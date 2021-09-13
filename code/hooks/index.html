@@ -713,10 +713,7 @@ end)
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L85">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called every time an affliction is applied.</p>
 			</header>
 
 
@@ -774,10 +771,7 @@ end)
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L88">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called every time an affliction updates.</p>
 			</header>
 
 
@@ -1030,18 +1024,57 @@ end)
 		<section class="method" id="gapOxygenUpdate">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>gapOxygenUpdate()</h1>
+					<h1><span class="realm shared"></span></span>gapOxygenUpdate(gap, hull1, hull2)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L116">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called every update when a gap passes oxygen</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">gap</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hull1</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hull2</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -1055,10 +1088,7 @@ end)
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L97">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called whenever an item is used as a treatment (eg.  bandages).</p>
 			</header>
 
 
@@ -1219,10 +1249,7 @@ end)
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L94">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Same as itemUse.</p>
 			</header>
 
 
@@ -1261,7 +1288,7 @@ end)
 		<section class="method" id="itemUnequip">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemUnequip()</h1>
+					<h1><span class="realm shared"></span></span>itemUnequip(item, character)</h1>
 				</a>
 
 
@@ -1270,6 +1297,35 @@ end)
 					<p>Same as itemEquip, but for unequipping.</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -1283,10 +1339,7 @@ end)
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L91">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called every time an Item gets "Used".</p>
 			</header>
 
 
@@ -1370,18 +1423,44 @@ end)
 		<section class="method" id="serverLog">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>serverLog()</h1>
+					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L128">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called everytime something is logged to the Server Log</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">text</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">serverLogMessageType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -1389,18 +1468,44 @@ end)
 		<section class="method" id="signalReceived">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived()</h1>
+					<h1><span class="realm shared"></span></span>signalReceived(connection, signal)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L119">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called everytime an Item receives a wire signal</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -1408,18 +1513,44 @@ end)
 		<section class="method" id="signalReceived.YourComponentIdentifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived.YourComponentIdentifier()</h1>
+					<h1><span class="realm shared"></span></span>signalReceived.YourComponentIdentifier(connection, signal)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L122">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Same as signalReceived, but gets called only when needed by specifying your component, better performance.</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -1443,18 +1574,57 @@ end)
 		<section class="method" id="wifiSignalTransmitted">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>wifiSignalTransmitted()</h1>
+					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L125">View source &raquo;</a>
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wifiComponent</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sentFromChat</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
