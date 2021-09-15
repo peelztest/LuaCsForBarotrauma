@@ -556,13 +556,13 @@ CreateVector4											</a>
 		<section class="method" id="Create">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Create(characterInfo, position, seed, id, isRemotePlayer, hasAi, ragdollParams)</h1>
+					<h1><span class="realm server"></span></span>Create(speciesName, name, jobPrefab, ragdollFileName, variant, randSync, npcIdentifier)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/CharacterInfo.lua#L13">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/CharacterInfo.lua#L17">View source &raquo;</a>
 
-					<p>Creates a Character using CharacterInfo.</p>
+					<p>Creates a CharacterInfo.</p>
 			</header>
 
 
@@ -572,7 +572,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">characterInfo</span>
+								<span class="tag parameter">speciesName</span>
 
 
 
@@ -585,7 +585,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">position</span>
+								<span class="tag parameter">name</span>
 
 
 
@@ -598,7 +598,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">seed</span>
+								<span class="tag parameter">jobPrefab</span>
 
 
 
@@ -611,7 +611,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">id</span>
+								<span class="tag parameter">ragdollFileName</span>
 
 
 
@@ -624,7 +624,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">isRemotePlayer</span>
+								<span class="tag parameter">variant</span>
 
 
 
@@ -637,7 +637,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">hasAi</span>
+								<span class="tag parameter">randSync</span>
 
 
 
@@ -650,7 +650,7 @@ CreateVector4											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">ragdollParams</span>
+								<span class="tag parameter">npcIdentifier</span>
 
 
 
@@ -665,7 +665,7 @@ CreateVector4											</a>
 				<ul>
 
 							<li>
-									<span class="type">Character</span>
+									<span class="type">CharacterInfo</span>
 
 								<p>
 
@@ -674,6 +674,11 @@ CreateVector4											</a>
 
 				</ul>
 
+				<h3>Example Usage</h3>
+					<pre><code>local vsauce = CharacterInfo.Create("human", "VSAUCE HERE")
+local character = Character.Create(vsauce, CreateVector2(0, 0), "some random characters")
+print(character)
+</code></pre>
 
 		</section>
 
