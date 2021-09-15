@@ -44,6 +44,11 @@
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../code/character/#TeleportTo">
+TeleportTo											</a>
+										</li>
 
 									</ul>
 									</details>
@@ -560,7 +565,7 @@ CreateVector4											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L20">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L22">View source &raquo;</a>
 
 					<p>Creates a Character using CharacterInfo.</p>
 			</header>
@@ -681,6 +686,42 @@ print(character)
 </code></pre>
 
 		</section>
+		<section class="method" id="TeleportTo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>TeleportTo(position)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L30">View source &raquo;</a>
+
+					<p>Teleports a character to a position.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Character.CharacterList[1].TeleportTo(CreateVector2(0, 0)) -- teleports first created characters to 0, 0
+</code></pre>
+
+		</section>
 	<h1 class="title">Tables</h1>
 
 		<section class="method" id="Character.CharacterList">
@@ -690,11 +731,1613 @@ print(character)
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L26">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L40">View source &raquo;</a>
 
-					<p>List of all characters.</p>
+					<p>Character.CharacterList, List of all characters.</p>
 			</header>
 
+
+
+
+		</section>
+	<h1 class="title">Fields</h1>
+
+		<section class="method" id="CanBeDragged">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanBeDragged</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L160">View source &raquo;</a>
+
+					<p>CanBeDragged, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanBeDragged</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanBeSelected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanBeSelected</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L155">View source &raquo;</a>
+
+					<p>CanBeSelected, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanBeSelected</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanInteract">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanInteract</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L120">View source &raquo;</a>
+
+					<p>CanInteract, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanInteract</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanInventoryBeAccessed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanInventoryBeAccessed</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L165">View source &raquo;</a>
+
+					<p>CanInventoryBeAccessed, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanInventoryBeAccessed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanMove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanMove</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L115">View source &raquo;</a>
+
+					<p>CanMove, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanMove</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanSpeak">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanSpeak</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L80">View source &raquo;</a>
+
+					<p>CanSpeak, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanSpeak</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CauseOfDeath">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CauseOfDeath</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L289">View source &raquo;</a>
+
+					<p>CauseOfDeath, returns a CauseOfDeath.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CauseOfDeath</span>
+
+									<span class="tag"><a class="type" href="../../code/character/#CauseOfDeath">CauseOfDeath</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CurrentSpeed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CurrentSpeed</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L255">View source &raquo;</a>
+
+					<p>CurrentSpeed, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CurrentSpeed</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CursorPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CursorPosition</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L190">View source &raquo;</a>
+
+					<p>CursorPosition, returns a Vector2.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CursorPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CursorWorldPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CursorWorldPosition</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L200">View source &raquo;</a>
+
+					<p>CursorWorldPosition, returns a Vector2.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CursorWorldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DisplayName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DisplayName</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L275">View source &raquo;</a>
+
+					<p>DisplayName, returns a string.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DisplayName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DrawPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DrawPosition</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L185">View source &raquo;</a>
+
+					<p>DrawPosition, returns a Vector2.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DrawPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FocusedItem">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FocusedItem</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L260">View source &raquo;</a>
+
+					<p>FocusedItem, returns a Item.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FocusedItem</span>
+
+									<span class="tag"><span class="type">item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GodMode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GodMode</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L170">View source &raquo;</a>
+
+					<p>GodMode, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">GodMode</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Health">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Health</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L235">View source &raquo;</a>
+
+					<p>Health, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Health</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HealthPercentage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HealthPercentage</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L240">View source &raquo;</a>
+
+					<p>HealthPercentage, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HealthPercentage</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HideFace">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HideFace</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L105">View source &raquo;</a>
+
+					<p>HideFace, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HideFace</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Inventory">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Inventory</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L285">View source &raquo;</a>
+
+					<p>Inventory, returns a CharacterInventory.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Inventory</span>
+
+									<span class="tag"><span class="type">CharacterInventory</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsBot">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsBot</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L55">View source &raquo;</a>
+
+					<p>IsBot, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsBot</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsDead">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsDead</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L60">View source &raquo;</a>
+
+					<p>IsDead, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsDead</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsFemale">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsFemale</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L75">View source &raquo;</a>
+
+					<p>IsFemale, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsFemale</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsHuman">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsHuman</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L65">View source &raquo;</a>
+
+					<p>IsHuman, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsHuman</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsInFriendlySub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsInFriendlySub</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L175">View source &raquo;</a>
+
+					<p>IsInFriendlySub, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsInFriendlySub</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsIncapacitated">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsIncapacitated</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L135">View source &raquo;</a>
+
+					<p>IsIncapacitated, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsIncapacitated</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsMale">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsMale</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L70">View source &raquo;</a>
+
+					<p>IsMale, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsMale</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsObserving">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsObserving</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L50">View source &raquo;</a>
+
+					<p>IsObserving, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsObserving</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsPet">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsPet</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L145">View source &raquo;</a>
+
+					<p>IsPet, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsPet</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsRagdolled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsRagdolled</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L130">View source &raquo;</a>
+
+					<p>IsRagdolled, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsRagdolled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsRemotelyControlled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsRemotelyControlled</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L45">View source &raquo;</a>
+
+					<p>IsRemotelyControlled, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsRemotelyControlled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsTraitor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsTraitor</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L100">View source &raquo;</a>
+
+					<p>IsTraitor, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsTraitor</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsUnconscious">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsUnconscious</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L140">View source &raquo;</a>
+
+					<p>IsUnconscious, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsUnconscious</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LockHands">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LockHands</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L110">View source &raquo;</a>
+
+					<p>LockHands, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LockHands</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LogName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LogName</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L280">View source &raquo;</a>
+
+					<p>LogName, returns a string.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LogName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LowPassMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LowPassMultiplier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L205">View source &raquo;</a>
+
+					<p>LowPassMultiplier, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LowPassMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxVitality">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxVitality</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L230">View source &raquo;</a>
+
+					<p>MaxVitality, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxVitality</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L270">View source &raquo;</a>
+
+					<p>Name, returns a string.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="NeedsAir">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NeedsAir</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L85">View source &raquo;</a>
+
+					<p>NeedsAir, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">NeedsAir</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="NeedsOxygen">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NeedsOxygen</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L95">View source &raquo;</a>
+
+					<p>NeedsOxygen, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">NeedsOxygen</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="NeedsWater">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NeedsWater</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L90">View source &raquo;</a>
+
+					<p>NeedsWater, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">NeedsWater</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ObstructVision">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ObstructVision</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L125">View source &raquo;</a>
+
+					<p>ObstructVision, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ObstructVision</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Oxygen">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Oxygen</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L210">View source &raquo;</a>
+
+					<p>Oxygen, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Oxygen</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OxygenAvailable">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OxygenAvailable</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L215">View source &raquo;</a>
+
+					<p>OxygenAvailable, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OxygenAvailable</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PickingItem">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PickingItem</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L265">View source &raquo;</a>
+
+					<p>PickingItem, returns a Item.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PickingItem</span>
+
+									<span class="tag"><span class="type">item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Position">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Position</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L180">View source &raquo;</a>
+
+					<p>Position, returns a Vector2.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PressureTimer">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PressureTimer</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L250">View source &raquo;</a>
+
+					<p>PressureTimer, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PressureTimer</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SmoothedCursorPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SmoothedCursorPosition</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L195">View source &raquo;</a>
+
+					<p>SmoothedCursorPosition, returns a Vector2.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SmoothedCursorPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SpeechImpediment">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SpeechImpediment</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L245">View source &raquo;</a>
+
+					<p>SpeechImpediment, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SpeechImpediment</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Stun">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Stun</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L220">View source &raquo;</a>
+
+					<p>Stun, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Stun</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UseHullOxygen">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UseHullOxygen</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L150">View source &raquo;</a>
+
+					<p>UseHullOxygen, returns a bool.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UseHullOxygen</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Vitality">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Vitality</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Character.lua#L225">View source &raquo;</a>
+
+					<p>Vitality, returns a number.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Vitality</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
