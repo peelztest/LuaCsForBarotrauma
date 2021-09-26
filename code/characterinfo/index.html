@@ -338,8 +338,8 @@ WorldPosition											</a>
 
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.Create">
-CharacterInfo.Create											</a>
+											<a href="../../code/characterinfo/#CharacterInfo">
+CharacterInfo											</a>
 										</li>
 
 
@@ -842,6 +842,11 @@ Identifier											</a>
 								</li>
 
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Receive">
+Networking.Receive											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestGetHTTP">
 Networking.RequestGetHTTP											</a>
@@ -850,6 +855,21 @@ Networking.RequestGetHTTP											</a>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestPostHTTP">
 Networking.RequestPostHTTP											</a>
+										</li>
+										<li>
+											<span class="realm client"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Start">
+Networking.Start											</a>
 										</li>
 
 
@@ -872,12 +892,45 @@ Networking.RequestPostHTTP											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/signal/#Signal.Create">
-Signal.Create											</a>
+											<a href="../../code/signal/#Signal">
+Signal											</a>
 										</li>
 
 
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#power">
+power											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#sender">
+sender											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#source">
+source											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#stepsTaken">
+stepsTaken											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#strength">
+strength											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#value">
+value											</a>
+										</li>
 
 									</ul>
 									</details>
@@ -920,18 +973,18 @@ Timer.GetTime											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector2">
-CreateVector2											</a>
+											<a href="../../code/vectors/#Vector2">
+Vector2											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector3">
-CreateVector3											</a>
+											<a href="../../code/vectors/#Vector3">
+Vector3											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector4">
-CreateVector4											</a>
+											<a href="../../code/vectors/#Vector4">
+Vector4											</a>
 										</li>
 
 
@@ -1086,16 +1139,16 @@ ServerMessageBoxInGame											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="CharacterInfo.Create">
+		<section class="method" id="CharacterInfo">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>CharacterInfo.Create(speciesName, name, jobPrefab, ragdollFileName, variant, randSync, npcIdentifier)</h1>
+					<h1><span class="realm server"></span></span>CharacterInfo(speciesName, name, jobPrefab, ragdollFileName, variant, randSync, npcIdentifier)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/CharacterInfo.lua#L20">View source &raquo;</a>
 
-					<p>Creates a CharacterInfo.</p>
+					<p>Instantiates a new CharacterInfo.</p>
 			</header>
 
 
@@ -1198,7 +1251,7 @@ ServerMessageBoxInGame											</a>
 				<ul>
 
 							<li>
-									<span class="type">CharacterInfo</span>
+									<a class="type" href="../../code/characterinfo/#CharacterInfo">CharacterInfo</a>
 
 								<p>
 
@@ -1208,8 +1261,8 @@ ServerMessageBoxInGame											</a>
 				</ul>
 
 				<h3>Example Usage</h3>
-					<pre><code>local vsauce = CharacterInfo.Create("human", "VSAUCE HERE")
-local character = Character.Create(vsauce, CreateVector2(0, 0), "some random characters")
+					<pre><code>local vsauce = CharacterInfo.__new("human", "VSAUCE HERE")
+local character = Character.Create(vsauce, Vector2.__new(0, 0), "some random characters")
 print(character)
 </code></pre>
 

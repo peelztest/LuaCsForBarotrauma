@@ -338,8 +338,8 @@ WorldPosition											</a>
 
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.Create">
-CharacterInfo.Create											</a>
+											<a href="../../code/characterinfo/#CharacterInfo">
+CharacterInfo											</a>
 										</li>
 
 
@@ -842,6 +842,11 @@ Identifier											</a>
 								</li>
 
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Receive">
+Networking.Receive											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestGetHTTP">
 Networking.RequestGetHTTP											</a>
@@ -850,6 +855,21 @@ Networking.RequestGetHTTP											</a>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestPostHTTP">
 Networking.RequestPostHTTP											</a>
+										</li>
+										<li>
+											<span class="realm client"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Start">
+Networking.Start											</a>
 										</li>
 
 
@@ -872,12 +892,45 @@ Networking.RequestPostHTTP											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/signal/#Signal.Create">
-Signal.Create											</a>
+											<a href="../../code/signal/#Signal">
+Signal											</a>
 										</li>
 
 
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#power">
+power											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#sender">
+sender											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#source">
+source											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#stepsTaken">
+stepsTaken											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#strength">
+strength											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#value">
+value											</a>
+										</li>
 
 									</ul>
 									</details>
@@ -920,18 +973,18 @@ Timer.GetTime											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector2">
-CreateVector2											</a>
+											<a href="../../code/vectors/#Vector2">
+Vector2											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector3">
-CreateVector3											</a>
+											<a href="../../code/vectors/#Vector3">
+Vector3											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector4">
-CreateVector4											</a>
+											<a href="../../code/vectors/#Vector4">
+Vector4											</a>
 										</li>
 
 
@@ -1086,16 +1139,16 @@ ServerMessageBoxInGame											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Signal.Create">
+		<section class="method" id="Signal">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Signal.Create(stringValue, stepsTaken, characterSender, itemSource, power, strength)</h1>
+					<h1><span class="realm shared"></span></span>Signal(stringValue, stepsTaken, characterSender, itemSource, power, strength)</h1>
 				</a>
 
 
 					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L16">View source &raquo;</a>
 
-					<p>Creates a Signal.</p>
+					<p>Instantiates a new Signal.</p>
 			</header>
 
 
@@ -1185,7 +1238,7 @@ ServerMessageBoxInGame											</a>
 				<ul>
 
 							<li>
-									<span class="type">Signal</span>
+									<a class="type" href="../../code/signal/#Signal">Signal</a>
 
 								<p>
 
@@ -1193,6 +1246,200 @@ ServerMessageBoxInGame											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+	<h1 class="title">Fields</h1>
+
+		<section class="method" id="power">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>power</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L43">View source &raquo;</a>
+
+					<p>power = 0</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">power</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="sender">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>sender</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L33">View source &raquo;</a>
+
+					<p>sender = nil</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="source">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>source</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L38">View source &raquo;</a>
+
+					<p>source = nil</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">source</span>
+
+									<span class="tag"><span class="type">item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="stepsTaken">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>stepsTaken</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L28">View source &raquo;</a>
+
+					<p>stepsTaken = 1</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">stepsTaken</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="strength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>strength</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L47">View source &raquo;</a>
+
+					<p>strength = 1</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">strength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="value">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>value</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Signal.lua#L23">View source &raquo;</a>
+
+					<p>value, String value of the signal.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">value</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>

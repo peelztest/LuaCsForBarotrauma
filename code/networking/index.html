@@ -338,8 +338,8 @@ WorldPosition											</a>
 
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.Create">
-CharacterInfo.Create											</a>
+											<a href="../../code/characterinfo/#CharacterInfo">
+CharacterInfo											</a>
 										</li>
 
 
@@ -842,6 +842,11 @@ Identifier											</a>
 								</li>
 
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Receive">
+Networking.Receive											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestGetHTTP">
 Networking.RequestGetHTTP											</a>
@@ -850,6 +855,21 @@ Networking.RequestGetHTTP											</a>
 											<span class="realm server"></span>
 											<a href="../../code/networking/#Networking.RequestPostHTTP">
 Networking.RequestPostHTTP											</a>
+										</li>
+										<li>
+											<span class="realm client"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../code/networking/#Networking.Send">
+Networking.Send											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/networking/#Networking.Start">
+Networking.Start											</a>
 										</li>
 
 
@@ -872,12 +892,45 @@ Networking.RequestPostHTTP											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/signal/#Signal.Create">
-Signal.Create											</a>
+											<a href="../../code/signal/#Signal">
+Signal											</a>
 										</li>
 
 
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#power">
+power											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#sender">
+sender											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#source">
+source											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#stepsTaken">
+stepsTaken											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#strength">
+strength											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/signal/#value">
+value											</a>
+										</li>
 
 									</ul>
 									</details>
@@ -920,18 +973,18 @@ Timer.GetTime											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector2">
-CreateVector2											</a>
+											<a href="../../code/vectors/#Vector2">
+Vector2											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector3">
-CreateVector3											</a>
+											<a href="../../code/vectors/#Vector3">
+Vector3											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/vectors/#CreateVector4">
-CreateVector4											</a>
+											<a href="../../code/vectors/#Vector4">
+Vector4											</a>
 										</li>
 
 
@@ -1088,17 +1141,61 @@ ServerMessageBoxInGame											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Networking.RequestGetHTTP">
+		<section class="method" id="Networking.Receive">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url)</h1>
+					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L19">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L34">View source &raquo;</a>
 
-					<p>Send a get HTTP Request.
- treturn string result.</p>
+					<p>Adds a function to listen for lua net messages</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessageName</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.RequestGetHTTP">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L17">View source &raquo;</a>
+
+					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
 			</header>
 
 
@@ -1118,20 +1215,32 @@ ServerMessageBoxInGame											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
 		<section class="method" id="Networking.RequestPostHTTP">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestPostHTTP(url, textData, contentType)</h1>
+					<h1><span class="realm server"></span></span>Networking.RequestPostHTTP(url, callback, textData, contentType)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L14">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L13">View source &raquo;</a>
 
-					<p>Send a post HTTP Request.
- treturn string result.</p>
+					<p>Send a post HTTP Request, callback is called with an argument result string.</p>
 			</header>
 
 
@@ -1142,6 +1251,19 @@ ServerMessageBoxInGame											</a>
 
 							<li>
 								<span class="tag parameter">url</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
 
 
 
@@ -1168,6 +1290,142 @@ ServerMessageBoxInGame											</a>
 
 							<li>
 								<span class="tag parameter">contentType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.Send">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm client"></span></span>Networking.Send(netMessage, deliveryMethod)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L26">View source &raquo;</a>
+
+					<p>Sends a net message to the server.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deliveryMethod</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.Send">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L30">View source &raquo;</a>
+
+					<p>Sends a net message to a connection, if the connection is null, then it sends the message to all connections</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deliveryMethod</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.Start">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Networking.Start(netMessageName)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Networking.lua#L22">View source &raquo;</a>
+
+					<p>Creates a new net message, returns an IWriteMessage
+ treturn IWriteMessage netMessage</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessageName</span>
 
 
 
