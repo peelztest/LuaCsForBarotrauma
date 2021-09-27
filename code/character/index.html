@@ -1261,8 +1261,8 @@ ServerMessageBoxInGame											</a>
 				</ul>
 
 				<h3>Example Usage</h3>
-					<pre><code>local vsauce = CharacterInfo.__new("human", "VSAUCE HERE")
-local character = Character.Create(vsauce, Vector2.__new(0, 0), "some random characters")
+					<pre><code>local vsauce = CharacterInfo("human", "VSAUCE HERE")
+local character = Character.Create(vsauce, Vector2(0, 0), "some random characters")
 print(character)
 </code></pre>
 
@@ -1299,7 +1299,7 @@ print(character)
 
 
 				<h3>Example Usage</h3>
-					<pre><code>Character.CharacterList[1].TeleportTo(Vector2.__new(0, 0)) -- teleports first created characters to 0, 0
+					<pre><code>Character.CharacterList[1].TeleportTo(Vector2(0, 0)) -- teleports first created characters to 0, 0
 </code></pre>
 
 		</section>
