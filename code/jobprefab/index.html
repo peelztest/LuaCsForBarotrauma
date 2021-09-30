@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hook - LuaForBarotrauma Documentation</title>
+		<title>JobPrefab - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Hook - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="JobPrefab - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
-			<meta property="og:description" content="Hooks are basically functions that get called when events happen in-game, like chat messages." />
+			<meta property="og:description" content="Barotrauma JobPrefab class with some additional functions and fields" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -2130,7 +2130,7 @@ Game.ServerSettings											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../code/hook/">Hook</a></summary>
 
 									<ul>
@@ -3795,7 +3795,7 @@ Variant											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../code/jobprefab/">JobPrefab</a></summary>
 
 									<ul>
@@ -4804,86 +4804,40 @@ Unsynced											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>Hook</h1>
-	<h2>Hooks are basically functions that get called when events happen in-game, like chat messages.</h2>
+	<h1>JobPrefab</h1>
+	<h2>Barotrauma JobPrefab class with some additional functions and fields</h2>
 </header>
 
-<p>
-
-</p>
+<p>Barotrauma source code: <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/blob/master/Barotrauma/BarotraumaShared/SharedSource/Characters/Jobs/JobPrefab.cs">JobPrefab.cs</a></p>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Hook.Add">
+		<section class="method" id="Dispose">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Add(eventname, hookname, func)</h1>
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L21">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L15">View source &raquo;</a>
 
-					<p>Adds a hook.</p>
+					<p>Dispose</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> hook name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">func</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p> callback</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
-   print(character)
-end)
-</code></pre>
 
 		</section>
-		<section class="method" id="Hook.Call">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Call(eventname, parameters)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L39">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L58">View source &raquo;</a>
 
-					<p>Calls a hook.</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -4893,128 +4847,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">eventname</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">parameters</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p> parameters to be passed in</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("think", "happyDebuggingSuckers", function()
-     Hook.Call("characterDead", {}) -- ruin someone's day
-end)
-</code></pre>
-
-		</section>
-		<section class="method" id="Hook.Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Remove(eventname, hookname)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L29">View source &raquo;</a>
-
-					<p>Removes a hook.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> hook name</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Remove("characterDeath", "characterDeathExample")
-</code></pre>
-
-		</section>
-		<section class="method" id="afflictionApplied">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>afflictionApplied(affliction, characterHealth, limb)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L86">View source &raquo;</a>
-
-					<p>Gets called every time an affliction is applied.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -5024,18 +4859,89 @@ end)
 					</ul>
 
 
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
 
 		</section>
-		<section class="method" id="afflictionUpdate">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>afflictionUpdate(affliction, characterHealth, limb)</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L89">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L63">View source &raquo;</a>
 
-					<p>Gets called every time an affliction updates.</p>
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L47">View source &raquo;</a>
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="JobPrefab.Get">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>JobPrefab.Get(identifier)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L21">View source &raquo;</a>
+
+					<p>Get</p>
 			</header>
 
 
@@ -5045,153 +4951,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">affliction</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="changeFallDamage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>changeFallDamage()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L114">View source &raquo;</a>
-
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="characterCreated">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>characterCreated(createdCharacter)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L73">View source &raquo;</a>
-
-					<p>Gets callled everytime a character is created.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">createdCharacter</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="characterDeath">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>characterDeath(character)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L82">View source &raquo;</a>
-
-					<p>Gets called everytime a Character dies.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p> A dead Character.</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
-   print(character)
-end)
-</code></pre>
-
-		</section>
-		<section class="method" id="chatMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>chatMessage(message, sender)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L45">View source &raquo;</a>
-
-					<p>Gets called everytime someone sends a chat message, return true to cancel message</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">message</span>
+								<span class="tag parameter">identifier</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -5202,33 +4962,32 @@ end)
 							</li>
 					</ul>
 
-					<ul>
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">sender</span>
-
-									<span class="tag"><span class="type">client</span></span>
-
+									<span class="type">JobPrefab</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
 
+				</ul>
 
 
 		</section>
-		<section class="method" id="clientConnected">
+		<section class="method" id="JobPrefab.LoadAll">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientConnected(connectedClient)</h1>
+					<h1><span class="realm shared"></span></span>JobPrefab.LoadAll(files)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L54">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L32">View source &raquo;</a>
 
-					<p>Called when a client connects</p>
+					<p>LoadAll</p>
 			</header>
 
 
@@ -5238,9 +4997,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">connectedClient</span>
+								<span class="tag parameter">files</span>
 
-									<span class="tag"><span class="type">client</span></span>
+									<span class="tag"><span class="type">IEnumerable`1</span></span>
 
 
 								<p>
@@ -5252,16 +5011,16 @@ end)
 
 
 		</section>
-		<section class="method" id="clientDisconnected">
+		<section class="method" id="JobPrefab.LoadFromFile">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientDisconnected(disconnectedClient)</h1>
+					<h1><span class="realm shared"></span></span>JobPrefab.LoadFromFile(file)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L59">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L37">View source &raquo;</a>
 
-					<p>Called when a client disconnects</p>
+					<p>LoadFromFile</p>
 			</header>
 
 
@@ -5271,9 +5030,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">disconnectedClient</span>
+								<span class="tag parameter">file</span>
 
-									<span class="tag"><span class="type">client</span></span>
+									<span class="tag"><span class="type">ContentFile</span></span>
 
 
 								<p>
@@ -5285,16 +5044,16 @@ end)
 
 
 		</section>
-		<section class="method" id="gapOxygenUpdate">
+		<section class="method" id="JobPrefab.Random">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>gapOxygenUpdate(gap, hull1, hull2)</h1>
+					<h1><span class="realm shared"></span></span>JobPrefab.Random(sync)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L117">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L27">View source &raquo;</a>
 
-					<p>Gets called every update when a gap passes oxygen</p>
+					<p>Random</p>
 			</header>
 
 
@@ -5304,8 +5063,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">gap</span>
+								<span class="tag parameter">sync</span>
 
+									<span class="tag"><span class="type">RandSync</span></span>
 
 
 								<p>
@@ -5314,45 +5074,32 @@ end)
 							</li>
 					</ul>
 
-					<ul>
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">hull1</span>
-
-
+									<span class="type">JobPrefab</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
 
-					<ul>
-
-							<li>
-								<span class="tag parameter">hull2</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
+				</ul>
 
 
 		</section>
-		<section class="method" id="itemApplyTreatment">
+		<section class="method" id="JobPrefab.RemoveByFile">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemApplyTreatment(item, usingCharacter, targetCharacter, limb)</h1>
+					<h1><span class="realm shared"></span></span>JobPrefab.RemoveByFile(filePath)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L98">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L42">View source &raquo;</a>
 
-					<p>Gets called whenever an item is used as a treatment (eg.  bandages).</p>
+					<p>RemoveByFile</p>
 			</header>
 
 
@@ -5362,47 +5109,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">filePath</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">usingCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5414,40 +5123,156 @@ end)
 
 
 		</section>
-		<section class="method" id="itemDrop">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemDrop(item, character)</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L102">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L52">View source &raquo;</a>
 
-					<p>Gets called whenever an item is dropped, You can return true to cancel.</p>
+					<p>ToString</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
-
-					<ul>
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
-
-
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
+
+				</ul>
+
+
+		</section>
+	<h1 class="title">Tables</h1>
+
+		<section class="method" id="AppropriateOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L210">View source &raquo;</a>
+
+					<p>AppropriateOrders, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AutonomousObjectives">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutonomousObjectives</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L205">View source &raquo;</a>
+
+					<p>AutonomousObjectives, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ItemIdentifiers">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemIdentifiers</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L190">View source &raquo;</a>
+
+					<p>ItemIdentifiers, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ItemSets">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemSets</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L185">View source &raquo;</a>
+
+					<p>ItemSets, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ShowItemPreview">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowItemPreview</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L195">View source &raquo;</a>
+
+					<p>ShowItemPreview, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Skills">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Skills</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L200">View source &raquo;</a>
+
+					<p>Skills, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+	<h1 class="title">Fields</h1>
+
+		<section class="method" id="AllowAlways">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowAlways</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L120">View source &raquo;</a>
+
+					<p>AllowAlways, Field of type bool</p>
+			</header>
+
+
+
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">AllowAlways</span>
 
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -5459,40 +5284,27 @@ end)
 
 
 		</section>
-		<section class="method" id="itemEquip">
+		<section class="method" id="Commonness">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemEquip(item, character)</h1>
+					<h1><span class="realm shared"></span></span>Commonness</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L106">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L145">View source &raquo;</a>
 
-					<p>Gets called whenever an item is equipped.  Return true to cancel.</p>
+					<p>Commonness, Field of type number</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">Commonness</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5504,40 +5316,27 @@ end)
 
 
 		</section>
-		<section class="method" id="itemSecondaryUse">
+		<section class="method" id="Description">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemSecondaryUse(item, itemUser)</h1>
+					<h1><span class="realm shared"></span></span>Description</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L95">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L105">View source &raquo;</a>
 
-					<p>Same as itemUse.</p>
+					<p>Description, Field of type string</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">Description</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemUser</span>
-
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5549,40 +5348,27 @@ end)
 
 
 		</section>
-		<section class="method" id="itemUnequip">
+		<section class="method" id="FilePath">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemUnequip(item, character)</h1>
+					<h1><span class="realm shared"></span></span>FilePath</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L111">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L165">View source &raquo;</a>
 
-					<p>Same as itemEquip, but for unequipping.</p>
+					<p>FilePath, Field of type string</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">FilePath</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5594,53 +5380,27 @@ end)
 
 
 		</section>
-		<section class="method" id="itemUse">
+		<section class="method" id="HiddenJob">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemUse(item, itemUser, targetLimb)</h1>
+					<h1><span class="realm shared"></span></span>HiddenJob</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L92">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L155">View source &raquo;</a>
 
-					<p>Gets called every time an Item gets "Used".</p>
+					<p>HiddenJob, Field of type bool</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">HiddenJob</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemUser</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetLimb</span>
-
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -5652,72 +5412,27 @@ end)
 
 
 		</section>
-		<section class="method" id="roundEnd">
+		<section class="method" id="Identifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundEnd()</h1>
+					<h1><span class="realm shared"></span></span>Identifier</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L68">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L80">View source &raquo;</a>
 
-					<p>Called on round end</p>
+					<p>Identifier, Field of type string</p>
 			</header>
 
 
-
-
-		</section>
-		<section class="method" id="roundStart">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundStart()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L64">View source &raquo;</a>
-
-					<p>Called on round start</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="serverLog">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L129">View source &raquo;</a>
-
-					<p>Gets called everytime something is logged to the Server Log</p>
-			</header>
-
-
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">text</span>
+								<span class="tag parameter">Identifier</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">serverLogMessageType</span>
-
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5729,40 +5444,27 @@ end)
 
 
 		</section>
-		<section class="method" id="signalReceived">
+		<section class="method" id="InitialCount">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived(connection, signal)</h1>
+					<h1><span class="realm shared"></span></span>InitialCount</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L120">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L115">View source &raquo;</a>
 
-					<p>Gets called everytime an Item receives a wire signal</p>
+					<p>InitialCount, Field of type number</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">connection</span>
+								<span class="tag parameter">InitialCount</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5774,40 +5476,27 @@ end)
 
 
 		</section>
-		<section class="method" id="signalReceived.YourComponentIdentifier">
+		<section class="method" id="MaxNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived.YourComponentIdentifier(connection, signal)</h1>
+					<h1><span class="realm shared"></span></span>MaxNumber</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L123">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L125">View source &raquo;</a>
 
-					<p>Same as signalReceived, but gets called only when needed by specifying your component, better performance.</p>
+					<p>MaxNumber, Field of type number</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">connection</span>
+								<span class="tag parameter">MaxNumber</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5819,43 +5508,59 @@ end)
 
 
 		</section>
-		<section class="method" id="think">
+		<section class="method" id="MinKarma">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>think()</h1>
+					<h1><span class="realm shared"></span></span>MinKarma</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L49">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L135">View source &raquo;</a>
 
-					<p>Called every update</p>
+					<p>MinKarma, Field of type number</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MinKarma</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
 		</section>
-		<section class="method" id="wifiSignalTransmitted">
+		<section class="method" id="MinNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
+					<h1><span class="realm shared"></span></span>MinNumber</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Hooks.lua#L126">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L130">View source &raquo;</a>
 
-					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
+					<p>MinNumber, Field of type number</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">wifiComponent</span>
+								<span class="tag parameter">MinNumber</span>
 
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5864,11 +5569,30 @@ end)
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L85">View source &raquo;</a>
+
+					<p>Name, Field of type string</p>
+			</header>
+
+
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">signal</span>
+								<span class="tag parameter">Name</span>
 
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5877,11 +5601,158 @@ end)
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="OnlyJobSpecificDialog">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OnlyJobSpecificDialog</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L110">View source &raquo;</a>
+
+					<p>OnlyJobSpecificDialog, Field of type bool</p>
+			</header>
+
+
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">sentFromChat</span>
+								<span class="tag parameter">OnlyJobSpecificDialog</span>
 
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OriginalName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L95">View source &raquo;</a>
+
+					<p>OriginalName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OriginalName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PriceMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L140">View source &raquo;</a>
+
+					<p>PriceMultiplier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PriceMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Variants">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Variants</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L180">View source &raquo;</a>
+
+					<p>Variants, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Variants</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="VitalityModifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>VitalityModifier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L150">View source &raquo;</a>
+
+					<p>VitalityModifier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">VitalityModifier</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
