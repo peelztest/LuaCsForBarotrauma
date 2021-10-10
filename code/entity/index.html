@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Game - LuaForBarotrauma Documentation</title>
+		<title>Entity - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Game - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="Entity - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
-			<meta property="og:description" content="Class providing game related things, Access fields and functions like that: Game.*" />
+			<meta property="og:description" content="Barotrauma Entity class with some additional functions and fields" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -135,17 +135,17 @@ CanSeeCharacter											</a>
 CanSeeTarget											</a>
 										</li>
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#Character.Create">
+Character.Create											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#Character.Create">
+Character.Create											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
-											<a href="../../code/character/#Character.Create">
-Character.Create											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.Create">
-Character.Create											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
@@ -1954,7 +1954,7 @@ VoiceEnabled											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../code/entity/">Entity</a></summary>
 
 									<ul>
@@ -2257,7 +2257,7 @@ File.Write											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../code/game/">Game</a></summary>
 
 									<ul>
@@ -5053,27 +5053,25 @@ Unsynced											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>Game</h1>
-	<h2>Class providing game related things, Access fields and functions like that: Game.*</h2>
+	<h1>Entity</h1>
+	<h2>Barotrauma Entity class with some additional functions and fields</h2>
 </header>
 
-<p>
-
-</p>
+<p>Barotrauma source code: <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/blob/master/Barotrauma/BarotraumaShared/SharedSource/Map/Entity.cs">Entity.cs</a></p>
 
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Game.ExecuteCommand">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.ExecuteCommand(command)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L79">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L60">View source &raquo;</a>
 
-					<p>Execute console command.</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -5083,8 +5081,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">command</span>
+								<span class="tag parameter">obj</span>
 
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -5093,219 +5092,32 @@ Unsynced											</a>
 							</li>
 					</ul>
 
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
-		<section class="method" id="Game.SendDirectChatMessage">
+		<section class="method" id="Entity.GetEntities">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(sendername, text, senderCharacter, chatMessageType, client, iconStyle)</h1>
+					<h1><span class="realm shared"></span></span>Entity.GetEntities()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L34">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L23">View source &raquo;</a>
 
-					<p>Send direct message.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sendername</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">text</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">senderCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">iconStyle</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L25">View source &raquo;</a>
-
-					<p>Send chat message to every client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">messageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideSignalRadio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L54">View source &raquo;</a>
-
-					<p>True to prevent headsets from transmitting wifi signals.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.GetEnabledPackagesDirectlyFromFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledPackagesDirectlyFromFile()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L93">View source &raquo;</a>
-
-					<p>Gets all enabled content packages by reading directly the player xml, useful when your mod doesn't have any xml.</p>
+					<p>GetEntities</p>
 			</header>
 
 
@@ -5314,25 +5126,90 @@ Unsynced											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+									<span class="type">IEnumerable`1</span>
 
-								<p>Table containing ContentPackages</p>
+								<p>
+
+</p>
 							</li>
 
 				</ul>
 
 
 		</section>
-		<section class="method" id="Game.GetEnabledContentPackages">
+		<section class="method" id="Entity.DumpIds">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledContentPackages()</h1>
+					<h1><span class="realm shared"></span></span>Entity.DumpIds(count, filename)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L88">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L49">View source &raquo;</a>
 
-					<p>Gets all enabled content packages.</p>
+					<p>DumpIds</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">count</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">filename</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove()</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L13">View source &raquo;</a>
+
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L18">View source &raquo;</a>
+
+					<p>ToString</p>
 			</header>
 
 
@@ -5341,41 +5218,27 @@ Unsynced											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
-								<p>Table containing ContentPackages</p>
+								<p>
+
+</p>
 							</li>
 
 				</ul>
 
 
 		</section>
-		<section class="method" id="Game.DispatchRespawnSub">
+		<section class="method" id="Entity.FindEntityByID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DispatchRespawnSub()</h1>
+					<h1><span class="realm shared"></span></span>Entity.FindEntityByID(ID)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L75">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L35">View source &raquo;</a>
 
-					<p>Dispatch respawn sub.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.DisableSpamFilter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L58">View source &raquo;</a>
-
-					<p>True to disable spam filter.</p>
+					<p>FindEntityByID</p>
 			</header>
 
 
@@ -5385,8 +5248,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+								<span class="tag parameter">ID</span>
 
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5396,18 +5260,31 @@ Unsynced											</a>
 					</ul>
 
 
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Entity</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
 
 		</section>
-		<section class="method" id="Game.Log">
+		<section class="method" id="Entity.FindFreeID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Log(message, ServerLogMessageType)</h1>
+					<h1><span class="realm shared"></span></span>Entity.FindFreeID(idOffset)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L62">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L29">View source &raquo;</a>
 
-					<p>Log message to server logs.</p>
+					<p>FindFreeID</p>
 			</header>
 
 
@@ -5417,8 +5294,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">message</span>
+								<span class="tag parameter">idOffset</span>
 
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5427,203 +5305,32 @@ Unsynced											</a>
 							</li>
 					</ul>
 
-					<ul>
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">ServerLogMessageType</span>
-
-
+									<span class="type">number</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
 
+				</ul>
 
 
 		</section>
-		<section class="method" id="Game.Explode">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Explode(pos, range, force, damage, structureDamage, itemDamage, empStrength, ballastFloraStrength)</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L66">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L65">View source &raquo;</a>
 
-					<p>Spawn explosion.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">pos</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">range</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">force</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">damage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">structureDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">empStrength</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ballastFloraStrength</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L46">View source &raquo;</a>
-
-					<p>True to override respawn sub, stops players from being respawned.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.StartGame">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.StartGame()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L83">View source &raquo;</a>
-
-					<p>Starts the game.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.GetRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L71">View source &raquo;</a>
-
-					<p>Get respawn sub submarine.</p>
+					<p>GetHashCode</p>
 			</header>
 
 
@@ -5632,239 +5339,458 @@ Unsynced											</a>
 				<ul>
 
 							<li>
-									<span class="type">Submarine</span>
+									<span class="type">number</span>
 
-								<p>Respawn Shuttle</p>
+								<p>
+
+</p>
 							</li>
 
 				</ul>
 
 
 		</section>
-		<section class="method" id="Game.SendDirectChatMessage">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(chatMessage, client)</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L38">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L54">View source &raquo;</a>
 
-					<p>Send direct message.</p>
+					<p>GetType</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
-
-					<ul>
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">chatMessage</span>
-
-
+									<span class="type">Type</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
 
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
+				</ul>
 
 
+		</section>
+		<section class="method" id="Entity.RemoveAll">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.RemoveAll()</h1>
+				</a>
 
-								<p>
 
-</p>
-							</li>
-					</ul>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L39">View source &raquo;</a>
+
+					<p>RemoveAll</p>
+			</header>
+
 
 
 
 		</section>
-		<section class="method" id="Game.SendTraitorMessage">
+		<section class="method" id="FreeID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendTraitorMessage(client, msg, missionid, type)</h1>
+					<h1><span class="realm shared"></span></span>FreeID()</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L29">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L43">View source &raquo;</a>
 
-					<p>Send traitor message.</p>
+					<p>FreeID</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">missionid</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">type</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.AllowWifiChat">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L50">View source &raquo;</a>
-
-					<p>True to make wifi chat always work.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideTraitors">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L42">View source &raquo;</a>
-
-					<p>True to override traitors.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Game.RoundStarted">
+		<section class="method" id="DrawPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.RoundStarted</h1>
+					<h1><span class="realm shared"></span></span>DrawPosition</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L13">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L102">View source &raquo;</a>
 
-					<p>Is the round started?</p>
+					<p>DrawPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DrawPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="WorldPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WorldPosition</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L97">View source &raquo;</a>
+
+					<p>WorldPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">WorldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ID</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L122">View source &raquo;</a>
+
+					<p>ID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L107">View source &raquo;</a>
+
+					<p>Submarine, Field of type Submarine</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Submarine</span>
+
+									<span class="tag"><span class="type">submarine</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IdFreed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IdFreed</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L82">View source &raquo;</a>
+
+					<p>IdFreed, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IdFreed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Removed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Removed</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L77">View source &raquo;</a>
+
+					<p>Removed, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Removed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.DummyID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.DummyID</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L147">View source &raquo;</a>
+
+					<p>Entity.DummyID, Field of type number</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Game.IsDedicated">
+		<section class="method" id="SimPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.IsDedicated</h1>
+					<h1><span class="realm shared"></span></span>SimPosition</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L17">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L87">View source &raquo;</a>
 
-					<p>Is dedicated server?</p>
+					<p>SimPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SimPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.NullEntityID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.NullEntityID</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L132">View source &raquo;</a>
+
+					<p>Entity.NullEntityID, Field of type number</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Game.ServerSettings">
+		<section class="method" id="Entity.ReservedIDStart">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.ServerSettings</h1>
+					<h1><span class="realm shared"></span></span>Entity.ReservedIDStart</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Game.lua#L21">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L152">View source &raquo;</a>
 
-					<p>Server settings.</p>
+					<p>Entity.ReservedIDStart, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Position">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Position</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L92">View source &raquo;</a>
+
+					<p>Position, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.EntitySpawnerID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.EntitySpawnerID</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L137">View source &raquo;</a>
+
+					<p>Entity.EntitySpawnerID, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Entity.EntityCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.EntityCount</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L72">View source &raquo;</a>
+
+					<p>Entity.EntityCount, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SpawnTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SpawnTime</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L117">View source &raquo;</a>
+
+					<p>SpawnTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SpawnTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.RespawnManagerID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.RespawnManagerID</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Entity.lua#L142">View source &raquo;</a>
+
+					<p>Entity.RespawnManagerID, Field of type number</p>
 			</header>
 
 
