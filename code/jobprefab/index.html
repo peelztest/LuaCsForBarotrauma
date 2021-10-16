@@ -2452,8 +2452,23 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#inventoryItemSwap">
+inventoryItemSwap											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#inventoryPutItem">
+inventoryPutItem											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#itemApplyTreatment">
 itemApplyTreatment											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#itemCombine">
+itemCombine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2464,6 +2479,11 @@ itemDrop											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#itemEquip">
 itemEquip											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#itemInteract">
+itemInteract											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5062,52 +5082,6 @@ Unsynced											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="JobPrefab.Random">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>JobPrefab.Random(sync)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L27">View source &raquo;</a>
-
-					<p>Random</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sync</span>
-
-									<span class="tag"><span class="type">RandSync</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">JobPrefab</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="Dispose">
 			<header>
 				<a class="anchor">
@@ -5356,6 +5330,52 @@ Unsynced											</a>
 
 
 		</section>
+		<section class="method" id="JobPrefab.Random">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>JobPrefab.Random(sync)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L27">View source &raquo;</a>
+
+					<p>Random</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sync</span>
+
+									<span class="tag"><span class="type">RandSync</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">JobPrefab</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="JobPrefab.Get">
 			<header>
 				<a class="anchor">
@@ -5404,32 +5424,16 @@ Unsynced											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="ItemSets">
+		<section class="method" id="InitialCount">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemSets</h1>
+					<h1><span class="realm shared"></span></span>InitialCount</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L185">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L115">View source &raquo;</a>
 
-					<p>ItemSets, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="MinNumber">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinNumber</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L130">View source &raquo;</a>
-
-					<p>MinNumber, Field of type number</p>
+					<p>InitialCount, Field of type number</p>
 			</header>
 
 
@@ -5438,7 +5442,7 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MinNumber</span>
+								<span class="tag parameter">InitialCount</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -5448,6 +5452,38 @@ Unsynced											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="ShowItemPreview">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowItemPreview</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L195">View source &raquo;</a>
+
+					<p>ShowItemPreview, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AutonomousObjectives">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutonomousObjectives</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L205">View source &raquo;</a>
+
+					<p>AutonomousObjectives, Field of type table</p>
+			</header>
+
 
 
 
@@ -5473,86 +5509,6 @@ Unsynced											</a>
 								<span class="tag parameter">FilePath</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AppropriateOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L210">View source &raquo;</a>
-
-					<p>AppropriateOrders, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Commonness">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Commonness</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L145">View source &raquo;</a>
-
-					<p>Commonness, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Commonness</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MinKarma">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinKarma</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L135">View source &raquo;</a>
-
-					<p>MinKarma, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MinKarma</span>
-
-									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -5596,38 +5552,6 @@ Unsynced											</a>
 
 
 		</section>
-		<section class="method" id="VitalityModifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>VitalityModifier</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L150">View source &raquo;</a>
-
-					<p>VitalityModifier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">VitalityModifier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="MaxNumber">
 			<header>
 				<a class="anchor">
@@ -5660,16 +5584,16 @@ Unsynced											</a>
 
 
 		</section>
-		<section class="method" id="AllowAlways">
+		<section class="method" id="MinNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowAlways</h1>
+					<h1><span class="realm shared"></span></span>MinNumber</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L120">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L130">View source &raquo;</a>
 
-					<p>AllowAlways, Field of type bool</p>
+					<p>MinNumber, Field of type number</p>
 			</header>
 
 
@@ -5678,135 +5602,7 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowAlways</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Description">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L105">View source &raquo;</a>
-
-					<p>Description, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Description</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AutonomousObjectives">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutonomousObjectives</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L205">View source &raquo;</a>
-
-					<p>AutonomousObjectives, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ShowItemPreview">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowItemPreview</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L195">View source &raquo;</a>
-
-					<p>ShowItemPreview, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L80">View source &raquo;</a>
-
-					<p>Identifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="PriceMultiplier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L140">View source &raquo;</a>
-
-					<p>PriceMultiplier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">PriceMultiplier</span>
+								<span class="tag parameter">MinNumber</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -5816,38 +5612,6 @@ Unsynced											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="ItemIdentifiers">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemIdentifiers</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L190">View source &raquo;</a>
-
-					<p>ItemIdentifiers, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Skills">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Skills</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L200">View source &raquo;</a>
-
-					<p>Skills, Field of type table</p>
-			</header>
-
 
 
 
@@ -5871,70 +5635,6 @@ Unsynced											</a>
 
 							<li>
 								<span class="tag parameter">Variants</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="OriginalName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L95">View source &raquo;</a>
-
-					<p>OriginalName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OriginalName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="InitialCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InitialCount</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L115">View source &raquo;</a>
-
-					<p>InitialCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InitialCount</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -5980,6 +5680,166 @@ Unsynced											</a>
 
 
 		</section>
+		<section class="method" id="PriceMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L140">View source &raquo;</a>
+
+					<p>PriceMultiplier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PriceMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Description">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Description</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L105">View source &raquo;</a>
+
+					<p>Description, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Description</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Commonness">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Commonness</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L145">View source &raquo;</a>
+
+					<p>Commonness, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Commonness</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Identifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Identifier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L80">View source &raquo;</a>
+
+					<p>Identifier, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OriginalName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L95">View source &raquo;</a>
+
+					<p>OriginalName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OriginalName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Name">
 			<header>
 				<a class="anchor">
@@ -6008,6 +5868,166 @@ Unsynced											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="MinKarma">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MinKarma</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L135">View source &raquo;</a>
+
+					<p>MinKarma, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MinKarma</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="VitalityModifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>VitalityModifier</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L150">View source &raquo;</a>
+
+					<p>VitalityModifier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">VitalityModifier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowAlways">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowAlways</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L120">View source &raquo;</a>
+
+					<p>AllowAlways, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowAlways</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ItemIdentifiers">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemIdentifiers</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L190">View source &raquo;</a>
+
+					<p>ItemIdentifiers, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AppropriateOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L210">View source &raquo;</a>
+
+					<p>AppropriateOrders, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ItemSets">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemSets</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L185">View source &raquo;</a>
+
+					<p>ItemSets, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Skills">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Skills</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/JobPrefab.lua#L200">View source &raquo;</a>
+
+					<p>Skills, Field of type table</p>
+			</header>
+
 
 
 

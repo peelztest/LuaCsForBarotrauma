@@ -2452,8 +2452,23 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#inventoryItemSwap">
+inventoryItemSwap											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#inventoryPutItem">
+inventoryPutItem											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#itemApplyTreatment">
 itemApplyTreatment											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#itemCombine">
+itemCombine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2464,6 +2479,11 @@ itemDrop											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#itemEquip">
 itemEquip											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#itemInteract">
+itemInteract											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5062,16 +5082,16 @@ Unsynced											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Job.Random">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Job.Random(randSync)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L17">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L57">View source &raquo;</a>
 
-					<p>Random</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -5081,9 +5101,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">randSync</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">RandSync</span></span>
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -5097,83 +5117,7 @@ Unsynced											</a>
 				<ul>
 
 							<li>
-									<span class="type">Job</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="IncreaseSkillLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L29">View source &raquo;</a>
-
-					<p>IncreaseSkillLevel</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">skillIdentifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">increase</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L62">View source &raquo;</a>
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -5203,6 +5147,52 @@ Unsynced											</a>
 
 							<li>
 									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetSkillLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSkillLevel(skillIdentifier)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L23">View source &raquo;</a>
+
+					<p>GetSkillLevel</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">skillIdentifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
 
 								<p>
 
@@ -5260,16 +5250,16 @@ Unsynced											</a>
 
 
 		</section>
-		<section class="method" id="GetSkillLevel">
+		<section class="method" id="Job.Random">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSkillLevel(skillIdentifier)</h1>
+					<h1><span class="realm shared"></span></span>Job.Random(randSync)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L23">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L17">View source &raquo;</a>
 
-					<p>GetSkillLevel</p>
+					<p>Random</p>
 			</header>
 
 
@@ -5279,9 +5269,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">skillIdentifier</span>
+								<span class="tag parameter">randSync</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">RandSync</span></span>
 
 
 								<p>
@@ -5289,6 +5279,35 @@ Unsynced											</a>
 </p>
 							</li>
 					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Job</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L62">View source &raquo;</a>
+
+					<p>GetHashCode</p>
+			</header>
+
 
 
 				<h3>Returns</h3>
@@ -5381,16 +5400,16 @@ Unsynced											</a>
 
 
 		</section>
-		<section class="method" id="Equals">
+		<section class="method" id="IncreaseSkillLevel">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L57">View source &raquo;</a>
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L29">View source &raquo;</a>
 
-					<p>Equals</p>
+					<p>IncreaseSkillLevel</p>
 			</header>
 
 
@@ -5400,9 +5419,9 @@ Unsynced											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">obj</span>
+								<span class="tag parameter">skillIdentifier</span>
 
-									<span class="tag"><span class="type">Object</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -5411,43 +5430,10 @@ Unsynced											</a>
 							</li>
 					</ul>
 
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-	<h1 class="title">Fields</h1>
-
-		<section class="method" id="Variant">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Variant</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L94">View source &raquo;</a>
-
-					<p>Variant, Field of type number</p>
-			</header>
-
-
-
-
 					<ul>
 
 							<li>
-								<span class="tag parameter">Variant</span>
+								<span class="tag parameter">increase</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -5461,6 +5447,8 @@ Unsynced											</a>
 
 
 		</section>
+	<h1 class="title">Fields</h1>
+
 		<section class="method" id="Prefab">
 			<header>
 				<a class="anchor">
@@ -5482,6 +5470,38 @@ Unsynced											</a>
 								<span class="tag parameter">Prefab</span>
 
 									<span class="tag"><span class="type">JobPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Variant">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Variant</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/evilfactory/Barotrauma-lua-attempt/tree/master/home/runner/work/Barotrauma-lua-attempt/Barotrauma-lua-attempt/docs/lua/Job.lua#L94">View source &raquo;</a>
+
+					<p>Variant, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Variant</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
