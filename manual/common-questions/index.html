@@ -160,12 +160,12 @@ ChangeAbilityResistance											</a>
 ChangeStat											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
@@ -739,11 +739,6 @@ CanSpeak											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#CauseOfDeath">
 CauseOfDeath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.CharacterList">
-Character.CharacterList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1864,19 +1859,9 @@ ragdollFileName											</a>
 AddKickVote											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Ban">
-Ban											</a>
-										</li>
-										<li>
 											<span class="realm server"></span>
 											<a href="../../code/client/#Ban">
 Ban											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#CheckPermission">
-CheckPermission											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -1900,11 +1885,6 @@ Client.SanitizeName											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#Client.Unban">
-Client.Unban											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#Client.Unban">
 Client.Unban											</a>
 										</li>
@@ -1975,11 +1955,6 @@ Kick											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/client/#Kick">
-Kick											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#ReadPermissions">
 ReadPermissions											</a>
 										</li>
@@ -1997,11 +1972,6 @@ RemovePermission											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/client/#ResetVotes">
 ResetVotes											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#SetClientCharacter">
-SetClientCharacter											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -6580,10 +6550,29 @@ Game.SendMessage(<span class="keyword">nil</span>)
 <p>pairs() Returns an enumerator that iterates through the entire table keys, if you already have an enumerator, you can just pass it in directly.</p>
 
 <pre>
-<span class="comment">-- get first item ever created and loop through all the values
+<span class="comment">-- get first item ever created and loop through all the items stored inside it.
 </span><span class="keyword">for</span> item <span class="keyword">in</span> Item.ItemList[<span class="number">1</span>].OwnInventory.AllItems <span class="keyword">do</span>
 
 <span class="keyword">end</span>
+</pre>
+
+
+<p><a name="How_do_i_spawn_an_item_"></a></p>
+<h2>How do i spawn an item?</h2>
+
+<pre>
+<span class="keyword">local</span> prefab = ItemPrefab.GetItemPrefab(<span class="string">"screwdriver"</span>)
+<span class="keyword">local</span> firstPlayerCharacter = Client.ClientList[<span class="number">1</span>].Character
+
+<span class="comment">-- Spawn on the world
+</span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.WorldPosition, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
+    <span class="global">print</span>(item .. <span class="string">" Has been spawned."</span>)
+<span class="keyword">end</span>)
+
+<span class="comment">-- Spawn inside an inventory
+</span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.Inventory, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
+    <span class="global">print</span>(item .. <span class="string">" Has been spawned."</span>)
+<span class="keyword">end</span>)
 </pre>
 
 

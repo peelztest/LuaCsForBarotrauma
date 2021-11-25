@@ -150,12 +150,12 @@ ChangeAbilityResistance											</a>
 ChangeStat											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
@@ -729,11 +729,6 @@ CanSpeak											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#CauseOfDeath">
 CauseOfDeath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.CharacterList">
-Character.CharacterList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1859,17 +1854,7 @@ AddKickVote											</a>
 Ban											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Ban">
-Ban											</a>
-										</li>
-										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#CheckPermission">
-CheckPermission											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#CheckPermission">
 CheckPermission											</a>
 										</li>
@@ -1887,11 +1872,6 @@ Client.ReadPermissions											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/client/#Client.SanitizeName">
 Client.SanitizeName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Client.Unban">
-Client.Unban											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -1965,11 +1945,6 @@ Kick											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/client/#Kick">
-Kick											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#ReadPermissions">
 ReadPermissions											</a>
 										</li>
@@ -1990,11 +1965,6 @@ ResetVotes											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#SetClientCharacter">
-SetClientCharacter											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#SetClientCharacter">
 SetClientCharacter											</a>
 										</li>
@@ -6517,14 +6487,14 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Job.Random">
+		<section class="method" id="Save">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Job.Random(randSync)</h1>
+					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
 				</a>
 
 
-					<p>Random</p>
+					<p>Save</p>
 			</header>
 
 
@@ -6534,9 +6504,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">randSync</span>
+								<span class="tag parameter">parentElement</span>
 
-									<span class="tag"><span class="type">RandSync</span></span>
+									<span class="tag"><span class="type">XElement</span></span>
 
 
 								<p>
@@ -6550,7 +6520,7 @@ Wiring											</a>
 				<ul>
 
 							<li>
-									<span class="type">Job</span>
+									<span class="type">XElement</span>
 
 								<p>
 
@@ -6595,6 +6565,193 @@ Wiring											</a>
 
 							<li>
 									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GiveJobItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GiveJobItems(character, spawnPoint)</h1>
+				</a>
+
+
+					<p>GiveJobItems</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+									<span class="tag"><span class="type">Character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">spawnPoint</span>
+
+									<span class="tag"><span class="type">WayPoint</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Job.Random">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Job.Random(randSync)</h1>
+				</a>
+
+
+					<p>Random</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">randSync</span>
+
+									<span class="tag"><span class="type">RandSync</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Job</span>
 
 								<p>
 
@@ -6691,193 +6848,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="GiveJobItems">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GiveJobItems(character, spawnPoint)</h1>
-				</a>
-
-
-					<p>GiveJobItems</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">spawnPoint</span>
-
-									<span class="tag"><span class="type">WayPoint</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Save">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
-				</a>
-
-
-					<p>Save</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">parentElement</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">XElement</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
 		<section class="method" id="Name">
@@ -6940,32 +6910,16 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Description">
+		<section class="method" id="Skills">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
+					<h1><span class="realm shared"></span></span>Skills</h1>
 				</a>
 
 
-					<p>Description, Field of type string</p>
+					<p>Skills, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Description</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -7000,16 +6954,32 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Skills">
+		<section class="method" id="Description">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Skills</h1>
+					<h1><span class="realm shared"></span></span>Description</h1>
 				</a>
 
 
-					<p>Skills, Field of type table</p>
+					<p>Description, Field of type string</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Description</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 

@@ -150,12 +150,12 @@ ChangeAbilityResistance											</a>
 ChangeStat											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
@@ -729,11 +729,6 @@ CanSpeak											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#CauseOfDeath">
 CauseOfDeath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.CharacterList">
-Character.CharacterList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1859,17 +1854,7 @@ AddKickVote											</a>
 Ban											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Ban">
-Ban											</a>
-										</li>
-										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#CheckPermission">
-CheckPermission											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#CheckPermission">
 CheckPermission											</a>
 										</li>
@@ -1887,11 +1872,6 @@ Client.ReadPermissions											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/client/#Client.SanitizeName">
 Client.SanitizeName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Client.Unban">
-Client.Unban											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -1965,11 +1945,6 @@ Kick											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/client/#Kick">
-Kick											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#ReadPermissions">
 ReadPermissions											</a>
 										</li>
@@ -1990,11 +1965,6 @@ ResetVotes											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#SetClientCharacter">
-SetClientCharacter											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#SetClientCharacter">
 SetClientCharacter											</a>
 										</li>
@@ -6519,14 +6489,56 @@ Wiring											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Default">
+		<section class="method" id="Error">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Default</h1>
+					<h1><span class="realm shared"></span></span>Error</h1>
 				</a>
 
 
-					<p>ChatMessageType.Default = 0</p>
+					<p>ChatMessageType.Error = 1</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Server">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Server</h1>
+				</a>
+
+
+					<p>ChatMessageType.Server = 3</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerMessageBox">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerMessageBox</h1>
+				</a>
+
+
+					<p>ChatMessageType.ServerMessageBox = 9</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Dead">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dead</h1>
+				</a>
+
+
+					<p>ChatMessageType.Dead = 2</p>
 			</header>
 
 
@@ -6547,14 +6559,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="ServerMessageBox">
+		<section class="method" id="Default">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerMessageBox</h1>
+					<h1><span class="realm shared"></span></span>Default</h1>
 				</a>
 
 
-					<p>ChatMessageType.ServerMessageBox = 9</p>
+					<p>ChatMessageType.Default = 0</p>
 			</header>
 
 
@@ -6603,14 +6615,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Dead">
+		<section class="method" id="MessageBox">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dead</h1>
+					<h1><span class="realm shared"></span></span>MessageBox</h1>
 				</a>
 
 
-					<p>ChatMessageType.Dead = 2</p>
+					<p>ChatMessageType.MessageBox = 7</p>
 			</header>
 
 
@@ -6631,34 +6643,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Error">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Error</h1>
-				</a>
-
-
-					<p>ChatMessageType.Error = 1</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Server">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Server</h1>
-				</a>
-
-
-					<p>ChatMessageType.Server = 3</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Order">
 			<header>
 				<a class="anchor">
@@ -6667,20 +6651,6 @@ Wiring											</a>
 
 
 					<p>ChatMessageType.Order = 8</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="MessageBox">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MessageBox</h1>
-				</a>
-
-
-					<p>ChatMessageType.MessageBox = 7</p>
 			</header>
 
 

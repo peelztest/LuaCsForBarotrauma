@@ -150,12 +150,12 @@ ChangeAbilityResistance											</a>
 ChangeStat											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Create">
 Character.Create											</a>
 										</li>
@@ -729,11 +729,6 @@ CanSpeak											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#CauseOfDeath">
 CauseOfDeath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.CharacterList">
-Character.CharacterList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1854,19 +1849,9 @@ ragdollFileName											</a>
 AddKickVote											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#Ban">
-Ban											</a>
-										</li>
-										<li>
 											<span class="realm server"></span>
 											<a href="../../code/client/#Ban">
 Ban											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#CheckPermission">
-CheckPermission											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -1890,11 +1875,6 @@ Client.SanitizeName											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
-											<a href="../../code/client/#Client.Unban">
-Client.Unban											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#Client.Unban">
 Client.Unban											</a>
 										</li>
@@ -1965,11 +1945,6 @@ Kick											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/client/#Kick">
-Kick											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#ReadPermissions">
 ReadPermissions											</a>
 										</li>
@@ -1987,11 +1962,6 @@ RemovePermission											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/client/#ResetVotes">
 ResetVotes											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/client/#SetClientCharacter">
-SetClientCharacter											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -6519,6 +6489,90 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="File.Write">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>File.Write(path, text)</h1>
+				</a>
+
+
+					<p>Write text to file</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">path</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">text</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="File.GetDirectories">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>File.GetDirectories(path)</h1>
+				</a>
+
+
+					<p>List all directories.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">path</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>table containing all directories</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="File.Read">
 			<header>
 				<a class="anchor">
@@ -6560,10 +6614,10 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="File.DirectoryExists">
+		<section class="method" id="File.GetFiles">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.DirectoryExists(path)</h1>
+					<h1><span class="realm shared"></span></span>File.GetFiles(path)</h1>
 				</a>
 
 
@@ -6592,11 +6646,9 @@ Wiring											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
-								<p>
-
-</p>
+								<p>table containing all files</p>
 							</li>
 
 				</ul>
@@ -6687,53 +6739,10 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="File.Write">
+		<section class="method" id="File.DirectoryExists">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.Write(path, text)</h1>
-				</a>
-
-
-					<p>Write text to file</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">path</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">text</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="File.GetFiles">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.GetFiles(path)</h1>
+					<h1><span class="realm shared"></span></span>File.DirectoryExists(path)</h1>
 				</a>
 
 
@@ -6762,50 +6771,11 @@ Wiring											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>table containing all files</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="File.GetDirectories">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.GetDirectories(path)</h1>
-				</a>
-
-
-					<p>List all directories.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">path</span>
-
-
+									<span class="type">bool</span>
 
 								<p>
 
 </p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>table containing all directories</p>
 							</li>
 
 				</ul>
