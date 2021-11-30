@@ -3902,8 +3902,8 @@ itemUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#jobAssigned">
-jobAssigned											</a>
+											<a href="../../code/hook/#jobsAssigned">
+jobsAssigned											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7337,209 +7337,6 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="IsInRemoveQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsInRemoveQueue(entity)</h1>
-				</a>
-
-
-					<p>IsInRemoveQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">entity</span>
-
-									<span class="tag"><span class="type">Entity</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="FreeID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FreeID()</h1>
-				</a>
-
-
-					<p>FreeID</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AddToSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddToSpawnQueue(itemPrefab, position, sub, condition, quality, onSpawned)</h1>
-				</a>
-
-
-					<p>AddToSpawnQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemPrefab</span>
-
-									<span class="tag"><span class="type">ItemPrefab</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sub</span>
-
-									<span class="tag"><a class="type" href="../../code/entity.spawner/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">condition</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">quality</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onSpawned</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CountSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CountSpawnQueue(predicate)</h1>
-				</a>
-
-
-					<p>CountSpawnQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">predicate</span>
-
-									<span class="tag"><span class="type">Predicate`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="CreateNetworkEvent">
 			<header>
 				<a class="anchor">
@@ -7581,210 +7378,6 @@ Wiring											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="AddToSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddToSpawnQueue(speciesName, position, sub, onSpawn)</h1>
-				</a>
-
-
-					<p>AddToSpawnQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">speciesName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sub</span>
-
-									<span class="tag"><a class="type" href="../../code/entity.spawner/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onSpawn</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="AddToSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddToSpawnQueue(speciesName, worldPosition, characterInfo, onSpawn)</h1>
-				</a>
-
-
-					<p>AddToSpawnQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">speciesName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">worldPosition</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterInfo</span>
-
-									<span class="tag"><span class="type">CharacterInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onSpawn</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove()</h1>
-				</a>
-
-
-					<p>Remove</p>
-			</header>
-
 
 
 
@@ -7859,6 +7452,50 @@ Wiring											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="IsInSpawnQueue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsInSpawnQueue(predicate)</h1>
+				</a>
+
+
+					<p>IsInSpawnQueue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">predicate</span>
+
+									<span class="tag"><span class="type">Predicate`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -7949,50 +7586,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="IsInSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsInSpawnQueue(predicate)</h1>
-				</a>
-
-
-					<p>IsInSpawnQueue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">predicate</span>
-
-									<span class="tag"><span class="type">Predicate`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="AddToRemoveQueue">
 			<header>
 				<a class="anchor">
@@ -8013,6 +7606,37 @@ Wiring											</a>
 								<span class="tag parameter">item</span>
 
 									<span class="tag"><span class="type">Item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Update">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Update(createNetworkEvents)</h1>
+				</a>
+
+
+					<p>Update</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">createNetworkEvents</span>
+
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -8055,23 +7679,40 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
+		<section class="method" id="IsInRemoveQueue">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>IsInRemoveQueue(entity)</h1>
 				</a>
 
 
-					<p>GetType</p>
+					<p>IsInRemoveQueue</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">entity</span>
+
+									<span class="tag"><span class="type">Entity</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -8082,30 +7723,17 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
+		<section class="method" id="FreeID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
+					<h1><span class="realm shared"></span></span>FreeID()</h1>
 				</a>
 
 
-					<p>ToString</p>
+					<p>FreeID</p>
 			</header>
 
 
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
@@ -8168,14 +7796,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Update">
+		<section class="method" id="CountSpawnQueue">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(createNetworkEvents)</h1>
+					<h1><span class="realm shared"></span></span>CountSpawnQueue(predicate)</h1>
 				</a>
 
 
-					<p>Update</p>
+					<p>CountSpawnQueue</p>
 			</header>
 
 
@@ -8185,9 +7813,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">createNetworkEvents</span>
+								<span class="tag parameter">predicate</span>
 
-									<span class="tag"><span class="type">bool</span></span>
+									<span class="tag"><span class="type">Predicate`1</span></span>
 
 
 								<p>
@@ -8196,6 +7824,87 @@ Wiring											</a>
 							</li>
 					</ul>
 
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove()</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -8355,25 +8064,38 @@ Wiring											</a>
 
 
 		</section>
-	<h1 class="title">Fields</h1>
-
-		<section class="method" id="WorldPosition">
+		<section class="method" id="AddToSpawnQueue">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WorldPosition</h1>
+					<h1><span class="realm shared"></span></span>AddToSpawnQueue(itemPrefab, position, sub, condition, quality, onSpawned)</h1>
 				</a>
 
 
-					<p>WorldPosition, Field of type Vector2</p>
+					<p>AddToSpawnQueue</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">WorldPosition</span>
+								<span class="tag parameter">itemPrefab</span>
+
+									<span class="tag"><span class="type">ItemPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
 
@@ -8384,28 +8106,54 @@ Wiring											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">sub</span>
+
+									<span class="tag"><a class="type" href="../../code/entity.spawner/#Submarine">Submarine</a></span>
 
 
-		</section>
-		<section class="method" id="SpawnTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SpawnTime</h1>
-				</a>
+								<p>
 
-
-					<p>SpawnTime, Field of type number</p>
-			</header>
-
-
-
+</p>
+							</li>
+					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">SpawnTime</span>
+								<span class="tag parameter">condition</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">quality</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onSpawned</span>
+
+									<span class="tag"><span class="type">function</span></span>
 
 
 								<p>
@@ -8417,25 +8165,112 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="ID">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ID</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<p>ID, Field of type number</p>
+					<p>Equals</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">ID</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="AddToSpawnQueue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddToSpawnQueue(speciesName, position, sub, onSpawn)</h1>
+				</a>
+
+
+					<p>AddToSpawnQueue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">speciesName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sub</span>
+
+									<span class="tag"><a class="type" href="../../code/entity.spawner/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onSpawn</span>
+
+									<span class="tag"><span class="type">function</span></span>
 
 
 								<p>
@@ -8447,6 +8282,81 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="AddToSpawnQueue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddToSpawnQueue(speciesName, worldPosition, characterInfo, onSpawn)</h1>
+				</a>
+
+
+					<p>AddToSpawnQueue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">speciesName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">worldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterInfo</span>
+
+									<span class="tag"><span class="type">CharacterInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onSpawn</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+	<h1 class="title">Fields</h1>
+
 		<section class="method" id="SimPosition">
 			<header>
 				<a class="anchor">
@@ -8537,36 +8447,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="InDetectable">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InDetectable</h1>
-				</a>
-
-
-					<p>InDetectable, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InDetectable</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="IdFreed">
 			<header>
 				<a class="anchor">
@@ -8627,6 +8507,36 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="WorldPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WorldPosition</h1>
+				</a>
+
+
+					<p>WorldPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">WorldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Position">
 			<header>
 				<a class="anchor">
@@ -8646,6 +8556,96 @@ Wiring											</a>
 								<span class="tag parameter">Position</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SpawnTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SpawnTime</h1>
+				</a>
+
+
+					<p>SpawnTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SpawnTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ID</h1>
+				</a>
+
+
+					<p>ID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="InDetectable">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InDetectable</h1>
+				</a>
+
+
+					<p>InDetectable, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InDetectable</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>

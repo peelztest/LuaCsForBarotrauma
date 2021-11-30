@@ -3902,8 +3902,8 @@ itemUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#jobAssigned">
-jobAssigned											</a>
+											<a href="../../code/hook/#jobsAssigned">
+jobsAssigned											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7339,14 +7339,14 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Networking.Send">
+		<section class="method" id="Networking.ClientWriteLobby">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
+					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
 				</a>
 
 
-					<p>Sends a net message to a connection, if the connection is null, then it sends the message to all connections</p>
+					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
 			</header>
 
 
@@ -7356,7 +7356,37 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">netMessage</span>
+								<span class="tag parameter">client</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.RequestGetHTTP">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+				</a>
+
+
+					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">url</span>
 
 
 
@@ -7369,20 +7399,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">connection</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deliveryMethod</span>
+								<span class="tag parameter">callback</span>
 
 
 
@@ -7479,14 +7496,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Networking.RequestGetHTTP">
+		<section class="method" id="Networking.Receive">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
 				</a>
 
 
-					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+					<p>Adds a function to listen for lua net messages</p>
 			</header>
 
 
@@ -7496,7 +7513,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">url</span>
+								<span class="tag parameter">netMessageName</span>
 
 
 
@@ -7510,6 +7527,62 @@ Wiring											</a>
 
 							<li>
 								<span class="tag parameter">callback</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.Send">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
+				</a>
+
+
+					<p>Sends a net message to a connection, if the connection is null, then it sends the message to all connections</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deliveryMethod</span>
 
 
 
@@ -7579,79 +7652,6 @@ Wiring											</a>
 
 							<li>
 								<span class="tag parameter">contentType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Networking.ClientWriteLobby">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
-				</a>
-
-
-					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Networking.Receive">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
-				</a>
-
-
-					<p>Adds a function to listen for lua net messages</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">netMessageName</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">callback</span>
 
 
 

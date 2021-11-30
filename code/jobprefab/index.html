@@ -3902,8 +3902,8 @@ itemUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#jobAssigned">
-jobAssigned											</a>
+											<a href="../../code/hook/#jobsAssigned">
+jobsAssigned											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7337,6 +7337,37 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="JobPrefab.LoadFromFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>JobPrefab.LoadFromFile(file)</h1>
+				</a>
+
+
+					<p>LoadFromFile</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">file</span>
+
+									<span class="tag"><span class="type">ContentFile</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
@@ -7405,6 +7436,64 @@ Wiring											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="JobPrefab.RemoveByFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>JobPrefab.RemoveByFile(filePath)</h1>
+				</a>
+
+
+					<p>RemoveByFile</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">filePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -7496,95 +7585,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="JobPrefab.LoadFromFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>JobPrefab.LoadFromFile(file)</h1>
-				</a>
-
-
-					<p>LoadFromFile</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">file</span>
-
-									<span class="tag"><span class="type">ContentFile</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="JobPrefab.RemoveByFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>JobPrefab.RemoveByFile(filePath)</h1>
-				</a>
-
-
-					<p>RemoveByFile</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">filePath</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
@@ -7659,28 +7659,14 @@ Wiring											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Skills">
+		<section class="method" id="MaxNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Skills</h1>
+					<h1><span class="realm shared"></span></span>MaxNumber</h1>
 				</a>
 
 
-					<p>Skills, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="OriginalName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
-				</a>
-
-
-					<p>OriginalName, Field of type string</p>
+					<p>MaxNumber, Field of type number</p>
 			</header>
 
 
@@ -7689,97 +7675,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">OriginalName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="VitalityModifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>VitalityModifier</h1>
-				</a>
-
-
-					<p>VitalityModifier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">VitalityModifier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<p>Identifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MinKarma">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinKarma</h1>
-				</a>
-
-
-					<p>MinKarma, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MinKarma</span>
+								<span class="tag parameter">MaxNumber</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -7823,14 +7719,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="InitialCount">
+		<section class="method" id="OnlyJobSpecificDialog">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InitialCount</h1>
+					<h1><span class="realm shared"></span></span>OnlyJobSpecificDialog</h1>
 				</a>
 
 
-					<p>InitialCount, Field of type number</p>
+					<p>OnlyJobSpecificDialog, Field of type bool</p>
 			</header>
 
 
@@ -7839,9 +7735,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">InitialCount</span>
+								<span class="tag parameter">OnlyJobSpecificDialog</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -7853,32 +7749,16 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Commonness">
+		<section class="method" id="PreviewItems">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Commonness</h1>
+					<h1><span class="realm shared"></span></span>PreviewItems</h1>
 				</a>
 
 
-					<p>Commonness, Field of type number</p>
+					<p>PreviewItems, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Commonness</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -7893,6 +7773,36 @@ Wiring											</a>
 					<p>AutonomousObjectives, Field of type table</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="Description">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Description</h1>
+				</a>
+
+
+					<p>Description, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Description</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -7957,14 +7867,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="MaxNumber">
+		<section class="method" id="OriginalName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxNumber</h1>
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
 				</a>
 
 
-					<p>MaxNumber, Field of type number</p>
+					<p>OriginalName, Field of type string</p>
 			</header>
 
 
@@ -7973,9 +7883,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MaxNumber</span>
+								<span class="tag parameter">OriginalName</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -7987,14 +7897,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="MinNumber">
+		<section class="method" id="Identifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinNumber</h1>
+					<h1><span class="realm shared"></span></span>Identifier</h1>
 				</a>
 
 
-					<p>MinNumber, Field of type number</p>
+					<p>Identifier, Field of type string</p>
 			</header>
 
 
@@ -8003,53 +7913,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MinNumber</span>
+								<span class="tag parameter">Identifier</span>
 
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AppropriateOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
-				</a>
-
-
-					<p>AppropriateOrders, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="OnlyJobSpecificDialog">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OnlyJobSpecificDialog</h1>
-				</a>
-
-
-					<p>OnlyJobSpecificDialog, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OnlyJobSpecificDialog</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -8075,14 +7941,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="AllowAlways">
+		<section class="method" id="PriceMultiplier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowAlways</h1>
+					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
 				</a>
 
 
-					<p>AllowAlways, Field of type bool</p>
+					<p>PriceMultiplier, Field of type number</p>
 			</header>
 
 
@@ -8091,9 +7957,83 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowAlways</span>
+								<span class="tag parameter">PriceMultiplier</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="InitialCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InitialCount</h1>
+				</a>
+
+
+					<p>InitialCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InitialCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Skills">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Skills</h1>
+				</a>
+
+
+					<p>Skills, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Commonness">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Commonness</h1>
+				</a>
+
+
+					<p>Commonness, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Commonness</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -8135,14 +8075,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="PriceMultiplier">
+		<section class="method" id="MinNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
+					<h1><span class="realm shared"></span></span>MinNumber</h1>
 				</a>
 
 
-					<p>PriceMultiplier, Field of type number</p>
+					<p>MinNumber, Field of type number</p>
 			</header>
 
 
@@ -8151,7 +8091,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">PriceMultiplier</span>
+								<span class="tag parameter">MinNumber</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -8165,14 +8105,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Description">
+		<section class="method" id="VitalityModifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
+					<h1><span class="realm shared"></span></span>VitalityModifier</h1>
 				</a>
 
 
-					<p>Description, Field of type string</p>
+					<p>VitalityModifier, Field of type number</p>
 			</header>
 
 
@@ -8181,9 +8121,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Description</span>
+								<span class="tag parameter">VitalityModifier</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -8195,14 +8135,74 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="PreviewItems">
+		<section class="method" id="AllowAlways">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PreviewItems</h1>
+					<h1><span class="realm shared"></span></span>AllowAlways</h1>
 				</a>
 
 
-					<p>PreviewItems, Field of type table</p>
+					<p>AllowAlways, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowAlways</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MinKarma">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MinKarma</h1>
+				</a>
+
+
+					<p>MinKarma, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MinKarma</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AppropriateOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
+				</a>
+
+
+					<p>AppropriateOrders, Field of type table</p>
 			</header>
 
 

@@ -3902,8 +3902,8 @@ itemUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#jobAssigned">
-jobAssigned											</a>
+											<a href="../../code/hook/#jobsAssigned">
+jobsAssigned											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7339,14 +7339,14 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Game.AssignOnExecute">
+		<section class="method" id="Game.AssignOnClientRequestExecute">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.AssignOnExecute(names, onExecute)</h1>
+					<h1><span class="realm server"></span></span>Game.AssignOnClientRequestExecute(names, onExecute)</h1>
 				</a>
 
 
-					<p>Assigns a command for server on execute, onExecute is called with a table of strings.</p>
+					<p>Assigns a command for client on execute, onExecute is called with a client, mouse position and a table of strings.</p>
 			</header>
 
 
@@ -7370,6 +7370,390 @@ Wiring											</a>
 
 							<li>
 								<span class="tag parameter">onExecute</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.AddCommand">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Game.AddCommand(name, help, onExecute, getValidArgs, isCheat)</h1>
+				</a>
+
+
+					<p>Adds a new command, onExecute is called with a table of strings.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">name</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">help</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onExecute</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">getValidArgs</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">isCheat</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.DispatchRespawnSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.DispatchRespawnSub()</h1>
+				</a>
+
+
+					<p>Dispatch respawn sub.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Game.DisableSpamFilter">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
+				</a>
+
+
+					<p>True to disable spam filter.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.GetEnabledPackagesDirectlyFromFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Game.GetEnabledPackagesDirectlyFromFile()</h1>
+				</a>
+
+
+					<p>Gets all enabled content packages by reading directly the player xml, useful when your mod doesn't have any xml.</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>Table containing ContentPackages</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Game.OverrideRespawnSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
+				</a>
+
+
+					<p>True to override respawn sub, stops players from being respawned.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.OverrideSignalRadio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
+				</a>
+
+
+					<p>True to prevent headsets from transmitting wifi signals.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.SendMessage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
+				</a>
+
+
+					<p>Send chat message to every client.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">messageType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.AllowWifiChat">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
+				</a>
+
+
+					<p>True to make wifi chat always work.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.OverrideTraitors">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
+				</a>
+
+
+					<p>True to override traitors.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.StartGame">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.StartGame()</h1>
+				</a>
+
+
+					<p>Starts the game.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Game.DisableDisconnectCharacter">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.DisableDisconnectCharacter(override)</h1>
+				</a>
+
+
+					<p>True to disable character disconnect logic, aka stop character from being automatically stunned and killed.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">override</span>
 
 
 
@@ -7451,74 +7835,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Game.DisableDisconnectCharacter">
+		<section class="method" id="Game.GetRespawnSub">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableDisconnectCharacter(override)</h1>
+					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
 				</a>
 
 
-					<p>True to disable character disconnect logic, aka stop character from being automatically stunned and killed.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideTraitors">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
-				</a>
-
-
-					<p>True to override traitors.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.GetEnabledContentPackages">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledContentPackages()</h1>
-				</a>
-
-
-					<p>Gets all enabled content packages.</p>
+					<p>Get respawn sub submarine.</p>
 			</header>
 
 
@@ -7527,9 +7851,9 @@ Wiring											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+									<span class="type">Submarine</span>
 
-								<p>Table containing ContentPackages</p>
+								<p>Respawn Shuttle</p>
 							</li>
 
 				</ul>
@@ -7657,14 +7981,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Game.ExecuteCommand">
+		<section class="method" id="Game.AssignOnExecute">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.ExecuteCommand(command)</h1>
+					<h1><span class="realm shared"></span></span>Game.AssignOnExecute(names, onExecute)</h1>
 				</a>
 
 
-					<p>Execute console command.</p>
+					<p>Assigns a command for server on execute, onExecute is called with a table of strings.</p>
 			</header>
 
 
@@ -7674,245 +7998,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">command</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
-				</a>
-
-
-					<p>Send chat message to every client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">messageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.DispatchRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DispatchRespawnSub()</h1>
-				</a>
-
-
-					<p>Dispatch respawn sub.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.AllowWifiChat">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
-				</a>
-
-
-					<p>True to make wifi chat always work.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.StartGame">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.StartGame()</h1>
-				</a>
-
-
-					<p>Starts the game.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.SendDirectChatMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(chatMessage, client)</h1>
-				</a>
-
-
-					<p>Send direct message.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.GetRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
-				</a>
-
-
-					<p>Get respawn sub submarine.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Submarine</span>
-
-								<p>Respawn Shuttle</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.AddCommand">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.AddCommand(name, help, onExecute, getValidArgs, isCheat)</h1>
-				</a>
-
-
-					<p>Adds a new command, onExecute is called with a table of strings.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">name</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">help</span>
+								<span class="tag parameter">names</span>
 
 
 
@@ -7935,23 +8021,27 @@ Wiring											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="Game.ExecuteCommand">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.ExecuteCommand(command)</h1>
+				</a>
+
+
+					<p>Execute console command.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">getValidArgs</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isCheat</span>
+								<span class="tag parameter">command</span>
 
 
 
@@ -8059,104 +8149,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Game.GetEnabledPackagesDirectlyFromFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledPackagesDirectlyFromFile()</h1>
-				</a>
-
-
-					<p>Gets all enabled content packages by reading directly the player xml, useful when your mod doesn't have any xml.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>Table containing ContentPackages</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.DisableSpamFilter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
-				</a>
-
-
-					<p>True to disable spam filter.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.AssignOnClientRequestExecute">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AssignOnClientRequestExecute(names, onExecute)</h1>
-				</a>
-
-
-					<p>Assigns a command for client on execute, onExecute is called with a client, mouse position and a table of strings.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">names</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onExecute</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Game.EnableControlHusk">
 			<header>
 				<a class="anchor">
@@ -8187,14 +8179,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Game.OverrideRespawnSub">
+		<section class="method" id="Game.SendDirectChatMessage">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
+					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(chatMessage, client)</h1>
 				</a>
 
 
-					<p>True to override respawn sub, stops players from being respawned.</p>
+					<p>Send direct message.</p>
 			</header>
 
 
@@ -8204,7 +8196,20 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+								<span class="tag parameter">chatMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
 
 
 
@@ -8217,33 +8222,28 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Game.OverrideSignalRadio">
+		<section class="method" id="Game.GetEnabledContentPackages">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
+					<h1><span class="realm shared"></span></span>Game.GetEnabledContentPackages()</h1>
 				</a>
 
 
-					<p>True to prevent headsets from transmitting wifi signals.</p>
+					<p>Gets all enabled content packages.</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
-
-					<ul>
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
-
-
-								<p>
-
-</p>
+								<p>Table containing ContentPackages</p>
 							</li>
-					</ul>
 
+				</ul>
 
 
 		</section>
@@ -8292,6 +8292,20 @@ Wiring											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="Game.IsDedicated">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.IsDedicated</h1>
+				</a>
+
+
+					<p>Is dedicated server?</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Game.RoundStarted">
 			<header>
 				<a class="anchor">
@@ -8314,20 +8328,6 @@ Wiring											</a>
 
 
 					<p>Server settings.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.IsDedicated">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.IsDedicated</h1>
-				</a>
-
-
-					<p>Is dedicated server?</p>
 			</header>
 
 
