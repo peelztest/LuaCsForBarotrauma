@@ -7337,14 +7337,14 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Client.ReadPermissions">
+		<section class="method" id="HasKickVoteFromID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Client.ReadPermissions(inc, permissions, permittedCommands)</h1>
+					<h1><span class="realm shared"></span></span>HasKickVoteFromID(id)</h1>
 				</a>
 
 
-					<p>ReadPermissions</p>
+					<p>HasKickVoteFromID</p>
 			</header>
 
 
@@ -7354,23 +7354,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">inc</span>
+								<span class="tag parameter">id</span>
 
-									<span class="tag"><span class="type">IReadMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">permissions</span>
-
-									<span class="tag"><span class="type">ClientPermissions&</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -7378,41 +7364,13 @@ Wiring											</a>
 </p>
 							</li>
 					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">permittedCommands</span>
-
-									<span class="tag"><span class="type">List`1&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -7423,14 +7381,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="WritePermissions">
+		<section class="method" id="EndpointMatches">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WritePermissions(msg)</h1>
+					<h1><span class="realm shared"></span></span>EndpointMatches(endPoint)</h1>
 				</a>
 
 
-					<p>WritePermissions</p>
+					<p>EndpointMatches</p>
 			</header>
 
 
@@ -7440,9 +7398,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">msg</span>
+								<span class="tag parameter">endPoint</span>
 
-									<span class="tag"><span class="type">IWriteMessage</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -7452,25 +7410,11 @@ Wiring											</a>
 					</ul>
 
 
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -7478,65 +7422,6 @@ Wiring											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="Dispose">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
-				</a>
-
-
-					<p>Dispose</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SetVote">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetVote(voteType, value)</h1>
-				</a>
-
-
-					<p>SetVote</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">voteType</span>
-
-									<span class="tag"><span class="type">VoteType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">value</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 
 		</section>
@@ -7598,14 +7483,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Client.SanitizeName">
+		<section class="method" id="SetVote">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Client.SanitizeName(name)</h1>
+					<h1><span class="realm shared"></span></span>SetVote(voteType, value)</h1>
 				</a>
 
 
-					<p>SanitizeName</p>
+					<p>SetVote</p>
 			</header>
 
 
@@ -7615,53 +7500,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">name</span>
+								<span class="tag parameter">voteType</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="SetPermissions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetPermissions(permissions, permittedConsoleCommands)</h1>
-				</a>
-
-
-					<p>SetPermissions</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">permissions</span>
-
-									<span class="tag"><span class="type">ClientPermissions</span></span>
+									<span class="tag"><span class="type">VoteType</span></span>
 
 
 								<p>
@@ -7673,141 +7514,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">permittedConsoleCommands</span>
+								<span class="tag parameter">value</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="EndpointMatches">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EndpointMatches(endPoint)</h1>
-				</a>
-
-
-					<p>EndpointMatches</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">endPoint</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="HasPermission">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasPermission(permission)</h1>
-				</a>
-
-
-					<p>HasPermission</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">permission</span>
-
-									<span class="tag"><span class="type">ClientPermissions</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ResetVotes">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ResetVotes()</h1>
-				</a>
-
-
-					<p>ResetVotes</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SetClientCharacter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>SetClientCharacter(character)</h1>
-				</a>
-
-
-					<p>Sets the client character.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -7863,36 +7572,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="CheckPermission">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>CheckPermission(permissions)</h1>
-				</a>
-
-
-					<p>Checks permissions, Client.Permissions.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">permissions</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="GetVote">
 			<header>
 				<a class="anchor">
@@ -7937,14 +7616,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="RemovePermission">
+		<section class="method" id="SetClientCharacter">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemovePermission(permission)</h1>
+					<h1><span class="realm server"></span></span>SetClientCharacter(character)</h1>
 				</a>
 
 
-					<p>RemovePermission</p>
+					<p>Sets the client character.</p>
 			</header>
 
 
@@ -7954,82 +7633,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">permission</span>
-
-									<span class="tag"><span class="type">ClientPermissions</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RemoveKickVote">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveKickVote(voter)</h1>
-				</a>
-
-
-					<p>RemoveKickVote</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">voter</span>
-
-									<span class="tag"><span class="type">Client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Client.Unban">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Client.Unban(player, endpoint)</h1>
-				</a>
-
-
-					<p>Unban a client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">player</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">endpoint</span>
+								<span class="tag parameter">character</span>
 
 
 
@@ -8042,30 +7646,47 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="InitClientSync">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>InitClientSync()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>InitClientSync</p>
 			</header>
 
 
 
-				<h3>Returns</h3>
-				<ul>
+
+		</section>
+		<section class="method" id="CheckPermission">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>CheckPermission(permissions)</h1>
+				</a>
+
+
+					<p>Checks permissions, Client.Permissions.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
 
 							<li>
-									<span class="type">number</span>
+								<span class="tag parameter">permissions</span>
+
+
 
 								<p>
 
 </p>
 							</li>
+					</ul>
 
-				</ul>
 
 
 		</section>
@@ -8125,14 +7746,352 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="AddKickVote">
+		<section class="method" id="Client.UpdateKickVotes">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddKickVote(voter)</h1>
+					<h1><span class="realm shared"></span></span>Client.UpdateKickVotes(connectedClients)</h1>
 				</a>
 
 
-					<p>AddKickVote</p>
+					<p>UpdateKickVotes</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connectedClients</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Client.Unban">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Client.Unban(player, endpoint)</h1>
+				</a>
+
+
+					<p>Unban a client.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">player</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">endpoint</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="WritePermissions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WritePermissions(msg)</h1>
+				</a>
+
+
+					<p>WritePermissions</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+									<span class="tag"><span class="type">IWriteMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Kick">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Kick(reason)</h1>
+				</a>
+
+
+					<p>Kick a client.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">reason</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="RemovePermission">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemovePermission(permission)</h1>
+				</a>
+
+
+					<p>RemovePermission</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">permission</span>
+
+									<span class="tag"><span class="type">ClientPermissions</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Client.ReadPermissions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Client.ReadPermissions(inc, permissions, permittedCommands)</h1>
+				</a>
+
+
+					<p>ReadPermissions</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">inc</span>
+
+									<span class="tag"><span class="type">IReadMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">permissions</span>
+
+									<span class="tag"><span class="type">ClientPermissions&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">permittedCommands</span>
+
+									<span class="tag"><span class="type">List`1&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ResetVotes">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetVotes()</h1>
+				</a>
+
+
+					<p>ResetVotes</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SetPermissions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetPermissions(permissions, permittedConsoleCommands)</h1>
+				</a>
+
+
+					<p>SetPermissions</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">permissions</span>
+
+									<span class="tag"><span class="type">ClientPermissions</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">permittedConsoleCommands</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RemoveKickVote">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemoveKickVote(voter)</h1>
+				</a>
+
+
+					<p>RemoveKickVote</p>
 			</header>
 
 
@@ -8187,14 +8146,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="HasKickVoteFromID">
+		<section class="method" id="HasPermission">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasKickVoteFromID(id)</h1>
+					<h1><span class="realm shared"></span></span>HasPermission(permission)</h1>
 				</a>
 
 
-					<p>HasKickVoteFromID</p>
+					<p>HasPermission</p>
 			</header>
 
 
@@ -8204,97 +8163,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">id</span>
+								<span class="tag parameter">permission</span>
 
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="InitClientSync">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InitClientSync()</h1>
-				</a>
-
-
-					<p>InitClientSync</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Kick">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Kick(reason)</h1>
-				</a>
-
-
-					<p>Kick a client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">reason</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
+									<span class="tag"><span class="type">ClientPermissions</span></span>
 
 
 								<p>
@@ -8350,14 +8221,28 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Client.UpdateKickVotes">
+		<section class="method" id="Dispose">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Client.UpdateKickVotes(connectedClients)</h1>
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
 				</a>
 
 
-					<p>UpdateKickVotes</p>
+					<p>Dispose</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AddKickVote">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddKickVote(voter)</h1>
+				</a>
+
+
+					<p>AddKickVote</p>
 			</header>
 
 
@@ -8367,9 +8252,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">connectedClients</span>
+								<span class="tag parameter">voter</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+									<span class="tag"><span class="type">Client</span></span>
 
 
 								<p>
@@ -8378,71 +8263,126 @@ Wiring											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="Client.SanitizeName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Client.SanitizeName(name)</h1>
+				</a>
+
+
+					<p>SanitizeName</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="LastRecvChatMsgID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastRecvChatMsgID</h1>
-				</a>
-
-
-					<p>LastRecvChatMsgID, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LastRecvChatMsgID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="KickVoteCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KickVoteCount</h1>
-				</a>
-
-
-					<p>KickVoteCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KickVoteCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="KarmaKickCount">
 			<header>
 				<a class="anchor">
@@ -8473,36 +8413,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Character">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Character</h1>
-				</a>
-
-
-					<p>Character, Field of type Character</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Character</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="PositionUpdateLastSent">
 			<header>
 				<a class="anchor">
@@ -8517,32 +8427,16 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Karma">
+		<section class="method" id="EntityEventLastSent">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Karma</h1>
+					<h1><span class="realm shared"></span></span>EntityEventLastSent</h1>
 				</a>
 
 
-					<p>Karma, Field of type number</p>
+					<p>EntityEventLastSent, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Karma</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -8651,6 +8545,36 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="Character">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Character</h1>
+				</a>
+
+
+					<p>Character, Field of type Character</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Character</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="ChatSpamCount">
 			<header>
 				<a class="anchor">
@@ -8711,14 +8635,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="FirstNewEventID">
+		<section class="method" id="Karma">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FirstNewEventID</h1>
+					<h1><span class="realm shared"></span></span>Karma</h1>
 				</a>
 
 
-					<p>FirstNewEventID, Field of type number</p>
+					<p>Karma, Field of type number</p>
 			</header>
 
 
@@ -8727,7 +8651,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">FirstNewEventID</span>
+								<span class="tag parameter">Karma</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -8755,36 +8679,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="NameID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NameID</h1>
-				</a>
-
-
-					<p>NameID, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">NameID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Muted">
 			<header>
 				<a class="anchor">
@@ -8804,6 +8698,36 @@ Wiring											</a>
 								<span class="tag parameter">Muted</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OwnerSteamID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OwnerSteamID</h1>
+				</a>
+
+
+					<p>OwnerSteamID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OwnerSteamID</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -8845,6 +8769,36 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<p>Name, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="SteamID">
 			<header>
 				<a class="anchor">
@@ -8862,6 +8816,36 @@ Wiring											</a>
 
 							<li>
 								<span class="tag parameter">SteamID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LastRecvClientListUpdate">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LastRecvClientListUpdate</h1>
+				</a>
+
+
+					<p>LastRecvClientListUpdate, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LastRecvClientListUpdate</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -8905,14 +8889,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Name">
+		<section class="method" id="ChatSpamTimer">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Name</h1>
+					<h1><span class="realm shared"></span></span>ChatSpamTimer</h1>
 				</a>
 
 
-					<p>Name, Field of type string</p>
+					<p>ChatSpamTimer, Field of type number</p>
 			</header>
 
 
@@ -8921,9 +8905,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Name</span>
+								<span class="tag parameter">ChatSpamTimer</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -8965,126 +8949,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="LastRecvClientListUpdate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastRecvClientListUpdate</h1>
-				</a>
-
-
-					<p>LastRecvClientListUpdate, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LastRecvClientListUpdate</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CharacterID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterID</h1>
-				</a>
-
-
-					<p>CharacterID, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CharacterID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ChatSpamTimer">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ChatSpamTimer</h1>
-				</a>
-
-
-					<p>ChatSpamTimer, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ChatSpamTimer</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Ping">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Ping</h1>
-				</a>
-
-
-					<p>Ping, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Ping</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="LastRecvEntityEventID">
 			<header>
 				<a class="anchor">
@@ -9115,14 +8979,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="OwnerSteamID">
+		<section class="method" id="InGame">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OwnerSteamID</h1>
+					<h1><span class="realm shared"></span></span>InGame</h1>
 				</a>
 
 
-					<p>OwnerSteamID, Field of type number</p>
+					<p>InGame, Field of type bool</p>
 			</header>
 
 
@@ -9131,9 +8995,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">OwnerSteamID</span>
+								<span class="tag parameter">InGame</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -9145,14 +9009,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Client.ClientList">
+		<section class="method" id="LastSentChatMessages">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Client.ClientList</h1>
+					<h1><span class="realm shared"></span></span>LastSentChatMessages</h1>
 				</a>
 
 
-					<p>Client.ClientList, Field of type table</p>
+					<p>LastSentChatMessages, Field of type table</p>
 			</header>
 
 
@@ -9189,14 +9053,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="NeedsMidRoundSync">
+		<section class="method" id="Ping">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NeedsMidRoundSync</h1>
+					<h1><span class="realm shared"></span></span>Ping</h1>
 				</a>
 
 
-					<p>NeedsMidRoundSync, Field of type bool</p>
+					<p>Ping, Field of type number</p>
 			</header>
 
 
@@ -9205,9 +9069,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">NeedsMidRoundSync</span>
+								<span class="tag parameter">Ping</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -9339,14 +9203,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="LastChatMsgQueueID">
+		<section class="method" id="NeedsMidRoundSync">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastChatMsgQueueID</h1>
+					<h1><span class="realm shared"></span></span>NeedsMidRoundSync</h1>
 				</a>
 
 
-					<p>LastChatMsgQueueID, Field of type number</p>
+					<p>NeedsMidRoundSync, Field of type bool</p>
 			</header>
 
 
@@ -9355,9 +9219,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">LastChatMsgQueueID</span>
+								<span class="tag parameter">NeedsMidRoundSync</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -9399,28 +9263,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="PermittedConsoleCommands">
+		<section class="method" id="LastRecvCampaignSave">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PermittedConsoleCommands</h1>
+					<h1><span class="realm shared"></span></span>LastRecvCampaignSave</h1>
 				</a>
 
 
-					<p>PermittedConsoleCommands, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="InGame">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InGame</h1>
-				</a>
-
-
-					<p>InGame, Field of type bool</p>
+					<p>LastRecvCampaignSave, Field of type number</p>
 			</header>
 
 
@@ -9429,9 +9279,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">InGame</span>
+								<span class="tag parameter">LastRecvCampaignSave</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -9443,14 +9293,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="HasSpawned">
+		<section class="method" id="NameID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasSpawned</h1>
+					<h1><span class="realm shared"></span></span>NameID</h1>
 				</a>
 
 
-					<p>HasSpawned, Field of type bool</p>
+					<p>NameID, Field of type number</p>
 			</header>
 
 
@@ -9459,9 +9309,39 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">HasSpawned</span>
+								<span class="tag parameter">NameID</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FirstNewEventID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FirstNewEventID</h1>
+				</a>
+
+
+					<p>FirstNewEventID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FirstNewEventID</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -9517,46 +9397,30 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="LastSentChatMessages">
+		<section class="method" id="PermittedConsoleCommands">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastSentChatMessages</h1>
+					<h1><span class="realm shared"></span></span>PermittedConsoleCommands</h1>
 				</a>
 
 
-					<p>LastSentChatMessages, Field of type table</p>
+					<p>PermittedConsoleCommands, Field of type table</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="LastRecvCampaignSave">
+		<section class="method" id="Client.ClientList">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastRecvCampaignSave</h1>
+					<h1><span class="realm shared"></span></span>Client.ClientList</h1>
 				</a>
 
 
-					<p>LastRecvCampaignSave, Field of type number</p>
+					<p>Client.ClientList, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LastRecvCampaignSave</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -9621,6 +9485,126 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="LastChatMsgQueueID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LastChatMsgQueueID</h1>
+				</a>
+
+
+					<p>LastChatMsgQueueID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LastChatMsgQueueID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LastRecvChatMsgID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LastRecvChatMsgID</h1>
+				</a>
+
+
+					<p>LastRecvChatMsgID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LastRecvChatMsgID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasSpawned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasSpawned</h1>
+				</a>
+
+
+					<p>HasSpawned, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HasSpawned</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KickVoteCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KickVoteCount</h1>
+				</a>
+
+
+					<p>KickVoteCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KickVoteCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="LastRecvLobbyUpdate">
 			<header>
 				<a class="anchor">
@@ -9651,16 +9635,32 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="EntityEventLastSent">
+		<section class="method" id="CharacterID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EntityEventLastSent</h1>
+					<h1><span class="realm shared"></span></span>CharacterID</h1>
 				</a>
 
 
-					<p>EntityEventLastSent, Field of type table</p>
+					<p>CharacterID, Field of type number</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CharacterID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 

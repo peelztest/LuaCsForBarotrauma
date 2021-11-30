@@ -7382,49 +7382,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="File.Write">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.Write(path, text)</h1>
-				</a>
-
-
-					<p>Write text to file</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">path</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">text</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="File.Exists">
 			<header>
 				<a class="anchor">
@@ -7468,14 +7425,57 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="File.GetDirectories">
+		<section class="method" id="File.Write">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.GetDirectories(path)</h1>
+					<h1><span class="realm shared"></span></span>File.Write(path, text)</h1>
 				</a>
 
 
-					<p>List all directories.</p>
+					<p>Write text to file</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">path</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">text</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="File.DirSearch">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>File.DirSearch(path)</h1>
+				</a>
+
+
+					<p>Search directory for all files including sub directories.</p>
 			</header>
 
 
@@ -7502,48 +7502,7 @@ Wiring											</a>
 							<li>
 									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
-								<p>table containing all directories</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="File.Read">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.Read(path)</h1>
-				</a>
-
-
-					<p>Read contents from path</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">path</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>file contents</p>
+								<p>table containing all files</p>
 							</li>
 
 				</ul>
@@ -7591,14 +7550,55 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="File.DirSearch">
+		<section class="method" id="File.Read">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>File.DirSearch(path)</h1>
+					<h1><span class="realm shared"></span></span>File.Read(path)</h1>
 				</a>
 
 
-					<p>Search directory for all files including sub directories.</p>
+					<p>Read contents from path</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">path</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>file contents</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="File.GetDirectories">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>File.GetDirectories(path)</h1>
+				</a>
+
+
+					<p>List all directories.</p>
 			</header>
 
 
@@ -7625,7 +7625,7 @@ Wiring											</a>
 							<li>
 									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
-								<p>table containing all files</p>
+								<p>table containing all directories</p>
 							</li>
 
 				</ul>
