@@ -9194,37 +9194,6 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="RemoveTag">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveTag(tag)</h1>
-				</a>
-
-
-					<p>RemoveTag</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">tag</span>
-
-									<span class="tag"><span class="type">SubmarineTag</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="SubmarineInfo.OpenFile">
 			<header>
 				<a class="anchor">
@@ -9269,162 +9238,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="SubmarineInfo.RefreshSavedSubs">
+		<section class="method" id="GetRealWorldCrushDepth">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SubmarineInfo.RefreshSavedSubs()</h1>
+					<h1><span class="realm shared"></span></span>GetRealWorldCrushDepth()</h1>
 				</a>
 
 
-					<p>RefreshSavedSubs</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Reload">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Reload()</h1>
-				</a>
-
-
-					<p>Reload</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SubmarineInfo.AddToSavedSubs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SubmarineInfo.AddToSavedSubs(subInfo)</h1>
-				</a>
-
-
-					<p>AddToSavedSubs</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">subInfo</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CheckSubsLeftBehind">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CheckSubsLeftBehind(element)</h1>
-				</a>
-
-
-					<p>CheckSubsLeftBehind</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">element</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Dispose">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
-				</a>
-
-
-					<p>Dispose</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
+					<p>GetRealWorldCrushDepth</p>
 			</header>
 
 
@@ -9433,7 +9254,7 @@ Wiring											</a>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -9502,41 +9323,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="IsVanillaSubmarine">
+		<section class="method" id="SubmarineInfo.RefreshSavedSub">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsVanillaSubmarine()</h1>
+					<h1><span class="realm shared"></span></span>SubmarineInfo.RefreshSavedSub(filePath)</h1>
 				</a>
 
 
-					<p>IsVanillaSubmarine</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="StartHashDocTask">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartHashDocTask(doc)</h1>
-				</a>
-
-
-					<p>StartHashDocTask</p>
+					<p>RefreshSavedSub</p>
 			</header>
 
 
@@ -9546,67 +9340,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">doc</span>
+								<span class="tag parameter">filePath</span>
 
-									<span class="tag"><span class="type">XDocument</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetRealWorldCrushDepth">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRealWorldCrushDepth()</h1>
-				</a>
-
-
-					<p>GetRealWorldCrushDepth</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="HasTag">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasTag(tag)</h1>
-				</a>
-
-
-					<p>HasTag</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">tag</span>
-
-									<span class="tag"><span class="type">SubmarineTag</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -9615,73 +9351,6 @@ Wiring											</a>
 							</li>
 					</ul>
 
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetRealWorldCrushDepthMultiplier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRealWorldCrushDepthMultiplier()</h1>
-				</a>
-
-
-					<p>GetRealWorldCrushDepthMultiplier</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
@@ -9743,6 +9412,167 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="StartHashDocTask">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>StartHashDocTask(doc)</h1>
+				</a>
+
+
+					<p>StartHashDocTask</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">doc</span>
+
+									<span class="tag"><span class="type">XDocument</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetRealWorldCrushDepthMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetRealWorldCrushDepthMultiplier()</h1>
+				</a>
+
+
+					<p>GetRealWorldCrushDepthMultiplier</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SubmarineInfo.RefreshSavedSubs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SubmarineInfo.RefreshSavedSubs()</h1>
+				</a>
+
+
+					<p>RefreshSavedSubs</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CheckSubsLeftBehind">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CheckSubsLeftBehind(element)</h1>
+				</a>
+
+
+					<p>CheckSubsLeftBehind</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">element</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Dispose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
+				</a>
+
+
+					<p>Dispose</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="HasTag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasTag(tag)</h1>
+				</a>
+
+
+					<p>HasTag</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">tag</span>
+
+									<span class="tag"><span class="type">SubmarineTag</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
@@ -9770,14 +9600,41 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="SubmarineInfo.RefreshSavedSub">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SubmarineInfo.RefreshSavedSub(filePath)</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>RefreshSavedSub</p>
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="RemoveTag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemoveTag(tag)</h1>
+				</a>
+
+
+					<p>RemoveTag</p>
 			</header>
 
 
@@ -9787,9 +9644,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">filePath</span>
+								<span class="tag parameter">tag</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">SubmarineTag</span></span>
 
 
 								<p>
@@ -9797,6 +9654,51 @@ Wiring											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="SubmarineInfo.AddToSavedSubs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SubmarineInfo.AddToSavedSubs(subInfo)</h1>
+				</a>
+
+
+					<p>AddToSavedSubs</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">subInfo</span>
+
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Reload">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Reload()</h1>
+				</a>
+
+
+					<p>Reload</p>
+			</header>
+
 
 
 
@@ -9832,16 +9734,114 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="IsVanillaSubmarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsVanillaSubmarine()</h1>
+				</a>
+
+
+					<p>IsVanillaSubmarine</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Description">
+		<section class="method" id="IsFileCorrupted">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
+					<h1><span class="realm shared"></span></span>IsFileCorrupted</h1>
 				</a>
 
 
-					<p>Description, Field of type string</p>
+					<p>IsFileCorrupted, Field of type bool</p>
 			</header>
 
 
@@ -9850,97 +9850,7 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Description</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RecommendedCrewSizeMin">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RecommendedCrewSizeMin</h1>
-				</a>
-
-
-					<p>RecommendedCrewSizeMin, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RecommendedCrewSizeMin</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="LeftBehindSubDockingPortOccupied">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LeftBehindSubDockingPortOccupied</h1>
-				</a>
-
-
-					<p>LeftBehindSubDockingPortOccupied, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LeftBehindSubDockingPortOccupied</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RequiredContentPackagesInstalled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RequiredContentPackagesInstalled</h1>
-				</a>
-
-
-					<p>RequiredContentPackagesInstalled, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RequiredContentPackagesInstalled</span>
+								<span class="tag parameter">IsFileCorrupted</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -9984,6 +9894,66 @@ Wiring											</a>
 
 
 		</section>
+		<section class="method" id="IsRuin">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsRuin</h1>
+				</a>
+
+
+					<p>IsRuin, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsRuin</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CargoCapacity">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CargoCapacity</h1>
+				</a>
+
+
+					<p>CargoCapacity, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CargoCapacity</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="SubmarineInfo.SavePath">
 			<header>
 				<a class="anchor">
@@ -9994,36 +9964,6 @@ Wiring											</a>
 					<p>SubmarineInfo.SavePath, Field of type string</p>
 			</header>
 
-
-
-
-		</section>
-		<section class="method" id="IsPlayer">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsPlayer</h1>
-				</a>
-
-
-					<p>IsPlayer, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsPlayer</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -10042,14 +9982,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Dimensions">
+		<section class="method" id="Description">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dimensions</h1>
+					<h1><span class="realm shared"></span></span>Description</h1>
 				</a>
 
 
-					<p>Dimensions, Field of type Vector2</p>
+					<p>Description, Field of type string</p>
 			</header>
 
 
@@ -10058,99 +9998,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Dimensions</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Price">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Price</h1>
-				</a>
-
-
-					<p>Price, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Price</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Name">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Name</h1>
-				</a>
-
-
-					<p>Name, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Name</span>
+								<span class="tag parameter">Description</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsBeacon">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsBeacon</h1>
-				</a>
-
-
-					<p>IsBeacon, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsBeacon</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -10192,214 +10042,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="SubmarineInfo.SavedSubmarines">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SubmarineInfo.SavedSubmarines</h1>
-				</a>
-
-
-					<p>SubmarineInfo.SavedSubmarines, Field of type Enumerable</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="IsCampaignCompatible">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsCampaignCompatible</h1>
-				</a>
-
-
-					<p>IsCampaignCompatible, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsCampaignCompatible</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="LeftBehindDockingPortIDs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LeftBehindDockingPortIDs</h1>
-				</a>
-
-
-					<p>LeftBehindDockingPortIDs, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="IsRuin">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsRuin</h1>
-				</a>
-
-
-					<p>IsRuin, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsRuin</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsCampaignCompatibleIgnoreClass">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsCampaignCompatibleIgnoreClass</h1>
-				</a>
-
-
-					<p>IsCampaignCompatibleIgnoreClass, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsCampaignCompatibleIgnoreClass</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RecommendedCrewSizeMax">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RecommendedCrewSizeMax</h1>
-				</a>
-
-
-					<p>RecommendedCrewSizeMax, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RecommendedCrewSizeMax</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsOutpost">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsOutpost</h1>
-				</a>
-
-
-					<p>IsOutpost, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsOutpost</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DisplayName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisplayName</h1>
-				</a>
-
-
-					<p>DisplayName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DisplayName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="IsWreck">
 			<header>
 				<a class="anchor">
@@ -10417,36 +10059,6 @@ Wiring											</a>
 
 							<li>
 								<span class="tag parameter">IsWreck</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CalculatingHash">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CalculatingHash</h1>
-				</a>
-
-
-					<p>CalculatingHash, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CalculatingHash</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -10490,14 +10102,42 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="IsFileCorrupted">
+		<section class="method" id="OutpostNPCs">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsFileCorrupted</h1>
+					<h1><span class="realm shared"></span></span>OutpostNPCs</h1>
 				</a>
 
 
-					<p>IsFileCorrupted, Field of type bool</p>
+					<p>OutpostNPCs, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SubmarineInfo.SavedSubmarines">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SubmarineInfo.SavedSubmarines</h1>
+				</a>
+
+
+					<p>SubmarineInfo.SavedSubmarines, Field of type Enumerable</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="RequiredContentPackagesInstalled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RequiredContentPackagesInstalled</h1>
+				</a>
+
+
+					<p>RequiredContentPackagesInstalled, Field of type bool</p>
 			</header>
 
 
@@ -10506,7 +10146,411 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">IsFileCorrupted</span>
+								<span class="tag parameter">RequiredContentPackagesInstalled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LeftBehindSubDockingPortOccupied">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LeftBehindSubDockingPortOccupied</h1>
+				</a>
+
+
+					<p>LeftBehindSubDockingPortOccupied, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LeftBehindSubDockingPortOccupied</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RecommendedCrewSizeMin">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RecommendedCrewSizeMin</h1>
+				</a>
+
+
+					<p>RecommendedCrewSizeMin, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RecommendedCrewSizeMin</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RecommendedCrewSizeMax">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RecommendedCrewSizeMax</h1>
+				</a>
+
+
+					<p>RecommendedCrewSizeMax, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RecommendedCrewSizeMax</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Dimensions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dimensions</h1>
+				</a>
+
+
+					<p>Dimensions, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Dimensions</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsCampaignCompatibleIgnoreClass">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsCampaignCompatibleIgnoreClass</h1>
+				</a>
+
+
+					<p>IsCampaignCompatibleIgnoreClass, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsCampaignCompatibleIgnoreClass</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Price">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Price</h1>
+				</a>
+
+
+					<p>Price, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Price</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RecommendedCrewExperience">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RecommendedCrewExperience</h1>
+				</a>
+
+
+					<p>RecommendedCrewExperience, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RecommendedCrewExperience</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LeftBehindDockingPortIDs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LeftBehindDockingPortIDs</h1>
+				</a>
+
+
+					<p>LeftBehindDockingPortIDs, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IsBeacon">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsBeacon</h1>
+				</a>
+
+
+					<p>IsBeacon, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsBeacon</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<p>Name, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsPlayer">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsPlayer</h1>
+				</a>
+
+
+					<p>IsPlayer, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsPlayer</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CalculatingHash">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CalculatingHash</h1>
+				</a>
+
+
+					<p>CalculatingHash, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CalculatingHash</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsOutpost">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsOutpost</h1>
+				</a>
+
+
+					<p>IsOutpost, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsOutpost</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsCampaignCompatible">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsCampaignCompatible</h1>
+				</a>
+
+
+					<p>IsCampaignCompatible, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsCampaignCompatible</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -10550,28 +10594,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="OutpostNPCs">
+		<section class="method" id="DisplayName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OutpostNPCs</h1>
+					<h1><span class="realm shared"></span></span>DisplayName</h1>
 				</a>
 
 
-					<p>OutpostNPCs, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="RecommendedCrewExperience">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RecommendedCrewExperience</h1>
-				</a>
-
-
-					<p>RecommendedCrewExperience, Field of type string</p>
+					<p>DisplayName, Field of type string</p>
 			</header>
 
 
@@ -10580,39 +10610,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">RecommendedCrewExperience</span>
+								<span class="tag parameter">DisplayName</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CargoCapacity">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CargoCapacity</h1>
-				</a>
-
-
-					<p>CargoCapacity, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CargoCapacity</span>
-
-									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>

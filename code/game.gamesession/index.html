@@ -9194,41 +9194,14 @@ Wiring											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="GameSession.GetSessionCrewCharacters">
+		<section class="method" id="PurchaseSubmarine">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GameSession.GetSessionCrewCharacters()</h1>
+					<h1><span class="realm shared"></span></span>PurchaseSubmarine(newSubmarine)</h1>
 				</a>
 
 
-					<p>GetSessionCrewCharacters</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="PlaceSubAtStart">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PlaceSubAtStart(level)</h1>
-				</a>
-
-
-					<p>PlaceSubAtStart</p>
+					<p>PurchaseSubmarine</p>
 			</header>
 
 
@@ -9238,9 +9211,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">level</span>
+								<span class="tag parameter">newSubmarine</span>
 
-									<span class="tag"><span class="type">Level</span></span>
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
 
 
 								<p>
@@ -9252,14 +9225,28 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="ReviveCharacter">
+		<section class="method" id="LoadPreviousSave">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReviveCharacter(character)</h1>
+					<h1><span class="realm shared"></span></span>LoadPreviousSave()</h1>
 				</a>
 
 
-					<p>ReviveCharacter</p>
+					<p>LoadPreviousSave</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Update">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
+				</a>
+
+
+					<p>Update</p>
 			</header>
 
 
@@ -9269,9 +9256,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">deltaTime</span>
 
-									<span class="tag"><span class="type">Character</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -9283,16 +9270,33 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="IsCurrentLocationRadiated">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsCurrentLocationRadiated()</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<p>IsCurrentLocationRadiated</p>
+					<p>Equals</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
@@ -9368,14 +9372,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="StartRound">
+		<section class="method" id="ReviveCharacter">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartRound(levelData, mirrorLevel, startOutpost, endOutpost)</h1>
+					<h1><span class="realm shared"></span></span>ReviveCharacter(character)</h1>
 				</a>
 
 
-					<p>StartRound</p>
+					<p>ReviveCharacter</p>
 			</header>
 
 
@@ -9385,51 +9389,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">levelData</span>
+								<span class="tag parameter">character</span>
 
-									<span class="tag"><span class="type">LevelData</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">mirrorLevel</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">startOutpost</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">endOutpost</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
+									<span class="tag"><span class="type">Character</span></span>
 
 
 								<p>
@@ -9441,14 +9403,41 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="IsSubmarineOwned">
+		<section class="method" id="GameSession.GetSessionCrewCharacters">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsSubmarineOwned(query)</h1>
+					<h1><span class="realm shared"></span></span>GameSession.GetSessionCrewCharacters()</h1>
 				</a>
 
 
-					<p>IsSubmarineOwned</p>
+					<p>GetSessionCrewCharacters</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GameSession.IsCompatibleWithEnabledContentPackages">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GameSession.IsCompatibleWithEnabledContentPackages(contentPackagePaths, errorMsg)</h1>
+				</a>
+
+
+					<p>IsCompatibleWithEnabledContentPackages</p>
 			</header>
 
 
@@ -9458,9 +9447,23 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">query</span>
+								<span class="tag parameter">contentPackagePaths</span>
 
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
+									<span class="tag"><span class="type">IList`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">errorMsg</span>
+
+									<span class="tag"><span class="type">String&</span></span>
 
 
 								<p>
@@ -9544,17 +9547,30 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="LoadPreviousSave">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LoadPreviousSave()</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<p>LoadPreviousSave</p>
+					<p>ToString</p>
 			</header>
 
 
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -9599,6 +9615,319 @@ Wiring											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="StartRound">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>StartRound(levelSeed, difficulty)</h1>
+				</a>
+
+
+					<p>StartRound</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">levelSeed</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">difficulty</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PlaceSubAtStart">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PlaceSubAtStart(level)</h1>
+				</a>
+
+
+					<p>PlaceSubAtStart</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">level</span>
+
+									<span class="tag"><span class="type">Level</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Save">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Save(filePath)</h1>
+				</a>
+
+
+					<p>Save</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">filePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsSubmarineOwned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsSubmarineOwned(query)</h1>
+				</a>
+
+
+					<p>IsSubmarineOwned</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">query</span>
+
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="KillCharacter">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KillCharacter(character)</h1>
+				</a>
+
+
+					<p>KillCharacter</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+									<span class="tag"><span class="type">Character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="StartRound">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>StartRound(levelData, mirrorLevel, startOutpost, endOutpost)</h1>
+				</a>
+
+
+					<p>StartRound</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">levelData</span>
+
+									<span class="tag"><span class="type">LevelData</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">mirrorLevel</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">startOutpost</span>
+
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">endOutpost</span>
+
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="EnforceMissionOrder">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>EnforceMissionOrder(missionIdentifiers)</h1>
+				</a>
+
+
+					<p>EnforceMissionOrder</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">missionIdentifiers</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -9673,47 +10002,16 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="GameSession.IsCompatibleWithEnabledContentPackages">
+		<section class="method" id="IsCurrentLocationRadiated">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GameSession.IsCompatibleWithEnabledContentPackages(contentPackagePaths, errorMsg)</h1>
+					<h1><span class="realm shared"></span></span>IsCurrentLocationRadiated()</h1>
 				</a>
 
 
-					<p>IsCompatibleWithEnabledContentPackages</p>
+					<p>IsCurrentLocationRadiated</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">contentPackagePaths</span>
-
-									<span class="tag"><span class="type">IList`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">errorMsg</span>
-
-									<span class="tag"><span class="type">String&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 				<h3>Returns</h3>
@@ -9728,309 +10026,71 @@ Wiring											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="KillCharacter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KillCharacter(character)</h1>
-				</a>
-
-
-					<p>KillCharacter</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Update">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
-				</a>
-
-
-					<p>Update</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="StartRound">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartRound(levelSeed, difficulty)</h1>
-				</a>
-
-
-					<p>StartRound</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">levelSeed</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">difficulty</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Save">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(filePath)</h1>
-				</a>
-
-
-					<p>Save</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">filePath</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="EnforceMissionOrder">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EnforceMissionOrder(missionIdentifiers)</h1>
-				</a>
-
-
-					<p>EnforceMissionOrder</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">missionIdentifiers</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="PurchaseSubmarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PurchaseSubmarine(newSubmarine)</h1>
-				</a>
-
-
-					<p>PurchaseSubmarine</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newSubmarine</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 
 		</section>
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="MirrorLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MirrorLevel</h1>
+				</a>
+
+
+					<p>MirrorLevel, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MirrorLevel</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine</h1>
+				</a>
+
+
+					<p>Submarine, Field of type Submarine</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Submarine</span>
+
+									<span class="tag"><span class="type">submarine</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="SavePath">
 			<header>
 				<a class="anchor">
@@ -10091,14 +10151,14 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="Submarine">
+		<section class="method" id="RoundEnding">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine</h1>
+					<h1><span class="realm shared"></span></span>RoundEnding</h1>
 				</a>
 
 
-					<p>Submarine, Field of type Submarine</p>
+					<p>RoundEnding, Field of type bool</p>
 			</header>
 
 
@@ -10107,9 +10167,9 @@ Wiring											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Submarine</span>
+								<span class="tag parameter">RoundEnding</span>
 
-									<span class="tag"><span class="type">submarine</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -10151,36 +10211,6 @@ Wiring											</a>
 
 
 		</section>
-		<section class="method" id="MirrorLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MirrorLevel</h1>
-				</a>
-
-
-					<p>MirrorLevel, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MirrorLevel</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="RoundStartTime">
 			<header>
 				<a class="anchor">
@@ -10200,36 +10230,6 @@ Wiring											</a>
 								<span class="tag parameter">RoundStartTime</span>
 
 									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RoundEnding">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RoundEnding</h1>
-				</a>
-
-
-					<p>RoundEnding, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RoundEnding</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>

@@ -18,7 +18,7 @@ print(thisIsNil.what)
 print(thisIsNil.something())
 ```
 
- Why i&#39;m getting &quot;cannot access field ..." />
+ Why i&#39;m getting &quot;Cannot access field ..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -9205,12 +9205,22 @@ Wiring											</a>
 </pre>
 
 
-<p><a name="Why_i_m_getting__cannot_access_field_test_of_userdata_something___errors_"></a></p>
-<h2>Why i'm getting "cannot access field test of userdata<something>" errors?</h2>
+<p><a name="Why_i_m_getting__Cannot_access_field_test_of_userdata_something___errors_"></a></p>
+<h2>Why i'm getting "Cannot access field test of userdata<something>" errors?</h2>
 <p>Because you are trying to access a field in a C# class that doesn't exist.</p>
 
 <pre>
 <span class="global">print</span>(Item.thisDoesntExist)
+</pre>
+
+
+<p><a name="What_is__Attempt_to_access_instance_member__Drop__from_a_static_userdata_"></a></p>
+<h2>What is "Attempt to access instance member "Drop" from a static userdata"</h2>
+<p>It means you are trying to access a member that requires an instance to accessed, for example:</p>
+
+<pre>
+Item.Drop() <span class="comment">-- there's a static global class called Item, but because it's static, you can't call item specific things on it, this will error.
+</span>Item.ItemList[<span class="number">1</span>].Drop() <span class="comment">-- this won't error, it will drop the first item ever created.</span>
 </pre>
 
 
@@ -9221,7 +9231,6 @@ Wiring											</a>
 <pre>
 Game.SendMessage(<span class="keyword">nil</span>)
 </pre>
-
 
 <p>This will result in </p>
 <pre><code> [LUA ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
@@ -9271,15 +9280,14 @@ Game.SendMessage(<span class="keyword">nil</span>)
 
 <span class="comment">-- Spawn on the world
 </span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.WorldPosition, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
-    <span class="global">print</span>(item .. <span class="string">" Has been spawned."</span>)
+    <span class="global">print</span>(item.Name .. <span class="string">" Has been spawned."</span>)
 <span class="keyword">end</span>)
 
 <span class="comment">-- Spawn inside an inventory
 </span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.Inventory, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
-    <span class="global">print</span>(item .. <span class="string">" Has been spawned."</span>)
+    <span class="global">print</span>(item.Name .. <span class="string">" Has been spawned."</span>)
 <span class="keyword">end</span>)
 </pre>
-
 
 
 					</div>
