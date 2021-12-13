@@ -9,9 +9,9 @@
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
 			<meta property="og:description" content="
-1 - Download [latest version of Barotrauma Lua](https:&#47;&#47;github.com&#47;evilfactory&#47;Barotrauma-lua-attempt&#47;releases&#47;download&#47;latest&#47;barotrauma_lua_windows.zip)&lt;br&gt;
+1 - Download [latest version of Barotrauma Lua](https:&#47;&#47;github.com&#47;evilfactory&#47;Barotrauma-lua-attempt&#47;releases&#47;tag&#47;latest), choose the correct platform in the assets drop down.&lt;br&gt;
 2 - Extract the zip file&lt;br&gt;
-3 - Find the Content folder in your original Barotrauma game: &lt;br&gt;..." />
+3 - Find the Content folder in your original..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -9632,7 +9632,7 @@ Path											</a>
 					<div class="wrapper">
 
 <h2>Installing Lua For Barotrauma</h2>
-<p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/download/latest/barotrauma_lua_windows.zip">latest version of Barotrauma Lua</a><br>
+<p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of Barotrauma Lua</a>, choose the correct platform in the assets drop down.<br>
 2 - Extract the zip file<br>
 3 - Find the Content folder in your original Barotrauma game: <br></p>
 
@@ -9644,12 +9644,15 @@ Path											</a>
 
 <p><img src="https://cdn.discordapp.com/attachments/799752463619325968/833133217300742154/unknown.png" alt=""/></p>
 
-<p>5 - Done! Now run Barotrauma.exe to run the modded game <br></p>
+<p>5 - Done! Now run DedicatedServer.exe to run the modded server.<br></p>
 
+<p><a name="Linux_notice"></a></p>
+<h3>Linux notice</h3>
+<p>Sometimes you will get steam initialization errors, most of the time it's because it's missing the linux64/steamclient.so binary, so you can just copy the binary from your steam instalation over to the folder and it should work.</p>
 
-<p><a name="Dedicated_Servers"></a></p>
-<h3>Dedicated Servers</h3>
-<p>For dedicated servers, it should be the same steps as before, just instead you execute DedicatedServer.exe</p>
+<h2>Adding to an existing server</h2>
+
+<p>To install to an existing server, do the 1-2 steps from before and replace the following files in your existing server: <strong>DedicatedServer.deps.json</strong> <strong>DedicatedServer.dll</strong> <strong>DedicatedServer.pdb</strong> <strong>DedicatedServer.runtimeconfig.dev.json</strong> <strong>DedicatedServer.runtimeconfig.json</strong> and the entire <strong>Lua/</strong> folder</p>
 
 					</div>
 			</article>
