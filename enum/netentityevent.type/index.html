@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Game - LuaForBarotrauma Documentation</title>
+		<title>NetEntityEvent.Type - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Game - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="NetEntityEvent.Type - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
-			<meta property="og:description" content="Class providing game related things, Access fields and functions like that: Game.*" />
+			<meta property="og:description" content="NetEntityEvent.Type enum." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -3403,7 +3403,7 @@ File.Write											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../code/game/">Game</a></summary>
 
 									<ul>
@@ -5748,17 +5748,17 @@ SecondaryUse											</a>
 SendPendingNetworkUpdates											</a>
 										</li>
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#SendSignal">
+SendSignal											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#SendSignal">
+SendSignal											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
-											<a href="../../code/item/#SendSignal">
-SendSignal											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/item/#SendSignal">
-SendSignal											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/item/#SendSignal">
 SendSignal											</a>
 										</li>
@@ -6717,17 +6717,17 @@ IsContainerPreferred											</a>
 IsLinkAllowed											</a>
 										</li>
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
+ItemPrefab.AddToSpawnQueue											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
+ItemPrefab.AddToSpawnQueue											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
-ItemPrefab.AddToSpawnQueue											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
-ItemPrefab.AddToSpawnQueue											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
 ItemPrefab.AddToSpawnQueue											</a>
 										</li>
@@ -9575,7 +9575,7 @@ RightHand											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../enum/netentityevent.type/">NetEntityEvent.Type</a></summary>
 
 									<ul>
@@ -9907,8 +9907,8 @@ Path											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>Game</h1>
-	<h2>Class providing game related things, Access fields and functions like that: Game.*</h2>
+	<h1>NetEntityEvent.Type</h1>
+	<h2>NetEntityEvent.Type enum.</h2>
 </header>
 
 <p>
@@ -9916,997 +9916,296 @@ Path											</a>
 </p>
 
 
-	<h1 class="title">Functions</h1>
-
-		<section class="method" id="Game.Explode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Explode(pos, range, force, damage, structureDamage, itemDamage, empStrength, ballastFloraStrength)</h1>
-				</a>
-
-
-					<p>Spawn explosion.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">pos</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">range</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">force</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">damage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">structureDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">empStrength</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ballastFloraStrength</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.AssignOnExecute">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.AssignOnExecute(names, onExecute)</h1>
-				</a>
-
-
-					<p>Assigns a command for server on execute, onExecute is called with a table of strings.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">names</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onExecute</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.ExecuteCommand">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.ExecuteCommand(command)</h1>
-				</a>
-
-
-					<p>Execute console command.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">command</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.AssignOnClientRequestExecute">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AssignOnClientRequestExecute(names, onExecute)</h1>
-				</a>
-
-
-					<p>Assigns a command for client on execute, onExecute is called with a client, mouse position and a table of strings.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">names</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onExecute</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.StartGame">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.StartGame()</h1>
-				</a>
-
-
-					<p>Starts the game.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.GetEnabledContentPackages">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledContentPackages()</h1>
-				</a>
-
-
-					<p>Gets all enabled content packages.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>Table containing ContentPackages</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.AddCommand">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.AddCommand(name, help, onExecute, getValidArgs, isCheat)</h1>
-				</a>
-
-
-					<p>Adds a new command, onExecute is called with a table of strings.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">name</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">help</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onExecute</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">getValidArgs</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isCheat</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.DispatchRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DispatchRespawnSub()</h1>
-				</a>
-
-
-					<p>Dispatch respawn sub.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Game.DisableDisconnectCharacter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableDisconnectCharacter(override)</h1>
-				</a>
-
-
-					<p>True to disable character disconnect logic, aka stop character from being automatically stunned and killed.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.GetEnabledPackagesDirectlyFromFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetEnabledPackagesDirectlyFromFile()</h1>
-				</a>
-
-
-					<p>Gets all enabled content packages by reading directly the player xml, useful when your mod doesn't have any xml.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>Table containing ContentPackages</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.EnableControlHusk">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.EnableControlHusk(override)</h1>
-				</a>
-
-
-					<p>True to allow husks to carry control to players.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
-				</a>
-
-
-					<p>Send chat message to every client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">messageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.Log">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Log(message, ServerLogMessageType)</h1>
-				</a>
-
-
-					<p>Log message to server logs.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">message</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ServerLogMessageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendTraitorMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendTraitorMessage(client, msg, missionid, type)</h1>
-				</a>
-
-
-					<p>Send traitor message.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">missionid</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">type</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.DisableSpamFilter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
-				</a>
-
-
-					<p>True to disable spam filter.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendDirectChatMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(chatMessage, client)</h1>
-				</a>
-
-
-					<p>Send direct message.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendDirectChatMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendDirectChatMessage(sendername, text, senderCharacter, chatMessageType, client, iconStyle)</h1>
-				</a>
-
-
-					<p>Send direct message.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sendername</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">text</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">senderCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">iconStyle</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideTraitors">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
-				</a>
-
-
-					<p>True to override traitors.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideSignalRadio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
-				</a>
-
-
-					<p>True to prevent headsets from transmitting wifi signals.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.OverrideRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
-				</a>
-
-
-					<p>True to override respawn sub, stops players from being respawned.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.GetRespawnSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
-				</a>
-
-
-					<p>Get respawn sub submarine.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Submarine</span>
-
-								<p>Respawn Shuttle</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.AllowWifiChat">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
-				</a>
-
-
-					<p>True to make wifi chat always work.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Game.RoundStarted">
+		<section class="method" id="Upgrade">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.RoundStarted</h1>
+					<h1><span class="realm shared"></span></span>Upgrade</h1>
 				</a>
 
 
-					<p>Is the round started?</p>
+					<p>NetEntityEvent.Type.Upgrade = 12</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Game.IsDedicated">
+		<section class="method" id="TeamChange">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.IsDedicated</h1>
+					<h1><span class="realm shared"></span></span>TeamChange</h1>
 				</a>
 
 
-					<p>Is dedicated server?</p>
+					<p>NetEntityEvent.Type.TeamChange = 14</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Game.ServerSettings">
+		<section class="method" id="ChangeProperty">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.ServerSettings</h1>
+					<h1><span class="realm shared"></span></span>ChangeProperty</h1>
 				</a>
 
 
-					<p>Server settings.</p>
+					<p>NetEntityEvent.Type.ChangeProperty = 6</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Status">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Status</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Status = 3</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Treatment">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Treatment</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Treatment = 4</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AssignCampaignInteraction">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AssignCampaignInteraction</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.AssignCampaignInteraction = 13</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="UpdateSkills">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateSkills</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdateSkills = 8</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AddToCrew">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddToCrew</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.AddToCrew = 16</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="UpdateTalents">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateTalents</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdateTalents = 18</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SetAttackTarget">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetAttackTarget</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.SetAttackTarget = 10</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="UpdateMoney">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateMoney</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdateMoney = 19</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="UpdatePermanentStats">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdatePermanentStats</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdatePermanentStats = 20</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ComponentState">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ComponentState</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.ComponentState = 1</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Combine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Combine</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Combine = 9</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ApplyStatusEffect">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyStatusEffect</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.ApplyStatusEffect = 5</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Invalid">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Invalid</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Invalid = 0</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Control">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Control</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Control = 7</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="UpdateExperience">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateExperience</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdateExperience = 17</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ObjectiveManagerState">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ObjectiveManagerState</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.ObjectiveManagerState = 15</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ExecuteAttack">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ExecuteAttack</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.ExecuteAttack = 11</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="InventoryState">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InventoryState</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.InventoryState = 2</p>
 			</header>
 
 
