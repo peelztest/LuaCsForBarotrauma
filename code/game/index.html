@@ -9918,14 +9918,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Game.Explode">
+		<section class="method" id="Game.DisableSpamFilter">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Explode(pos, range, force, damage, structureDamage, itemDamage, empStrength, ballastFloraStrength)</h1>
+					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
 				</a>
 
 
-					<p>Spawn explosion.</p>
+					<p>True to disable spam filter.</p>
 			</header>
 
 
@@ -9935,7 +9935,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">pos</span>
+								<span class="tag parameter">override</span>
 
 
 
@@ -9945,10 +9945,27 @@ Path											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="Game.OverrideRespawnSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
+				</a>
+
+
+					<p>True to override respawn sub, stops players from being respawned.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">range</span>
+								<span class="tag parameter">override</span>
 
 
 
@@ -9958,75 +9975,52 @@ Path											</a>
 							</li>
 					</ul>
 
-					<ul>
+
+
+		</section>
+		<section class="method" id="Game.GetRespawnSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
+				</a>
+
+
+					<p>Get respawn sub submarine.</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">force</span>
+									<span class="type">Submarine</span>
 
-
-
-								<p>
-
-</p>
+								<p>Respawn Shuttle</p>
 							</li>
-					</ul>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Game.OverrideSignalRadio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
+				</a>
+
+
+					<p>True to prevent headsets from transmitting wifi signals.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">damage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">structureDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemDamage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">empStrength</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ballastFloraStrength</span>
+								<span class="tag parameter">override</span>
 
 
 
@@ -10194,14 +10188,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.AddCommand">
+		<section class="method" id="Game.AllowWifiChat">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.AddCommand(name, help, onExecute, getValidArgs, isCheat)</h1>
+					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
 				</a>
 
 
-					<p>Adds a new command, onExecute is called with a table of strings.</p>
+					<p>True to make wifi chat always work.</p>
 			</header>
 
 
@@ -10211,59 +10205,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">name</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">help</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onExecute</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">getValidArgs</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isCheat</span>
+								<span class="tag parameter">override</span>
 
 
 
@@ -10345,148 +10287,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.EnableControlHusk">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.EnableControlHusk(override)</h1>
-				</a>
-
-
-					<p>True to allow husks to carry control to players.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">override</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.SendMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
-				</a>
-
-
-					<p>Send chat message to every client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">messageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Game.Log">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.Log(message, ServerLogMessageType)</h1>
-				</a>
-
-
-					<p>Log message to server logs.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">message</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ServerLogMessageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Game.SendTraitorMessage">
 			<header>
 				<a class="anchor">
@@ -10556,14 +10356,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.DisableSpamFilter">
+		<section class="method" id="Game.OverrideTraitors">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.DisableSpamFilter(override)</h1>
+					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
 				</a>
 
 
-					<p>True to disable spam filter.</p>
+					<p>True to override traitors.</p>
 			</header>
 
 
@@ -10724,14 +10524,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.OverrideTraitors">
+		<section class="method" id="Game.EnableControlHusk">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideTraitors(override)</h1>
+					<h1><span class="realm server"></span></span>Game.EnableControlHusk(override)</h1>
 				</a>
 
 
-					<p>True to override traitors.</p>
+					<p>True to allow husks to carry control to players.</p>
 			</header>
 
 
@@ -10754,14 +10554,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.OverrideSignalRadio">
+		<section class="method" id="Game.SendMessage">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideSignalRadio(override)</h1>
+					<h1><span class="realm server"></span></span>Game.SendMessage(msg, messageType, sender, character)</h1>
 				</a>
 
 
-					<p>True to prevent headsets from transmitting wifi signals.</p>
+					<p>Send chat message to every client.</p>
 			</header>
 
 
@@ -10771,7 +10571,46 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+								<span class="tag parameter">msg</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">messageType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
 
 
 
@@ -10784,14 +10623,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.OverrideRespawnSub">
+		<section class="method" id="Game.Explode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.OverrideRespawnSub(override)</h1>
+					<h1><span class="realm server"></span></span>Game.Explode(pos, range, force, damage, structureDamage, itemDamage, empStrength, ballastFloraStrength)</h1>
 				</a>
 
 
-					<p>True to override respawn sub, stops players from being respawned.</p>
+					<p>Spawn explosion.</p>
 			</header>
 
 
@@ -10801,7 +10640,98 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+								<span class="tag parameter">pos</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">range</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">force</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">damage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">structureDamage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemDamage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">empStrength</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ballastFloraStrength</span>
 
 
 
@@ -10814,39 +10744,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Game.GetRespawnSub">
+		<section class="method" id="Game.Log">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.GetRespawnSub()</h1>
+					<h1><span class="realm server"></span></span>Game.Log(message, ServerLogMessageType)</h1>
 				</a>
 
 
-					<p>Get respawn sub submarine.</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Submarine</span>
-
-								<p>Respawn Shuttle</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Game.AllowWifiChat">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Game.AllowWifiChat(override)</h1>
-				</a>
-
-
-					<p>True to make wifi chat always work.</p>
+					<p>Log message to server logs.</p>
 			</header>
 
 
@@ -10856,7 +10761,102 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">override</span>
+								<span class="tag parameter">message</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ServerLogMessageType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Game.AddCommand">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Game.AddCommand(name, help, onExecute, getValidArgs, isCheat)</h1>
+				</a>
+
+
+					<p>Adds a new command, onExecute is called with a table of strings.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">name</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">help</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onExecute</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">getValidArgs</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">isCheat</span>
 
 
 
@@ -10871,20 +10871,6 @@ Path											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Game.RoundStarted">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Game.RoundStarted</h1>
-				</a>
-
-
-					<p>Is the round started?</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Game.IsDedicated">
 			<header>
 				<a class="anchor">
@@ -10893,6 +10879,20 @@ Path											</a>
 
 
 					<p>Is dedicated server?</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Game.RoundStarted">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Game.RoundStarted</h1>
+				</a>
+
+
+					<p>Is the round started?</p>
 			</header>
 
 
