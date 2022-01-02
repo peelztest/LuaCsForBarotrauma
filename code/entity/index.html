@@ -9916,6 +9916,33 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="Entity.RemoveAll">
 			<header>
 				<a class="anchor">
@@ -9930,17 +9957,115 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Remove">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove()</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<p>Remove</p>
+					<p>ToString</p>
 			</header>
 
 
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Entity.FindFreeIdBlock">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.FindFreeIdBlock(minBlockSize)</h1>
+				</a>
+
+
+					<p>FindFreeIdBlock</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">minBlockSize</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="FreeID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FreeID()</h1>
+				</a>
+
+
+					<p>FreeID</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Entity.GetEntities">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.GetEntities()</h1>
+				</a>
+
+
+					<p>GetEntities</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">IReadOnlyCollection`1</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -9988,14 +10113,72 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Entity.GetEntities">
+		<section class="method" id="Remove">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.GetEntities()</h1>
+					<h1><span class="realm shared"></span></span>Remove()</h1>
 				</a>
 
 
-					<p>GetEntities</p>
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
 			</header>
 
 
@@ -10004,7 +10187,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">IReadOnlyCollection`1</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -10060,235 +10243,8 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Entity.FindFreeIdBlock">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.FindFreeIdBlock(minBlockSize)</h1>
-				</a>
-
-
-					<p>FindFreeIdBlock</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">minBlockSize</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="FreeID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FreeID()</h1>
-				</a>
-
-
-					<p>FreeID</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="InDetectable">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InDetectable</h1>
-				</a>
-
-
-					<p>InDetectable, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InDetectable</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Entity.EntityCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.EntityCount</h1>
-				</a>
-
-
-					<p>Entity.EntityCount, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="SpawnTime">
 			<header>
 				<a class="anchor">
@@ -10319,64 +10275,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Entity.MaxEntityCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.MaxEntityCount</h1>
-				</a>
-
-
-					<p>Entity.MaxEntityCount, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Submarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine</h1>
-				</a>
-
-
-					<p>Submarine, Field of type Submarine</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Submarine</span>
-
-									<span class="tag"><span class="type">submarine</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Entity.RespawnManagerID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.RespawnManagerID</h1>
-				</a>
-
-
-					<p>Entity.RespawnManagerID, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Entity.EntitySpawnerID">
 			<header>
 				<a class="anchor">
@@ -10391,92 +10289,16 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ID">
+		<section class="method" id="Entity.NullEntityID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ID</h1>
+					<h1><span class="realm shared"></span></span>Entity.NullEntityID</h1>
 				</a>
 
 
-					<p>ID, Field of type number</p>
+					<p>Entity.NullEntityID, Field of type number</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IdFreed">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IdFreed</h1>
-				</a>
-
-
-					<p>IdFreed, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IdFreed</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Position">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Position</h1>
-				</a>
-
-
-					<p>Position, Field of type Vector2</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -10489,50 +10311,6 @@ Path											</a>
 
 
 					<p>Entity.DummyID, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="WorldPosition">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WorldPosition</h1>
-				</a>
-
-
-					<p>WorldPosition, Field of type Vector2</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">WorldPosition</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Entity.ReservedIDStart">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.ReservedIDStart</h1>
-				</a>
-
-
-					<p>Entity.ReservedIDStart, Field of type number</p>
 			</header>
 
 
@@ -10569,16 +10347,150 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Entity.NullEntityID">
+		<section class="method" id="InDetectable">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Entity.NullEntityID</h1>
+					<h1><span class="realm shared"></span></span>InDetectable</h1>
 				</a>
 
 
-					<p>Entity.NullEntityID, Field of type number</p>
+					<p>InDetectable, Field of type bool</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InDetectable</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.ReservedIDStart">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.ReservedIDStart</h1>
+				</a>
+
+
+					<p>Entity.ReservedIDStart, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IdFreed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IdFreed</h1>
+				</a>
+
+
+					<p>IdFreed, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IdFreed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine</h1>
+				</a>
+
+
+					<p>Submarine, Field of type Submarine</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Submarine</span>
+
+									<span class="tag"><span class="type">submarine</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.MaxEntityCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.MaxEntityCount</h1>
+				</a>
+
+
+					<p>Entity.MaxEntityCount, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="WorldPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WorldPosition</h1>
+				</a>
+
+
+					<p>WorldPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">WorldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -10632,6 +10544,94 @@ Path											</a>
 								<span class="tag parameter">Removed</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Entity.RespawnManagerID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.RespawnManagerID</h1>
+				</a>
+
+
+					<p>Entity.RespawnManagerID, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Entity.EntityCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Entity.EntityCount</h1>
+				</a>
+
+
+					<p>Entity.EntityCount, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ID</h1>
+				</a>
+
+
+					<p>ID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Position">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Position</h1>
+				</a>
+
+
+					<p>Position, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>

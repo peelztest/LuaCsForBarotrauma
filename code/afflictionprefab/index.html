@@ -9918,14 +9918,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="AfflictionPrefab.LoadAll">
+		<section class="method" id="AfflictionPrefab.LoadFromFile">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadAll(files)</h1>
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadFromFile(file)</h1>
 				</a>
 
 
-					<p>LoadAll</p>
+					<p>LoadFromFile</p>
 			</header>
 
 
@@ -9935,9 +9935,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">files</span>
+								<span class="tag parameter">file</span>
 
-									<span class="tag"><span class="type">Enumerable</span></span>
+									<span class="tag"><span class="type">ContentFile</span></span>
 
 
 								<p>
@@ -9966,6 +9966,33 @@ Path											</a>
 
 							<li>
 									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
@@ -10020,14 +10047,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AfflictionPrefab.RemoveByFile">
+		<section class="method" id="AfflictionPrefab.LoadAll">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.RemoveByFile(filePath)</h1>
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadAll(files)</h1>
 				</a>
 
 
-					<p>RemoveByFile</p>
+					<p>LoadAll</p>
 			</header>
 
 
@@ -10037,9 +10064,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">filePath</span>
+								<span class="tag parameter">files</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
 
 
 								<p>
@@ -10051,14 +10078,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AfflictionPrefab.LoadFromFile">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadFromFile(file)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<p>LoadFromFile</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -10068,40 +10095,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">file</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">ContentFile</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetActiveEffect">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetActiveEffect(currentStrength)</h1>
-				</a>
-
-
-					<p>GetActiveEffect</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">currentStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -10115,7 +10111,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Effect</span>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -10153,43 +10149,33 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
+		<section class="method" id="AfflictionPrefab.RemoveByFile">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.RemoveByFile(filePath)</h1>
 				</a>
 
 
-					<p>ToString</p>
+					<p>RemoveByFile</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
-				<h3>Returns</h3>
-				<ul>
+
+					<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+								<span class="tag parameter">filePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 								<p>
 
 </p>
 							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Dispose">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
-				</a>
-
-
-					<p>Dispose</p>
-			</header>
-
+					</ul>
 
 
 
@@ -10252,14 +10238,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Equals">
+		<section class="method" id="Dispose">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
 				</a>
 
 
-					<p>Equals</p>
+					<p>Dispose</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetActiveEffect">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetActiveEffect(currentStrength)</h1>
+				</a>
+
+
+					<p>GetActiveEffect</p>
 			</header>
 
 
@@ -10269,9 +10269,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">obj</span>
+								<span class="tag parameter">currentStrength</span>
 
-									<span class="tag"><span class="type">Object</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -10285,7 +10285,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<span class="type">Effect</span>
 
 								<p>
 
@@ -10298,36 +10298,6 @@ Path											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="UIntIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UIntIdentifier</h1>
-				</a>
-
-
-					<p>UIntIdentifier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UIntIdentifier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="LimbSpecific">
 			<header>
 				<a class="anchor">
@@ -10448,20 +10418,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AfflictionPrefab.List">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.List</h1>
-				</a>
-
-
-					<p>AfflictionPrefab.List, Field of type Enumerable</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Identifier">
 			<header>
 				<a class="anchor">
@@ -10552,14 +10508,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="FilePath">
+		<section class="method" id="MaxStrength">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FilePath</h1>
+					<h1><span class="realm shared"></span></span>MaxStrength</h1>
 				</a>
 
 
-					<p>FilePath, Field of type string</p>
+					<p>MaxStrength, Field of type number</p>
 			</header>
 
 
@@ -10568,9 +10524,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">FilePath</span>
+								<span class="tag parameter">MaxStrength</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -10642,6 +10598,36 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="IsBuff">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsBuff</h1>
+				</a>
+
+
+					<p>IsBuff, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsBuff</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="ActivationThreshold">
 			<header>
 				<a class="anchor">
@@ -10702,32 +10688,16 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="IsBuff">
+		<section class="method" id="AfflictionPrefab.List">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsBuff</h1>
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.List</h1>
 				</a>
 
 
-					<p>IsBuff, Field of type bool</p>
+					<p>AfflictionPrefab.List, Field of type Enumerable</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsBuff</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -10852,36 +10822,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SelfCauseOfDeathDescription">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelfCauseOfDeathDescription</h1>
-				</a>
-
-
-					<p>SelfCauseOfDeathDescription, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SelfCauseOfDeathDescription</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="ShowIconToOthersThreshold">
 			<header>
 				<a class="anchor">
@@ -10912,14 +10852,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Effects">
+		<section class="method" id="FilePath">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Effects</h1>
+					<h1><span class="realm shared"></span></span>FilePath</h1>
 				</a>
 
 
-					<p>Effects, Field of type Enumerable</p>
+					<p>FilePath, Field of type string</p>
 			</header>
 
 
@@ -10928,9 +10868,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Effects</span>
+								<span class="tag parameter">FilePath</span>
 
-									<span class="tag"><span class="type">Enumerable</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -10942,14 +10882,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="OriginalName">
+		<section class="method" id="Description">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
+					<h1><span class="realm shared"></span></span>Description</h1>
 				</a>
 
 
-					<p>OriginalName, Field of type string</p>
+					<p>Description, Field of type string</p>
 			</header>
 
 
@@ -10958,7 +10898,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">OriginalName</span>
+								<span class="tag parameter">Description</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SelfCauseOfDeathDescription">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelfCauseOfDeathDescription</h1>
+				</a>
+
+
+					<p>SelfCauseOfDeathDescription, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SelfCauseOfDeathDescription</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -11002,14 +10972,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="MaxStrength">
+		<section class="method" id="OriginalName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxStrength</h1>
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
 				</a>
 
 
-					<p>MaxStrength, Field of type number</p>
+					<p>OriginalName, Field of type string</p>
 			</header>
 
 
@@ -11018,9 +10988,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MaxStrength</span>
+								<span class="tag parameter">OriginalName</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -11032,14 +11002,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Description">
+		<section class="method" id="Effects">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
+					<h1><span class="realm shared"></span></span>Effects</h1>
 				</a>
 
 
-					<p>Description, Field of type string</p>
+					<p>Effects, Field of type Enumerable</p>
 			</header>
 
 
@@ -11048,9 +11018,39 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Description</span>
+								<span class="tag parameter">Effects</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UIntIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UIntIdentifier</h1>
+				</a>
+
+
+					<p>UIntIdentifier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UIntIdentifier</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
