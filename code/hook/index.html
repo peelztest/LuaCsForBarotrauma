@@ -9918,28 +9918,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="roundStart">
+		<section class="method" id="traitor.findTraitorCandidate">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundStart()</h1>
+					<h1><span class="realm shared"></span></span>traitor.findTraitorCandidate(character, team)</h1>
 				</a>
 
 
-					<p>Called on round start</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="inventoryItemSwap">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>inventoryItemSwap(inventory, item, characterUser, index, swapWholeStackBool)</h1>
-				</a>
-
-
-					<p>Gets called every time items are swapped, return true to cancel</p>
+					<p>Return true to accept traitor candidate.</p>
 			</header>
 
 
@@ -9949,7 +9935,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">inventory</span>
+								<span class="tag parameter">character</span>
 
 
 
@@ -9958,6 +9944,124 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">team</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="clientConnected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>clientConnected(connectedClient)</h1>
+				</a>
+
+
+					<p>Called when a client connects</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connectedClient</span>
+
+									<span class="tag"><span class="type">client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="serverLog">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
+				</a>
+
+
+					<p>Gets called everytime something is logged to the Server Log, do not call print() inside this function, i repeat, do not call print() inside this function.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">text</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">serverLogMessageType</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="roundEnd">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>roundEnd()</h1>
+				</a>
+
+
+					<p>Called on round end</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="itemInteract">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemInteract(item, characterPicker, ignoreRequiredItemsBool, forceSelectKeyBool, forceActionKeyBool)</h1>
+				</a>
+
+
+					<p>Gets called every time an item is interacted, eg: picking item on ground, fixing something with wrench</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
 
 					<ul>
 
@@ -9975,7 +10079,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">characterUser</span>
+								<span class="tag parameter">characterPicker</span>
 
 
 
@@ -9988,7 +10092,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">index</span>
+								<span class="tag parameter">ignoreRequiredItemsBool</span>
 
 
 
@@ -10001,7 +10105,20 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">swapWholeStackBool</span>
+								<span class="tag parameter">forceSelectKeyBool</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceActionKeyBool</span>
 
 
 
@@ -10014,14 +10131,245 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="canUseVoiceRadio">
+		<section class="method" id="gapOxygenUpdate">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>canUseVoiceRadio(sender, receiver)</h1>
+					<h1><span class="realm shared"></span></span>gapOxygenUpdate(gap, hull1, hull2)</h1>
 				</a>
 
 
-					<p>Check if a client is allowed to hear radio voice to another client, return true to allow, false to disallow.</p>
+					<p>Gets called every update when a gap passes oxygen</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">gap</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hull1</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hull2</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="itemEquip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemEquip(item, character)</h1>
+				</a>
+
+
+					<p>Gets called whenever an item is equipped.  Return true to cancel.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="traitor.traitorAssigned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>traitor.traitorAssigned(traitor)</h1>
+				</a>
+
+
+					<div class="notice warning">
+						<div class="title">Incomplete</div>
+						<p>Documentation for this section is incomplete and needs expanding.</p>
+					</div>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">traitor</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="itemUse">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemUse(item, itemUser, targetLimb)</h1>
+				</a>
+
+
+					<p>Gets called every time an Item gets "Used".</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemUser</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetLimb</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="itemUnequip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemUnequip(item, character)</h1>
+				</a>
+
+
+					<p>Same as itemEquip, but for unequipping.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="changeLocalVoiceRange">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>changeLocalVoiceRange(sender, receiver)</h1>
+				</a>
+
+
+					<p>Changes the local voice range, return a number to change the local voice range, 1 = normal, 0.5 = lower range, 2 = higher range.</p>
 			</header>
 
 
@@ -10045,6 +10393,94 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">receiver</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="roundStart">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>roundStart()</h1>
+				</a>
+
+
+					<p>Called on round start</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="characterCreated">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>characterCreated(createdCharacter)</h1>
+				</a>
+
+
+					<p>Gets callled everytime a character is created.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">createdCharacter</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="itemSecondaryUse">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemSecondaryUse(item, itemUser)</h1>
+				</a>
+
+
+					<p>Same as itemUse.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemUser</span>
 
 
 
@@ -10102,14 +10538,200 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="itemEquip">
+		<section class="method" id="signalReceived">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemEquip(item, character)</h1>
+					<h1><span class="realm shared"></span></span>signalReceived(signal, connection)</h1>
 				</a>
 
 
-					<p>Gets called whenever an item is equipped.  Return true to cancel.</p>
+					<p>Gets called everytime an Item receives a wire signal</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Hook.Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Hook.Remove(eventname, hookname)</h1>
+				</a>
+
+
+					<p>Removes a hook.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">eventname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> event name</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hookname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> hook name</p>
+							</li>
+					</ul>
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Hook.Remove("characterDeath", "characterDeathExample")
+</code></pre>
+
+		</section>
+		<section class="method" id="canUseVoiceRadio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>canUseVoiceRadio(sender, receiver)</h1>
+				</a>
+
+
+					<p>Check if a client is allowed to hear radio voice to another client, return true to allow, false to disallow.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">receiver</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="afflictionApplied">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>afflictionApplied(affliction, characterHealth, limb)</h1>
+				</a>
+
+
+					<p>Gets called every time an affliction is applied.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterHealth</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="itemDrop">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>itemDrop(item, character)</h1>
+				</a>
+
+
+					<p>Gets called whenever an item is dropped, You can return true to cancel.</p>
 			</header>
 
 
@@ -10141,6 +10763,338 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="wifiSignalTransmitted">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
+				</a>
+
+
+					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wifiComponent</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sentFromChat</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Hook.Add">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Hook.Add(eventname, hookname, func)</h1>
+				</a>
+
+
+					<p>Adds a hook.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">eventname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> event name</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hookname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> hook name</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">func</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p> callback</p>
+							</li>
+					</ul>
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
+   print(character)
+end)
+</code></pre>
+
+		</section>
+		<section class="method" id="stop">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>stop()</h1>
+				</a>
+
+
+					<p>Called when the script execution is terminating.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="clientDisconnected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>clientDisconnected(disconnectedClient)</h1>
+				</a>
+
+
+					<p>Called when a client disconnects</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">disconnectedClient</span>
+
+									<span class="tag"><span class="type">client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="modifyChatMessage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>modifyChatMessage(chatMessage, wifiComponentSender)</h1>
+				</a>
+
+
+					<p>Called right before a message is going to be sent, return true to stop message from being sent.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">chatMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wifiComponentSender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="signalReceived.YourComponentIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>signalReceived.YourComponentIdentifier(signal, connection)</h1>
+				</a>
+
+
+					<p>Same as signalReceived, but gets called only when needed by specifying your component, better performance.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="think">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>think()</h1>
+				</a>
+
+
+					<p>Game's fixed update rate, gets called normally 60 times a second.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="afflictionUpdate">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>afflictionUpdate(affliction, characterHealth, limb)</h1>
+				</a>
+
+
+					<p>Gets called every time an affliction updates.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterHealth</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="changeFallDamage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>changeFallDamage()</h1>
+				</a>
+
+
+					<div class="notice warning">
+						<div class="title">Incomplete</div>
+						<p>Documentation for this section is incomplete and needs expanding.</p>
+					</div>
+			</header>
+
 
 
 
@@ -10189,6 +11143,73 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">userCharacter</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="jobsAssigned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>jobsAssigned()</h1>
+				</a>
+
+
+					<p>Called each time a new round start job has been assigned, this context allows for you to change the role before it's applied in game.</p>
+			</header>
+
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Hook.Add("jobsAssigned", "", function ()
+  for key, value in pairs(Client.ClientList) do
+    value.AssignedJob = {JobPrefab.Get("assistant"), 0}
+  end
+end)
+</code></pre>
+
+		</section>
+		<section class="method" id="husk.clientControl">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>husk.clientControl(client, husk)</h1>
+				</a>
+
+
+					<div class="notice warning">
+						<div class="title">Incomplete</div>
+						<p>Documentation for this section is incomplete and needs expanding.</p>
+					</div>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">husk</span>
 
 
 
@@ -10258,82 +11279,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">limb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="traitor.findTraitorCandidate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>traitor.findTraitorCandidate(character, team)</h1>
-				</a>
-
-
-					<p>Return true to accept traitor candidate.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">team</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="traitor.traitorAssigned">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>traitor.traitorAssigned(traitor)</h1>
-				</a>
-
-
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">traitor</span>
 
 
 
@@ -10428,800 +11373,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="characterCreated">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>characterCreated(createdCharacter)</h1>
-				</a>
-
-
-					<p>Gets callled everytime a character is created.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">createdCharacter</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="clientConnected">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientConnected(connectedClient)</h1>
-				</a>
-
-
-					<p>Called when a client connects</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connectedClient</span>
-
-									<span class="tag"><span class="type">client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="signalReceived.YourComponentIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived.YourComponentIdentifier(signal, connection)</h1>
-				</a>
-
-
-					<p>Same as signalReceived, but gets called only when needed by specifying your component, better performance.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connection</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="roundEnd">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundEnd()</h1>
-				</a>
-
-
-					<p>Called on round end</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="itemUnequip">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemUnequip(item, character)</h1>
-				</a>
-
-
-					<p>Same as itemEquip, but for unequipping.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="husk.clientControl">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>husk.clientControl(client, husk)</h1>
-				</a>
-
-
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">husk</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="itemDrop">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemDrop(item, character)</h1>
-				</a>
-
-
-					<p>Gets called whenever an item is dropped, You can return true to cancel.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="changeFallDamage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>changeFallDamage()</h1>
-				</a>
-
-
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Hook.Add">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Add(eventname, hookname, func)</h1>
-				</a>
-
-
-					<p>Adds a hook.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> hook name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">func</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p> callback</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
-   print(character)
-end)
-</code></pre>
-
-		</section>
-		<section class="method" id="Hook.Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Remove(eventname, hookname)</h1>
-				</a>
-
-
-					<p>Removes a hook.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> hook name</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Remove("characterDeath", "characterDeathExample")
-</code></pre>
-
-		</section>
-		<section class="method" id="signalReceived">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived(signal, connection)</h1>
-				</a>
-
-
-					<p>Gets called everytime an Item receives a wire signal</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connection</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="wifiSignalTransmitted">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
-				</a>
-
-
-					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wifiComponent</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sentFromChat</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="think">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>think()</h1>
-				</a>
-
-
-					<p>Game's fixed update rate, gets called normally 60 times a second.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="modifyChatMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>modifyChatMessage(chatMessage, wifiComponentSender)</h1>
-				</a>
-
-
-					<p>Called right before a message is going to be sent, return true to stop message from being sent.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wifiComponentSender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="serverLog">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
-				</a>
-
-
-					<p>Gets called everytime something is logged to the Server Log, do not call print() inside this function, i repeat, do not call print() inside this function.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">text</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">serverLogMessageType</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="gapOxygenUpdate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>gapOxygenUpdate(gap, hull1, hull2)</h1>
-				</a>
-
-
-					<p>Gets called every update when a gap passes oxygen</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">gap</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hull1</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hull2</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="afflictionApplied">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>afflictionApplied(affliction, characterHealth, limb)</h1>
-				</a>
-
-
-					<p>Gets called every time an affliction is applied.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="itemInteract">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemInteract(item, characterPicker, ignoreRequiredItemsBool, forceSelectKeyBool, forceActionKeyBool)</h1>
-				</a>
-
-
-					<p>Gets called every time an item is interacted, eg: picking item on ground, fixing something with wrench</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterPicker</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ignoreRequiredItemsBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">forceSelectKeyBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">forceActionKeyBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="clientDisconnected">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientDisconnected(disconnectedClient)</h1>
-				</a>
-
-
-					<p>Called when a client disconnects</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">disconnectedClient</span>
-
-									<span class="tag"><span class="type">client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="characterDeath">
 			<header>
 				<a class="anchor">
@@ -11256,40 +11407,32 @@ end)
 </code></pre>
 
 		</section>
-		<section class="method" id="jobsAssigned">
+		<section class="method" id="inventoryItemSwap">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>jobsAssigned()</h1>
+					<h1><span class="realm shared"></span></span>inventoryItemSwap(inventory, item, characterUser, index, swapWholeStackBool)</h1>
 				</a>
 
 
-					<p>Called each time a new round start job has been assigned, this context allows for you to change the role before it's applied in game.</p>
-			</header>
-
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("jobsAssigned", "", function ()
-  for key, value in pairs(Client.ClientList) do
-    value.AssignedJob = {JobPrefab.Get("assistant"), 0}
-  end
-end)
-</code></pre>
-
-		</section>
-		<section class="method" id="itemUse">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemUse(item, itemUser, targetLimb)</h1>
-				</a>
-
-
-					<p>Gets called every time an Item gets "Used".</p>
+					<p>Gets called every time items are swapped, return true to cancel</p>
 			</header>
 
 
 					<h3>Parameters</h3>
 
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">inventory</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 					<ul>
 
@@ -11307,7 +11450,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">itemUser</span>
+								<span class="tag parameter">characterUser</span>
 
 
 
@@ -11320,37 +11463,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">targetLimb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="changeLocalVoiceRange">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>changeLocalVoiceRange(sender, receiver)</h1>
-				</a>
-
-
-					<p>Changes the local voice range, return a number to change the local voice range, 1 = normal, 0.5 = lower range, 2 = higher range.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
+								<span class="tag parameter">index</span>
 
 
 
@@ -11363,7 +11476,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">receiver</span>
+								<span class="tag parameter">swapWholeStackBool</span>
 
 
 
@@ -11372,76 +11485,6 @@ end)
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="afflictionUpdate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>afflictionUpdate(affliction, characterHealth, limb)</h1>
-				</a>
-
-
-					<p>Gets called every time an affliction updates.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="stop">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>stop()</h1>
-				</a>
-
-
-					<p>Called when the script execution is terminating.</p>
-			</header>
-
 
 
 
@@ -11490,49 +11533,6 @@ end)
      Hook.Call("characterDead", {}) -- ruin someone's day
 end)
 </code></pre>
-
-		</section>
-		<section class="method" id="itemSecondaryUse">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>itemSecondaryUse(item, itemUser)</h1>
-				</a>
-
-
-					<p>Same as itemUse.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemUser</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
 
 		</section>
 

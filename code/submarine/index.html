@@ -9918,14 +9918,144 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="GetWalls">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetWalls(alsoFromConnectedSubs)</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<p>GetWalls</p>
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove()</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SetPrevTransform">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetPrevTransform(position)</h1>
+				</a>
+
+
+					<p>SetPrevTransform</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.CalculateDockOffset">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.CalculateDockOffset(sub, dockedSub)</h1>
+				</a>
+
+
+					<p>CalculateDockOffset</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sub</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">dockedSub</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Nullable`1</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetGaps">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetGaps(alsoFromConnectedSubs)</h1>
+				</a>
+
+
+					<p>GetGaps</p>
 			</header>
 
 
@@ -9952,6 +10082,64 @@ Path											</a>
 
 							<li>
 									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="RefreshOutdoorNodes">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RefreshOutdoorNodes()</h1>
+				</a>
+
+
+					<p>RefreshOutdoorNodes</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IsConnectedTo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsConnectedTo(otherSub)</h1>
+				</a>
+
+
+					<p>IsConnectedTo</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">otherSub</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -10006,14 +10194,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SetPrevTransform">
+		<section class="method" id="ServerWrite">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetPrevTransform(position)</h1>
+					<h1><span class="realm shared"></span></span>ServerWrite(msg, c, extraData)</h1>
 				</a>
 
 
-					<p>SetPrevTransform</p>
+					<p>ServerWrite</p>
 			</header>
 
 
@@ -10023,9 +10211,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">position</span>
+								<span class="tag parameter">msg</span>
 
-									<span class="tag"><span class="type">Vector2</span></span>
+									<span class="tag"><span class="type">IWriteMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">c</span>
+
+									<span class="tag"><span class="type">Client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">extraData</span>
+
+									<span class="tag"><span class="type">Object[]</span></span>
 
 
 								<p>
@@ -10037,14 +10253,110 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SaveAs">
+		<section class="method" id="EnableMaintainPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SaveAs(filePath, previewImage)</h1>
+					<h1><span class="realm shared"></span></span>EnableMaintainPosition()</h1>
 				</a>
 
 
-					<p>SaveAs</p>
+					<p>EnableMaintainPosition</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetConnectedSubs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetConnectedSubs()</h1>
+				</a>
+
+
+					<p>GetConnectedSubs</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetCargoContainers">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetCargoContainers()</h1>
+				</a>
+
+
+					<p>GetCargoContainers</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="DisableObstructedWayPoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DisableObstructedWayPoints()</h1>
+				</a>
+
+
+					<p>DisableObstructedWayPoints</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="FreeID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FreeID()</h1>
+				</a>
+
+
+					<p>FreeID</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetWaypoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetWaypoints(alsoFromConnectedSubs)</h1>
+				</a>
+
+
+					<p>GetWaypoints</p>
 			</header>
 
 
@@ -10054,23 +10366,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">filePath</span>
+								<span class="tag parameter">alsoFromConnectedSubs</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">previewImage</span>
-
-									<span class="tag"><span class="type">MemoryStream</span></span>
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -10084,7 +10382,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
 								<p>
 
@@ -10095,17 +10393,177 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Remove">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove()</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>Remove</p>
+					<p>GetType</p>
 			</header>
 
 
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHulls">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHulls(alsoFromConnectedSubs)</h1>
+				</a>
+
+
+					<p>GetHulls</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">alsoFromConnectedSubs</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="UpdateTransform">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateTransform(interpolate)</h1>
+				</a>
+
+
+					<p>UpdateTransform</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">interpolate</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.Unload">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.Unload()</h1>
+				</a>
+
+
+					<p>Unload</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Dispose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
+				</a>
+
+
+					<p>Dispose</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CalculateDimensions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CalculateDimensions(onlyHulls)</h1>
+				</a>
+
+
+					<p>CalculateDimensions</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">onlyHulls</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Rectangle</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -10237,17 +10695,486 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="NeutralizeBallast">
+		<section class="method" id="Update">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NeutralizeBallast()</h1>
+					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
 				</a>
 
 
-					<p>NeutralizeBallast</p>
+					<p>Update</p>
 			</header>
 
 
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Translate">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Translate(amount)</h1>
+				</a>
+
+
+					<p>Translate</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">amount</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetItems(alsoFromConnectedSubs)</h1>
+				</a>
+
+
+					<p>GetItems</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">alsoFromConnectedSubs</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SaveAs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SaveAs(filePath, previewImage)</h1>
+				</a>
+
+
+					<p>SaveAs</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">filePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">previewImage</span>
+
+									<span class="tag"><span class="type">MemoryStream</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Submarine.RepositionEntities">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.RepositionEntities(moveAmount, entities)</h1>
+				</a>
+
+
+					<p>RepositionEntities</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">moveAmount</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">entities</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsEntityFoundOnThisSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsEntityFoundOnThisSub(entity, includingConnectedSubs, allowDifferentTeam, allowDifferentType)</h1>
+				</a>
+
+
+					<p>IsEntityFoundOnThisSub</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">entity</span>
+
+									<span class="tag"><span class="type">MapEntity</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">includingConnectedSubs</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">allowDifferentTeam</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">allowDifferentType</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Submarine.RectsOverlap">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.RectsOverlap(rect1, rect2, inclusive)</h1>
+				</a>
+
+
+					<p>RectsOverlap</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rect1</span>
+
+									<span class="tag"><span class="type">Rectangle</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rect2</span>
+
+									<span class="tag"><span class="type">Rectangle</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">inclusive</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="DisableObstructedWayPoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DisableObstructedWayPoints(otherSub)</h1>
+				</a>
+
+
+					<p>DisableObstructedWayPoints</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">otherSub</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.AbsRect">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.AbsRect(pos, size)</h1>
+				</a>
+
+
+					<p>AbsRect</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">pos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">size</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Rectangle</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -10379,345 +11306,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="DisableWreckAI">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisableWreckAI()</h1>
-				</a>
-
-
-					<p>DisableWreckAI</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CalculateDimensions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CalculateDimensions(onlyHulls)</h1>
-				</a>
-
-
-					<p>CalculateDimensions</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">onlyHulls</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Rectangle</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="UpdateTransform">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UpdateTransform(interpolate)</h1>
-				</a>
-
-
-					<p>UpdateTransform</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">interpolate</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ApplyForce">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyForce(force)</h1>
-				</a>
-
-
-					<p>ApplyForce</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">force</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.GetBorders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.GetBorders(submarineElement)</h1>
-				</a>
-
-
-					<p>GetBorders</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">submarineElement</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Rectangle</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetGaps">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetGaps(alsoFromConnectedSubs)</h1>
-				</a>
-
-
-					<p>GetGaps</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">alsoFromConnectedSubs</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Translate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Translate(amount)</h1>
-				</a>
-
-
-					<p>Translate</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">amount</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Submarine.Unload">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.Unload()</h1>
-				</a>
-
-
-					<p>Unload</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="MakeWreck">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MakeWreck()</h1>
-				</a>
-
-
-					<p>MakeWreck</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Submarine.RepositionEntities">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.RepositionEntities(moveAmount, entities)</h1>
-				</a>
-
-
-					<p>RepositionEntities</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">moveAmount</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">entities</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Submarine.RectContains">
 			<header>
 				<a class="anchor">
@@ -10790,14 +11378,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SaveToXElement">
+		<section class="method" id="GetWalls">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SaveToXElement(element)</h1>
+					<h1><span class="realm shared"></span></span>GetWalls(alsoFromConnectedSubs)</h1>
 				</a>
 
 
-					<p>SaveToXElement</p>
+					<p>GetWalls</p>
 			</header>
 
 
@@ -10807,156 +11395,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">element</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DisableObstructedWayPoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisableObstructedWayPoints(otherSub)</h1>
-				</a>
-
-
-					<p>DisableObstructedWayPoints</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">otherSub</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ServerWrite">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerWrite(msg, c, extraData)</h1>
-				</a>
-
-
-					<p>ServerWrite</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-									<span class="tag"><span class="type">IWriteMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">c</span>
-
-									<span class="tag"><span class="type">Client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">extraData</span>
-
-									<span class="tag"><span class="type">Object[]</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.RectsOverlap">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.RectsOverlap(rect1, rect2, inclusive)</h1>
-				</a>
-
-
-					<p>RectsOverlap</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">rect1</span>
-
-									<span class="tag"><span class="type">Rectangle</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">rect2</span>
-
-									<span class="tag"><span class="type">Rectangle</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">inclusive</span>
+								<span class="tag parameter">alsoFromConnectedSubs</span>
 
 									<span class="tag"><span class="type">bool</span></span>
 
@@ -10972,7 +11411,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
 								<p>
 
@@ -10983,28 +11422,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RefreshOutdoorNodes">
+		<section class="method" id="AttemptBallastFloraInfection">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RefreshOutdoorNodes()</h1>
+					<h1><span class="realm shared"></span></span>AttemptBallastFloraInfection(identifier, deltaTime, probability)</h1>
 				</a>
 
 
-					<p>RefreshOutdoorNodes</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Submarine.AbsRect">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.AbsRect(pos, size)</h1>
-				</a>
-
-
-					<p>AbsRect</p>
+					<p>AttemptBallastFloraInfection</p>
 			</header>
 
 
@@ -11014,23 +11439,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">pos</span>
+								<span class="tag parameter">identifier</span>
 
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">size</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -11038,36 +11449,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Rectangle</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Update">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
-				</a>
-
-
-					<p>Update</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
 
 					<ul>
 
@@ -11083,6 +11464,164 @@ Path											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">probability</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.Load">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.Load(info, unloadPrevious, linkedRemap)</h1>
+				</a>
+
+
+					<p>Load</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">info</span>
+
+									<span class="tag"><span class="type">SubmarineInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">unloadPrevious</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">linkedRemap</span>
+
+									<span class="tag"><span class="type">IdRemap</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="../../code/submarine/#Submarine">Submarine</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="MakeWreck">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MakeWreck()</h1>
+				</a>
+
+
+					<p>MakeWreck</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetEntities">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetEntities(includingConnectedSubs, list)</h1>
+				</a>
+
+
+					<p>GetEntities</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">includingConnectedSubs</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">list</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -11172,14 +11711,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetWaypoints">
+		<section class="method" id="Submarine.LastPickedBodyDist">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetWaypoints(alsoFromConnectedSubs)</h1>
+					<h1><span class="realm shared"></span></span>Submarine.LastPickedBodyDist(body)</h1>
 				</a>
 
 
-					<p>GetWaypoints</p>
+					<p>LastPickedBodyDist</p>
 			</header>
 
 
@@ -11189,9 +11728,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">alsoFromConnectedSubs</span>
+								<span class="tag parameter">body</span>
 
-									<span class="tag"><span class="type">bool</span></span>
+									<span class="tag"><span class="type">Body</span></span>
 
 
 								<p>
@@ -11205,7 +11744,95 @@ Path											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Submarine.GetBorders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.GetBorders(submarineElement)</h1>
+				</a>
+
+
+					<p>GetBorders</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">submarineElement</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Rectangle</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -11260,28 +11887,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="DisableObstructedWayPoints">
+		<section class="method" id="CalculateBasePrice">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisableObstructedWayPoints()</h1>
+					<h1><span class="realm shared"></span></span>CalculateBasePrice()</h1>
 				</a>
 
 
-					<p>DisableObstructedWayPoints</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
+					<p>CalculateBasePrice</p>
 			</header>
 
 
@@ -11398,6 +12011,68 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="ApplyForce">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyForce(force)</h1>
+				</a>
+
+
+					<p>ApplyForce</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">force</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="EnableObstructedWaypoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>EnableObstructedWaypoints(otherSub)</h1>
+				</a>
+
+
+					<p>EnableObstructedWaypoints</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">otherSub</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -11529,320 +12204,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Submarine.CalculateDockOffset">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.CalculateDockOffset(sub, dockedSub)</h1>
-				</a>
-
-
-					<p>CalculateDockOffset</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sub</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">dockedSub</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Nullable`1</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="EnableMaintainPosition">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EnableMaintainPosition()</h1>
-				</a>
-
-
-					<p>EnableMaintainPosition</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetEntities">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetEntities(includingConnectedSubs, list)</h1>
-				</a>
-
-
-					<p>GetEntities</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">includingConnectedSubs</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">list</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Submarine.LastPickedBodyDist">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.LastPickedBodyDist(body)</h1>
-				</a>
-
-
-					<p>LastPickedBodyDist</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">body</span>
-
-									<span class="tag"><span class="type">Body</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetCargoContainers">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetCargoContainers()</h1>
-				</a>
-
-
-					<p>GetCargoContainers</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="IsEntityFoundOnThisSub">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsEntityFoundOnThisSub(entity, includingConnectedSubs, allowDifferentTeam, allowDifferentType)</h1>
-				</a>
-
-
-					<p>IsEntityFoundOnThisSub</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">entity</span>
-
-									<span class="tag"><span class="type">MapEntity</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">includingConnectedSubs</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">allowDifferentTeam</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">allowDifferentType</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="SetPosition">
 			<header>
 				<a class="anchor">
@@ -11902,266 +12263,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Submarine.Load">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.Load(info, unloadPrevious, linkedRemap)</h1>
-				</a>
-
-
-					<p>Load</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">info</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">unloadPrevious</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">linkedRemap</span>
-
-									<span class="tag"><span class="type">IdRemap</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="../../code/submarine/#Submarine">Submarine</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="FreeID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FreeID()</h1>
-				</a>
-
-
-					<p>FreeID</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetConnectedSubs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetConnectedSubs()</h1>
-				</a>
-
-
-					<p>GetConnectedSubs</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="IsConnectedTo">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsConnectedTo(otherSub)</h1>
-				</a>
-
-
-					<p>IsConnectedTo</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">otherSub</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="EnableObstructedWaypoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EnableObstructedWaypoints(otherSub)</h1>
-				</a>
-
-
-					<p>EnableObstructedWaypoints</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">otherSub</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#Submarine">Submarine</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="FlipX">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FlipX(parents)</h1>
-				</a>
-
-
-					<p>FlipX</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">parents</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CreateWreckAI">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateWreckAI()</h1>
-				</a>
-
-
-					<p>CreateWreckAI</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Dispose">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
-				</a>
-
-
-					<p>Dispose</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="GetDockedBorders">
 			<header>
 				<a class="anchor">
@@ -12206,14 +12307,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetItems">
+		<section class="method" id="SaveToXElement">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetItems(alsoFromConnectedSubs)</h1>
+					<h1><span class="realm shared"></span></span>SaveToXElement(element)</h1>
 				</a>
 
 
-					<p>GetItems</p>
+					<p>SaveToXElement</p>
 			</header>
 
 
@@ -12223,9 +12324,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">alsoFromConnectedSubs</span>
+								<span class="tag parameter">element</span>
 
-									<span class="tag"><span class="type">bool</span></span>
+									<span class="tag"><span class="type">XElement</span></span>
 
 
 								<p>
@@ -12235,11 +12336,53 @@ Path											</a>
 					</ul>
 
 
+
+		</section>
+		<section class="method" id="NeutralizeBallast">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NeutralizeBallast()</h1>
+				</a>
+
+
+					<p>NeutralizeBallast</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="DisableWreckAI">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DisableWreckAI()</h1>
+				</a>
+
+
+					<p>DisableWreckAI</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CreateWreckAI">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateWreckAI()</h1>
+				</a>
+
+
+					<p>CreateWreckAI</p>
+			</header>
+
+
+
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -12247,6 +12390,37 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="FlipX">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FlipX(parents)</h1>
+				</a>
+
+
+					<p>FlipX</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">parents</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -12308,190 +12482,16 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AttemptBallastFloraInfection">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AttemptBallastFloraInfection(identifier, deltaTime, probability)</h1>
-				</a>
-
-
-					<p>AttemptBallastFloraInfection</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">probability</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CalculateBasePrice">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CalculateBasePrice()</h1>
-				</a>
-
-
-					<p>CalculateBasePrice</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetHulls">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHulls(alsoFromConnectedSubs)</h1>
-				</a>
-
-
-					<p>GetHulls</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">alsoFromConnectedSubs</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Removed">
+		<section class="method" id="DrawPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Removed</h1>
+					<h1><span class="realm shared"></span></span>DrawPosition</h1>
 				</a>
 
 
-					<p>Removed, Field of type bool</p>
+					<p>DrawPosition, Field of type Vector2</p>
 			</header>
 
 
@@ -12500,7 +12500,65 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Removed</span>
+								<span class="tag parameter">DrawPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.LastPickedFraction">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.LastPickedFraction</h1>
+				</a>
+
+
+					<p>Submarine.LastPickedFraction, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Submarine.HiddenSubStartPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.HiddenSubStartPosition</h1>
+				</a>
+
+
+					<p>Submarine.HiddenSubStartPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ShowSonarMarker">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowSonarMarker</h1>
+				</a>
+
+
+					<p>ShowSonarMarker, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ShowSonarMarker</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -12514,14 +12572,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SimPosition">
+		<section class="method" id="FlippedX">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SimPosition</h1>
+					<h1><span class="realm shared"></span></span>FlippedX</h1>
 				</a>
 
 
-					<p>SimPosition, Field of type Vector2</p>
+					<p>FlippedX, Field of type bool</p>
 			</header>
 
 
@@ -12530,9 +12588,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">SimPosition</span>
+								<span class="tag parameter">FlippedX</span>
 
-									<span class="tag"><span class="type">Vector2</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -12540,6 +12598,110 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="ImmuneToBallastFlora">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ImmuneToBallastFlora</h1>
+				</a>
+
+
+					<p>ImmuneToBallastFlora, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ImmuneToBallastFlora</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AtDamageDepth">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AtDamageDepth</h1>
+				</a>
+
+
+					<p>AtDamageDepth, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AtDamageDepth</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PhysicsBody">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PhysicsBody</h1>
+				</a>
+
+
+					<p>PhysicsBody, Field of type PhysicsBody</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PhysicsBody</span>
+
+									<span class="tag"><a class="type" href="../../code/submarine/#PhysicsBody">PhysicsBody</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.Loaded">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.Loaded</h1>
+				</a>
+
+
+					<p>Submarine.Loaded, Field of type table</p>
+			</header>
+
 
 
 
@@ -12574,124 +12736,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ID</h1>
-				</a>
-
-
-					<p>ID, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Position">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Position</h1>
-				</a>
-
-
-					<p>Position, Field of type Vector2</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.LastPickedFraction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.LastPickedFraction</h1>
-				</a>
-
-
-					<p>Submarine.LastPickedFraction, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Submarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine</h1>
-				</a>
-
-
-					<p>Submarine, Field of type Submarine</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Submarine</span>
-
-									<span class="tag"><span class="type">submarine</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.Unloading">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.Unloading</h1>
-				</a>
-
-
-					<p>Submarine.Unloading, Field of type bool</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="ConnectedDockingPorts">
 			<header>
 				<a class="anchor">
@@ -12706,14 +12750,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RealWorldCrushDepth">
+		<section class="method" id="Removed">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RealWorldCrushDepth</h1>
+					<h1><span class="realm shared"></span></span>Removed</h1>
 				</a>
 
 
-					<p>RealWorldCrushDepth, Field of type number</p>
+					<p>Removed, Field of type bool</p>
 			</header>
 
 
@@ -12722,95 +12766,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">RealWorldCrushDepth</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DockedTo">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DockedTo</h1>
-				</a>
-
-
-					<p>DockedTo, Field of type Enumerable</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DockedTo</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.Loaded">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.Loaded</h1>
-				</a>
-
-
-					<p>Submarine.Loaded, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Submarine.LockX">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.LockX</h1>
-				</a>
-
-
-					<p>Submarine.LockX, Field of type bool</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AtEndExit">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AtEndExit</h1>
-				</a>
-
-
-					<p>AtEndExit, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AtEndExit</span>
+								<span class="tag parameter">Removed</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -12854,14 +12810,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SubmarineSpecificIDTag">
+		<section class="method" id="IdFreed">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SubmarineSpecificIDTag</h1>
+					<h1><span class="realm shared"></span></span>IdFreed</h1>
 				</a>
 
 
-					<p>SubmarineSpecificIDTag, Field of type number</p>
+					<p>IdFreed, Field of type bool</p>
 			</header>
 
 
@@ -12870,7 +12826,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">SubmarineSpecificIDTag</span>
+								<span class="tag parameter">IdFreed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RealWorldDepth">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RealWorldDepth</h1>
+				</a>
+
+
+					<p>RealWorldDepth, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RealWorldDepth</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -12884,14 +12870,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ImmuneToBallastFlora">
+		<section class="method" id="AtEndExit">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ImmuneToBallastFlora</h1>
+					<h1><span class="realm shared"></span></span>AtEndExit</h1>
 				</a>
 
 
-					<p>ImmuneToBallastFlora, Field of type bool</p>
+					<p>AtEndExit, Field of type bool</p>
 			</header>
 
 
@@ -12900,9 +12886,113 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">ImmuneToBallastFlora</span>
+								<span class="tag parameter">AtEndExit</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DockedTo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DockedTo</h1>
+				</a>
+
+
+					<p>DockedTo, Field of type Enumerable</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DockedTo</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.MainSubs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.MainSubs</h1>
+				</a>
+
+
+					<p>Submarine.MainSubs, Field of type Submarine[]</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="InDetectable">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InDetectable</h1>
+				</a>
+
+
+					<p>InDetectable, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InDetectable</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Position">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Position</h1>
+				</a>
+
+
+					<p>Position, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -12958,80 +13048,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="DrawPosition">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DrawPosition</h1>
-				</a>
-
-
-					<p>DrawPosition, Field of type Vector2</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DrawPosition</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.MainSubs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.MainSubs</h1>
-				</a>
-
-
-					<p>Submarine.MainSubs, Field of type Submarine[]</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="RealWorldDepth">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RealWorldDepth</h1>
-				</a>
-
-
-					<p>RealWorldDepth, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RealWorldDepth</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Submarine.LastPickedPosition">
 			<header>
 				<a class="anchor">
@@ -13040,20 +13056,6 @@ Path											</a>
 
 
 					<p>Submarine.LastPickedPosition, Field of type Vector2</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="HullVertices">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HullVertices</h1>
-				</a>
-
-
-					<p>HullVertices, Field of type table</p>
 			</header>
 
 
@@ -13090,28 +13092,56 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Submarine.MainSub">
+		<section class="method" id="Submarine.GridSize">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.MainSub</h1>
+					<h1><span class="realm shared"></span></span>Submarine.GridSize</h1>
 				</a>
 
 
-					<p>Submarine.MainSub, Field of type Submarine</p>
+					<p>Submarine.GridSize, Field of type Vector2</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="IdOffset">
+		<section class="method" id="Submarine.LockY">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IdOffset</h1>
+					<h1><span class="realm shared"></span></span>Submarine.LockY</h1>
 				</a>
 
 
-					<p>IdOffset, Field of type number</p>
+					<p>Submarine.LockY, Field of type bool</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="HullVertices">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HullVertices</h1>
+				</a>
+
+
+					<p>HullVertices, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Submarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine</h1>
+				</a>
+
+
+					<p>Submarine, Field of type Submarine</p>
 			</header>
 
 
@@ -13120,7 +13150,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">IdOffset</span>
+								<span class="tag parameter">Submarine</span>
+
+									<span class="tag"><span class="type">submarine</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RealWorldCrushDepth">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RealWorldCrushDepth</h1>
+				</a>
+
+
+					<p>RealWorldCrushDepth, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RealWorldCrushDepth</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -13134,14 +13194,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="FlippedX">
+		<section class="method" id="ID">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FlippedX</h1>
+					<h1><span class="realm shared"></span></span>ID</h1>
 				</a>
 
 
-					<p>FlippedX, Field of type bool</p>
+					<p>ID, Field of type number</p>
 			</header>
 
 
@@ -13150,39 +13210,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">FlippedX</span>
+								<span class="tag parameter">ID</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AtStartExit">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AtStartExit</h1>
-				</a>
-
-
-					<p>AtStartExit, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AtStartExit</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -13224,14 +13254,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AtDamageDepth">
+		<section class="method" id="SubmarineSpecificIDTag">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AtDamageDepth</h1>
+					<h1><span class="realm shared"></span></span>SubmarineSpecificIDTag</h1>
 				</a>
 
 
-					<p>AtDamageDepth, Field of type bool</p>
+					<p>SubmarineSpecificIDTag, Field of type number</p>
 			</header>
 
 
@@ -13240,7 +13270,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AtDamageDepth</span>
+								<span class="tag parameter">SubmarineSpecificIDTag</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AtStartExit">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AtStartExit</h1>
+				</a>
+
+
+					<p>AtStartExit, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AtStartExit</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13254,56 +13314,42 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Submarine.LockY">
+		<section class="method" id="Submarine.MainSub">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.LockY</h1>
+					<h1><span class="realm shared"></span></span>Submarine.MainSub</h1>
 				</a>
 
 
-					<p>Submarine.LockY, Field of type bool</p>
+					<p>Submarine.MainSub, Field of type Submarine</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Submarine.LastPickedNormal">
+		<section class="method" id="Submarine.Unloading">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.LastPickedNormal</h1>
+					<h1><span class="realm shared"></span></span>Submarine.Unloading</h1>
 				</a>
 
 
-					<p>Submarine.LastPickedNormal, Field of type Vector2</p>
+					<p>Submarine.Unloading, Field of type bool</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Submarine.GridSize">
+		<section class="method" id="IdOffset">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.GridSize</h1>
+					<h1><span class="realm shared"></span></span>IdOffset</h1>
 				</a>
 
 
-					<p>Submarine.GridSize, Field of type Vector2</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="InDetectable">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InDetectable</h1>
-				</a>
-
-
-					<p>InDetectable, Field of type bool</p>
+					<p>IdOffset, Field of type number</p>
 			</header>
 
 
@@ -13312,9 +13358,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">InDetectable</span>
+								<span class="tag parameter">IdOffset</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -13322,6 +13368,20 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="Submarine.LockX">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Submarine.LockX</h1>
+				</a>
+
+
+					<p>Submarine.LockX, Field of type bool</p>
+			</header>
+
 
 
 
@@ -13356,14 +13416,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ShowSonarMarker">
+		<section class="method" id="Submarine.LastPickedNormal">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowSonarMarker</h1>
+					<h1><span class="realm shared"></span></span>Submarine.LastPickedNormal</h1>
 				</a>
 
 
-					<p>ShowSonarMarker, Field of type bool</p>
+					<p>Submarine.LastPickedNormal, Field of type Vector2</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SimPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SimPosition</h1>
+				</a>
+
+
+					<p>SimPosition, Field of type Vector2</p>
 			</header>
 
 
@@ -13372,39 +13446,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">ShowSonarMarker</span>
+								<span class="tag parameter">SimPosition</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="PhysicsBody">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PhysicsBody</h1>
-				</a>
-
-
-					<p>PhysicsBody, Field of type PhysicsBody</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">PhysicsBody</span>
-
-									<span class="tag"><a class="type" href="../../code/submarine/#PhysicsBody">PhysicsBody</a></span>
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -13412,50 +13456,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="IdFreed">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IdFreed</h1>
-				</a>
-
-
-					<p>IdFreed, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IdFreed</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine.HiddenSubStartPosition">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine.HiddenSubStartPosition</h1>
-				</a>
-
-
-					<p>Submarine.HiddenSubStartPosition, Field of type Vector2</p>
-			</header>
-
 
 
 

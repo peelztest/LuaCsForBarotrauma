@@ -9918,14 +9918,68 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="CreateMultiplied">
+		<section class="method" id="GetActiveEffect">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateMultiplied(multiplier)</h1>
+					<h1><span class="realm shared"></span></span>GetActiveEffect()</h1>
 				</a>
 
 
-					<p>CreateMultiplied</p>
+					<p>GetActiveEffect</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Effect</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetRadialDistortStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetRadialDistortStrength()</h1>
+				</a>
+
+
+					<p>GetRadialDistortStrength</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
 			</header>
 
 
@@ -9935,9 +9989,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">multiplier</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -9951,7 +10005,120 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Affliction</span>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Update">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Update(characterHealth, targetLimb, deltaTime)</h1>
+				</a>
+
+
+					<p>Update</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterHealth</span>
+
+									<span class="tag"><span class="type">CharacterHealth</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetLimb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
@@ -10006,23 +10173,40 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetSkillMultiplier">
+		<section class="method" id="ShouldShowIcon">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSkillMultiplier()</h1>
+					<h1><span class="realm shared"></span></span>ShouldShowIcon(afflictedCharacter)</h1>
 				</a>
 
 
-					<p>GetSkillMultiplier</p>
+					<p>ShouldShowIcon</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">afflictedCharacter</span>
+
+									<span class="tag"><span class="type">Character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">bool</span>
 
 								<p>
 
@@ -10033,57 +10217,65 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetAfflictionOverlayMultiplier">
+		<section class="method" id="SetStrength">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAfflictionOverlayMultiplier()</h1>
+					<h1><span class="realm shared"></span></span>SetStrength(strength)</h1>
 				</a>
 
 
-					<p>GetAfflictionOverlayMultiplier</p>
+					<p>SetStrength</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
-				<h3>Returns</h3>
-				<ul>
+
+					<ul>
 
 							<li>
-									<span class="type">number</span>
+								<span class="tag parameter">strength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
 
 								<p>
 
 </p>
 							</li>
+					</ul>
 
-				</ul>
 
 
 		</section>
-		<section class="method" id="GetActiveEffect">
+		<section class="method" id="Serialize">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetActiveEffect()</h1>
+					<h1><span class="realm shared"></span></span>Serialize(element)</h1>
 				</a>
 
 
-					<p>GetActiveEffect</p>
+					<p>Serialize</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
-				<h3>Returns</h3>
-				<ul>
+
+					<ul>
 
 							<li>
-									<span class="type">Effect</span>
+								<span class="tag parameter">element</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
 
 								<p>
 
 </p>
 							</li>
+					</ul>
 
-				</ul>
 
 
 		</section>
@@ -10095,6 +10287,452 @@ Path											</a>
 
 
 					<p>GetScreenDistortStrength</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetResistance">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetResistance(affliction)</h1>
+				</a>
+
+
+					<p>GetResistance</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+									<span class="tag"><span class="type">AfflictionPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="HasFlag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasFlag(flagType)</h1>
+				</a>
+
+
+					<p>HasFlag</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">flagType</span>
+
+									<span class="tag"><span class="type">AbilityFlags</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetBodyTint">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetBodyTint()</h1>
+				</a>
+
+
+					<p>GetBodyTint</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Color</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CreateMultiplied">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateMultiplied(multiplier)</h1>
+				</a>
+
+
+					<p>CreateMultiplied</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">multiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Affliction</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetFaceTint">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetFaceTint()</h1>
+				</a>
+
+
+					<p>GetFaceTint</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Color</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetStatValue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetStatValue(statType)</h1>
+				</a>
+
+
+					<p>GetStatValue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">statType</span>
+
+									<span class="tag"><span class="type">StatTypes</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ApplyStatusEffects">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyStatusEffects(type, deltaTime, characterHealth, targetLimb)</h1>
+				</a>
+
+
+					<p>ApplyStatusEffects</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">type</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterHealth</span>
+
+									<span class="tag"><span class="type">CharacterHealth</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetLimb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetScreenBlurStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetScreenBlurStrength()</h1>
+				</a>
+
+
+					<p>GetScreenBlurStrength</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetChromaticAberrationStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetChromaticAberrationStrength()</h1>
+				</a>
+
+
+					<p>GetChromaticAberrationStrength</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CalculateDamagePerSecond">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CalculateDamagePerSecond(currentVitalityDecrease)</h1>
+				</a>
+
+
+					<p>CalculateDamagePerSecond</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">currentVitalityDecrease</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Deserialize">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Deserialize(element)</h1>
+				</a>
+
+
+					<p>Deserialize</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">element</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetSkillMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSkillMultiplier()</h1>
+				</a>
+
+
+					<p>GetSkillMultiplier</p>
 			</header>
 
 
@@ -10201,6 +10839,60 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="GetScreenGrainStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetScreenGrainStrength()</h1>
+				</a>
+
+
+					<p>GetScreenGrainStrength</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetSpeedMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSpeedMultiplier()</h1>
+				</a>
+
+
+					<p>GetSpeedMultiplier</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="GetVitalityDecrease">
 			<header>
 				<a class="anchor">
@@ -10259,569 +10951,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Deserialize">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Deserialize(element)</h1>
-				</a>
-
-
-					<p>Deserialize</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">element</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="HasFlag">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasFlag(flagType)</h1>
-				</a>
-
-
-					<p>HasFlag</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">flagType</span>
-
-									<span class="tag"><span class="type">AbilityFlags</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ApplyStatusEffects">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyStatusEffects(type, deltaTime, characterHealth, targetLimb)</h1>
-				</a>
-
-
-					<p>ApplyStatusEffects</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">type</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-									<span class="tag"><span class="type">CharacterHealth</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetLimb</span>
-
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Serialize">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Serialize(element)</h1>
-				</a>
-
-
-					<p>Serialize</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">element</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetScreenBlurStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetScreenBlurStrength()</h1>
-				</a>
-
-
-					<p>GetScreenBlurStrength</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetStatValue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetStatValue(statType)</h1>
-				</a>
-
-
-					<p>GetStatValue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">statType</span>
-
-									<span class="tag"><span class="type">StatTypes</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetRadialDistortStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRadialDistortStrength()</h1>
-				</a>
-
-
-					<p>GetRadialDistortStrength</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="SetStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetStrength(strength)</h1>
-				</a>
-
-
-					<p>SetStrength</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">strength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Update">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(characterHealth, targetLimb, deltaTime)</h1>
-				</a>
-
-
-					<p>Update</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterHealth</span>
-
-									<span class="tag"><span class="type">CharacterHealth</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetLimb</span>
-
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetFaceTint">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetFaceTint()</h1>
-				</a>
-
-
-					<p>GetFaceTint</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Color</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetScreenGrainStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetScreenGrainStrength()</h1>
-				</a>
-
-
-					<p>GetScreenGrainStrength</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetBodyTint">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetBodyTint()</h1>
-				</a>
-
-
-					<p>GetBodyTint</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Color</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ShouldShowIcon">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShouldShowIcon(afflictedCharacter)</h1>
-				</a>
-
-
-					<p>ShouldShowIcon</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">afflictedCharacter</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
@@ -10849,143 +10978,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetSpeedMultiplier">
+		<section class="method" id="GetAfflictionOverlayMultiplier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSpeedMultiplier()</h1>
+					<h1><span class="realm shared"></span></span>GetAfflictionOverlayMultiplier()</h1>
 				</a>
 
 
-					<p>GetSpeedMultiplier</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetChromaticAberrationStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetChromaticAberrationStrength()</h1>
-				</a>
-
-
-					<p>GetChromaticAberrationStrength</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CalculateDamagePerSecond">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CalculateDamagePerSecond(currentVitalityDecrease)</h1>
-				</a>
-
-
-					<p>CalculateDamagePerSecond</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">currentVitalityDecrease</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetResistance">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetResistance(affliction)</h1>
-				</a>
-
-
-					<p>GetResistance</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-									<span class="tag"><span class="type">AfflictionPrefab</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
+					<p>GetAfflictionOverlayMultiplier</p>
 			</header>
 
 
@@ -11007,66 +11007,6 @@ Path											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="AdditionStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AdditionStrength</h1>
-				</a>
-
-
-					<p>AdditionStrength, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AdditionStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Probability">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Probability</h1>
-				</a>
-
-
-					<p>Probability, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Probability</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="StrengthDiminishMultiplier">
 			<header>
 				<a class="anchor">
@@ -11127,96 +11067,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Source">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Source</h1>
-				</a>
-
-
-					<p>Source, Field of type Character</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Source</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<p>Identifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="NonClampedStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NonClampedStrength</h1>
-				</a>
-
-
-					<p>NonClampedStrength, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">NonClampedStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="PendingAdditionStrength">
 			<header>
 				<a class="anchor">
@@ -11234,110 +11084,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">PendingAdditionStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AppliedAsSuccessfulTreatmentTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AppliedAsSuccessfulTreatmentTime</h1>
-				</a>
-
-
-					<p>AppliedAsSuccessfulTreatmentTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AppliedAsSuccessfulTreatmentTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DamagePerSecond">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagePerSecond</h1>
-				</a>
-
-
-					<p>DamagePerSecond, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagePerSecond</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SerializableProperties">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SerializableProperties</h1>
-				</a>
-
-
-					<p>SerializableProperties, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="DamagePerSecondTimer">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagePerSecondTimer</h1>
-				</a>
-
-
-					<p>DamagePerSecondTimer, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagePerSecondTimer</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11381,14 +11127,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AppliedAsFailedTreatmentTime">
+		<section class="method" id="SerializableProperties">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AppliedAsFailedTreatmentTime</h1>
+					<h1><span class="realm shared"></span></span>SerializableProperties</h1>
 				</a>
 
 
-					<p>AppliedAsFailedTreatmentTime, Field of type number</p>
+					<p>SerializableProperties, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AppliedAsSuccessfulTreatmentTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AppliedAsSuccessfulTreatmentTime</h1>
+				</a>
+
+
+					<p>AppliedAsSuccessfulTreatmentTime, Field of type number</p>
 			</header>
 
 
@@ -11397,7 +11157,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AppliedAsFailedTreatmentTime</span>
+								<span class="tag parameter">AppliedAsSuccessfulTreatmentTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AdditionStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AdditionStrength</h1>
+				</a>
+
+
+					<p>AdditionStrength, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AdditionStrength</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11441,6 +11231,186 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="Probability">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Probability</h1>
+				</a>
+
+
+					<p>Probability, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Probability</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Source">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Source</h1>
+				</a>
+
+
+					<p>Source, Field of type Character</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Source</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DamagePerSecond">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DamagePerSecond</h1>
+				</a>
+
+
+					<p>DamagePerSecond, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DamagePerSecond</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="NonClampedStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NonClampedStrength</h1>
+				</a>
+
+
+					<p>NonClampedStrength, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">NonClampedStrength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Identifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Identifier</h1>
+				</a>
+
+
+					<p>Identifier, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DamagePerSecondTimer">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DamagePerSecondTimer</h1>
+				</a>
+
+
+					<p>DamagePerSecondTimer, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DamagePerSecondTimer</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="PeriodicEffectTimers">
 			<header>
 				<a class="anchor">
@@ -11451,6 +11421,36 @@ Path											</a>
 					<p>PeriodicEffectTimers, Field of type table</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="AppliedAsFailedTreatmentTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AppliedAsFailedTreatmentTime</h1>
+				</a>
+
+
+					<p>AppliedAsFailedTreatmentTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AppliedAsFailedTreatmentTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 

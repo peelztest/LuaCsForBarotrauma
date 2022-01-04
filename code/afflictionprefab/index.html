@@ -9918,91 +9918,6 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="AfflictionPrefab.LoadFromFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadFromFile(file)</h1>
-				</a>
-
-
-					<p>LoadFromFile</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">file</span>
-
-									<span class="tag"><span class="type">ContentFile</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="GetTreatmentSuitability">
 			<header>
 				<a class="anchor">
@@ -10044,6 +9959,153 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="AfflictionPrefab.RemoveByFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.RemoveByFile(filePath)</h1>
+				</a>
+
+
+					<p>RemoveByFile</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">filePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AfflictionPrefab.LoadFromFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AfflictionPrefab.LoadFromFile(file)</h1>
+				</a>
+
+
+					<p>LoadFromFile</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">file</span>
+
+									<span class="tag"><span class="type">ContentFile</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetActiveEffect">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetActiveEffect(currentStrength)</h1>
+				</a>
+
+
+					<p>GetActiveEffect</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">currentStrength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Effect</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Dispose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
+				</a>
+
+
+					<p>Dispose</p>
+			</header>
+
+
 
 
 		</section>
@@ -10122,14 +10184,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<p>GetType</p>
+					<p>ToString</p>
 			</header>
 
 
@@ -10138,7 +10200,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
@@ -10146,37 +10208,6 @@ Path											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="AfflictionPrefab.RemoveByFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionPrefab.RemoveByFile(filePath)</h1>
-				</a>
-
-
-					<p>RemoveByFile</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">filePath</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 
 		</section>
@@ -10238,54 +10269,23 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Dispose">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<p>Dispose</p>
+					<p>GetHashCode</p>
 			</header>
 
-
-
-
-		</section>
-		<section class="method" id="GetActiveEffect">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetActiveEffect(currentStrength)</h1>
-				</a>
-
-
-					<p>GetActiveEffect</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">currentStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Effect</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -10298,396 +10298,6 @@ Path											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="LimbSpecific">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LimbSpecific</h1>
-				</a>
-
-
-					<p>LimbSpecific, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LimbSpecific</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AchievementOnRemoved">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AchievementOnRemoved</h1>
-				</a>
-
-
-					<p>AchievementOnRemoved, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AchievementOnRemoved</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CauseOfDeathDescription">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CauseOfDeathDescription</h1>
-				</a>
-
-
-					<p>CauseOfDeathDescription, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CauseOfDeathDescription</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AfflictionOverlayAlphaIsLinear">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionOverlayAlphaIsLinear</h1>
-				</a>
-
-
-					<p>AfflictionOverlayAlphaIsLinear, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AfflictionOverlayAlphaIsLinear</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<p>Identifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ShowIconThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowIconThreshold</h1>
-				</a>
-
-
-					<p>ShowIconThreshold, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ShowIconThreshold</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="TreatmentThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TreatmentThreshold</h1>
-				</a>
-
-
-					<p>TreatmentThreshold, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TreatmentThreshold</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxStrength</h1>
-				</a>
-
-
-					<p>MaxStrength, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxStrength</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="BurnOverlayAlpha">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>BurnOverlayAlpha</h1>
-				</a>
-
-
-					<p>BurnOverlayAlpha, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">BurnOverlayAlpha</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AfflictionType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AfflictionType</h1>
-				</a>
-
-
-					<p>AfflictionType, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AfflictionType</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsBuff">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsBuff</h1>
-				</a>
-
-
-					<p>IsBuff, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsBuff</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ActivationThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ActivationThreshold</h1>
-				</a>
-
-
-					<p>ActivationThreshold, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ActivationThreshold</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ShowInHealthScannerThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowInHealthScannerThreshold</h1>
-				</a>
-
-
-					<p>ShowInHealthScannerThreshold, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ShowInHealthScannerThreshold</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="AfflictionPrefab.List">
 			<header>
 				<a class="anchor">
@@ -10822,36 +10432,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ShowIconToOthersThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowIconToOthersThreshold</h1>
-				</a>
-
-
-					<p>ShowIconToOthersThreshold, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ShowIconToOthersThreshold</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="FilePath">
 			<header>
 				<a class="anchor">
@@ -10869,126 +10449,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">FilePath</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Description">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Description</h1>
-				</a>
-
-
-					<p>Description, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Description</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SelfCauseOfDeathDescription">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelfCauseOfDeathDescription</h1>
-				</a>
-
-
-					<p>SelfCauseOfDeathDescription, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SelfCauseOfDeathDescription</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GrainBurst">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GrainBurst</h1>
-				</a>
-
-
-					<p>GrainBurst, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">GrainBurst</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="OriginalName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
-				</a>
-
-
-					<p>OriginalName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OriginalName</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -11032,6 +10492,36 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="GrainBurst">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GrainBurst</h1>
+				</a>
+
+
+					<p>GrainBurst, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">GrainBurst</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="UIntIdentifier">
 			<header>
 				<a class="anchor">
@@ -11049,6 +10539,516 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">UIntIdentifier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LimbSpecific">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LimbSpecific</h1>
+				</a>
+
+
+					<p>LimbSpecific, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LimbSpecific</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AchievementOnRemoved">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AchievementOnRemoved</h1>
+				</a>
+
+
+					<p>AchievementOnRemoved, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AchievementOnRemoved</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CauseOfDeathDescription">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CauseOfDeathDescription</h1>
+				</a>
+
+
+					<p>CauseOfDeathDescription, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CauseOfDeathDescription</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AfflictionOverlayAlphaIsLinear">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AfflictionOverlayAlphaIsLinear</h1>
+				</a>
+
+
+					<p>AfflictionOverlayAlphaIsLinear, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AfflictionOverlayAlphaIsLinear</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ShowIconToOthersThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowIconToOthersThreshold</h1>
+				</a>
+
+
+					<p>ShowIconToOthersThreshold, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ShowIconToOthersThreshold</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Identifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Identifier</h1>
+				</a>
+
+
+					<p>Identifier, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ShowInHealthScannerThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowInHealthScannerThreshold</h1>
+				</a>
+
+
+					<p>ShowInHealthScannerThreshold, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ShowInHealthScannerThreshold</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ShowIconThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowIconThreshold</h1>
+				</a>
+
+
+					<p>ShowIconThreshold, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ShowIconThreshold</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TreatmentThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TreatmentThreshold</h1>
+				</a>
+
+
+					<p>TreatmentThreshold, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TreatmentThreshold</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SelfCauseOfDeathDescription">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelfCauseOfDeathDescription</h1>
+				</a>
+
+
+					<p>SelfCauseOfDeathDescription, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SelfCauseOfDeathDescription</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxStrength</h1>
+				</a>
+
+
+					<p>MaxStrength, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxStrength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="BurnOverlayAlpha">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>BurnOverlayAlpha</h1>
+				</a>
+
+
+					<p>BurnOverlayAlpha, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">BurnOverlayAlpha</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OriginalName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
+				</a>
+
+
+					<p>OriginalName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OriginalName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Description">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Description</h1>
+				</a>
+
+
+					<p>Description, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Description</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AfflictionType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AfflictionType</h1>
+				</a>
+
+
+					<p>AfflictionType, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AfflictionType</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsBuff">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsBuff</h1>
+				</a>
+
+
+					<p>IsBuff, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsBuff</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ActivationThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ActivationThreshold</h1>
+				</a>
+
+
+					<p>ActivationThreshold, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ActivationThreshold</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
