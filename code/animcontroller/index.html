@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Game.GameSession - LuaForBarotrauma Documentation</title>
+		<title>AnimController - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Game.GameSession - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="AnimController - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
-			<meta property="og:description" content="Barotrauma.GameSession" />
+			<meta property="og:description" content="Barotrauma.AnimController" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -492,7 +492,7 @@ UIntIdentifier											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../code/animcontroller/">AnimController</a></summary>
 
 									<ul>
@@ -4361,7 +4361,7 @@ GameTime											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../code/game.gamesession/">Game.GameSession</a></summary>
 
 									<ul>
@@ -6492,17 +6492,17 @@ SecondaryUse											</a>
 SendPendingNetworkUpdates											</a>
 										</li>
 										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#SendSignal">
+SendSignal											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#SendSignal">
+SendSignal											</a>
+										</li>
+										<li>
 											<span class="realm server"></span>
-											<a href="../../code/item/#SendSignal">
-SendSignal											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/item/#SendSignal">
-SendSignal											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/item/#SendSignal">
 SendSignal											</a>
 										</li>
@@ -7461,7 +7461,7 @@ IsContainerPreferred											</a>
 IsLinkAllowed											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
 ItemPrefab.AddToSpawnQueue											</a>
 										</li>
@@ -7476,7 +7476,7 @@ ItemPrefab.AddToSpawnQueue											</a>
 ItemPrefab.AddToSpawnQueue											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
 ItemPrefab.AddToSpawnQueue											</a>
 										</li>
@@ -10765,8 +10765,8 @@ Path											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>Game.GameSession</h1>
-	<h2>Barotrauma.GameSession</h2>
+	<h1>AnimController</h1>
+	<h2>Barotrauma.AnimController</h2>
 </header>
 
 <p>
@@ -10776,82 +10776,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="GetType">
+		<section class="method" id="OnLimbCollision">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>OnLimbCollision(f1, f2, contact)</h1>
 				</a>
 
 
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="LoadPreviousSave">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LoadPreviousSave()</h1>
-				</a>
-
-
-					<p>LoadPreviousSave</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GameSession.GetSessionCrewCharacters">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GameSession.GetSessionCrewCharacters()</h1>
-				</a>
-
-
-					<p>GetSessionCrewCharacters</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ReviveCharacter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReviveCharacter(character)</h1>
-				</a>
-
-
-					<p>ReviveCharacter</p>
+					<p>OnLimbCollision</p>
 			</header>
 
 
@@ -10861,9 +10793,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">f1</span>
 
-									<span class="tag"><span class="type">Character</span></span>
+									<span class="tag"><span class="type">Fixture</span></span>
 
 
 								<p>
@@ -10872,6 +10804,703 @@ Path											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">f2</span>
+
+									<span class="tag"><span class="type">Fixture</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">contact</span>
+
+									<span class="tag"><span class="type">Contact</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Hang">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Hang()</h1>
+				</a>
+
+
+					<p>Hang</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ReleaseStuckLimbs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReleaseStuckLimbs()</h1>
+				</a>
+
+
+					<p>ReleaseStuckLimbs</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Teleport">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Teleport(moveAmount, velocityChange, detachProjectiles)</h1>
+				</a>
+
+
+					<p>Teleport</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">moveAmount</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">velocityChange</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">detachProjectiles</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HandIK">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HandIK(hand, pos, armTorque, handTorque, maxAngularVelocity)</h1>
+				</a>
+
+
+					<p>HandIK</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hand</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">pos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">armTorque</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">handTorque</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">maxAngularVelocity</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AddJoint">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddJoint(jointParams)</h1>
+				</a>
+
+
+					<p>AddJoint</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">jointParams</span>
+
+									<span class="tag"><span class="type">JointParams</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetCenterOfMass">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetCenterOfMass()</h1>
+				</a>
+
+
+					<p>GetCenterOfMass</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Vector2</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove()</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ResetRagdoll">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetRagdoll(forceReload)</h1>
+				</a>
+
+
+					<p>ResetRagdoll</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceReload</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetCurrentSpeed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetCurrentSpeed(useMaxSpeed)</h1>
+				</a>
+
+
+					<p>GetCurrentSpeed</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">useMaxSpeed</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="FindHull">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FindHull(worldPosition, setSubmarine)</h1>
+				</a>
+
+
+					<p>FindHull</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">worldPosition</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">setSubmarine</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetColliderBottom">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetColliderBottom()</h1>
+				</a>
+
+
+					<p>GetColliderBottom</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Vector2</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="HoldItem">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HoldItem(deltaTime, item, handlePos, holdPos, aimPos, aim, holdAngle, itemAngleRelativeToHoldAngle, aimMelee)</h1>
+				</a>
+
+
+					<p>HoldItem</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+									<span class="tag"><span class="type">Item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">handlePos</span>
+
+									<span class="tag"><span class="type">Vector2[]</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">holdPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">aimPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">aim</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">holdAngle</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemAngleRelativeToHoldAngle</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">aimMelee</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SubtractMass">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SubtractMass(limb)</h1>
+				</a>
+
+
+					<p>SubtractMass</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UpdateAnim">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateAnim(deltaTime)</h1>
+				</a>
+
+
+					<p>UpdateAnim</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ApplyTestPose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyTestPose()</h1>
+				</a>
+
+
+					<p>ApplyTestPose</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetSpeed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSpeed(type)</h1>
+				</a>
+
+
+					<p>GetSpeed</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">type</span>
+
+									<span class="tag"><span class="type">AnimationType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -10892,81 +11521,6 @@ Path											</a>
 
 							<li>
 									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="PlaceSubAtStart">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PlaceSubAtStart(level)</h1>
-				</a>
-
-
-					<p>PlaceSubAtStart</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">level</span>
-
-									<span class="tag"><span class="type">Level</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetMission">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetMission(index)</h1>
-				</a>
-
-
-					<p>GetMission</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">index</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Mission</span>
 
 								<p>
 
@@ -11048,14 +11602,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="StartRound">
+		<section class="method" id="UpdateUseItem">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartRound(levelSeed, difficulty, levelGenerationParams)</h1>
+					<h1><span class="realm shared"></span></span>UpdateUseItem(allowMovement, handWorldPos)</h1>
 				</a>
 
 
-					<p>StartRound</p>
+					<p>UpdateUseItem</p>
 			</header>
 
 
@@ -11065,23 +11619,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">levelSeed</span>
+								<span class="tag parameter">allowMovement</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">difficulty</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -11093,9 +11633,54 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">levelGenerationParams</span>
+								<span class="tag parameter">handWorldPos</span>
 
-									<span class="tag"><span class="type">LevelGenerationParams</span></span>
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DragCharacter">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DragCharacter(target, deltaTime)</h1>
+				</a>
+
+
+					<p>DragCharacter</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">target</span>
+
+									<span class="tag"><a class="type" href="../../code/animcontroller/#Character">Character</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -11110,7 +11695,7 @@ Path											</a>
 		<section class="method" id="Update">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
+					<h1><span class="realm shared"></span></span>Update(deltaTime, cam)</h1>
 				</a>
 
 
@@ -11135,29 +11720,12 @@ Path											</a>
 							</li>
 					</ul>
 
-
-
-		</section>
-		<section class="method" id="PurchaseSubmarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PurchaseSubmarine(newSubmarine)</h1>
-				</a>
-
-
-					<p>PurchaseSubmarine</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
 					<ul>
 
 							<li>
-								<span class="tag parameter">newSubmarine</span>
+								<span class="tag parameter">cam</span>
 
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
+									<span class="tag"><span class="type">Camera</span></span>
 
 
 								<p>
@@ -11169,14 +11737,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="IsCurrentLocationRadiated">
+		<section class="method" id="GetMouthPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsCurrentLocationRadiated()</h1>
+					<h1><span class="realm shared"></span></span>GetMouthPosition()</h1>
 				</a>
 
 
-					<p>IsCurrentLocationRadiated</p>
+					<p>GetMouthPosition</p>
 			</header>
 
 
@@ -11185,7 +11753,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<span class="type">Nullable`1</span>
 
 								<p>
 
@@ -11196,14 +11764,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Save">
+		<section class="method" id="SetPosition">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(filePath)</h1>
+					<h1><span class="realm shared"></span></span>SetPosition(simPosition, lerp, ignorePlatforms, forceMainLimbToCollider, detachProjectiles)</h1>
 				</a>
 
 
-					<p>Save</p>
+					<p>SetPosition</p>
 			</header>
 
 
@@ -11213,84 +11781,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">filePath</span>
+								<span class="tag parameter">simPosition</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetMissionIndex">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetMissionIndex(mission)</h1>
-				</a>
-
-
-					<p>GetMissionIndex</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">mission</span>
-
-									<span class="tag"><span class="type">Mission</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="EndRound">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EndRound(endMessage, traitorResults, transitionType)</h1>
-				</a>
-
-
-					<p>EndRound</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">endMessage</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -11302,124 +11795,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">traitorResults</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">transitionType</span>
-
-									<span class="tag"><span class="type">TransitionType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SwitchSubmarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SwitchSubmarine(newSubmarine, cost)</h1>
-				</a>
-
-
-					<p>SwitchSubmarine</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newSubmarine</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">cost</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">SubmarineInfo</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="StartRound">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartRound(levelData, mirrorLevel, startOutpost, endOutpost)</h1>
-				</a>
-
-
-					<p>StartRound</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">levelData</span>
-
-									<span class="tag"><span class="type">LevelData</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">mirrorLevel</span>
+								<span class="tag parameter">lerp</span>
 
 									<span class="tag"><span class="type">bool</span></span>
 
@@ -11433,9 +11809,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">startOutpost</span>
+								<span class="tag parameter">ignorePlatforms</span>
 
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -11447,9 +11823,23 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">endOutpost</span>
+								<span class="tag parameter">forceMainLimbToCollider</span>
 
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">detachProjectiles</span>
+
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -11461,14 +11851,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GameSession.IsCompatibleWithEnabledContentPackages">
+		<section class="method" id="SaveRagdoll">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GameSession.IsCompatibleWithEnabledContentPackages(contentPackagePaths, errorMsg)</h1>
+					<h1><span class="realm shared"></span></span>SaveRagdoll(fileNameWithoutExtension)</h1>
 				</a>
 
 
-					<p>IsCompatibleWithEnabledContentPackages</p>
+					<p>SaveRagdoll</p>
 			</header>
 
 
@@ -11478,322 +11868,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">contentPackagePaths</span>
-
-									<span class="tag"><span class="type">IList`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">errorMsg</span>
-
-									<span class="tag"><span class="type">String&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="KillCharacter">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KillCharacter(character)</h1>
-				</a>
-
-
-					<p>KillCharacter</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="EnforceMissionOrder">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EnforceMissionOrder(missionIdentifiers)</h1>
-				</a>
-
-
-					<p>EnforceMissionOrder</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">missionIdentifiers</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsSubmarineOwned">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsSubmarineOwned(query)</h1>
-				</a>
-
-
-					<p>IsSubmarineOwned</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">query</span>
-
-									<span class="tag"><span class="type">SubmarineInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-	<h1 class="title">Fields</h1>
-
-		<section class="method" id="IsRunning">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsRunning</h1>
-				</a>
-
-
-					<p>IsRunning, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsRunning</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Submarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Submarine</h1>
-				</a>
-
-
-					<p>Submarine, Field of type Submarine</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Submarine</span>
-
-									<span class="tag"><span class="type">submarine</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RoundStartTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RoundStartTime</h1>
-				</a>
-
-
-					<p>RoundStartTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RoundStartTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RoundEnding">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RoundEnding</h1>
-				</a>
-
-
-					<p>RoundEnding, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RoundEnding</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Missions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Missions</h1>
-				</a>
-
-
-					<p>Missions, Field of type Enumerable</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Missions</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SavePath">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SavePath</h1>
-				</a>
-
-
-					<p>SavePath, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SavePath</span>
+								<span class="tag parameter">fileNameWithoutExtension</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -11807,14 +11882,657 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="MirrorLevel">
+		<section class="method" id="RestoreTemporarilyDisabled">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MirrorLevel</h1>
+					<h1><span class="realm shared"></span></span>RestoreTemporarilyDisabled()</h1>
 				</a>
 
 
-					<p>MirrorLevel, Field of type bool</p>
+					<p>RestoreTemporarilyDisabled</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ResetPullJoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetPullJoints()</h1>
+				</a>
+
+
+					<p>ResetPullJoints</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ResetLimbs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetLimbs()</h1>
+				</a>
+
+
+					<p>ResetLimbs</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="FindLowestLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FindLowestLimb()</h1>
+				</a>
+
+
+					<p>FindLowestLimb</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Limb</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Flip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Flip()</h1>
+				</a>
+
+
+					<p>Flip</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetAnimationParamsFromType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAnimationParamsFromType(type)</h1>
+				</a>
+
+
+					<p>GetAnimationParamsFromType</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">type</span>
+
+									<span class="tag"><span class="type">AnimationType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">AnimationParams</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ResetJoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetJoints()</h1>
+				</a>
+
+
+					<p>ResetJoints</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ApplyPose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyPose(leftHandPos, rightHandPos, leftFootPos, rightFootPos, footMoveForce)</h1>
+				</a>
+
+
+					<p>ApplyPose</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">leftHandPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rightHandPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">leftFootPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rightFootPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">footMoveForce</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RemoveLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemoveLimb(limb)</h1>
+				</a>
+
+
+					<p>RemoveLimb</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AddLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddLimb(limb)</h1>
+				</a>
+
+
+					<p>AddLimb</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ForceRefreshFloorY">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ForceRefreshFloorY()</h1>
+				</a>
+
+
+					<p>ForceRefreshFloorY</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetLimb(limbType, excludeSevered)</h1>
+				</a>
+
+
+					<p>GetLimb</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limbType</span>
+
+									<span class="tag"><span class="type">LimbType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">excludeSevered</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Limb</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SeverLimbJoint">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SeverLimbJoint(limbJoint)</h1>
+				</a>
+
+
+					<p>SeverLimbJoint</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limbJoint</span>
+
+									<span class="tag"><span class="type">LimbJoint</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="MoveLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MoveLimb(limb, pos, amount, pullFromCenter)</h1>
+				</a>
+
+
+					<p>MoveLimb</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">pos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">amount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">pullFromCenter</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Recreate">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Recreate(ragdollParams)</h1>
+				</a>
+
+
+					<p>Recreate</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ragdollParams</span>
+
+									<span class="tag"><span class="type">RagdollParams</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Grab">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Grab(rightHandPos, leftHandPos)</h1>
+				</a>
+
+
+					<p>Grab</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rightHandPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">leftHandPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HideAndDisable">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HideAndDisable(limbType, duration, ignoreCollisions)</h1>
+				</a>
+
+
+					<p>HideAndDisable</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limbType</span>
+
+									<span class="tag"><span class="type">LimbType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">duration</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ignoreCollisions</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+	<h1 class="title">Fields</h1>
+
+		<section class="method" id="AimSourceWorldPos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AimSourceWorldPos</h1>
+				</a>
+
+
+					<p>AimSourceWorldPos, Field of type Vector2</p>
 			</header>
 
 
@@ -11823,7 +12541,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MirrorLevel</span>
+								<span class="tag parameter">AimSourceWorldPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AnimationTestPose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AnimationTestPose</h1>
+				</a>
+
+
+					<p>AnimationTestPose, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AnimationTestPose</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -11837,16 +12585,1156 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="OwnedSubmarines">
+		<section class="method" id="Frozen">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OwnedSubmarines</h1>
+					<h1><span class="realm shared"></span></span>Frozen</h1>
 				</a>
 
 
-					<p>OwnedSubmarines, Field of type table</p>
+					<p>Frozen, Field of type bool</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Frozen</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IgnorePlatforms">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IgnorePlatforms</h1>
+				</a>
+
+
+					<p>IgnorePlatforms, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IgnorePlatforms</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanEnterSubmarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanEnterSubmarine</h1>
+				</a>
+
+
+					<p>CanEnterSubmarine, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanEnterSubmarine</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="forceNotStanding">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>forceNotStanding</h1>
+				</a>
+
+
+					<p>forceNotStanding, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceNotStanding</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ColliderHeightFromFloor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ColliderHeightFromFloor</h1>
+				</a>
+
+
+					<p>ColliderHeightFromFloor, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ColliderHeightFromFloor</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="InWater">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InWater</h1>
+				</a>
+
+
+					<p>InWater, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InWater</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllAnimParams">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllAnimParams</h1>
+				</a>
+
+
+					<p>AllAnimParams, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CanWalk">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanWalk</h1>
+				</a>
+
+
+					<p>CanWalk, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanWalk</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Dir">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dir</h1>
+				</a>
+
+
+					<p>Dir, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Dir</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsMovingBackwards">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsMovingBackwards</h1>
+				</a>
+
+
+					<p>IsMovingBackwards, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsMovingBackwards</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ImpactTolerance">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ImpactTolerance</h1>
+				</a>
+
+
+					<p>ImpactTolerance, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ImpactTolerance</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Character">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Character</h1>
+				</a>
+
+
+					<p>Character, Field of type Character</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Character</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="forceStanding">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>forceStanding</h1>
+				</a>
+
+
+					<p>forceStanding, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceStanding</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsHanging">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsHanging</h1>
+				</a>
+
+
+					<p>IsHanging, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsHanging</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ColliderIndex">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ColliderIndex</h1>
+				</a>
+
+
+					<p>ColliderIndex, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ColliderIndex</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsAiming">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsAiming</h1>
+				</a>
+
+
+					<p>IsAiming, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsAiming</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasMultipleLimbsOfSameType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasMultipleLimbsOfSameType</h1>
+				</a>
+
+
+					<p>HasMultipleLimbsOfSameType, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HasMultipleLimbsOfSameType</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SimplePhysicsEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SimplePhysicsEnabled</h1>
+				</a>
+
+
+					<p>SimplePhysicsEnabled, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SimplePhysicsEnabled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsMovingFast">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsMovingFast</h1>
+				</a>
+
+
+					<p>IsMovingFast, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsMovingFast</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="WorldPosition">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WorldPosition</h1>
+				</a>
+
+
+					<p>WorldPosition, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">WorldPosition</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="WalkPos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WalkPos</h1>
+				</a>
+
+
+					<p>WalkPos, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">WalkPos</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HeadInWater">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HeadInWater</h1>
+				</a>
+
+
+					<p>HeadInWater, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HeadInWater</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TargetMovement">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TargetMovement</h1>
+				</a>
+
+
+					<p>TargetMovement, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TargetMovement</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AimSourcePos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AimSourcePos</h1>
+				</a>
+
+
+					<p>AimSourcePos, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AimSourcePos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FloorY">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FloorY</h1>
+				</a>
+
+
+					<p>FloorY, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FloorY</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AimSourceSimPos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AimSourceSimPos</h1>
+				</a>
+
+
+					<p>AimSourceSimPos, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AimSourceSimPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ArmLength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ArmLength</h1>
+				</a>
+
+
+					<p>ArmLength, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ArmLength</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RightHandIKPos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RightHandIKPos</h1>
+				</a>
+
+
+					<p>RightHandIKPos, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RightHandIKPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OnGround">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OnGround</h1>
+				</a>
+
+
+					<p>OnGround, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OnGround</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LeftHandIKPos">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LeftHandIKPos</h1>
+				</a>
+
+
+					<p>LeftHandIKPos, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LeftHandIKPos</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Mass">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Mass</h1>
+				</a>
+
+
+					<p>Mass, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Mass</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsStuck">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsStuck</h1>
+				</a>
+
+
+					<p>IsStuck, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsStuck</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="BodyInRest">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>BodyInRest</h1>
+				</a>
+
+
+					<p>BodyInRest, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">BodyInRest</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Draggable">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Draggable</h1>
+				</a>
+
+
+					<p>Draggable, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Draggable</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsAimingMelee">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsAimingMelee</h1>
+				</a>
+
+
+					<p>IsAimingMelee, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsAimingMelee</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="movement">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>movement</h1>
+				</a>
+
+
+					<p>movement, Field of type Vector2</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">movement</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Invalid">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Invalid</h1>
+				</a>
+
+
+					<p>Invalid, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Invalid</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsFlipped">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsFlipped</h1>
+				</a>
+
+
+					<p>IsFlipped, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsFlipped</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Collider">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Collider</h1>
+				</a>
+
+
+					<p>Collider, Field of type PhysicsBody</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Collider</span>
+
+									<span class="tag"><span class="type">PhysicsBody</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
