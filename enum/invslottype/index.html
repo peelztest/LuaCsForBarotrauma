@@ -5075,48 +5075,53 @@ inventoryPutItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemApplyTreatment">
-itemApplyTreatment											</a>
+											<a href="../../code/hook/#item.applyTreatment">
+item.applyTreatment											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemCombine">
-itemCombine											</a>
+											<a href="../../code/hook/#item.combine">
+item.combine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemDrop">
-itemDrop											</a>
+											<a href="../../code/hook/#item.drop">
+item.drop											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemEquip">
-itemEquip											</a>
+											<a href="../../code/hook/#item.equip">
+item.equip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemInteract">
-itemInteract											</a>
+											<a href="../../code/hook/#item.interact">
+item.interact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemSecondaryUse">
-itemSecondaryUse											</a>
+											<a href="../../code/hook/#item.secondaryUse">
+item.secondaryUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUnequip">
-itemUnequip											</a>
+											<a href="../../code/hook/#item.unequip">
+item.unequip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUse">
-itemUse											</a>
+											<a href="../../code/hook/#item.use">
+item.use											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#meleeWeapon.handleImpact">
+meleeWeapon.handleImpact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5145,8 +5150,13 @@ signalReceived											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#signalReceived.YourComponentIdentifier">
-signalReceived.YourComponentIdentifier											</a>
+											<a href="../../code/hook/#signalReceived.YourItemIdentifier">
+signalReceived.YourItemIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#statusEffect.apply.YourItemIdentifier">
+statusEffect.apply.YourItemIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5167,6 +5177,11 @@ traitor.findTraitorCandidate											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#traitor.traitorAssigned">
 traitor.traitorAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#tryChangeClientName">
+tryChangeClientName											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -10776,14 +10791,28 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="InnerClothes">
+		<section class="method" id="Headset">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InnerClothes</h1>
+					<h1><span class="realm shared"></span></span>Headset</h1>
 				</a>
 
 
-					<p>InvSlotType.InnerClothes = 16</p>
+					<p>InvSlotType.Headset = 64</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Any">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Any</h1>
+				</a>
+
+
+					<p>InvSlotType.Any = 1</p>
 			</header>
 
 
@@ -10818,6 +10847,62 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="Head">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Head</h1>
+				</a>
+
+
+					<p>InvSlotType.Head = 8</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="InnerClothes">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InnerClothes</h1>
+				</a>
+
+
+					<p>InvSlotType.InnerClothes = 16</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="OuterClothes">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OuterClothes</h1>
+				</a>
+
+
+					<p>InvSlotType.OuterClothes = 32</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="None">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>None</h1>
+				</a>
+
+
+					<p>InvSlotType.None = 0</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Card">
 			<header>
 				<a class="anchor">
@@ -10846,34 +10931,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="None">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>None</h1>
-				</a>
-
-
-					<p>InvSlotType.None = 0</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="OuterClothes">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OuterClothes</h1>
-				</a>
-
-
-					<p>InvSlotType.OuterClothes = 32</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="RightHand">
 			<header>
 				<a class="anchor">
@@ -10882,48 +10939,6 @@ Path											</a>
 
 
 					<p>InvSlotType.RightHand = 2</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Headset">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Headset</h1>
-				</a>
-
-
-					<p>InvSlotType.Headset = 64</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Any">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Any</h1>
-				</a>
-
-
-					<p>InvSlotType.Any = 1</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Head">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Head</h1>
-				</a>
-
-
-					<p>InvSlotType.Head = 8</p>
 			</header>
 
 

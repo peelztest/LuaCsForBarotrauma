@@ -5075,48 +5075,53 @@ inventoryPutItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemApplyTreatment">
-itemApplyTreatment											</a>
+											<a href="../../code/hook/#item.applyTreatment">
+item.applyTreatment											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemCombine">
-itemCombine											</a>
+											<a href="../../code/hook/#item.combine">
+item.combine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemDrop">
-itemDrop											</a>
+											<a href="../../code/hook/#item.drop">
+item.drop											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemEquip">
-itemEquip											</a>
+											<a href="../../code/hook/#item.equip">
+item.equip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemInteract">
-itemInteract											</a>
+											<a href="../../code/hook/#item.interact">
+item.interact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemSecondaryUse">
-itemSecondaryUse											</a>
+											<a href="../../code/hook/#item.secondaryUse">
+item.secondaryUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUnequip">
-itemUnequip											</a>
+											<a href="../../code/hook/#item.unequip">
+item.unequip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUse">
-itemUse											</a>
+											<a href="../../code/hook/#item.use">
+item.use											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#meleeWeapon.handleImpact">
+meleeWeapon.handleImpact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5145,8 +5150,13 @@ signalReceived											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#signalReceived.YourComponentIdentifier">
-signalReceived.YourComponentIdentifier											</a>
+											<a href="../../code/hook/#signalReceived.YourItemIdentifier">
+signalReceived.YourItemIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#statusEffect.apply.YourItemIdentifier">
+statusEffect.apply.YourItemIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5167,6 +5177,11 @@ traitor.findTraitorCandidate											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#traitor.traitorAssigned">
 traitor.traitorAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#tryChangeClientName">
+tryChangeClientName											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -10776,6 +10791,20 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="Unknown">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Unknown</h1>
+				</a>
+
+
+					<p>CauseOfDeathType.Unknown = 0</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Suffocation">
 			<header>
 				<a class="anchor">
@@ -10804,14 +10833,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Drowning">
+		<section class="method" id="Affliction">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Drowning</h1>
+					<h1><span class="realm shared"></span></span>Affliction</h1>
 				</a>
 
 
-					<p>CauseOfDeathType.Drowning = 3</p>
+					<p>CauseOfDeathType.Affliction = 4</p>
 			</header>
 
 
@@ -10846,28 +10875,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Unknown">
+		<section class="method" id="Drowning">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Unknown</h1>
+					<h1><span class="realm shared"></span></span>Drowning</h1>
 				</a>
 
 
-					<p>CauseOfDeathType.Unknown = 0</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Affliction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Affliction</h1>
-				</a>
-
-
-					<p>CauseOfDeathType.Affliction = 4</p>
+					<p>CauseOfDeathType.Drowning = 3</p>
 			</header>
 
 

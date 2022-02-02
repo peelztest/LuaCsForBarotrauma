@@ -5075,48 +5075,53 @@ inventoryPutItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemApplyTreatment">
-itemApplyTreatment											</a>
+											<a href="../../code/hook/#item.applyTreatment">
+item.applyTreatment											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemCombine">
-itemCombine											</a>
+											<a href="../../code/hook/#item.combine">
+item.combine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemDrop">
-itemDrop											</a>
+											<a href="../../code/hook/#item.drop">
+item.drop											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemEquip">
-itemEquip											</a>
+											<a href="../../code/hook/#item.equip">
+item.equip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemInteract">
-itemInteract											</a>
+											<a href="../../code/hook/#item.interact">
+item.interact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemSecondaryUse">
-itemSecondaryUse											</a>
+											<a href="../../code/hook/#item.secondaryUse">
+item.secondaryUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUnequip">
-itemUnequip											</a>
+											<a href="../../code/hook/#item.unequip">
+item.unequip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUse">
-itemUse											</a>
+											<a href="../../code/hook/#item.use">
+item.use											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#meleeWeapon.handleImpact">
+meleeWeapon.handleImpact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5145,8 +5150,13 @@ signalReceived											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#signalReceived.YourComponentIdentifier">
-signalReceived.YourComponentIdentifier											</a>
+											<a href="../../code/hook/#signalReceived.YourItemIdentifier">
+signalReceived.YourItemIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#statusEffect.apply.YourItemIdentifier">
+statusEffect.apply.YourItemIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5167,6 +5177,11 @@ traitor.findTraitorCandidate											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#traitor.traitorAssigned">
 traitor.traitorAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#tryChangeClientName">
+tryChangeClientName											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -10776,14 +10791,14 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="IncompatibleContentPackage">
+		<section class="method" id="NoName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IncompatibleContentPackage</h1>
+					<h1><span class="realm shared"></span></span>NoName</h1>
 				</a>
 
 
-					<p>DisconnectReason.IncompatibleContentPackage = 16</p>
+					<p>DisconnectReason.NoName = 11</p>
 			</header>
 
 
@@ -10804,34 +10819,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ExcessiveDesyncRemovedEvent">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ExcessiveDesyncRemovedEvent</h1>
-				</a>
-
-
-					<p>DisconnectReason.ExcessiveDesyncRemovedEvent = 19</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Banned">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Banned</h1>
-				</a>
-
-
-					<p>DisconnectReason.Banned = 1</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Kicked">
 			<header>
 				<a class="anchor">
@@ -10840,118 +10827,6 @@ Path											</a>
 
 
 					<p>DisconnectReason.Kicked = 2</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerFull">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerFull</h1>
-				</a>
-
-
-					<p>DisconnectReason.ServerFull = 5</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerShutdown">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerShutdown</h1>
-				</a>
-
-
-					<p>DisconnectReason.ServerShutdown = 3</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerCrashed">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerCrashed</h1>
-				</a>
-
-
-					<p>DisconnectReason.ServerCrashed = 4</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="NotOnWhitelist">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NotOnWhitelist</h1>
-				</a>
-
-
-					<p>DisconnectReason.NotOnWhitelist = 17</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="InvalidName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InvalidName</h1>
-				</a>
-
-
-					<p>DisconnectReason.InvalidName = 12</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SyncTimeout">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SyncTimeout</h1>
-				</a>
-
-
-					<p>DisconnectReason.SyncTimeout = 20</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Unknown">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Unknown</h1>
-				</a>
-
-
-					<p>DisconnectReason.Unknown = 0</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="NoName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NoName</h1>
-				</a>
-
-
-					<p>DisconnectReason.NoName = 11</p>
 			</header>
 
 
@@ -10972,6 +10847,76 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="InvalidVersion">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InvalidVersion</h1>
+				</a>
+
+
+					<p>DisconnectReason.InvalidVersion = 14</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="NotOnWhitelist">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NotOnWhitelist</h1>
+				</a>
+
+
+					<p>DisconnectReason.NotOnWhitelist = 17</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Unknown">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Unknown</h1>
+				</a>
+
+
+					<p>DisconnectReason.Unknown = 0</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerShutdown">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerShutdown</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerShutdown = 3</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerFull">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerFull</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerFull = 5</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="AuthenticationRequired">
 			<header>
 				<a class="anchor">
@@ -10986,14 +10931,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SteamAuthenticationRequired">
+		<section class="method" id="ExcessiveDesyncRemovedEvent">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SteamAuthenticationRequired</h1>
+					<h1><span class="realm shared"></span></span>ExcessiveDesyncRemovedEvent</h1>
 				</a>
 
 
-					<p>DisconnectReason.SteamAuthenticationRequired = 7</p>
+					<p>DisconnectReason.ExcessiveDesyncRemovedEvent = 19</p>
 			</header>
 
 
@@ -11014,6 +10959,34 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="ServerCrashed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerCrashed</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerCrashed = 4</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Banned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Banned</h1>
+				</a>
+
+
+					<p>DisconnectReason.Banned = 1</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="TooManyFailedLogins">
 			<header>
 				<a class="anchor">
@@ -11022,6 +10995,34 @@ Path											</a>
 
 
 					<p>DisconnectReason.TooManyFailedLogins = 10</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SyncTimeout">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SyncTimeout</h1>
+				</a>
+
+
+					<p>DisconnectReason.SyncTimeout = 20</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="NameTaken">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NameTaken</h1>
+				</a>
+
+
+					<p>DisconnectReason.NameTaken = 13</p>
 			</header>
 
 
@@ -11042,28 +11043,42 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="InvalidVersion">
+		<section class="method" id="IncompatibleContentPackage">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InvalidVersion</h1>
+					<h1><span class="realm shared"></span></span>IncompatibleContentPackage</h1>
 				</a>
 
 
-					<p>DisconnectReason.InvalidVersion = 14</p>
+					<p>DisconnectReason.IncompatibleContentPackage = 16</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="NameTaken">
+		<section class="method" id="SteamAuthenticationRequired">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NameTaken</h1>
+					<h1><span class="realm shared"></span></span>SteamAuthenticationRequired</h1>
 				</a>
 
 
-					<p>DisconnectReason.NameTaken = 13</p>
+					<p>DisconnectReason.SteamAuthenticationRequired = 7</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="InvalidName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InvalidName</h1>
+				</a>
+
+
+					<p>DisconnectReason.InvalidName = 12</p>
 			</header>
 
 

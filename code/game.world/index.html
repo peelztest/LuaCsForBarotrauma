@@ -5075,48 +5075,53 @@ inventoryPutItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemApplyTreatment">
-itemApplyTreatment											</a>
+											<a href="../../code/hook/#item.applyTreatment">
+item.applyTreatment											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemCombine">
-itemCombine											</a>
+											<a href="../../code/hook/#item.combine">
+item.combine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemDrop">
-itemDrop											</a>
+											<a href="../../code/hook/#item.drop">
+item.drop											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemEquip">
-itemEquip											</a>
+											<a href="../../code/hook/#item.equip">
+item.equip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemInteract">
-itemInteract											</a>
+											<a href="../../code/hook/#item.interact">
+item.interact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemSecondaryUse">
-itemSecondaryUse											</a>
+											<a href="../../code/hook/#item.secondaryUse">
+item.secondaryUse											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUnequip">
-itemUnequip											</a>
+											<a href="../../code/hook/#item.unequip">
+item.unequip											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#itemUse">
-itemUse											</a>
+											<a href="../../code/hook/#item.use">
+item.use											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#meleeWeapon.handleImpact">
+meleeWeapon.handleImpact											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5145,8 +5150,13 @@ signalReceived											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hook/#signalReceived.YourComponentIdentifier">
-signalReceived.YourComponentIdentifier											</a>
+											<a href="../../code/hook/#signalReceived.YourItemIdentifier">
+signalReceived.YourItemIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#statusEffect.apply.YourItemIdentifier">
+statusEffect.apply.YourItemIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5167,6 +5177,11 @@ traitor.findTraitorCandidate											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#traitor.traitorAssigned">
 traitor.traitorAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#tryChangeClientName">
+tryChangeClientName											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -10776,14 +10791,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="CreateChain">
+		<section class="method" id="CreateCircle">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateChain(start, endparam, linkWidth, linkHeight, numberOfLinks, linkDensity, attachRopeJoint)</h1>
+					<h1><span class="realm shared"></span></span>CreateCircle(radius, density, position, bodyType)</h1>
 				</a>
 
 
-					<p>CreateChain</p>
+					<p>CreateCircle</p>
 			</header>
 
 
@@ -10793,7 +10808,35 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">start</span>
+								<span class="tag parameter">radius</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">density</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
 
@@ -10807,79 +10850,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">endparam</span>
+								<span class="tag parameter">bodyType</span>
 
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">linkWidth</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">linkHeight</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">numberOfLinks</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">linkDensity</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">attachRopeJoint</span>
-
-									<span class="tag"><span class="type">bool</span></span>
+									<span class="tag"><span class="type">BodyType</span></span>
 
 
 								<p>
@@ -10893,7 +10866,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Path</span>
+									<span class="type">Body</span>
 
 								<p>
 
@@ -10904,14 +10877,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateEdge">
+		<section class="method" id="CreateChainShape">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateEdge(start, endparam)</h1>
+					<h1><span class="realm shared"></span></span>CreateChainShape(vertices, position)</h1>
 				</a>
 
 
-					<p>CreateEdge</p>
+					<p>CreateChainShape</p>
 			</header>
 
 
@@ -10921,9 +10894,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">start</span>
+								<span class="tag parameter">vertices</span>
 
-									<span class="tag"><span class="type">Vector2</span></span>
+									<span class="tag"><span class="type">Vertices</span></span>
 
 
 								<p>
@@ -10935,7 +10908,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">endparam</span>
+								<span class="tag parameter">position</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
 
@@ -10962,14 +10935,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateCapsule">
+		<section class="method" id="CreateGear">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateCapsule(height, endRadius, density, position, rotation, bodyType)</h1>
+					<h1><span class="realm shared"></span></span>CreateGear(radius, numberOfTeeth, tipPercentage, toothHeight, density, position, rotation, bodyType)</h1>
 				</a>
 
 
-					<p>CreateCapsule</p>
+					<p>CreateGear</p>
 			</header>
 
 
@@ -10979,7 +10952,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">height</span>
+								<span class="tag parameter">radius</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -10993,9 +10966,181 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">endRadius</span>
+								<span class="tag parameter">numberOfTeeth</span>
 
 									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">tipPercentage</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">toothHeight</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">density</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rotation</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">bodyType</span>
+
+									<span class="tag"><span class="type">BodyType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Body</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CreateCompoundPolygon">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateCompoundPolygon(list, density, position, rotation, bodyType)</h1>
+				</a>
+
+
+					<p>CreateCompoundPolygon</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">list</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
 
 
 								<p>
@@ -11204,6 +11349,352 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="QueryAABB">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>QueryAABB(aabb)</h1>
+				</a>
+
+
+					<p>QueryAABB</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">aabb</span>
+
+									<span class="tag"><span class="type">AABB&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CreateBody">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateBody(position, rotation, bodyType)</h1>
+				</a>
+
+
+					<p>CreateBody</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rotation</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">bodyType</span>
+
+									<span class="tag"><span class="type">BodyType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Body</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CreateCapsuleHorizontal">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateCapsuleHorizontal(width, endRadius, density, position, rotation, bodyType)</h1>
+				</a>
+
+
+					<p>CreateCapsuleHorizontal</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">width</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">endRadius</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">density</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rotation</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">bodyType</span>
+
+									<span class="tag"><span class="type">BodyType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Body</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove(body)</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">body</span>
+
+									<span class="tag"><span class="type">Body</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Step">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Step(dt)</h1>
+				</a>
+
+
+					<p>Step</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">dt</span>
+
+									<span class="tag"><span class="type">TimeSpan</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="CreateRectangle">
 			<header>
 				<a class="anchor">
@@ -11318,14 +11809,103 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Remove">
+		<section class="method" id="AddAsync">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove(joint)</h1>
+					<h1><span class="realm shared"></span></span>AddAsync(body)</h1>
 				</a>
 
 
-					<p>Remove</p>
+					<p>AddAsync</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">body</span>
+
+									<span class="tag"><span class="type">Body</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RayCast">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RayCast(point1, point2)</h1>
+				</a>
+
+
+					<p>RayCast</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">point1</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">point2</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Add">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Add(joint)</h1>
+				</a>
+
+
+					<p>Add</p>
 			</header>
 
 
@@ -11394,41 +11974,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
+		<section class="method" id="CreateCapsule">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
+					<h1><span class="realm shared"></span></span>CreateCapsule(height, endRadius, density, position, rotation, bodyType)</h1>
 				</a>
 
 
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CreateBody">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateBody(position, rotation, bodyType)</h1>
-				</a>
-
-
-					<p>CreateBody</p>
+					<p>CreateCapsule</p>
 			</header>
 
 
@@ -11438,21 +11991,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">rotation</span>
+								<span class="tag parameter">height</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11466,9 +12005,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">bodyType</span>
+								<span class="tag parameter">endRadius</span>
 
-									<span class="tag"><span class="type">BodyType</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -11476,36 +12015,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Body</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CreateSolidArc">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateSolidArc(density, radians, sides, radius, position, rotation, bodyType)</h1>
-				</a>
-
-
-					<p>CreateSolidArc</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
 
 					<ul>
 
@@ -11524,7 +12033,21 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">radians</span>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">rotation</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11538,7 +12061,51 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">sides</span>
+								<span class="tag parameter">bodyType</span>
+
+									<span class="tag"><span class="type">BodyType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Body</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CreateCapsule">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateCapsule(height, topRadius, topEdges, bottomRadius, bottomEdges, density, position, rotation, bodyType)</h1>
+				</a>
+
+
+					<p>CreateCapsule</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">height</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11552,7 +12119,63 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">radius</span>
+								<span class="tag parameter">topRadius</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">topEdges</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">bottomRadius</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">bottomEdges</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">density</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11621,89 +12244,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AddAsync">
+		<section class="method" id="RemoveAsync">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddAsync(joint)</h1>
+					<h1><span class="realm shared"></span></span>RemoveAsync(body)</h1>
 				</a>
 
 
-					<p>AddAsync</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">joint</span>
-
-									<span class="tag"><span class="type">Joint</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="QueryAABB">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>QueryAABB(aabb)</h1>
-				</a>
-
-
-					<p>QueryAABB</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">aabb</span>
-
-									<span class="tag"><span class="type">AABB&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="AddAsync">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddAsync(body)</h1>
-				</a>
-
-
-					<p>AddAsync</p>
+					<p>RemoveAsync</p>
 			</header>
 
 
@@ -11727,114 +12275,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateCompoundPolygon">
+		<section class="method" id="Clear">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateCompoundPolygon(list, density, position, rotation, bodyType)</h1>
+					<h1><span class="realm shared"></span></span>Clear()</h1>
 				</a>
 
 
-					<p>CreateCompoundPolygon</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">list</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">density</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">rotation</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bodyType</span>
-
-									<span class="tag"><span class="type">BodyType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Body</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ClearForces">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ClearForces()</h1>
-				</a>
-
-
-					<p>ClearForces</p>
+					<p>Clear</p>
 			</header>
 
 
@@ -11896,188 +12344,6 @@ Path											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="RayCast">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RayCast(point1, point2)</h1>
-				</a>
-
-
-					<p>RayCast</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">point1</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">point2</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove(body)</h1>
-				</a>
-
-
-					<p>Remove</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">body</span>
-
-									<span class="tag"><span class="type">Body</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Add">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Add(joint)</h1>
-				</a>
-
-
-					<p>Add</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">joint</span>
-
-									<span class="tag"><span class="type">Joint</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Step">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Step(dt)</h1>
-				</a>
-
-
-					<p>Step</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">dt</span>
-
-									<span class="tag"><span class="type">TimeSpan</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RemoveAsync">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveAsync(body)</h1>
-				</a>
-
-
-					<p>RemoveAsync</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">body</span>
-
-									<span class="tag"><span class="type">Body</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 
 		</section>
@@ -12209,226 +12475,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="TestPointAll">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TestPointAll(point)</h1>
-				</a>
-
-
-					<p>TestPointAll</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">point</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CreateCircle">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateCircle(radius, density, position, bodyType)</h1>
-				</a>
-
-
-					<p>CreateCircle</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">radius</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">density</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bodyType</span>
-
-									<span class="tag"><span class="type">BodyType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Body</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Add">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Add(body)</h1>
-				</a>
-
-
-					<p>Add</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">body</span>
-
-									<span class="tag"><span class="type">Body</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Clear">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Clear()</h1>
-				</a>
-
-
-					<p>Clear</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="QueryAABB">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>QueryAABB(callback, aabb)</h1>
-				</a>
-
-
-					<p>QueryAABB</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">callback</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">aabb</span>
-
-									<span class="tag"><span class="type">AABB&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="TestPoint">
 			<header>
 				<a class="anchor">
@@ -12473,14 +12519,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateGear">
+		<section class="method" id="ShiftOrigin">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateGear(radius, numberOfTeeth, tipPercentage, toothHeight, density, position, rotation, bodyType)</h1>
+					<h1><span class="realm shared"></span></span>ShiftOrigin(newOrigin)</h1>
 				</a>
 
 
-					<p>CreateGear</p>
+					<p>ShiftOrigin</p>
 			</header>
 
 
@@ -12490,23 +12536,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">radius</span>
+								<span class="tag parameter">newOrigin</span>
 
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">numberOfTeeth</span>
-
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -12515,12 +12547,43 @@ Path											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="ProcessChanges">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ProcessChanges()</h1>
+				</a>
+
+
+					<p>ProcessChanges</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Add">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Add(body)</h1>
+				</a>
+
+
+					<p>Add</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">tipPercentage</span>
+								<span class="tag parameter">body</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Body</span></span>
 
 
 								<p>
@@ -12529,12 +12592,29 @@ Path											</a>
 							</li>
 					</ul>
 
+
+
+		</section>
+		<section class="method" id="CreatePolygon">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreatePolygon(vertices, density, position, rotation, bodyType)</h1>
+				</a>
+
+
+					<p>CreatePolygon</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
 					<ul>
 
 							<li>
-								<span class="tag parameter">toothHeight</span>
+								<span class="tag parameter">vertices</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">Vertices</span></span>
 
 
 								<p>
@@ -12649,68 +12729,6 @@ Path											</a>
 								<span class="tag parameter">iterations</span>
 
 									<span class="tag"><span class="type">SolverIterations&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Step">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Step(dt)</h1>
-				</a>
-
-
-					<p>Step</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">dt</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ShiftOrigin">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShiftOrigin(newOrigin)</h1>
-				</a>
-
-
-					<p>ShiftOrigin</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newOrigin</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -12951,228 +12969,23 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Remove">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove(controller)</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>Remove</p>
+					<p>GetType</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">controller</span>
-
-									<span class="tag"><span class="type">Controller</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Add">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Add(controller)</h1>
-				</a>
-
-
-					<p>Add</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">controller</span>
-
-									<span class="tag"><span class="type">Controller</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ProcessChanges">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ProcessChanges()</h1>
-				</a>
-
-
-					<p>ProcessChanges</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CreateCapsule">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateCapsule(height, topRadius, topEdges, bottomRadius, bottomEdges, density, position, rotation, bodyType)</h1>
-				</a>
-
-
-					<p>CreateCapsule</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">height</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">topRadius</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">topEdges</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bottomRadius</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bottomEdges</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">density</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">rotation</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bodyType</span>
-
-									<span class="tag"><span class="type">BodyType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Body</span>
+									<span class="type">Type</span>
 
 								<p>
 
@@ -13180,6 +12993,68 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="AddAsync">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddAsync(joint)</h1>
+				</a>
+
+
+					<p>AddAsync</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">joint</span>
+
+									<span class="tag"><span class="type">Joint</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Step">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Step(dt)</h1>
+				</a>
+
+
+					<p>Step</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">dt</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -13214,14 +13089,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateChainShape">
+		<section class="method" id="Remove">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateChainShape(vertices, position)</h1>
+					<h1><span class="realm shared"></span></span>Remove(controller)</h1>
 				</a>
 
 
-					<p>CreateChainShape</p>
+					<p>Remove</p>
 			</header>
 
 
@@ -13231,9 +13106,71 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">vertices</span>
+								<span class="tag parameter">controller</span>
 
-									<span class="tag"><span class="type">Vertices</span></span>
+									<span class="tag"><span class="type">Controller</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove(joint)</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">joint</span>
+
+									<span class="tag"><span class="type">Joint</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CreateChain">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateChain(start, endparam, linkWidth, linkHeight, numberOfLinks, linkDensity, attachRopeJoint)</h1>
+				</a>
+
+
+					<p>CreateChain</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">start</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
 
 
 								<p>
@@ -13245,7 +13182,180 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">position</span>
+								<span class="tag parameter">endparam</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">linkWidth</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">linkHeight</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">numberOfLinks</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">linkDensity</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">attachRopeJoint</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Path</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="QueryAABB">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>QueryAABB(callback, aabb)</h1>
+				</a>
+
+
+					<p>QueryAABB</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">aabb</span>
+
+									<span class="tag"><span class="type">AABB&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CreateEdge">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CreateEdge(start, endparam)</h1>
+				</a>
+
+
+					<p>CreateEdge</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">start</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">endparam</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
 
@@ -13272,14 +13382,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CreateCapsuleHorizontal">
+		<section class="method" id="CreateSolidArc">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreateCapsuleHorizontal(width, endRadius, density, position, rotation, bodyType)</h1>
+					<h1><span class="realm shared"></span></span>CreateSolidArc(density, radians, sides, radius, position, rotation, bodyType)</h1>
 				</a>
 
 
-					<p>CreateCapsuleHorizontal</p>
+					<p>CreateSolidArc</p>
 			</header>
 
 
@@ -13289,35 +13399,49 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">width</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">endRadius</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
 								<span class="tag parameter">density</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">radians</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sides</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">radius</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -13386,41 +13510,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="ClearForces">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>ClearForces()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>ClearForces</p>
 			</header>
 
 
 
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
 
 		</section>
-		<section class="method" id="CreatePolygon">
+		<section class="method" id="TestPointAll">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CreatePolygon(vertices, density, position, rotation, bodyType)</h1>
+					<h1><span class="realm shared"></span></span>TestPointAll(point)</h1>
 				</a>
 
 
-					<p>CreatePolygon</p>
+					<p>TestPointAll</p>
 			</header>
 
 
@@ -13430,35 +13541,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">vertices</span>
-
-									<span class="tag"><span class="type">Vertices</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">density</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
+								<span class="tag parameter">point</span>
 
 									<span class="tag"><span class="type">Vector2</span></span>
 
@@ -13469,40 +13552,12 @@ Path											</a>
 							</li>
 					</ul>
 
-					<ul>
-
-							<li>
-								<span class="tag parameter">rotation</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bodyType</span>
-
-									<span class="tag"><span class="type">BodyType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Body</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
 
 								<p>
 
@@ -13513,41 +13568,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
+		<section class="method" id="Add">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>Add(controller)</h1>
 				</a>
 
 
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
+					<p>Add</p>
 			</header>
 
 
@@ -13557,9 +13585,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">obj</span>
+								<span class="tag parameter">controller</span>
 
-									<span class="tag"><span class="type">Object</span></span>
+									<span class="tag"><span class="type">Controller</span></span>
 
 
 								<p>
@@ -13568,38 +13596,11 @@ Path											</a>
 							</li>
 					</ul>
 
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="ControllerList">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ControllerList</h1>
-				</a>
-
-
-					<p>ControllerList, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="JointList">
 			<header>
 				<a class="anchor">
@@ -13644,6 +13645,20 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="BodyList">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>BodyList</h1>
+				</a>
+
+
+					<p>BodyList, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Gravity">
 			<header>
 				<a class="anchor">
@@ -13674,50 +13689,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ProxyCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ProxyCount</h1>
-				</a>
-
-
-					<p>ProxyCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ProxyCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="BodyList">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>BodyList</h1>
-				</a>
-
-
-					<p>BodyList, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="IsLocked">
 			<header>
 				<a class="anchor">
@@ -13737,6 +13708,50 @@ Path											</a>
 								<span class="tag parameter">IsLocked</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ControllerList">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ControllerList</h1>
+				</a>
+
+
+					<p>ControllerList, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ProxyCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ProxyCount</h1>
+				</a>
+
+
+					<p>ProxyCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ProxyCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
