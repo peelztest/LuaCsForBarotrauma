@@ -10892,14 +10892,7 @@ Game.SendMessage(<span class="keyword">nil</span>)
 
 
 <pre>
-<span class="keyword">local</span> burnPrefab
-
-<span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="global">pairs</span>(AfflictionPrefab.ListArray) <span class="keyword">do</span>
-    <span class="keyword">if</span> v.Identifier == <span class="string">"burn"</span> <span class="keyword">then</span>
-       burnPrefab = v
-       <span class="keyword">break</span>
-    <span class="keyword">end</span>
-<span class="keyword">end</span>
+<span class="keyword">local</span> burnPrefab = AfflictionPrefab.Prefabs[<span class="string">"burn"</span>]
 
 <span class="keyword">local</span> char = Character.CharacterList[<span class="number">1</span>]
 <span class="keyword">local</span> limb = char.AnimController.MainLimb

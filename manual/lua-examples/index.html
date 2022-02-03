@@ -10801,24 +10801,6 @@ Hook.Add(<span class="string">'chatMessage'</span>, <span class="string">'suicid
 
 
 <pre>
-<span class="keyword">local</span> characters = Character.CharacterList
-<span class="keyword">local</span> biteWoundsPrefab
-
-<span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="global">pairs</span>(AfflictionPrefab.ListArray) <span class="keyword">do</span>
-    <span class="keyword">if</span> v.name == <span class="string">"Bite wounds"</span> <span class="keyword">then</span>
-       biteWoundsPrefab = v
-       <span class="keyword">break</span>
-    <span class="keyword">end</span>
-<span class="keyword">end</span>
-
-<span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="global">pairs</span>(characters) <span class="keyword">do</span>
-   v.CharacterHealth.ApplyAffliction(v.AnimController.MainLimb, biteWoundsPrefab.Instantiate(<span class="number">100</span>));
-<span class="keyword">end</span>
-</pre>
-
-
-
-<pre>
 Hook.Add(<span class="string">"itemApplyTreatment"</span>, <span class="string">"testItemApplyTreatment"</span>, <span class="keyword">function</span> (item, user, character, targetlimb)
     <span class="keyword">if</span> item.name == <span class="string">"Bandage"</span> <span class="keyword">then</span>
         <span class="keyword">local</span> pos = character.WorldPosition

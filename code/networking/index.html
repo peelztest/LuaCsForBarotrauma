@@ -10791,6 +10791,36 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="Networking.ClientWriteLobby">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
+				</a>
+
+
+					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Networking.Start">
 			<header>
 				<a class="anchor">
@@ -10829,6 +10859,49 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="Networking.Send">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm client"></span></span>Networking.Send(netMessage, deliveryMethod)</h1>
+				</a>
+
+
+					<p>Sends a net message to the server.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deliveryMethod</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -10904,11 +10977,11 @@ Path											</a>
 		<section class="method" id="Networking.Send">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm client"></span></span>Networking.Send(netMessage, deliveryMethod)</h1>
+					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
 				</a>
 
 
-					<p>Sends a net message to the server.</p>
+					<p>Sends a net message to a connection, if the connection is null, then it sends the message to all connections</p>
 			</header>
 
 
@@ -10919,6 +10992,19 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
 
 
 
@@ -10975,92 +11061,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">callback</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Networking.Send">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
-				</a>
-
-
-					<p>Sends a net message to a connection, if the connection is null, then it sends the message to all connections</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">netMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connection</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deliveryMethod</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Networking.ClientWriteLobby">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
-				</a>
-
-
-					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
 
 
 
