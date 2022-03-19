@@ -2,16 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Installing Lua For Barotrauma - LuaForBarotrauma Documentation</title>
+		<title>Adding Lua For Barotrauma to an existing server - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Installing Lua For Barotrauma - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="Adding Lua For Barotrauma to an existing server - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
 			<meta property="og:description" content="
-1 - Download [latest version of Barotrauma Lua](https:&#47;&#47;github.com&#47;evilfactory&#47;Barotrauma-lua-attempt&#47;releases&#47;tag&#47;latest), choose the correct platform in the assets drop down.&lt;br&gt;
+1 - Download [latest version of LuaForBarotrauma](https:&#47;&#47;github.com&#47;evilfactory&#47;Barotrauma-lua-attempt&#47;releases&#47;tag&#47;latest), choose the correct platform in the assets drop down.&lt;br&gt;
 2 - Extract the zip file&lt;br&gt;
-3 - Find the Content folder in your original..." />
+3 - Copy the following files inside the ex..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -11329,7 +11329,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
 
 
 
@@ -11359,28 +11359,10 @@ Path											</a>
 			<article>
 					<div class="wrapper">
 
-<h2>Installing Lua For Barotrauma</h2>
-<p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of Barotrauma Lua</a>, choose the correct platform in the assets drop down.<br>
+<h2>Adding Lua For Barotrauma to an existing server</h2>
+<p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of LuaForBarotrauma</a>, choose the correct platform in the assets drop down.<br>
 2 - Extract the zip file<br>
-3 - Find the Content folder in your original Barotrauma game: <br></p>
-
-<p> <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120013149929492/unknown.png" alt=""/>
- <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120379378991104/unknown.png" alt=""/>
- <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120841277374464/unknown.png" alt=""/></p>
-
-<p>4 - Copy the Content folder to the extracted folder <br></p>
-
-<p><img src="https://cdn.discordapp.com/attachments/799752463619325968/833133217300742154/unknown.png" alt=""/></p>
-
-<p>5 - Done! Now run DedicatedServer.exe to run the modded server or run Barotrauma.exe to run the modded client.<br></p>
-
-<p><a name="Linux_notice"></a></p>
-<h3>Linux notice</h3>
-<p>Sometimes you will get steam initialization errors, most of the time it's because it's missing the linux64/steamclient.so binary, so you can just copy the binary from your steam instalation over to the folder and it should work.</p>
-
-<h2>Adding to an existing server</h2>
-
-<p>To install to an existing server, do the 1-2 steps from before and copy/replace the following files in your existing server: </p>
+3 - Copy the following files inside the extracted zip:<br></p>
 
 <ul>
     <li><strong>DedicatedServer.deps.json</strong> </li>
@@ -11397,9 +11379,11 @@ Path											</a>
     <li>and the <strong>Lua/</strong> folder</li>
 </ul>
 
-<h2>Adding to an existing client</h2>
+<p>4 - Paste them to your existing server, and let it replace the files<br></p>
 
-<p>To install to an existing client, do the 1-2 steps from before and copy/replace the following files in your existing server: </p>
+<h2>Adding Lua For Barotrauma to an existing client</h2>
+
+<p>Same as above, but instead you need to copy/replace the following files:</p>
 
 <ul>
     <li><strong>Barotrauma.deps.json</strong> </li>
@@ -11414,6 +11398,31 @@ Path											</a>
     <li>file that starts with <strong>mscordaccore<em>amd64</em>amd64_</strong></li>
     <li>and the <strong>Lua/</strong> folder</li>
 </ul>
+
+
+<h2>Using Lua For Barotrauma from scratch</h2>
+
+<p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of LuaForBarotrauma</a>, choose the correct platform in the assets drop down.<br></p>
+
+<p>2 - Extract the zip file<br></p>
+
+<p>3 - Find the Content folder in your original Barotrauma game: <br></p>
+
+<p> <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120013149929492/unknown.png" alt=""/>
+ <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120379378991104/unknown.png" alt=""/>
+ <img src="https://cdn.discordapp.com/attachments/799752463619325968/833120841277374464/unknown.png" alt=""/></p>
+
+<p>4 - Copy the Content folder to the extracted folder <br></p>
+
+<p><img src="https://cdn.discordapp.com/attachments/799752463619325968/833133217300742154/unknown.png" alt=""/></p>
+
+<p>6 - Optional: Copy config_player.xml</p>
+
+<p>7 - Done! Now run DedicatedServer.exe to run the modded server or run Barotrauma.exe to run the modded client.<br></p>
+
+<p><a name="Linux_notice"></a></p>
+<h3>Linux notice</h3>
+<p>Sometimes you will get steam initialization errors, most of the time it's because it's missing the linux64/steamclient.so binary, so you can just copy the binary from your steam instalation over to the folder and it should work.</p>
 
 					</div>
 			</article>
