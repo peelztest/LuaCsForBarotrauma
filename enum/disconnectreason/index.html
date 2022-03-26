@@ -5592,6 +5592,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5649,6 +5659,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11326,7 +11341,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11368,28 +11383,14 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="ExcessiveDesyncOldEvent">
+		<section class="method" id="Banned">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ExcessiveDesyncOldEvent</h1>
+					<h1><span class="realm shared"></span></span>Banned</h1>
 				</a>
 
 
-					<p>DisconnectReason.ExcessiveDesyncOldEvent = 18</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Unknown">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Unknown</h1>
-				</a>
-
-
-					<p>DisconnectReason.Unknown = 0</p>
+					<p>DisconnectReason.Banned = 1</p>
 			</header>
 
 
@@ -11410,28 +11411,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ServerCrashed">
+		<section class="method" id="NotOnWhitelist">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerCrashed</h1>
+					<h1><span class="realm shared"></span></span>NotOnWhitelist</h1>
 				</a>
 
 
-					<p>DisconnectReason.ServerCrashed = 4</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="InvalidName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InvalidName</h1>
-				</a>
-
-
-					<p>DisconnectReason.InvalidName = 12</p>
+					<p>DisconnectReason.NotOnWhitelist = 17</p>
 			</header>
 
 
@@ -11452,6 +11439,20 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="InvalidVersion">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InvalidVersion</h1>
+				</a>
+
+
+					<p>DisconnectReason.InvalidVersion = 14</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="NoName">
 			<header>
 				<a class="anchor">
@@ -11460,118 +11461,6 @@ Path											</a>
 
 
 					<p>DisconnectReason.NoName = 11</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerShutdown">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerShutdown</h1>
-				</a>
-
-
-					<p>DisconnectReason.ServerShutdown = 3</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="NotOnWhitelist">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NotOnWhitelist</h1>
-				</a>
-
-
-					<p>DisconnectReason.NotOnWhitelist = 17</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SteamAuthenticationFailed">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SteamAuthenticationFailed</h1>
-				</a>
-
-
-					<p>DisconnectReason.SteamAuthenticationFailed = 8</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerFull">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerFull</h1>
-				</a>
-
-
-					<p>DisconnectReason.ServerFull = 5</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SessionTaken">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SessionTaken</h1>
-				</a>
-
-
-					<p>DisconnectReason.SessionTaken = 9</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="MissingContentPackage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MissingContentPackage</h1>
-				</a>
-
-
-					<p>DisconnectReason.MissingContentPackage = 15</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="NameTaken">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NameTaken</h1>
-				</a>
-
-
-					<p>DisconnectReason.NameTaken = 13</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="TooManyFailedLogins">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TooManyFailedLogins</h1>
-				</a>
-
-
-					<p>DisconnectReason.TooManyFailedLogins = 10</p>
 			</header>
 
 
@@ -11592,6 +11481,34 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="InvalidName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InvalidName</h1>
+				</a>
+
+
+					<p>DisconnectReason.InvalidName = 12</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerShutdown">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerShutdown</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerShutdown = 3</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="SteamAuthenticationRequired">
 			<header>
 				<a class="anchor">
@@ -11606,42 +11523,84 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="InvalidVersion">
+		<section class="method" id="SteamAuthenticationFailed">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InvalidVersion</h1>
+					<h1><span class="realm shared"></span></span>SteamAuthenticationFailed</h1>
 				</a>
 
 
-					<p>DisconnectReason.InvalidVersion = 14</p>
+					<p>DisconnectReason.SteamAuthenticationFailed = 8</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="IncompatibleContentPackage">
+		<section class="method" id="Unknown">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IncompatibleContentPackage</h1>
+					<h1><span class="realm shared"></span></span>Unknown</h1>
 				</a>
 
 
-					<p>DisconnectReason.IncompatibleContentPackage = 16</p>
+					<p>DisconnectReason.Unknown = 0</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Banned">
+		<section class="method" id="NameTaken">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Banned</h1>
+					<h1><span class="realm shared"></span></span>NameTaken</h1>
 				</a>
 
 
-					<p>DisconnectReason.Banned = 1</p>
+					<p>DisconnectReason.NameTaken = 13</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerCrashed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerCrashed</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerCrashed = 4</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SessionTaken">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SessionTaken</h1>
+				</a>
+
+
+					<p>DisconnectReason.SessionTaken = 9</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="TooManyFailedLogins">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TooManyFailedLogins</h1>
+				</a>
+
+
+					<p>DisconnectReason.TooManyFailedLogins = 10</p>
 			</header>
 
 
@@ -11662,6 +11621,62 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="MissingContentPackage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MissingContentPackage</h1>
+				</a>
+
+
+					<p>DisconnectReason.MissingContentPackage = 15</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerFull">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerFull</h1>
+				</a>
+
+
+					<p>DisconnectReason.ServerFull = 5</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IncompatibleContentPackage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IncompatibleContentPackage</h1>
+				</a>
+
+
+					<p>DisconnectReason.IncompatibleContentPackage = 16</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ExcessiveDesyncOldEvent">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ExcessiveDesyncOldEvent</h1>
+				</a>
+
+
+					<p>DisconnectReason.ExcessiveDesyncOldEvent = 18</p>
+			</header>
+
+
+
+
+		</section>
 
 					</div>
 			</article>
@@ -11673,7 +11688,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

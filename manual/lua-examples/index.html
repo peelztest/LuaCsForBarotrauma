@@ -10,11 +10,11 @@
 
 			<meta property="og:description" content="
 
-```lua
+```
 Hook.Add(&#39;chatMessage&#39;, &#39;suicide_mod&#39;, function(msg, client)
     if msg == &#39;!suicide&#39; and client.Character ~= nil then
         client.Character.Kill(CauseOfDeathType.Unknown)
-        Game.SendMessage(client.name .. &#39; killed himself!&#39;, ChatMessage..." />
+        Game.SendMessage(client.name .. &#39; killed himself!&#39;, ChatMessageTyp..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -5598,6 +5598,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5655,6 +5665,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11332,7 +11347,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11364,90 +11379,90 @@ Path											</a>
 
 <h1>Lua Examples</h1>
 
-
-<pre>
-Hook.Add(<span class="string">'chatMessage'</span>, <span class="string">'suicide_mod'</span>, <span class="keyword">function</span>(msg, client)
-    <span class="keyword">if</span> msg == <span class="string">'!suicide'</span> <span class="keyword">and</span> client.Character ~= <span class="keyword">nil</span> <span class="keyword">then</span>
-        client.Character.Kill(CauseOfDeathType.Unknown)
-        Game.SendMessage(client.name .. <span class="string">' killed himself!'</span>, ChatMessageType.Server)
-        <span class="keyword">return</span> <span class="keyword">true</span> <span class="comment">-- hide message
-</span>    <span class="keyword">end</span>
-<span class="keyword">end</span>)
-</pre>
+<pre><code> Hook.Add('chatMessage', 'suicide_mod', function(msg, client)
+     if msg == '!suicide' and client.Character ~= nil then
+         client.Character.Kill(CauseOfDeathType.Unknown)
+         Game.SendMessage(client.name .. ' killed himself!', ChatMessageType.Server)
+         return true -- hide message
+     end
+ end)
+</code></pre>
 
 
+<p><br></p>
 
-<pre>
-Hook.Add(<span class="string">"itemApplyTreatment"</span>, <span class="string">"testItemApplyTreatment"</span>, <span class="keyword">function</span> (item, user, character, targetlimb)
-    <span class="keyword">if</span> item.name == <span class="string">"Bandage"</span> <span class="keyword">then</span>
-        <span class="keyword">local</span> pos = character.WorldPosition
-        Game.Explode(pos, <span class="number">1</span>, <span class="number">500</span>, <span class="number">5000</span>, <span class="number">5000</span>, <span class="number">5000</span>)
+<pre><code> Hook.Add("itemApplyTreatment", "testItemApplyTreatment", function (item, user, character, targetlimb)
+     if item.name == "Bandage" then
+         local pos = character.WorldPosition
+         Game.Explode(pos, 1, 500, 5000, 5000, 5000)
 
-        Game.RemoveItem(item)
-    <span class="keyword">end</span>
-<span class="keyword">end</span>)
-</pre>
-
-
-
-<pre>
-<span class="comment">-- for example: create an item in xml named RandomComponent and add the wiring inputs/outputs trigger_random and random_out
-</span>Hook.Add(<span class="string">"signalReceived"</span>, <span class="string">"signalReceivedTest"</span>, <span class="keyword">function</span> (signal, connection)
-    <span class="keyword">if</span> connection.Item.name == <span class="string">"RandomComponent"</span> <span class="keyword">and</span> connection.Name == <span class="string">"trigger_random"</span> <span class="keyword">then</span>
-        connection.Item.SendSignal(<span class="global">tostring</span>(Random.Range(<span class="number">0</span>, <span class="number">100</span>)), <span class="string">"random_out"</span>)
-    <span class="keyword">end</span>
-<span class="keyword">end</span>)
-</pre>
+         Game.RemoveItem(item)
+     end
+ end)
+</code></pre>
 
 
-
-<pre>
-<span class="keyword">local</span> discordWebHook = <span class="string">"your discord webhook here"</span>
-
-<span class="keyword">local</span> <span class="keyword">function</span> escapeQuotes(str)
-    <span class="keyword">return</span> str:gsub(<span class="string">"\""</span>, <span class="string">"\\\""</span>)
-<span class="keyword">end</span>
-
-Hook.Add(<span class="string">"chatMessage"</span>, <span class="string">"discordIntegration"</span>, <span class="keyword">function</span> (msg, client)
-    <span class="keyword">local</span> escapedName = escapeQuotes(client.name)
-    <span class="keyword">local</span> escapedMessage = escapeQuotes(msg)
-
-    Networking.RequestPostHTTP(discordWebHook, <span class="keyword">function</span>(result) <span class="keyword">end</span>, <span class="string">'{\"content\": \"'</span>..escapedMessage..<span class="string">'\", \"username\": \"'</span>..escapedName..<span class="string">'\"}'</span>)
-<span class="keyword">end</span>)
-</pre>
+<p><br></p>
 
 
+<pre><code> -- for example: create an item in xml named RandomComponent and add the wiring inputs/outputs trigger_random and random_out
+ Hook.Add("signalReceived", "signalReceivedTest", function (signal, connection)
+     if connection.Item.name == "RandomComponent" and connection.Name == "trigger_random" then
+         connection.Item.SendSignal(tostring(Random.Range(0, 100)), "random_out")
+     end
+ end)
+</code></pre>
 
-<pre>
-<span class="comment">-- by jimmyl
-</span>Hook.Add(<span class="string">"chatMessage"</span>,<span class="string">"controlhuskcommand"</span>,<span class="keyword">function</span>(msg, client)
-    <span class="keyword">if</span> msg == <span class="string">"!controlhusk"</span> <span class="keyword">then</span>
-        <span class="keyword">if</span> client.Character ~= <span class="keyword">nil</span> <span class="keyword">then</span>
-            <span class="keyword">if</span> <span class="keyword">not</span> client.Character.IsDead <span class="keyword">then</span>
-                <span class="keyword">return</span> <span class="keyword">true</span>
-            <span class="keyword">end</span>
-        <span class="keyword">end</span>
-        <span class="keyword">if</span> <span class="keyword">not</span> client.InGame <span class="keyword">then</span>
-            <span class="keyword">return</span> <span class="keyword">true</span>
-        <span class="keyword">end</span>
 
-        <span class="keyword">local</span> chars = Character.CharacterList
-        <span class="keyword">local</span> suitablechars = {}
-        <span class="keyword">for</span> i = <span class="number">1</span>, #chars, <span class="number">1</span> <span class="keyword">do</span>
-            <span class="keyword">local</span> charat = chars[i]
-            <span class="keyword">if</span> <span class="keyword">not</span> charat.IsDead <span class="keyword">and</span> <span class="global">string</span>.match(<span class="global">string</span>.lower(charat.SpeciesName), <span class="string">"husk"</span>) <span class="keyword">and</span> <span class="keyword">not</span> charat.IsRemotelyControlled <span class="keyword">then</span>
-                <span class="global">table</span>.insert(suitablechars, charat)
-            <span class="keyword">end</span>
-        <span class="keyword">end</span>
+<p><br></p>
 
-        <span class="keyword">if</span> #suitablechars &gt;= <span class="number">1</span> <span class="keyword">then</span>
-            Player.SetClientCharacter(client, suitablechars[Random.Range(<span class="number">1</span>, #suitablechars)])
-        <span class="keyword">end</span>
+<pre><code> local discordWebHook = "your discord webhook here"
 
-        <span class="keyword">return</span> <span class="keyword">true</span> <span class="comment">-- hide message
-</span>    <span class="keyword">end</span>
-<span class="keyword">end</span>)
-</pre>
+ local function escapeQuotes(str)
+     return str:gsub("\"", "\\\"")
+ end
+
+ Hook.Add("chatMessage", "discordIntegration", function (msg, client)
+     local escapedName = escapeQuotes(client.name)
+     local escapedMessage = escapeQuotes(msg)
+
+     Networking.RequestPostHTTP(discordWebHook, function(result) end, '{\"content\": \"'..escapedMessage..'\", \"username\": \"'..escapedName..'\"}')
+ end)
+</code></pre>
+
+
+<p><br></p>
+
+
+<pre><code> -- by jimmyl
+ Hook.Add("chatMessage","controlhuskcommand",function(msg, client)
+     if msg == "!controlhusk" then
+         if client.Character ~= nil then
+             if not client.Character.IsDead then
+                 return true
+             end
+         end
+         if not client.InGame then
+             return true
+         end
+
+         local chars = Character.CharacterList
+         local suitablechars = {}
+         for i = 1, #chars, 1 do
+             local charat = chars[i]
+             if not charat.IsDead and string.match(string.lower(charat.SpeciesName), "husk") and not charat.IsRemotelyControlled then
+                 table.insert(suitablechars, charat)
+             end
+         end
+
+         if #suitablechars &gt;= 1 then
+             Player.SetClientCharacter(client, suitablechars[Random.Range(1, #suitablechars)])
+         end
+
+         return true -- hide message
+     end
+ end)
+</code></pre>
 
 
 					</div>
@@ -11460,7 +11475,7 @@ Hook.Add(<span class="string">"chatMessage"</span>, <span class="string">"discor
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

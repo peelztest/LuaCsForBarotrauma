@@ -5592,6 +5592,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5649,6 +5659,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11326,7 +11341,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11368,14 +11383,28 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Drowning">
+		<section class="method" id="Suffocation">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Drowning</h1>
+					<h1><span class="realm shared"></span></span>Suffocation</h1>
 				</a>
 
 
-					<p>CauseOfDeathType.Drowning = 3</p>
+					<p>CauseOfDeathType.Suffocation = 2</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Pressure">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Pressure</h1>
+				</a>
+
+
+					<p>CauseOfDeathType.Pressure = 1</p>
 			</header>
 
 
@@ -11410,20 +11439,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Affliction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Affliction</h1>
-				</a>
-
-
-					<p>CauseOfDeathType.Affliction = 4</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Unknown">
 			<header>
 				<a class="anchor">
@@ -11438,28 +11453,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Suffocation">
+		<section class="method" id="Drowning">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Suffocation</h1>
+					<h1><span class="realm shared"></span></span>Drowning</h1>
 				</a>
 
 
-					<p>CauseOfDeathType.Suffocation = 2</p>
+					<p>CauseOfDeathType.Drowning = 3</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Pressure">
+		<section class="method" id="Affliction">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Pressure</h1>
+					<h1><span class="realm shared"></span></span>Affliction</h1>
 				</a>
 
 
-					<p>CauseOfDeathType.Pressure = 1</p>
+					<p>CauseOfDeathType.Affliction = 4</p>
 			</header>
 
 
@@ -11477,7 +11492,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

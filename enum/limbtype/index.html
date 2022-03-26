@@ -5592,6 +5592,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5649,6 +5659,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11326,7 +11341,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11368,48 +11383,6 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Torso">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Torso</h1>
-				</a>
-
-
-					<p>LimbType.Torso = 12</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Head">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Head</h1>
-				</a>
-
-
-					<p>LimbType.Head = 11</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="LeftForearm">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LeftForearm</h1>
-				</a>
-
-
-					<p>LimbType.LeftForearm = 5</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="Jaw">
 			<header>
 				<a class="anchor">
@@ -11494,28 +11467,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RightArm">
+		<section class="method" id="RightFoot">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RightArm</h1>
+					<h1><span class="realm shared"></span></span>RightFoot</h1>
 				</a>
 
 
-					<p>LimbType.RightArm = 4</p>
+					<p>LimbType.RightFoot = 10</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="LeftLeg">
+		<section class="method" id="None">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LeftLeg</h1>
+					<h1><span class="realm shared"></span></span>None</h1>
 				</a>
 
 
-					<p>LimbType.LeftLeg = 7</p>
+					<p>LimbType.None = 0</p>
 			</header>
 
 
@@ -11550,42 +11523,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RightFoot">
+		<section class="method" id="LeftHand">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RightFoot</h1>
+					<h1><span class="realm shared"></span></span>LeftHand</h1>
 				</a>
 
 
-					<p>LimbType.RightFoot = 10</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="None">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>None</h1>
-				</a>
-
-
-					<p>LimbType.None = 0</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Legs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Legs</h1>
-				</a>
-
-
-					<p>LimbType.Legs = 14</p>
+					<p>LimbType.LeftHand = 1</p>
 			</header>
 
 
@@ -11620,14 +11565,84 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="LeftHand">
+		<section class="method" id="Torso">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LeftHand</h1>
+					<h1><span class="realm shared"></span></span>Torso</h1>
 				</a>
 
 
-					<p>LimbType.LeftHand = 1</p>
+					<p>LimbType.Torso = 12</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Head">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Head</h1>
+				</a>
+
+
+					<p>LimbType.Head = 11</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="LeftLeg">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LeftLeg</h1>
+				</a>
+
+
+					<p>LimbType.LeftLeg = 7</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="RightArm">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RightArm</h1>
+				</a>
+
+
+					<p>LimbType.RightArm = 4</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="LeftForearm">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LeftForearm</h1>
+				</a>
+
+
+					<p>LimbType.LeftForearm = 5</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Legs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Legs</h1>
+				</a>
+
+
+					<p>LimbType.Legs = 14</p>
 			</header>
 
 
@@ -11645,7 +11660,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

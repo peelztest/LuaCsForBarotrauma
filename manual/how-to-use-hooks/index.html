@@ -16,8 +16,8 @@ Hooks are basically functions that get called when events happen in-game, like c
 
 Hooks can be added like this:
 
-```lua
-Hook.Add(&quot;chatMessage&quot;, &quot;test&quot;, function(mes..." />
+```
+Hook.Add(&quot;chatMessage&quot;, &quot;test&quot;, function(messag..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -5601,6 +5601,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5658,6 +5668,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11335,7 +11350,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11374,12 +11389,10 @@ Path											</a>
 
 <p>Hooks can be added like this:</p>
 
-
-<pre>
-Hook.Add(<span class="string">"chatMessage"</span>, <span class="string">"test"</span>, <span class="keyword">function</span>(message, client)
-    <span class="global">print</span>(client.Name .. <span class="string">" has sent "</span> .. message)
-<span class="keyword">end</span>)
-</pre>
+<pre><code> Hook.Add("chatMessage", "test", function(message, client)
+     print(client.Name .. " has sent " .. message)
+ end)
+</code></pre>
 
 
 <p>The event name (first argument), is case-insensitive, so you can call it chatMessage, cHaTmEsSaGe, chatmessage, etc.</p>
@@ -11389,10 +11402,8 @@ Hook.Add(<span class="string">"chatMessage"</span>, <span class="string">"test"<
 
 <p>You can also call hooks with the following code:</p>
 
-
-<pre>
-Hook.Call(<span class="string">"myCustomEvent"</span>, {<span class="string">"some"</span>, <span class="string">"arguments"</span>, <span class="number">123</span>})
-</pre>
+<pre><code> Hook.Call("myCustomEvent", {"some", "arguments", 123})
+</code></pre>
 
 
 <p><a name="XML_Status_Effect_Hooks"></a></p>
@@ -11400,20 +11411,15 @@ Hook.Call(<span class="string">"myCustomEvent"</span>, {<span class="string">"so
 
 <p>With Lua, a new XML tags is added, it can be used to call Lua hooks inside status effects:</p>
 
-
-<pre>
-&lt;StatusEffect <span class="global">type</span>=<span class="string">"OnUse"</span>&gt;
-    &lt;LuaHook name=<span class="string">"doSomething"</span>&gt;
-&lt;/StatusEffect&gt;
-</pre>
+<pre><code> &lt;StatusEffect type="OnUse"&gt;
+     &lt;LuaHook name="doSomething" /&gt;
+ &lt;/StatusEffect&gt;
 
 
-
-<pre>
-Hook.Add(<span class="string">"doSomething"</span>, <span class="string">"something"</span>, <span class="keyword">function</span> (effect, deltaTime, item, targets, worldPosition)
-    <span class="global">print</span>(effect, <span class="string">' '</span>, item)
-<span class="keyword">end</span>)
-</pre>
+ Hook.Add("doSomething", "something", function (effect, deltaTime, item, targets, worldPosition)
+     print(effect, ' ', item)
+ end)
+</code></pre>
 
 
 <p><a name="Patching"></a></p>
@@ -11421,12 +11427,10 @@ Hook.Add(<span class="string">"doSomething"</span>, <span class="string">"someth
 
 <p>Patching allows you to hook into existing methods in the game code, notice that it can be a little unstable depending on the method that you are patching, so be aware.</p>
 
-
-<pre>
-Hook.HookMethod(<span class="string">"Barotrauma.CharacterInfo"</span>, <span class="string">"IncreaseSkillLevel"</span>, <span class="keyword">function</span> (instance, ptable)
-    <span class="global">print</span>(<span class="global">string</span>.format(<span class="string">"%s gained % xp"</span>, instance.Character.Name, ptable.increase))
-<span class="keyword">end</span>, Hook.HookMethodType.After)
-</pre>
+<pre><code> Hook.HookMethod("Barotrauma.CharacterInfo", "IncreaseSkillLevel", function (instance, ptable)
+     print(string.format("%s gained % xp", instance.Character.Name, ptable.increase))
+ end, Hook.HookMethodType.After)
+</code></pre>
 
 
 <p>If you return anything other than nil, it will stop the execution of the method, if the method has a return type, it will also return what you returned in the Lua function. (Only in Hook.HookMethodType.After)</p>
@@ -11441,7 +11445,7 @@ Hook.HookMethod(<span class="string">"Barotrauma.CharacterInfo"</span>, <span cl
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

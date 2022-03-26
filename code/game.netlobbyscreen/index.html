@@ -5592,6 +5592,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5649,6 +5659,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11326,7 +11341,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11368,6 +11383,109 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="Deselect">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Deselect()</h1>
+				</a>
+
+
+					<p>Deselect</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SetTraitorsEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetTraitorsEnabled(enabled)</h1>
+				</a>
+
+
+					<p>SetTraitorsEnabled</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">enabled</span>
+
+									<span class="tag"><span class="type">YesNoMaybe</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Update">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
+				</a>
+
+
+					<p>Update</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
@@ -11502,136 +11620,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetSubList">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSubList()</h1>
-				</a>
-
-
-					<p>GetSubList</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">IReadOnlyList`1</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToggleTraitorsEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToggleTraitorsEnabled(dir)</h1>
-				</a>
-
-
-					<p>ToggleTraitorsEnabled</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">dir</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RandomizeSettings">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RandomizeSettings()</h1>
-				</a>
-
-
-					<p>RandomizeSettings</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Update">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
-				</a>
-
-
-					<p>Update</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="AddSub">
 			<header>
 				<a class="anchor">
@@ -11663,14 +11651,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SetBotSpawnMode">
+		<section class="method" id="ToggleTraitorsEnabled">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetBotSpawnMode(botSpawnMode)</h1>
+					<h1><span class="realm shared"></span></span>ToggleTraitorsEnabled(dir)</h1>
 				</a>
 
 
-					<p>SetBotSpawnMode</p>
+					<p>ToggleTraitorsEnabled</p>
 			</header>
 
 
@@ -11680,69 +11668,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">botSpawnMode</span>
-
-									<span class="tag"><span class="type">BotSpawnMode</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ChangeServerMessage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ChangeServerMessage(m)</h1>
-				</a>
-
-
-					<p>ChangeServerMessage</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">m</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SetBotCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetBotCount(botCount)</h1>
-				</a>
-
-
-					<p>SetBotCount</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">botCount</span>
+								<span class="tag parameter">dir</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11800,28 +11726,55 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Deselect">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Deselect()</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<p>Deselect</p>
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="RandomizeSettings">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RandomizeSettings()</h1>
+				</a>
+
+
+					<p>RandomizeSettings</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="SetTraitorsEnabled">
+		<section class="method" id="SetBotSpawnMode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetTraitorsEnabled(enabled)</h1>
+					<h1><span class="realm shared"></span></span>SetBotSpawnMode(botSpawnMode)</h1>
 				</a>
 
 
-					<p>SetTraitorsEnabled</p>
+					<p>SetBotSpawnMode</p>
 			</header>
 
 
@@ -11831,9 +11784,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">enabled</span>
+								<span class="tag parameter">botSpawnMode</span>
 
-									<span class="tag"><span class="type">YesNoMaybe</span></span>
+									<span class="tag"><span class="type">BotSpawnMode</span></span>
 
 
 								<p>
@@ -11845,14 +11798,45 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="SetBotCount">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>SetBotCount(botCount)</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>SetBotCount</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">botCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetSubList">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSubList()</h1>
+				</a>
+
+
+					<p>GetSubList</p>
 			</header>
 
 
@@ -11861,7 +11845,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">IReadOnlyList`1</span>
 
 								<p>
 
@@ -11869,6 +11853,37 @@ Path											</a>
 							</li>
 
 				</ul>
+
+
+		</section>
+		<section class="method" id="ChangeServerMessage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ChangeServerMessage(m)</h1>
+				</a>
+
+
+					<p>ChangeServerMessage</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">m</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -11904,80 +11919,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="LastUpdateID">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastUpdateID</h1>
-				</a>
-
-
-					<p>LastUpdateID, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LastUpdateID</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Cam">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Cam</h1>
-				</a>
-
-
-					<p>Cam, Field of type Camera</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Cam</span>
-
-									<span class="tag"><span class="type">Camera</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="JobPreferences">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>JobPreferences</h1>
-				</a>
-
-
-					<p>JobPreferences, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="LevelSeed">
 			<header>
 				<a class="anchor">
@@ -11995,66 +11936,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">LevelSeed</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RadiationEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RadiationEnabled</h1>
-				</a>
-
-
-					<p>RadiationEnabled, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RadiationEnabled</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SelectedModeIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelectedModeIdentifier</h1>
-				</a>
-
-
-					<p>SelectedModeIdentifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SelectedModeIdentifier</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -12098,6 +11979,140 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="SelectedModeIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectedModeIdentifier</h1>
+				</a>
+
+
+					<p>SelectedModeIdentifier, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SelectedModeIdentifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RadiationEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RadiationEnabled</h1>
+				</a>
+
+
+					<p>RadiationEnabled, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RadiationEnabled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Cam">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Cam</h1>
+				</a>
+
+
+					<p>Cam, Field of type Camera</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Cam</span>
+
+									<span class="tag"><span class="type">Camera</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LastUpdateID">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LastUpdateID</h1>
+				</a>
+
+
+					<p>LastUpdateID, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LastUpdateID</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="JobPreferences">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>JobPreferences</h1>
+				</a>
+
+
+					<p>JobPreferences, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
 
 					</div>
 			</article>
@@ -12109,7 +12124,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

@@ -2,16 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Adding Lua For Barotrauma to an existing server - LuaForBarotrauma Documentation</title>
+		<title>Installing Lua For Barotrauma Manually - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Adding Lua For Barotrauma to an existing server - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="Installing Lua For Barotrauma Manually - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
 			<meta property="og:description" content="
+
+ Adding Lua For Barotrauma to an existing server
 1 - Download [latest version of LuaForBarotrauma](https:&#47;&#47;github.com&#47;evilfactory&#47;Barotrauma-lua-attempt&#47;releases&#47;tag&#47;latest), choose the correct platform in the assets drop down.&lt;br&gt;
-2 - Extract the zip file&lt;br&gt;
-3 - Copy the following files inside the ex..." />
+2 - Extract the zip f..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -5595,6 +5596,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5652,6 +5663,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11329,7 +11345,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11359,6 +11375,9 @@ Path											</a>
 			<article>
 					<div class="wrapper">
 
+<h1>Installing Lua For Barotrauma Manually</h1>
+
+<p><a name="Adding_Lua_For_Barotrauma_to_an_existing_server"></a></p>
 <h2>Adding Lua For Barotrauma to an existing server</h2>
 <p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of LuaForBarotrauma</a>, choose the correct platform in the assets drop down.<br>
 2 - Extract the zip file<br>
@@ -11381,6 +11400,7 @@ Path											</a>
 
 <p>4 - Paste them to your existing server, and let it replace the files<br></p>
 
+<p><a name="Adding_Lua_For_Barotrauma_to_an_existing_client"></a></p>
 <h2>Adding Lua For Barotrauma to an existing client</h2>
 
 <p>Same as above, but instead you need to copy/replace the following files:</p>
@@ -11400,6 +11420,7 @@ Path											</a>
 </ul>
 
 
+<p><a name="Using_Lua_For_Barotrauma_from_scratch"></a></p>
 <h2>Using Lua For Barotrauma from scratch</h2>
 
 <p>1 - Download <a href="https://github.com/evilfactory/Barotrauma-lua-attempt/releases/tag/latest">latest version of LuaForBarotrauma</a>, choose the correct platform in the assets drop down.<br></p>
@@ -11420,9 +11441,15 @@ Path											</a>
 
 <p>7 - Done! Now run DedicatedServer.exe to run the modded server or run Barotrauma.exe to run the modded client.<br></p>
 
-<p><a name="Linux_notice"></a></p>
 <h3>Linux notice</h3>
 <p>Sometimes you will get steam initialization errors, most of the time it's because it's missing the linux64/steamclient.so binary, so you can just copy the binary from your steam instalation over to the folder and it should work.</p>
+
+
+
+<p><a name="Checking_if_everything_is_working"></a></p>
+<h2>Checking if everything is working</h2>
+
+<p>If the commands <code>reloadlua</code> or <code>cl_reloadlua</code> work, it means you successfully installed the mod.</p>
 
 					</div>
 			</article>
@@ -11434,7 +11461,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

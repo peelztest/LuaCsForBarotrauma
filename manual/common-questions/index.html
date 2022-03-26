@@ -12,13 +12,13 @@
 
  What does attempt to index a nil value mean!?
 It means you tried to access a field of something that doesn&#39;t exist, for example:
-```lua
+```
 local thisIsNil = nil
 print(thisIsNil.what)
 print(thisIsNil.something())
 ```
 
- Why i&#39;m getting &quot;Cannot access field ..." />
+ Why i&#39;m getting &quot;Cannot access field tes..." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -5602,6 +5602,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5659,6 +5669,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11336,7 +11351,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11371,40 +11386,34 @@ Path											</a>
 <p><a name="What_does_attempt_to_index_a_nil_value_mean__"></a></p>
 <h2>What does attempt to index a nil value mean!?</h2>
 <p>It means you tried to access a field of something that doesn't exist, for example:</p>
-
-<pre>
-<span class="keyword">local</span> thisIsNil = <span class="keyword">nil</span>
-<span class="global">print</span>(thisIsNil.what)
-<span class="global">print</span>(thisIsNil.something())
-</pre>
+<pre><code> local thisIsNil = nil
+ print(thisIsNil.what)
+ print(thisIsNil.something())
+</code></pre>
 
 
 <p><a name="Why_i_m_getting__Cannot_access_field_test_of_userdata_something___errors_"></a></p>
 <h2>Why i'm getting "Cannot access field test of userdata<something>" errors?</h2>
 <p>Because you are trying to access a field in a C# class that doesn't exist.</p>
-
-<pre>
-<span class="global">print</span>(Item.thisDoesntExist)
-</pre>
+<pre><code> print(Item.thisDoesntExist)
+</code></pre>
 
 
 <p><a name="What_is__Attempt_to_access_instance_member__Drop__from_a_static_userdata_"></a></p>
 <h2>What is "Attempt to access instance member "Drop" from a static userdata"</h2>
 <p>It means you are trying to access a member that requires an instance to accessed, for example:</p>
-
-<pre>
-Item.Drop() <span class="comment">-- there's a static global class called Item, but because it's static, you can't call item specific things on it, this will error.
-</span>Item.ItemList[<span class="number">1</span>].Drop() <span class="comment">-- this won't error, it will drop the first item ever created.</span>
-</pre>
+<pre><code> -- there's a static global class called Item, but because it's static, you can't call item specific
+ -- things on it, this will error.
+ Item.Drop()
+ Item.ItemList[1].Drop() -- this won't error, it will drop the first item ever created.
+</code></pre>
 
 
 <p><a name="I_m_getting_a_super_big_error_with_things_related_to_the_C__side"></a></p>
 <h2>I'm getting a super big error with things related to the C# side</h2>
 <p>It usually happens when you call something on the C# side and you provide nil inputs, you can get a better idea of it by analyzing the error message and trying to link it your lua code, for example:</p>
-
-<pre>
-Game.SendMessage(<span class="keyword">nil</span>)
-</pre>
+<pre><code> Game.SendMessage(nil)
+</code></pre>
 
 <p>This will result in </p>
 <pre><code> [LUA ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
@@ -11417,89 +11426,78 @@ Game.SendMessage(<span class="keyword">nil</span>)
 
 <p><a name="How_do_i_list_all_clients__characters_and_items_"></a></p>
 <h2>How do i list all clients, characters and items?</h2>
+<pre><code> for _, client in pairs(Client.ClientList) do
 
-<pre>
-<span class="keyword">for</span> _, client <span class="keyword">in</span> <span class="global">pairs</span>(Client.ClientList) <span class="keyword">do</span>
+ end
 
-<span class="keyword">end</span>
+ for _, character in pairs(Character.CharacterList) do
 
-<span class="keyword">for</span> _, character <span class="keyword">in</span> <span class="global">pairs</span>(Character.CharacterList) <span class="keyword">do</span>
+ end
 
-<span class="keyword">end</span>
+ for _, item in pairs(Item.ItemList) do
 
-<span class="keyword">for</span> _, item <span class="keyword">in</span> <span class="global">pairs</span>(Item.ItemList) <span class="keyword">do</span>
-
-<span class="keyword">end</span>
-</pre>
+ end
+</code></pre>
 
 
 <p><a name="Running_pairs___on_an_enumerator_doesn_t_work_"></a></p>
 <h2>Running pairs() on an enumerator doesn't work!</h2>
 <p>pairs() Returns an enumerator that iterates through the entire table keys, if you already have an enumerator, you can just pass it in directly.</p>
+<pre><code> -- get first item ever created and loop through all the items stored inside it.
+ for item in Item.ItemList[1].OwnInventory.AllItems do
 
-<pre>
-<span class="comment">-- get first item ever created and loop through all the items stored inside it.
-</span><span class="keyword">for</span> item <span class="keyword">in</span> Item.ItemList[<span class="number">1</span>].OwnInventory.AllItems <span class="keyword">do</span>
-
-<span class="keyword">end</span>
-</pre>
+ end
+</code></pre>
 
 
 <p><a name="How_do_i_spawn_an_item_"></a></p>
 <h2>How do i spawn an item?</h2>
+<pre><code> local prefab = ItemPrefab.GetItemPrefab("screwdriver")
+ local firstPlayerCharacter = Client.ClientList[1].Character
 
-<pre>
-<span class="keyword">local</span> prefab = ItemPrefab.GetItemPrefab(<span class="string">"screwdriver"</span>)
-<span class="keyword">local</span> firstPlayerCharacter = Client.ClientList[<span class="number">1</span>].Character
+ -- Spawn on the world
+ Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.WorldPosition, nil, nil, function(item)
+     print(item.Name .. " Has been spawned.")
+ end)
 
-<span class="comment">-- Spawn on the world
-</span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.WorldPosition, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
-    <span class="global">print</span>(item.Name .. <span class="string">" Has been spawned."</span>)
-<span class="keyword">end</span>)
-
-<span class="comment">-- Spawn inside an inventory
-</span>Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.Inventory, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">function</span>(item)
-    <span class="global">print</span>(item.Name .. <span class="string">" Has been spawned."</span>)
-<span class="keyword">end</span>)
-</pre>
+ -- Spawn inside an inventory
+ Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.Inventory, nil, nil, function(item)
+     print(item.Name .. " Has been spawned.")
+ end)
+</code></pre>
 
 
 <p><a name="How_do_i_give_a_character_a_certain_affliction"></a></p>
 <h2>How do i give a character a certain affliction</h2>
 
+<pre><code> local burnPrefab = AfflictionPrefab.Prefabs["burn"]
 
-<pre>
-<span class="keyword">local</span> burnPrefab = AfflictionPrefab.Prefabs[<span class="string">"burn"</span>]
+ local char = Character.CharacterList[1]
+ local limb = char.AnimController.MainLimb
+ -- or        char.AnimController.Limbs[1]
 
-<span class="keyword">local</span> char = Character.CharacterList[<span class="number">1</span>]
-<span class="keyword">local</span> limb = char.AnimController.MainLimb
-<span class="comment">-- or        char.AnimController.Limbs[1]
-</span>
-char.CharacterHealth.ApplyAffliction(limb, burnPrefab.Instantiate(<span class="number">100</span>))
-</pre>
+ char.CharacterHealth.ApplyAffliction(limb, burnPrefab.Instantiate(100))
+</code></pre>
+
 
 
 <p><a name="How_do_i_get_the_amount_of_a_affliction_that_a_character_has_"></a></p>
 <h2>How do i get the amount of a affliction that a character has?</h2>
 
+<pre><code> local char = Character.CharacterList[1]
 
-<pre>
-<span class="keyword">local</span> char = Character.CharacterList[<span class="number">1</span>]
-
-<span class="global">print</span>(char.CharacterHealth.GetAffliction(<span class="string">"burn"</span>))
-<span class="comment">-- or
-</span><span class="global">print</span>(char.CharacterHealth.GetAffliction(<span class="string">"burn"</span>, char.AnimController.Limbs[<span class="number">1</span>]))
-</pre>
+ print(char.CharacterHealth.GetAffliction("burn"))
+ -- or
+ print(char.CharacterHealth.GetAffliction("burn", char.AnimController.Limbs[1]))
+</code></pre>
 
 
 <p><a name="How_do_i_send_a_private_chat_message_"></a></p>
 <h2>How do i send a private chat message?</h2>
 
-
-<pre>
-<span class="keyword">local</span> chatMessage = ChatMessage.Create(<span class="string">"Sender name"</span>, <span class="string">"text here"</span>, ChatMessageType.MessageBox, <span class="keyword">nil</span>, <span class="keyword">nil</span>)
-Game.SendDirectChatMessage(chatMessage, ChatMessageType.MessageBox)
-</pre>
+<pre><code> local chatMessage = ChatMessage.Create("Sender name", "text here", ChatMessageType.MessageBox, nil, nil)
+ Game.SendDirectChatMessage(chatMessage, ChatMessageType.MessageBox)
+</code></pre>
 
 
 					</div>
@@ -11512,7 +11510,7 @@ Game.SendDirectChatMessage(chatMessage, ChatMessageType.MessageBox)
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)

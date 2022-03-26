@@ -5592,6 +5592,16 @@ gapOxygenUpdate											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRFailed">
+human.CPRFailed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#human.CPRSuccess">
+human.CPRSuccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hook/#husk.clientControl">
 husk.clientControl											</a>
 										</li>
@@ -5649,6 +5659,11 @@ item.use											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hook/#jobsAssigned">
 jobsAssigned											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hook/#loaded">
+loaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -11326,7 +11341,7 @@ Path											</a>
 
 							</li>
 							<li>
-									<a href="../../manual/installing-lua-for-barotrauma-manually/">Adding Lua For Barotrauma to an existing server</a>
+									<a href="../../manual/installing-lua-for-barotrauma-manually/">Installing Lua For Barotrauma Manually</a>
 
 
 
@@ -11368,34 +11383,6 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="ObjectiveManagerState">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ObjectiveManagerState</h1>
-				</a>
-
-
-					<p>NetEntityEvent.Type.ObjectiveManagerState = 15</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AddToCrew">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddToCrew</h1>
-				</a>
-
-
-					<p>NetEntityEvent.Type.AddToCrew = 16</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="UpdateTalents">
 			<header>
 				<a class="anchor">
@@ -11452,14 +11439,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Treatment">
+		<section class="method" id="InventoryState">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Treatment</h1>
+					<h1><span class="realm shared"></span></span>InventoryState</h1>
 				</a>
 
 
-					<p>NetEntityEvent.Type.Treatment = 4</p>
+					<p>NetEntityEvent.Type.InventoryState = 2</p>
 			</header>
 
 
@@ -11522,20 +11509,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Upgrade">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Upgrade</h1>
-				</a>
-
-
-					<p>NetEntityEvent.Type.Upgrade = 12</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="SetAttackTarget">
 			<header>
 				<a class="anchor">
@@ -11550,42 +11523,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="UpdateSkills">
+		<section class="method" id="Upgrade">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UpdateSkills</h1>
+					<h1><span class="realm shared"></span></span>Upgrade</h1>
 				</a>
 
 
-					<p>NetEntityEvent.Type.UpdateSkills = 8</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="UpdateMoney">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UpdateMoney</h1>
-				</a>
-
-
-					<p>NetEntityEvent.Type.UpdateMoney = 19</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AssignCampaignInteraction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AssignCampaignInteraction</h1>
-				</a>
-
-
-					<p>NetEntityEvent.Type.AssignCampaignInteraction = 13</p>
+					<p>NetEntityEvent.Type.Upgrade = 12</p>
 			</header>
 
 
@@ -11620,14 +11565,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="InventoryState">
+		<section class="method" id="UpdateSkills">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InventoryState</h1>
+					<h1><span class="realm shared"></span></span>UpdateSkills</h1>
 				</a>
 
 
-					<p>NetEntityEvent.Type.InventoryState = 2</p>
+					<p>NetEntityEvent.Type.UpdateSkills = 8</p>
 			</header>
 
 
@@ -11648,6 +11593,34 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="UpdateMoney">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateMoney</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.UpdateMoney = 19</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ObjectiveManagerState">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ObjectiveManagerState</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.ObjectiveManagerState = 15</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Invalid">
 			<header>
 				<a class="anchor">
@@ -11656,6 +11629,48 @@ Path											</a>
 
 
 					<p>NetEntityEvent.Type.Invalid = 0</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AddToCrew">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddToCrew</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.AddToCrew = 16</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Treatment">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Treatment</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.Treatment = 4</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AssignCampaignInteraction">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AssignCampaignInteraction</h1>
+				</a>
+
+
+					<p>NetEntityEvent.Type.AssignCampaignInteraction = 13</p>
 			</header>
 
 
@@ -11673,7 +11688,7 @@ Path											</a>
 			var elements = document.querySelectorAll("pre code")
 
 			hljs.configure({
-				languages: ["lua"]
+				languages: ["lua", ""]
 			});
 
 			for (var i = 0; i < elements.length; i++)
