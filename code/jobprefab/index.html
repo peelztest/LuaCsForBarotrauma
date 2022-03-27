@@ -11381,14 +11381,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="GetHashCode">
+		<section class="method" id="ToString">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>ToString()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>ToString</p>
 			</header>
 
 
@@ -11397,7 +11397,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
@@ -11439,30 +11439,48 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
+		<section class="method" id="JobPrefab.LoadAll">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>JobPrefab.LoadAll(files)</h1>
 				</a>
 
 
-					<p>GetType</p>
+					<p>LoadAll</p>
 			</header>
 
 
+					<h3>Parameters</h3>
 
-				<h3>Returns</h3>
-				<ul>
+
+					<ul>
 
 							<li>
-									<span class="type">Type</span>
+								<span class="tag parameter">files</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
 
 								<p>
 
 </p>
 							</li>
+					</ul>
 
-				</ul>
+
+
+		</section>
+		<section class="method" id="Dispose">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
+				</a>
+
+
+					<p>Dispose</p>
+			</header>
+
+
 
 
 		</section>
@@ -11554,14 +11572,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>ToString</p>
+					<p>GetType</p>
 			</header>
 
 
@@ -11570,7 +11588,34 @@ Path											</a>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
 
 								<p>
 
@@ -11656,40 +11701,27 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Dispose">
+	<h1 class="title">Fields</h1>
+
+		<section class="method" id="OriginalName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
 				</a>
 
 
-					<p>Dispose</p>
+					<p>OriginalName, Field of type string</p>
 			</header>
 
 
-
-
-		</section>
-		<section class="method" id="JobPrefab.LoadAll">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>JobPrefab.LoadAll(files)</h1>
-				</a>
-
-
-					<p>LoadAll</p>
-			</header>
-
-
-					<h3>Parameters</h3>
 
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">files</span>
+								<span class="tag parameter">OriginalName</span>
 
-									<span class="tag"><span class="type">Enumerable</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -11701,18 +11733,92 @@ Path											</a>
 
 
 		</section>
-	<h1 class="title">Fields</h1>
-
-		<section class="method" id="PreviewItems">
+		<section class="method" id="OnlyJobSpecificDialog">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PreviewItems</h1>
+					<h1><span class="realm shared"></span></span>OnlyJobSpecificDialog</h1>
 				</a>
 
 
-					<p>PreviewItems, Field of type table</p>
+					<p>OnlyJobSpecificDialog, Field of type bool</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OnlyJobSpecificDialog</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FilePath">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FilePath</h1>
+				</a>
+
+
+					<p>FilePath, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FilePath</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<p>Name, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -11747,14 +11853,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Commonness">
+		<section class="method" id="Identifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Commonness</h1>
+					<h1><span class="realm shared"></span></span>Identifier</h1>
 				</a>
 
 
-					<p>Commonness, Field of type number</p>
+					<p>Identifier, Field of type string</p>
 			</header>
 
 
@@ -11763,7 +11869,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Commonness</span>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="InitialCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InitialCount</h1>
+				</a>
+
+
+					<p>InitialCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InitialCount</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11777,14 +11913,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="PriceMultiplier">
+		<section class="method" id="MinNumber">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
+					<h1><span class="realm shared"></span></span>MinNumber</h1>
 				</a>
 
 
-					<p>PriceMultiplier, Field of type number</p>
+					<p>MinNumber, Field of type number</p>
 			</header>
 
 
@@ -11793,7 +11929,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">PriceMultiplier</span>
+								<span class="tag parameter">MinNumber</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -11837,28 +11973,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ItemSets">
+		<section class="method" id="AppropriateOrders">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemSets</h1>
+					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
 				</a>
 
 
-					<p>ItemSets, Field of type table</p>
+					<p>AppropriateOrders, Field of type table</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Name">
+		<section class="method" id="PriceMultiplier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Name</h1>
+					<h1><span class="realm shared"></span></span>PriceMultiplier</h1>
 				</a>
 
 
-					<p>Name, Field of type string</p>
+					<p>PriceMultiplier, Field of type number</p>
 			</header>
 
 
@@ -11867,9 +12003,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Name</span>
+								<span class="tag parameter">PriceMultiplier</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -11877,20 +12013,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="Skills">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Skills</h1>
-				</a>
-
-
-					<p>Skills, Field of type table</p>
-			</header>
-
 
 
 
@@ -11955,14 +12077,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="FilePath">
+		<section class="method" id="MinKarma">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FilePath</h1>
+					<h1><span class="realm shared"></span></span>MinKarma</h1>
 				</a>
 
 
-					<p>FilePath, Field of type string</p>
+					<p>MinKarma, Field of type number</p>
 			</header>
 
 
@@ -11971,9 +12093,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">FilePath</span>
+								<span class="tag parameter">MinKarma</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -11985,14 +12107,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="OnlyJobSpecificDialog">
+		<section class="method" id="Commonness">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OnlyJobSpecificDialog</h1>
+					<h1><span class="realm shared"></span></span>Commonness</h1>
 				</a>
 
 
-					<p>OnlyJobSpecificDialog, Field of type bool</p>
+					<p>Commonness, Field of type number</p>
 			</header>
 
 
@@ -12001,9 +12123,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">OnlyJobSpecificDialog</span>
+								<span class="tag parameter">Commonness</span>
 
-									<span class="tag"><span class="type">boolean</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -12011,6 +12133,34 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="ItemSets">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemSets</h1>
+				</a>
+
+
+					<p>ItemSets, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="PreviewItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PreviewItems</h1>
+				</a>
+
+
+					<p>PreviewItems, Field of type table</p>
+			</header>
+
 
 
 
@@ -12045,180 +12195,16 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="OriginalName">
+		<section class="method" id="Skills">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
+					<h1><span class="realm shared"></span></span>Skills</h1>
 				</a>
 
 
-					<p>OriginalName, Field of type string</p>
+					<p>Skills, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OriginalName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MinNumber">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinNumber</h1>
-				</a>
-
-
-					<p>MinNumber, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MinNumber</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="InitialCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InitialCount</h1>
-				</a>
-
-
-					<p>InitialCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InitialCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<p>Identifier, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AppropriateOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AppropriateOrders</h1>
-				</a>
-
-
-					<p>AppropriateOrders, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AutonomousObjectives">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutonomousObjectives</h1>
-				</a>
-
-
-					<p>AutonomousObjectives, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="MinKarma">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinKarma</h1>
-				</a>
-
-
-					<p>MinKarma, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MinKarma</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -12249,6 +12235,20 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="AutonomousObjectives">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutonomousObjectives</h1>
+				</a>
+
+
+					<p>AutonomousObjectives, Field of type table</p>
+			</header>
+
 
 
 
