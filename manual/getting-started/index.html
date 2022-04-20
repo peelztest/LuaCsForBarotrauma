@@ -11427,15 +11427,13 @@ Path											</a>
 
 <p>If you wish to separate your Lua scripts into multiple files, you can do it by either having multiple scripts in the Autorun folder, or having a single script that is responsible for executing the rest of your Lua scripts, for that you will need to get relative paths to your mod, here's an example of how to do it:</p>
 
+<pre><code> -- this variable will be accessible to any other script, so you can use it to get the mod's path.
+ MyModGlobal = {}
 
-<pre>
-<span class="comment">-- this variable will be accessible to any other script, so you can use it to get the mod's path.
-</span>MyModGlobal = {}
+ MyModGlobal.Path = table.pack(...)[1]
 
-MyModGlobal.Path = <span class="global">table</span>.pack(...)[<span class="number">1</span>]
-
-<span class="global">dofile</span>(MyModGlobal.Path .. <span class="string">"/Lua/yourscript.lua"</span>)
-</pre>
+ dofile(MyModGlobal.Path .. "/Lua/yourscript.lua")
+</code></pre>
 
 
 <p><a name="Learning_the_libraries"></a></p>

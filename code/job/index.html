@@ -11416,14 +11416,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="GetHashCode">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>GetType</p>
 			</header>
 
 
@@ -11432,7 +11432,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">Type</span>
 
 								<p>
 
@@ -11443,14 +11443,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Save">
+		<section class="method" id="IncreaseSkillLevel">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
+					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase, increasePastMax)</h1>
 				</a>
 
 
-					<p>Save</p>
+					<p>IncreaseSkillLevel</p>
 			</header>
 
 
@@ -11460,9 +11460,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">parentElement</span>
+								<span class="tag parameter">skillIdentifier</span>
 
-									<span class="tag"><span class="type">XElement</span></span>
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">increase</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">increasePastMax</span>
+
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -11472,18 +11500,50 @@ Path											</a>
 					</ul>
 
 
-				<h3>Returns</h3>
-				<ul>
+
+		</section>
+		<section class="method" id="GiveJobItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GiveJobItems(character, spawnPoint)</h1>
+				</a>
+
+
+					<p>GiveJobItems</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
 
 							<li>
-									<span class="type">XElement</span>
+								<span class="tag parameter">character</span>
+
+									<span class="tag"><span class="type">Character</span></span>
+
 
 								<p>
 
 </p>
 							</li>
+					</ul>
 
-				</ul>
+					<ul>
+
+							<li>
+								<span class="tag parameter">spawnPoint</span>
+
+									<span class="tag"><span class="type">WayPoint</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -11514,6 +11574,33 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
 
 
 				<h3>Returns</h3>
@@ -11646,14 +11733,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GiveJobItems">
+		<section class="method" id="Save">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GiveJobItems(character, spawnPoint)</h1>
+					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
 				</a>
 
 
-					<p>GiveJobItems</p>
+					<p>Save</p>
 			</header>
 
 
@@ -11663,23 +11750,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">parentElement</span>
 
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">spawnPoint</span>
-
-									<span class="tag"><span class="type">WayPoint</span></span>
+									<span class="tag"><span class="type">XElement</span></span>
 
 
 								<p>
@@ -11687,27 +11760,13 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<span class="type">XElement</span>
 
 								<p>
 
@@ -11718,93 +11777,18 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="IncreaseSkillLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase, increasePastMax)</h1>
-				</a>
-
-
-					<p>IncreaseSkillLevel</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">skillIdentifier</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">increase</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">increasePastMax</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Prefab">
+		<section class="method" id="Skills">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Prefab</h1>
+					<h1><span class="realm shared"></span></span>Skills</h1>
 				</a>
 
 
-					<p>Prefab, Field of type JobPrefab</p>
+					<p>Skills, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Prefab</span>
-
-									<span class="tag"><span class="type">JobPrefab</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -11839,16 +11823,32 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Skills">
+		<section class="method" id="Prefab">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Skills</h1>
+					<h1><span class="realm shared"></span></span>Prefab</h1>
 				</a>
 
 
-					<p>Skills, Field of type table</p>
+					<p>Prefab, Field of type JobPrefab</p>
 			</header>
 
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Prefab</span>
+
+									<span class="tag"><span class="type">JobPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 

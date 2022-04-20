@@ -11418,49 +11418,6 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Networking.Receive">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
-				</a>
-
-
-					<p>Adds a function to listen for lua net messages</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">netMessageName</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">callback</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Networking.ClientWriteLobby">
 			<header>
 				<a class="anchor">
@@ -11529,49 +11486,6 @@ Path											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="Networking.Send">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm client"></span></span>Networking.Send(netMessage, deliveryMethod)</h1>
-				</a>
-
-
-					<p>Sends a net message to the server.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">netMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deliveryMethod</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
 
 
 		</section>
@@ -11647,6 +11561,92 @@ Path											</a>
 		<section class="method" id="Networking.Send">
 			<header>
 				<a class="anchor">
+					<h1><span class="realm client"></span></span>Networking.Send(netMessage, deliveryMethod)</h1>
+				</a>
+
+
+					<p>Sends a net message to the server.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deliveryMethod</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.RequestGetHTTP">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+				</a>
+
+
+					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">url</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Networking.Send">
+			<header>
+				<a class="anchor">
 					<h1><span class="realm server"></span></span>Networking.Send(netMessage, connection, deliveryMethod)</h1>
 				</a>
 
@@ -11700,14 +11700,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Networking.RequestGetHTTP">
+		<section class="method" id="Networking.Receive">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
 				</a>
 
 
-					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+					<p>Adds a function to listen for lua net messages</p>
 			</header>
 
 
@@ -11717,7 +11717,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">url</span>
+								<span class="tag parameter">netMessageName</span>
 
 
 
