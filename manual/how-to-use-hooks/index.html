@@ -302,18 +302,18 @@ StrengthDiminishMultiplier											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#AfflictionPrefab.LoadAll">
-AfflictionPrefab.LoadAll											</a>
+											<a href="../../code/afflictionprefab/#AfflictionPrefab.ClearAllEffects">
+AfflictionPrefab.ClearAllEffects											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#AfflictionPrefab.LoadFromFile">
-AfflictionPrefab.LoadFromFile											</a>
+											<a href="../../code/afflictionprefab/#AfflictionPrefab.LoadAllEffects">
+AfflictionPrefab.LoadAllEffects											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#AfflictionPrefab.RemoveByFile">
-AfflictionPrefab.RemoveByFile											</a>
+											<a href="../../code/afflictionprefab/#ClearEffects">
+ClearEffects											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -349,6 +349,11 @@ GetType											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/afflictionprefab/#Instantiate">
 Instantiate											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/afflictionprefab/#LoadEffects">
+LoadEffects											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -398,28 +403,13 @@ BurnOverlayAlpha											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#CauseOfDeathDescription">
-CauseOfDeathDescription											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/afflictionprefab/#DamageOverlayAlpha">
 DamageOverlayAlpha											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#Description">
-Description											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/afflictionprefab/#Effects">
 Effects											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#FilePath">
-FilePath											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -463,21 +453,6 @@ MaxStrength											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#Name">
-Name											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#OriginalName">
-OriginalName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#SelfCauseOfDeathDescription">
-SelfCauseOfDeathDescription											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/afflictionprefab/#ShowIconThreshold">
 ShowIconThreshold											</a>
 										</li>
@@ -493,8 +468,8 @@ ShowInHealthScannerThreshold											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#TranslationOverride">
-TranslationOverride											</a>
+											<a href="../../code/afflictionprefab/#TranslationIdentifier">
+TranslationIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -508,8 +483,8 @@ TreatmentThreshold											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/afflictionprefab/#UIntIdentifier">
-UIntIdentifier											</a>
+											<a href="../../code/afflictionprefab/#UintIdentifier">
+UintIdentifier											</a>
 										</li>
 
 									</ul>
@@ -621,6 +596,11 @@ GetMouthPosition											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/animcontroller/#GetSpeed">
 GetSpeed											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/animcontroller/#GetSurfaceY">
+GetSurfaceY											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1101,13 +1081,18 @@ Character.Create											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.GetFriendlyCrew">
-Character.GetFriendlyCrew											</a>
+											<a href="../../code/character/#Character.Create">
+Character.Create											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/character/#Character.GetSkillStatType">
-Character.GetSkillStatType											</a>
+											<a href="../../code/character/#Character.Create">
+Character.Create											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#Character.GetFriendlyCrew">
+Character.GetFriendlyCrew											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1123,6 +1108,11 @@ Character.RemoveByPrefab											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.SaveInventory">
 Character.SaveInventory											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#Character.ThrowIfAccessingWalletsInSingleplayer">
+Character.ThrowIfAccessingWalletsInSingleplayer											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1173,6 +1163,11 @@ DeselectCharacter											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#DespawnNow">
 DespawnNow											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#DisableLine">
+DisableLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1271,6 +1266,11 @@ GetSkillLevel											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/character/#GetSkillLevel">
+GetSkillLevel											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#GetStatValue">
 GetStatValue											</a>
 										</li>
@@ -1328,6 +1328,11 @@ GiveTalent											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#HasAbilityFlag">
 HasAbilityFlag											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#HasEquippedItem">
+HasEquippedItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1471,13 +1476,23 @@ SelectCharacter											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/character/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/character/#ServerEventRead">
+ServerEventRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/character/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/character/#ServerEventWrite">
+ServerEventWrite											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#ServerReadInput">
+ServerReadInput											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#ServerWritePosition">
+ServerWritePosition											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1498,16 +1513,6 @@ SetCustomInteract											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#SetInput">
 SetInput											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#SetMoney">
-SetMoney											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#SetOrder">
-SetOrder											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1687,6 +1692,11 @@ Character.CharacterList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/character/#Character.CharacterUpdateInterval">
+Character.CharacterUpdateInterval											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Character.Controlled">
 Character.Controlled											</a>
 										</li>
@@ -1704,6 +1714,16 @@ ClientDisconnected											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#ConfigPath">
 ConfigPath											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#CreationStackTrace">
+CreationStackTrace											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -1754,6 +1774,11 @@ EnableDespawn											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#Enabled">
 Enabled											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/character/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2117,6 +2142,11 @@ MemState											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/character/#MerchantIdentifier">
+MerchantIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/character/#Name">
 Name											</a>
 										</li>
@@ -2287,11 +2317,6 @@ Submarine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/character/#TraitorCurrentObjective">
-TraitorCurrentObjective											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/character/#UseHullOxygen">
 UseHullOxygen											</a>
 										</li>
@@ -2314,11 +2339,6 @@ Vitality											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/character/#WorldPosition">
 WorldPosition											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/character/#customInteractHUDText">
-customInteractHUDText											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2390,6 +2410,11 @@ GetActiveAfflictionTags											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/characterhealth/#GetActiveAfflictionTags">
 GetActiveAfflictionTags											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterhealth/#GetAffliction">
+GetAffliction											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2488,8 +2513,23 @@ Load											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterhealth/#ReduceAffliction">
-ReduceAffliction											</a>
+											<a href="../../code/characterhealth/#ReduceAfflictionOnAllLimbs">
+ReduceAfflictionOnAllLimbs											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterhealth/#ReduceAfflictionOnLimb">
+ReduceAfflictionOnLimb											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterhealth/#ReduceAllAfflictionsOnAllLimbs">
+ReduceAllAfflictionsOnAllLimbs											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterhealth/#ReduceAllAfflictionsOnLimb">
+ReduceAllAfflictionsOnLimb											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2670,21 +2710,6 @@ CharacterInfo.ApplyOrderData											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.Create">
-CharacterInfo.Create											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.IsMatchingGender">
-CharacterInfo.IsMatchingGender											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#CharacterInfo.IsMatchingRace">
-CharacterInfo.IsMatchingRace											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#CharacterInfo.IsValidIndex">
 CharacterInfo.IsValidIndex											</a>
 										</li>
@@ -2730,18 +2755,18 @@ ClearSavedStatValues											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#CountValidAttachmentsOfType">
+CountValidAttachmentsOfType											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#Equals">
 Equals											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#FilterByTypeAndHeadID">
-FilterByTypeAndHeadID											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#FilterElementsByGenderAndRace">
-FilterElementsByGenderAndRace											</a>
+											<a href="../../code/characterinfo/#FilterElements">
+FilterElements											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2800,23 +2825,8 @@ GetRandomElement											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#GetRandomGender">
-GetRandomGender											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#GetRandomHeadID">
-GetRandomHeadID											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#GetRandomName">
 GetRandomName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#GetRandomRace">
-GetRandomRace											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2842,6 +2852,11 @@ GetType											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#GetUnlockedTalentsInTree">
 GetUnlockedTalentsInTree											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#GetValidAttachmentElements">
+GetValidAttachmentElements											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2875,6 +2890,11 @@ RefreshHead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#ReloadHeadAttachments">
+ReloadHeadAttachments											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#Remove">
 Remove											</a>
 										</li>
@@ -2887,6 +2907,11 @@ RemoveSavedStatValuesOnDeath											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#Rename">
 Rename											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#ReplaceVars">
+ReplaceVars											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2946,11 +2971,6 @@ AttachmentSprites											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#BeardIndex">
-BeardIndex											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#CauseOfDeath">
 CauseOfDeath											</a>
 										</li>
@@ -2963,6 +2983,11 @@ Character											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#CharacterInfo.HighestManualOrderPriority">
 CharacterInfo.HighestManualOrderPriority											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#CharacterInfo.MaxAdditionalTalentPoints">
+CharacterInfo.MaxAdditionalTalentPoints											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -2986,38 +3011,13 @@ ExperiencePoints											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#FaceAttachmentIndex">
-FaceAttachmentIndex											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#HairIndex">
-HairIndex											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#HasGenders">
-HasGenders											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#HasNickname">
 HasNickname											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#HasRaces">
-HasRaces											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#HeadSpriteId">
-HeadSpriteId											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#Heads">
-Heads											</a>
+											<a href="../../code/characterinfo/#HasSpecifierTags">
+HasSpecifierTags											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -3041,6 +3041,16 @@ IsDisguisedAsAnother											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#IsFemale">
+IsFemale											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinfo/#IsMale">
+IsMale											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#IsNewHire">
 IsNewHire											</a>
 										</li>
@@ -3053,11 +3063,6 @@ Job											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/characterinfo/#MissionsCompletedSinceDeath">
 MissionsCompletedSinceDeath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/characterinfo/#MoustacheIndex">
-MoustacheIndex											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -3302,13 +3307,18 @@ RemoveItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinventory/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/characterinventory/#ServerEventRead">
+ServerEventRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/characterinventory/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/characterinventory/#ServerEventWrite">
+ServerEventWrite											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinventory/#SharedRead">
+SharedRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -3341,6 +3351,11 @@ TryPutItemWithAutoEquipCheck											</a>
 									<label class="colorful-label">FIELDS</label>
 								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/characterinventory/#AccessibleByOwner">
+AccessibleByOwner											</a>
+										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/characterinventory/#AccessibleWhenAlive">
@@ -3645,11 +3660,6 @@ KickVoteCount											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/client/#Language">
-Language											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/client/#LastChatMsgQueueID">
 LastChatMsgQueueID											</a>
 										</li>
@@ -3872,6 +3882,16 @@ ToString											</a>
 
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/entity/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/entity/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/entity/#DrawPosition">
 DrawPosition											</a>
 										</li>
@@ -3909,6 +3929,11 @@ Entity.ReservedIDStart											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/entity/#Entity.RespawnManagerID">
 Entity.RespawnManagerID											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/entity/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -3973,43 +3998,43 @@ WorldPosition											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToRemoveQueue">
-AddToRemoveQueue											</a>
+											<a href="../../code/entity.spawner/#AddCharacterToSpawnQueue">
+AddCharacterToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToRemoveQueue">
-AddToRemoveQueue											</a>
+											<a href="../../code/entity.spawner/#AddCharacterToSpawnQueue">
+AddCharacterToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddCharacterToSpawnQueue">
+AddCharacterToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddEntityToRemoveQueue">
+AddEntityToRemoveQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddItemToRemoveQueue">
+AddItemToRemoveQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddItemToSpawnQueue">
+AddItemToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddItemToSpawnQueue">
+AddItemToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#AddToSpawnQueue">
-AddToSpawnQueue											</a>
+											<a href="../../code/entity.spawner/#AddItemToSpawnQueue">
+AddItemToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -4063,8 +4088,8 @@ Reset											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/entity.spawner/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/entity.spawner/#ServerEventWrite">
+ServerEventWrite											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -4084,8 +4109,23 @@ Update											</a>
 
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/entity.spawner/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/entity.spawner/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/entity.spawner/#DrawPosition">
 DrawPosition											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/entity.spawner/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -4400,6 +4440,11 @@ Cam											</a>
 											<a href="../../code/game.gamescreen/#GameTime">
 GameTime											</a>
 										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/game.gamescreen/#IsEditor">
+IsEditor											</a>
+										</li>
 
 									</ul>
 									</details>
@@ -4537,6 +4582,11 @@ Update											</a>
 									<label class="colorful-label">FIELDS</label>
 								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/game.gamesession/#Casualties">
+Casualties											</a>
+										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/game.gamesession/#IsRunning">
@@ -5188,6 +5238,11 @@ Cam											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/game.netlobbyscreen/#IsEditor">
+IsEditor											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/game.netlobbyscreen/#JobPreferences">
 JobPreferences											</a>
 										</li>
@@ -5780,6 +5835,11 @@ AddFireSource											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hull/#AddLinked">
+AddLinked											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hull/#AddToGrid">
 AddToGrid											</a>
 										</li>
@@ -5807,11 +5867,6 @@ Clone											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hull/#CreateRoomName">
 CreateRoomName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/hull/#DirtySections">
-DirtySections											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -5975,11 +6030,6 @@ OnMapLoaded											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hull/#RefreshSubmergedSections">
-RefreshSubmergedSections											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/hull/#Remove">
 Remove											</a>
 										</li>
@@ -6005,13 +6055,13 @@ Save											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hull/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/hull/#ServerEventRead">
+ServerEventRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hull/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/hull/#ServerEventWrite">
+ServerEventWrite											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6076,13 +6126,18 @@ ConnectedGaps											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hull/#DisallowedUpgrades">
-DisallowedUpgrades											</a>
+											<a href="../../code/hull/#CreationIndex">
+CreationIndex											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/hull/#DisplayName">
-DisplayName											</a>
+											<a href="../../code/hull/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hull/#DisallowedUpgrades">
+DisallowedUpgrades											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6098,6 +6153,11 @@ DrawOverWater											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hull/#DrawPosition">
 DrawPosition											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/hull/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6156,6 +6216,11 @@ Hull.EntityGrids											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/hull/#Hull.HullList">
+Hull.HullList											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/hull/#Hull.MaxCompress">
 Hull.MaxCompress											</a>
 										</li>
@@ -6203,11 +6268,6 @@ Hull.WaveStiffness											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/hull/#Hull.WaveWidth">
 Hull.WaveWidth											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/hull/#Hull.hullList">
-Hull.hullList											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6612,13 +6672,18 @@ RemoveItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/inventory/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/inventory/#ServerEventRead">
+ServerEventRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/inventory/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/inventory/#ServerEventWrite">
+ServerEventWrite											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/inventory/#SharedRead">
+SharedRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6704,6 +6769,16 @@ AddDamage											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/item/#AddLinked">
+AddLinked											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#AddTag">
+AddTag											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/item/#AddTag">
 AddTag											</a>
 										</li>
@@ -6766,6 +6841,11 @@ CreateServerEventString											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/item/#CreateServerEventString">
 CreateServerEventString											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#CreateStatusEvent">
+CreateStatusEvent											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -6833,12 +6913,12 @@ GetComponent											</a>
 GetComponentIndex											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
+											<span class="realm shared"></span>
 											<a href="../../code/item/#GetComponentString">
 GetComponentString											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
+											<span class="realm server"></span>
 											<a href="../../code/item/#GetComponentString">
 GetComponentString											</a>
 										</li>
@@ -6919,6 +6999,16 @@ GetUpgrades											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/item/#HasAccess">
+HasAccess											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#HasTag">
+HasTag											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/item/#HasTag">
 HasTag											</a>
 										</li>
@@ -6966,16 +7056,6 @@ IsMouseOn											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/item/#IsOwnedBy">
 IsOwnedBy											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/item/#IsThisOrAnyContainerIgnoredByAI">
-IsThisOrAnyContainerIgnoredByAI											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/item/#Item.AddToRemoveQueue">
-Item.AddToRemoveQueue											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -7039,6 +7119,11 @@ ReplaceTag											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/item/#ReplaceTag">
+ReplaceTag											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/item/#Reset">
 Reset											</a>
 										</li>
@@ -7063,11 +7148,6 @@ SecondaryUse											</a>
 SendPendingNetworkUpdates											</a>
 										</li>
 										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/item/#SendSignal">
-SendSignal											</a>
-										</li>
-										<li>
 											<span class="realm server"></span>
 											<a href="../../code/item/#SendSignal">
 SendSignal											</a>
@@ -7084,13 +7164,18 @@ SendSignal											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/item/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/item/#SendSignal">
+SendSignal											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/item/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/item/#ServerEventRead">
+ServerEventRead											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#ServerEventWrite">
+ServerEventWrite											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7220,11 +7305,6 @@ ConditionPercentage											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/item/#ConfigFile">
-ConfigFile											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/item/#Connections">
 Connections											</a>
 										</li>
@@ -7242,6 +7322,16 @@ Container											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/item/#ContainerIdentifier">
 ContainerIdentifier											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#CreationStackTrace">
+CreationStackTrace											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7280,6 +7370,11 @@ EditableWhenEquipped											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/item/#ErrorLine">
+ErrorLine											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/item/#ExternalHighlight">
 ExternalHighlight											</a>
 										</li>
@@ -7297,6 +7392,11 @@ FlippedX											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/item/#FlippedY">
 FlippedY											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#HasBallastFloraInHull">
+HasBallastFloraInHull											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7362,6 +7462,11 @@ InteractPriority											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/item/#InvulnerableToDamage">
 InvulnerableToDamage											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/item/#IsClaimedByBallastFlora">
+IsClaimedByBallastFlora											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7866,13 +7971,18 @@ RemoveItem											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/iteminventory/#ServerRead">
-ServerRead											</a>
+											<a href="../../code/iteminventory/#ServerEventRead">
+ServerEventRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/iteminventory/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/iteminventory/#ServerEventWrite">
+ServerEventWrite											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/iteminventory/#SharedRead">
+SharedRead											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -7943,8 +8053,13 @@ Locked											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#CanBeBoughtAtLocation">
-CanBeBoughtAtLocation											</a>
+											<a href="../../code/itemprefab/#CanBeBoughtFrom">
+CanBeBoughtFrom											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/itemprefab/#CanBeBoughtFrom">
+CanBeBoughtFrom											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8018,6 +8133,11 @@ HasSubCategory											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/itemprefab/#InheritFrom">
+InheritFrom											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#IsContainerPreferred">
 IsContainerPreferred											</a>
 										</li>
@@ -8030,16 +8150,6 @@ IsContainerPreferred											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#IsLinkAllowed">
 IsLinkAllowed											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
-ItemPrefab.AddToSpawnQueue											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.AddToSpawnQueue">
-ItemPrefab.AddToSpawnQueue											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
@@ -8073,11 +8183,6 @@ ItemPrefab.GetItemPrefab											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.InitFabricationRecipes">
-ItemPrefab.InitFabricationRecipes											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#ItemPrefab.IsContainerPreferred">
 ItemPrefab.IsContainerPreferred											</a>
 										</li>
@@ -8085,21 +8190,6 @@ ItemPrefab.IsContainerPreferred											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#ItemPrefab.IsContainerPreferred">
 ItemPrefab.IsContainerPreferred											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.LoadAll">
-ItemPrefab.LoadAll											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.LoadFromFile">
-ItemPrefab.LoadFromFile											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#ItemPrefab.RemoveByFile">
-ItemPrefab.RemoveByFile											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8144,11 +8234,6 @@ AllowDroppingOnSwap											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#AllowDroppingOnSwapWith">
-AllowDroppingOnSwapWith											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#AllowRotatingInEditor">
 AllowRotatingInEditor											</a>
 										</li>
@@ -8156,11 +8241,6 @@ AllowRotatingInEditor											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#AllowSellingWhenBroken">
 AllowSellingWhenBroken											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#AllowedLinks">
-AllowedLinks											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8234,18 +8314,8 @@ DamagedByRepairTools											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#DeconstructItems">
-DeconstructItems											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#DeconstructTime">
 DeconstructTime											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#Description">
-Description											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8261,16 +8331,6 @@ EquipConfirmationText											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#ExplosionDamageMultiplier">
 ExplosionDamageMultiplier											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#FabricationRecipes">
-FabricationRecipes											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#FilePath">
-FilePath											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8349,16 +8409,6 @@ IsOverride											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#LevelCommonness">
-LevelCommonness											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#LevelQuantity">
-LevelQuantity											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#Linkable">
 Linkable											</a>
 										</li>
@@ -8366,11 +8416,6 @@ Linkable											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#MaxStackSize">
 MaxStackSize											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#Name">
-Name											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8386,11 +8431,6 @@ OnDamagedThreshold											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/itemprefab/#OriginalName">
 OriginalName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#PreferredContainers">
-PreferredContainers											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8454,13 +8494,8 @@ Subcategory											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#Triggers">
-Triggers											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/itemprefab/#UIntIdentifier">
-UIntIdentifier											</a>
+											<a href="../../code/itemprefab/#UintIdentifier">
+UintIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8556,16 +8591,6 @@ ToString											</a>
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/job/#Description">
-Description											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/job/#Name">
-Name											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/job/#Prefab">
 Prefab											</a>
 										</li>
@@ -8622,23 +8647,8 @@ JobPrefab.Get											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#JobPrefab.LoadAll">
-JobPrefab.LoadAll											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#JobPrefab.LoadFromFile">
-JobPrefab.LoadFromFile											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/jobprefab/#JobPrefab.Random">
 JobPrefab.Random											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#JobPrefab.RemoveByFile">
-JobPrefab.RemoveByFile											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8670,16 +8680,6 @@ AutonomousObjectives											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/jobprefab/#Commonness">
 Commonness											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#Description">
-Description											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#FilePath">
-FilePath											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8718,23 +8718,8 @@ MinNumber											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#Name">
-Name											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/jobprefab/#OnlyJobSpecificDialog">
 OnlyJobSpecificDialog											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#OriginalName">
-OriginalName											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/jobprefab/#PreviewItems">
-PreviewItems											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8745,6 +8730,11 @@ PriceMultiplier											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/jobprefab/#Skills">
 Skills											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/jobprefab/#UintIdentifier">
+UintIdentifier											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8884,8 +8874,8 @@ Remove											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/level/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/level/#ServerEventWrite">
+ServerEventWrite											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -8965,6 +8955,16 @@ Caves											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/level/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/level/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/level/#CrushDepth">
 CrushDepth											</a>
 										</li>
@@ -9012,6 +9012,11 @@ EntityCountBeforeGenerate											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/level/#EqualityCheckValues">
 EqualityCheckValues											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/level/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -9482,8 +9487,13 @@ SaveToXElement											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/submarine/#ServerWrite">
-ServerWrite											</a>
+											<a href="../../code/submarine/#ServerEventWrite">
+ServerEventWrite											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/submarine/#ServerWritePosition">
+ServerWritePosition											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -9623,6 +9633,16 @@ ConnectedDockingPorts											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/submarine/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/submarine/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/submarine/#DockedTo">
 DockedTo											</a>
 										</li>
@@ -9630,6 +9650,11 @@ DockedTo											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/submarine/#DrawPosition">
 DrawPosition											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/submarine/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -9914,6 +9939,11 @@ SubmarineInfo.RefreshSavedSubs											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/submarineinfo/#SubmarineInfo.RemoveSavedSub">
+SubmarineInfo.RemoveSavedSub											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/submarineinfo/#ToString">
 ToString											</a>
 										</li>
@@ -9940,18 +9970,8 @@ CargoCapacity											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/submarineinfo/#Description">
-Description											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/submarineinfo/#Dimensions">
 Dimensions											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
-											<a href="../../code/submarineinfo/#DisplayName">
-DisplayName											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -10055,11 +10075,6 @@ RequiredContentPackagesInstalled											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../../code/submarineinfo/#SubmarineInfo.SavePath">
-SubmarineInfo.SavePath											</a>
-										</li>
-										<li>
-											<span class="realm shared"></span>
 											<a href="../../code/submarineinfo/#SubmarineInfo.SavedSubmarines">
 SubmarineInfo.SavedSubmarines											</a>
 										</li>
@@ -10160,6 +10175,11 @@ Vector4											</a>
 									<label class="colorful-label">FUNCTIONS</label>
 								</li>
 
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/waypoint/#AddLinked">
+AddLinked											</a>
+										</li>
 										<li>
 											<span class="realm shared"></span>
 											<a href="../../code/waypoint/#AddUpgrade">
@@ -10328,6 +10348,16 @@ AssignedJob											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../code/waypoint/#CreationIndex">
+CreationIndex											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/waypoint/#CreationStackTrace">
+CreationStackTrace											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../code/waypoint/#DisallowedUpgrades">
 DisallowedUpgrades											</a>
 										</li>
@@ -10345,6 +10375,11 @@ DrawOverWater											</a>
 											<span class="realm shared"></span>
 											<a href="../../code/waypoint/#DrawPosition">
 DrawPosition											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../code/waypoint/#ErrorLine">
+ErrorLine											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
