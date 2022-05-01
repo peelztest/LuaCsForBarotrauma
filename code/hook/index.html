@@ -10724,6 +10724,125 @@ ServerMessageBoxInGame											</a>
 							</li>
 							<li>
 									<details >
+									<summary><a href="../../enum/clientpermissions/">ClientPermissions</a></summary>
+
+									<ul>
+
+
+
+
+
+
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
+
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#All">
+All											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Ban">
+Ban											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ConsoleCommands">
+ConsoleCommands											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#KarmaImmunity">
+KarmaImmunity											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Kick">
+Kick											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageCampaign">
+ManageCampaign											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageHires">
+ManageHires											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMap">
+ManageMap											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMoney">
+ManageMoney											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManagePermissions">
+ManagePermissions											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageRound">
+ManageRound											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageSettings">
+ManageSettings											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectMode">
+SelectMode											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectSub">
+SelectSub											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellInventoryItems">
+SellInventoryItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellSubItems">
+SellSubItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ServerLog">
+ServerLog											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Unban">
+Unban											</a>
+										</li>
+
+									</ul>
+									</details>
+							</li>
+							<li>
+									<details >
 									<summary><a href="../../enum/disconnectreason/">DisconnectReason</a></summary>
 
 									<ul>
@@ -11418,14 +11537,14 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="characterDeath">
+		<section class="method" id="Hook.HookMethod">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>characterDeath(character)</h1>
+					<h1><span class="realm shared"></span></span>Hook.HookMethod(className, methodName, callback)</h1>
 				</a>
 
 
-					<p>Gets called everytime a Character dies.</p>
+					<p>Patches a method, the callback is called with an instance variable and a ptable variable, ptable contains dictionary of parameter name -> parameter</p>
 			</header>
 
 
@@ -11435,66 +11554,50 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><span class="type">Character</span></span>
-
-
-								<p> A dead Character.</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
-   print(character)
-end)
-</code></pre>
-
-		</section>
-		<section class="method" id="Hook.Call">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Call(eventname, parameters)</h1>
-				</a>
-
-
-					<p>Calls a hook.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
+								<span class="tag parameter">className</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p> event name</p>
+								<p>
+
+</p>
 							</li>
 					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">parameters</span>
+								<span class="tag parameter">methodName</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p> parameters to be passed in</p>
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
 							</li>
 					</ul>
 
 
 				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("think", "happyDebuggingSuckers", function()
-     Hook.Call("characterDead", {}) -- ruin someone's day
-end)
+					<pre><code>Hook.HookMethod("Barotrauma.CharacterInfo", "IncreaseSkillLevel", function (instance, ptable)
+   print(string.format("%s gained % xp", instance.Character.Name, ptable.increase))
+end, Hook.HookMethodType.After)
 </code></pre>
 
 		</section>
@@ -11512,28 +11615,14 @@ end)
 
 
 		</section>
-		<section class="method" id="stop">
+		<section class="method" id="clientConnected">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>stop()</h1>
+					<h1><span class="realm shared"></span></span>clientConnected(connectedClient)</h1>
 				</a>
 
 
-					<p>Called when the script execution is terminating.</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="human.CPRFailed">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>human.CPRFailed(animController)</h1>
-				</a>
-
-
-					<p>Called after the CPR skill check fails.</p>
+					<p>Called when a client connects</p>
 			</header>
 
 
@@ -11543,94 +11632,9 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">animController</span>
+								<span class="tag parameter">connectedClient</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="signalReceived">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>signalReceived(signal, connection)</h1>
-				</a>
-
-
-					<p>Gets called everytime an Item receives a wire signal</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connection</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="canUseVoiceRadio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>canUseVoiceRadio(sender, receiver)</h1>
-				</a>
-
-
-					<p>Check if a client is allowed to hear radio voice to another client, return true to allow, false to disallow.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">receiver</span>
-
+									<span class="tag"><span class="type">client</span></span>
 
 
 								<p>
@@ -11741,57 +11745,42 @@ end)
 
 
 		</section>
-		<section class="method" id="modifyChatMessage">
+		<section class="method" id="roundEnd">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>modifyChatMessage(chatMessage, wifiComponentSender)</h1>
+					<h1><span class="realm shared"></span></span>roundEnd()</h1>
 				</a>
 
 
-					<p>Called right before a message is going to be sent, return true to stop message from being sent.</p>
+					<p>Called on round end</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">chatMessage</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wifiComponentSender</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
 		</section>
-		<section class="method" id="item.applyTreatment">
+		<section class="method" id="think">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.applyTreatment(item, usingCharacter, targetCharacter, limb)</h1>
+					<h1><span class="realm shared"></span></span>think()</h1>
 				</a>
 
 
-					<p>Gets called whenever an item is used as a treatment (eg.  bandages).</p>
+					<p>Game's fixed update rate, gets called normally 60 times a second.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Hook.Add">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Hook.Add(eventname, hookname, func)</h1>
+				</a>
+
+
+					<p>Adds a hook.</p>
 			</header>
 
 
@@ -11801,7 +11790,68 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">item</span>
+								<span class="tag parameter">eventname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> event name</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">hookname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p> hook name</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">func</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p> callback</p>
+							</li>
+					</ul>
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
+   print(character)
+end)
+</code></pre>
+
+		</section>
+		<section class="method" id="husk.clientControl">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>husk.clientControl(client, husk)</h1>
+				</a>
+
+
+					<div class="notice warning">
+						<div class="title">Incomplete</div>
+						<p>Documentation for this section is incomplete and needs expanding.</p>
+					</div>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
 
 
 
@@ -11814,33 +11864,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">usingCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetCharacter</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
+								<span class="tag parameter">husk</span>
 
 
 
@@ -11909,14 +11933,14 @@ end)
 
 
 		</section>
-		<section class="method" id="Hook.Remove">
+		<section class="method" id="changeLocalVoiceRange">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Remove(eventname, hookname)</h1>
+					<h1><span class="realm shared"></span></span>changeLocalVoiceRange(sender, receiver)</h1>
 				</a>
 
 
-					<p>Removes a hook.</p>
+					<p>Changes the local voice range, return a number to change the local voice range, 1 = normal, 0.5 = lower range, 2 = higher range.</p>
 			</header>
 
 
@@ -11926,30 +11950,126 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+								<span class="tag parameter">sender</span>
 
 
-								<p> event name</p>
+
+								<p>
+
+</p>
 							</li>
 					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+								<span class="tag parameter">receiver</span>
 
 
-								<p> hook name</p>
+
+								<p>
+
+</p>
 							</li>
 					</ul>
 
 
+
+		</section>
+		<section class="method" id="characterCreated">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>characterCreated(createdCharacter)</h1>
+				</a>
+
+
+					<p>Gets callled everytime a character is created.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">createdCharacter</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="chatMessage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>chatMessage(message, sender)</h1>
+				</a>
+
+
+					<p>Gets called everytime someone sends a chat message, return true to cancel message</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">message</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+									<span class="tag"><span class="type">client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="jobsAssigned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>jobsAssigned()</h1>
+				</a>
+
+
+					<p>Called each time a new round start job has been assigned, this context allows for you to change the role before it's applied in game.</p>
+			</header>
+
+
+
 				<h3>Example Usage</h3>
-					<pre><code>Hook.Remove("characterDeath", "characterDeathExample")
+					<pre><code>Hook.Add("jobsAssigned", "", function ()
+  for key, value in pairs(Client.ClientList) do
+    value.AssignedJob = {JobPrefab.Get("assistant"), 0}
+  end
+end)
 </code></pre>
 
 		</section>
@@ -11970,17 +12090,14 @@ end)
 
 
 		</section>
-		<section class="method" id="husk.clientControl">
+		<section class="method" id="item.interact">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>husk.clientControl(client, husk)</h1>
+					<h1><span class="realm shared"></span></span>item.interact(item, characterPicker, ignoreRequiredItemsBool, forceSelectKeyBool, forceActionKeyBool)</h1>
 				</a>
 
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Gets called every time an item is interacted, eg: picking item on ground, fixing something with wrench</p>
 			</header>
 
 
@@ -11990,7 +12107,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">client</span>
+								<span class="tag parameter">item</span>
 
 
 
@@ -12003,7 +12120,46 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">husk</span>
+								<span class="tag parameter">characterPicker</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ignoreRequiredItemsBool</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceSelectKeyBool</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">forceActionKeyBool</span>
 
 
 
@@ -12016,14 +12172,14 @@ end)
 
 
 		</section>
-		<section class="method" id="meleeWeapon.handleImpact">
+		<section class="method" id="serverLog">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>meleeWeapon.handleImpact(meleeComponent, targetBody)</h1>
+					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
 				</a>
 
 
-					<p>Called when a melee weapon has impacted a physical object.</p>
+					<p>Gets called everytime something is logged to the Server Log, do not call print() inside this function, i repeat, do not call print() inside this function.</p>
 			</header>
 
 
@@ -12033,7 +12189,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">meleeComponent</span>
+								<span class="tag parameter">text</span>
 
 
 
@@ -12046,63 +12202,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">targetBody</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="wifiSignalTransmitted">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
-				</a>
-
-
-					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wifiComponent</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">signal</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sentFromChat</span>
+								<span class="tag parameter">serverLogMessageType</span>
 
 
 
@@ -12197,14 +12297,14 @@ end)
 
 
 		</section>
-		<section class="method" id="changeLocalVoiceRange">
+		<section class="method" id="wifiSignalTransmitted">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>changeLocalVoiceRange(sender, receiver)</h1>
+					<h1><span class="realm shared"></span></span>wifiSignalTransmitted(wifiComponent, signal, sentFromChat)</h1>
 				</a>
 
 
-					<p>Changes the local voice range, return a number to change the local voice range, 1 = normal, 0.5 = lower range, 2 = higher range.</p>
+					<p>Gets called everytime a WifiComponent starts transmitting a signal</p>
 			</header>
 
 
@@ -12214,7 +12314,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">sender</span>
+								<span class="tag parameter">wifiComponent</span>
 
 
 
@@ -12227,7 +12327,20 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">receiver</span>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sentFromChat</span>
 
 
 
@@ -12238,64 +12351,6 @@ end)
 					</ul>
 
 
-
-		</section>
-		<section class="method" id="Hook.Add">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.Add(eventname, hookname, func)</h1>
-				</a>
-
-
-					<p>Adds a hook.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">eventname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> event name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">hookname</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> hook name</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">func</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p> callback</p>
-							</li>
-					</ul>
-
-
-				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
-   print(character)
-end)
-</code></pre>
 
 		</section>
 		<section class="method" id="tryChangeClientName">
@@ -12367,17 +12422,28 @@ end)
 
 
 		</section>
-		<section class="method" id="traitor.traitorAssigned">
+		<section class="method" id="roundStart">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>traitor.traitorAssigned(traitor)</h1>
+					<h1><span class="realm shared"></span></span>roundStart()</h1>
 				</a>
 
 
-					<div class="notice warning">
-						<div class="title">Incomplete</div>
-						<p>Documentation for this section is incomplete and needs expanding.</p>
-					</div>
+					<p>Called on round start</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Hook.Call">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Hook.Call(eventname, parameters)</h1>
+				</a>
+
+
+					<p>Calls a hook.</p>
 			</header>
 
 
@@ -12387,95 +12453,33 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">traitor</span>
+								<span class="tag parameter">eventname</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-
-								<p>
-
-</p>
+								<p> event name</p>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">parameters</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
 
 
-		</section>
-		<section class="method" id="jobsAssigned">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>jobsAssigned()</h1>
-				</a>
-
-
-					<p>Called each time a new round start job has been assigned, this context allows for you to change the role before it's applied in game.</p>
-			</header>
-
+								<p> parameters to be passed in</p>
+							</li>
+					</ul>
 
 
 				<h3>Example Usage</h3>
-					<pre><code>Hook.Add("jobsAssigned", "", function ()
-  for key, value in pairs(Client.ClientList) do
-    value.AssignedJob = {JobPrefab.Get("assistant"), 0}
-  end
+					<pre><code>Hook.Add("think", "happyDebuggingSuckers", function()
+     Hook.Call("characterDead", {}) -- ruin someone's day
 end)
 </code></pre>
-
-		</section>
-		<section class="method" id="traitor.findTraitorCandidate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>traitor.findTraitorCandidate(character, team)</h1>
-				</a>
-
-
-					<p>Return true to accept traitor candidate.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">team</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="think">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>think()</h1>
-				</a>
-
-
-					<p>Game's fixed update rate, gets called normally 60 times a second.</p>
-			</header>
-
-
-
 
 		</section>
 		<section class="method" id="statusEffect.apply.YourItemIdentifier">
@@ -12611,14 +12615,14 @@ end)
 
 
 		</section>
-		<section class="method" id="serverLog">
+		<section class="method" id="traitor.findTraitorCandidate">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>serverLog(text, serverLogMessageType)</h1>
+					<h1><span class="realm shared"></span></span>traitor.findTraitorCandidate(character, team)</h1>
 				</a>
 
 
-					<p>Gets called everytime something is logged to the Server Log, do not call print() inside this function, i repeat, do not call print() inside this function.</p>
+					<p>Return true to accept traitor candidate.</p>
 			</header>
 
 
@@ -12628,7 +12632,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">text</span>
+								<span class="tag parameter">character</span>
 
 
 
@@ -12641,8 +12645,201 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">serverLogMessageType</span>
+								<span class="tag parameter">team</span>
 
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="meleeWeapon.handleImpact">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>meleeWeapon.handleImpact(meleeComponent, targetBody)</h1>
+				</a>
+
+
+					<p>Called when a melee weapon has impacted a physical object.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">meleeComponent</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetBody</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="item.unequip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>item.unequip(item, character)</h1>
+				</a>
+
+
+					<p>Same as itemEquip, but for unequipping.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="traitor.traitorAssigned">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>traitor.traitorAssigned(traitor)</h1>
+				</a>
+
+
+					<div class="notice warning">
+						<div class="title">Incomplete</div>
+						<p>Documentation for this section is incomplete and needs expanding.</p>
+					</div>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">traitor</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="signalReceived">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>signalReceived(signal, connection)</h1>
+				</a>
+
+
+					<p>Gets called everytime an Item receives a wire signal</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">signal</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">connection</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="clientDisconnected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>clientDisconnected(disconnectedClient)</h1>
+				</a>
+
+
+					<p>Called when a client disconnects</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">disconnectedClient</span>
+
+									<span class="tag"><span class="type">client</span></span>
 
 
 								<p>
@@ -12710,28 +12907,28 @@ end)
 
 
 		</section>
-		<section class="method" id="roundStart">
+		<section class="method" id="stop">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundStart()</h1>
+					<h1><span class="realm shared"></span></span>stop()</h1>
 				</a>
 
 
-					<p>Called on round start</p>
+					<p>Called when the script execution is terminating.</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="chatMessage">
+		<section class="method" id="human.CPRFailed">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>chatMessage(message, sender)</h1>
+					<h1><span class="realm shared"></span></span>human.CPRFailed(animController)</h1>
 				</a>
 
 
-					<p>Gets called everytime someone sends a chat message, return true to cancel message</p>
+					<p>Called after the CPR skill check fails.</p>
 			</header>
 
 
@@ -12741,23 +12938,8 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">message</span>
+								<span class="tag parameter">animController</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">sender</span>
-
-									<span class="tag"><span class="type">client</span></span>
 
 
 								<p>
@@ -12769,28 +12951,14 @@ end)
 
 
 		</section>
-		<section class="method" id="roundEnd">
+		<section class="method" id="item.use">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>roundEnd()</h1>
+					<h1><span class="realm shared"></span></span>item.use(item, itemUser, targetLimb)</h1>
 				</a>
 
 
-					<p>Called on round end</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="item.equip">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.equip(item, character)</h1>
-				</a>
-
-
-					<p>Gets called whenever an item is equipped.  Return true to cancel.</p>
+					<p>Gets called every time an Item gets "Used".</p>
 			</header>
 
 
@@ -12813,7 +12981,50 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">itemUser</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetLimb</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="human.CPRSuccess">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>human.CPRSuccess(animController)</h1>
+				</a>
+
+
+					<p>Called after the CPR skill check succeeds.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">animController</span>
 
 
 
@@ -12882,14 +13093,91 @@ end)
 
 
 		</section>
-		<section class="method" id="item.unequip">
+		<section class="method" id="characterDeath">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.unequip(item, character)</h1>
+					<h1><span class="realm shared"></span></span>characterDeath(character)</h1>
 				</a>
 
 
-					<p>Same as itemEquip, but for unequipping.</p>
+					<p>Gets called everytime a Character dies.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+									<span class="tag"><span class="type">Character</span></span>
+
+
+								<p> A dead Character.</p>
+							</li>
+					</ul>
+
+
+				<h3>Example Usage</h3>
+					<pre><code>Hook.Add("characterDeath", "characterDeathExample", function(character)
+   print(character)
+end)
+</code></pre>
+
+		</section>
+		<section class="method" id="canUseVoiceRadio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>canUseVoiceRadio(sender, receiver)</h1>
+				</a>
+
+
+					<p>Check if a client is allowed to hear radio voice to another client, return true to allow, false to disallow.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">sender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">receiver</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="item.secondaryUse">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>item.secondaryUse(item, itemUser)</h1>
+				</a>
+
+
+					<p>Same as itemUse.</p>
 			</header>
 
 
@@ -12912,7 +13200,7 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">character</span>
+								<span class="tag parameter">itemUser</span>
 
 
 
@@ -12925,14 +13213,14 @@ end)
 
 
 		</section>
-		<section class="method" id="human.CPRSuccess">
+		<section class="method" id="Hook.Remove">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>human.CPRSuccess(animController)</h1>
+					<h1><span class="realm shared"></span></span>Hook.Remove(eventname, hookname)</h1>
 				</a>
 
 
-					<p>Called after the CPR skill check succeeds.</p>
+					<p>Removes a hook.</p>
 			</header>
 
 
@@ -12942,143 +13230,100 @@ end)
 					<ul>
 
 							<li>
-								<span class="tag parameter">animController</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="clientConnected">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientConnected(connectedClient)</h1>
-				</a>
-
-
-					<p>Called when a client connects</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">connectedClient</span>
-
-									<span class="tag"><span class="type">client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="characterCreated">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>characterCreated(createdCharacter)</h1>
-				</a>
-
-
-					<p>Gets callled everytime a character is created.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">createdCharacter</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Hook.HookMethod">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Hook.HookMethod(className, methodName, callback)</h1>
-				</a>
-
-
-					<p>Patches a method, the callback is called with an instance variable and a ptable variable, ptable contains dictionary of parameter name -> parameter</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">className</span>
+								<span class="tag parameter">eventname</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p>
-
-</p>
+								<p> event name</p>
 							</li>
 					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">methodName</span>
+								<span class="tag parameter">hookname</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">callback</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
+								<p> hook name</p>
 							</li>
 					</ul>
 
 
 				<h3>Example Usage</h3>
-					<pre><code>Hook.HookMethod("Barotrauma.CharacterInfo", "IncreaseSkillLevel", function (instance, ptable)
-   print(string.format("%s gained % xp", instance.Character.Name, ptable.increase))
-end, Hook.HookMethodType.After)
+					<pre><code>Hook.Remove("characterDeath", "characterDeathExample")
 </code></pre>
+
+		</section>
+		<section class="method" id="item.applyTreatment">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>item.applyTreatment(item, usingCharacter, targetCharacter, limb)</h1>
+				</a>
+
+
+					<p>Gets called whenever an item is used as a treatment (eg.  bandages).</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">usingCharacter</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetCharacter</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
 
 		</section>
 		<section class="method" id="inventoryPutItem">
@@ -13163,14 +13408,57 @@ end, Hook.HookMethodType.After)
 
 
 		</section>
-		<section class="method" id="item.secondaryUse">
+		<section class="method" id="modifyChatMessage">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.secondaryUse(item, itemUser)</h1>
+					<h1><span class="realm shared"></span></span>modifyChatMessage(chatMessage, wifiComponentSender)</h1>
 				</a>
 
 
-					<p>Same as itemUse.</p>
+					<p>Called right before a message is going to be sent, return true to stop message from being sent.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">chatMessage</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wifiComponentSender</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="item.equip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>item.equip(item, character)</h1>
+				</a>
+
+
+					<p>Gets called whenever an item is equipped.  Return true to cancel.</p>
 			</header>
 
 
@@ -13193,177 +13481,8 @@ end, Hook.HookMethodType.After)
 					<ul>
 
 							<li>
-								<span class="tag parameter">itemUser</span>
+								<span class="tag parameter">character</span>
 
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="item.use">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.use(item, itemUser, targetLimb)</h1>
-				</a>
-
-
-					<p>Gets called every time an Item gets "Used".</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemUser</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetLimb</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="item.interact">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>item.interact(item, characterPicker, ignoreRequiredItemsBool, forceSelectKeyBool, forceActionKeyBool)</h1>
-				</a>
-
-
-					<p>Gets called every time an item is interacted, eg: picking item on ground, fixing something with wrench</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterPicker</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ignoreRequiredItemsBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">forceSelectKeyBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">forceActionKeyBool</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="clientDisconnected">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>clientDisconnected(disconnectedClient)</h1>
-				</a>
-
-
-					<p>Called when a client disconnects</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">disconnectedClient</span>
-
-									<span class="tag"><span class="type">client</span></span>
 
 
 								<p>

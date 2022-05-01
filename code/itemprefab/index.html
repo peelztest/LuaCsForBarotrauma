@@ -10724,6 +10724,125 @@ ServerMessageBoxInGame											</a>
 							</li>
 							<li>
 									<details >
+									<summary><a href="../../enum/clientpermissions/">ClientPermissions</a></summary>
+
+									<ul>
+
+
+
+
+
+
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
+
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#All">
+All											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Ban">
+Ban											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ConsoleCommands">
+ConsoleCommands											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#KarmaImmunity">
+KarmaImmunity											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Kick">
+Kick											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageCampaign">
+ManageCampaign											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageHires">
+ManageHires											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMap">
+ManageMap											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMoney">
+ManageMoney											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManagePermissions">
+ManagePermissions											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageRound">
+ManageRound											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageSettings">
+ManageSettings											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectMode">
+SelectMode											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectSub">
+SelectSub											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellInventoryItems">
+SellInventoryItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellSubItems">
+SellSubItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ServerLog">
+ServerLog											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Unban">
+Unban											</a>
+										</li>
+
+									</ul>
+									</details>
+							</li>
+							<li>
+									<details >
 									<summary><a href="../../enum/disconnectreason/">DisconnectReason</a></summary>
 
 									<ul>
@@ -11416,6 +11535,77 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetBuyPricesUnder">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetBuyPricesUnder(maxCost)</h1>
+				</a>
+
+
+					<p>GetBuyPricesUnder</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">maxCost</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">ImmutableDictionary`2</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="GetSellPricesOver">
 			<header>
 				<a class="anchor">
@@ -11474,14 +11664,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CanBeBoughtFrom">
+		<section class="method" id="ItemPrefab.GenerateLegacyIdentifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanBeBoughtFrom(location)</h1>
+					<h1><span class="realm shared"></span></span>ItemPrefab.GenerateLegacyIdentifier(name)</h1>
 				</a>
 
 
-					<p>CanBeBoughtFrom</p>
+					<p>GenerateLegacyIdentifier</p>
 			</header>
 
 
@@ -11491,122 +11681,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">location</span>
+								<span class="tag parameter">name</span>
 
-									<span class="tag"><span class="type">Location</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="IsContainerPreferred">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsContainerPreferred(item, identifiersOrTags, isPreferencesDefined, isSecondary)</h1>
-				</a>
-
-
-					<p>IsContainerPreferred</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">item</span>
-
-									<span class="tag"><span class="type">Item</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">identifiersOrTags</span>
-
-									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier[]</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isPreferencesDefined</span>
-
-									<span class="tag"><span class="type">Boolean&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isSecondary</span>
-
-									<span class="tag"><span class="type">Boolean&</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -11620,382 +11697,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Dispose">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Dispose()</h1>
-				</a>
-
-
-					<p>Dispose</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetBuyPricesUnder">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetBuyPricesUnder(maxCost)</h1>
-				</a>
-
-
-					<p>GetBuyPricesUnder</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">maxCost</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">ImmutableDictionary`2</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetHullNameTextId">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHullNameTextId()</h1>
-				</a>
-
-
-					<p>GetHullNameTextId</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.IsContainerPreferred">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.IsContainerPreferred(preferences, ids)</h1>
-				</a>
-
-
-					<p>IsContainerPreferred</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">preferences</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ids</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.IsContainerPreferred">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.IsContainerPreferred(preferences, c)</h1>
-				</a>
-
-
-					<p>IsContainerPreferred</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">preferences</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">c</span>
-
-									<span class="tag"><span class="type">ItemContainer</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.AddToSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>ItemPrefab.AddToSpawnQueue(itemPrefab, inventory, spawned)</h1>
-				</a>
-
-
-					<p>Add ItemPrefab to spawn queue and spawns it inside the specified inventory</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemPrefab</span>
-
-									<span class="tag"><span class="type">ItemPrefab</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">inventory</span>
-
-									<span class="tag"><span class="type">Inventory</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">spawned</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetTreatmentSuitability">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetTreatmentSuitability(treatmentIdentifier)</h1>
-				</a>
-
-
-					<p>GetTreatmentSuitability</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">treatmentIdentifier</span>
-
-									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
+									<a class="type" href="../../code/itemprefab/#Identifier">Identifier</a>
 
 								<p>
 
@@ -12050,14 +11752,41 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="HasSubCategory">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasSubCategory(subcategory)</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>HasSubCategory</p>
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="NameMatches">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>NameMatches(allowedNames, comparisonType)</h1>
+				</a>
+
+
+					<p>NameMatches</p>
 			</header>
 
 
@@ -12067,9 +11796,23 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">subcategory</span>
+								<span class="tag parameter">allowedNames</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">comparisonType</span>
+
+									<span class="tag"><span class="type">StringComparison</span></span>
 
 
 								<p>
@@ -12084,282 +11827,6 @@ Path											</a>
 
 							<li>
 									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.Find">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.Find(name, identifier)</h1>
-				</a>
-
-
-					<p>Find</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">name</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">identifier</span>
-
-									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">ItemPrefab</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.GetItemPrefab">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.GetItemPrefab(itemNameOrId)</h1>
-				</a>
-
-
-					<p>GetItemPrefab</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemNameOrId</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">ItemPrefab</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetAllowedUpgrades">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAllowedUpgrades()</h1>
-				</a>
-
-
-					<p>GetAllowedUpgrades</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.GetItemPrefab">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.GetItemPrefab(itemNameOrId)</h1>
-				</a>
-
-
-					<p>Get a item prefab via name or id</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemNameOrId</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">ItemPrefab</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ItemPrefab.AddToSpawnQueue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>ItemPrefab.AddToSpawnQueue(itemPrefab, position, spawned)</h1>
-				</a>
-
-
-					<p>Add ItemPrefab to spawn queue and spawns it at the specified position</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">itemPrefab</span>
-
-									<span class="tag"><span class="type">ItemPrefab</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">position</span>
-
-									<span class="tag"><span class="type">Vector2</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">spawned</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ItemPrefab.GenerateLegacyIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ItemPrefab.GenerateLegacyIdentifier(name)</h1>
-				</a>
-
-
-					<p>GenerateLegacyIdentifier</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">name</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="../../code/itemprefab/#Identifier">Identifier</a>
 
 								<p>
 
@@ -12470,23 +11937,54 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="Dispose">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>Dispose()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>Dispose</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="ItemPrefab.GetItemPrefab">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemPrefab.GetItemPrefab(itemNameOrId)</h1>
+				</a>
+
+
+					<p>GetItemPrefab</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemNameOrId</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">ItemPrefab</span>
 
 								<p>
 
@@ -12497,14 +11995,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="InheritFrom">
+		<section class="method" id="ItemPrefab.IsContainerPreferred">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InheritFrom(parent)</h1>
+					<h1><span class="realm shared"></span></span>ItemPrefab.IsContainerPreferred(preferences, c)</h1>
 				</a>
 
 
-					<p>InheritFrom</p>
+					<p>IsContainerPreferred</p>
 			</header>
 
 
@@ -12514,7 +12012,65 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">parent</span>
+								<span class="tag parameter">preferences</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">c</span>
+
+									<span class="tag"><span class="type">ItemContainer</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ItemPrefab.AddToSpawnQueue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>ItemPrefab.AddToSpawnQueue(itemPrefab, inventory, spawned)</h1>
+				</a>
+
+
+					<p>Add ItemPrefab to spawn queue and spawns it inside the specified inventory</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemPrefab</span>
 
 									<span class="tag"><span class="type">ItemPrefab</span></span>
 
@@ -12525,6 +12081,207 @@ Path											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">inventory</span>
+
+									<span class="tag"><span class="type">Inventory</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">spawned</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasSubCategory">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasSubCategory(subcategory)</h1>
+				</a>
+
+
+					<p>HasSubCategory</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">subcategory</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHullNameTextId">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHullNameTextId()</h1>
+				</a>
+
+
+					<p>GetHullNameTextId</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetPriceInfo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetPriceInfo(store)</h1>
+				</a>
+
+
+					<p>GetPriceInfo</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">store</span>
+
+									<span class="tag"><span class="type">StoreInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">PriceInfo</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ItemPrefab.IsContainerPreferred">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemPrefab.IsContainerPreferred(preferences, ids)</h1>
+				</a>
+
+
+					<p>IsContainerPreferred</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">preferences</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ids</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
 
 
 		</section>
@@ -12586,23 +12343,113 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetItemNameTextId">
+		<section class="method" id="ItemPrefab.AddToSpawnQueue">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetItemNameTextId()</h1>
+					<h1><span class="realm server"></span></span>ItemPrefab.AddToSpawnQueue(itemPrefab, position, spawned)</h1>
 				</a>
 
 
-					<p>GetItemNameTextId</p>
+					<p>Add ItemPrefab to spawn queue and spawns it at the specified position</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemPrefab</span>
+
+									<span class="tag"><span class="type">ItemPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">position</span>
+
+									<span class="tag"><span class="type">Vector2</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">spawned</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ItemPrefab.Find">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemPrefab.Find(name, identifier)</h1>
+				</a>
+
+
+					<p>Find</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">identifier</span>
+
+									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+									<span class="type">ItemPrefab</span>
 
 								<p>
 
@@ -12610,20 +12457,6 @@ Path											</a>
 							</li>
 
 				</ul>
-
-
-		</section>
-		<section class="method" id="DebugCreateInstance">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DebugCreateInstance()</h1>
-				</a>
-
-
-					<p>DebugCreateInstance</p>
-			</header>
-
-
 
 
 		</section>
@@ -12685,6 +12518,323 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="GetAllowedUpgrades">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAllowedUpgrades()</h1>
+				</a>
+
+
+					<p>GetAllowedUpgrades</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ItemPrefab.GetItemPrefab">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ItemPrefab.GetItemPrefab(itemNameOrId)</h1>
+				</a>
+
+
+					<p>Get a item prefab via name or id</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">itemNameOrId</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">ItemPrefab</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetItemNameTextId">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetItemNameTextId()</h1>
+				</a>
+
+
+					<p>GetItemNameTextId</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetTreatmentSuitability">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetTreatmentSuitability(treatmentIdentifier)</h1>
+				</a>
+
+
+					<p>GetTreatmentSuitability</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">treatmentIdentifier</span>
+
+									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="IsContainerPreferred">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsContainerPreferred(item, identifiersOrTags, isPreferencesDefined, isSecondary)</h1>
+				</a>
+
+
+					<p>IsContainerPreferred</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">item</span>
+
+									<span class="tag"><span class="type">Item</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">identifiersOrTags</span>
+
+									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier[]</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">isPreferencesDefined</span>
+
+									<span class="tag"><span class="type">Boolean&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">isSecondary</span>
+
+									<span class="tag"><span class="type">Boolean&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="InheritFrom">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InheritFrom(parent)</h1>
+				</a>
+
+
+					<p>InheritFrom</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">parent</span>
+
+									<span class="tag"><span class="type">ItemPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanBeBoughtFrom">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanBeBoughtFrom(location)</h1>
+				</a>
+
+
+					<p>CanBeBoughtFrom</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">location</span>
+
+									<span class="tag"><span class="type">Location</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="DebugCreateInstance">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DebugCreateInstance()</h1>
+				</a>
+
+
+					<p>DebugCreateInstance</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="GetMinPrice">
 			<header>
 				<a class="anchor">
@@ -12712,14 +12862,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="NameMatches">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>NameMatches(allowedNames, comparisonType)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<p>NameMatches</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -12729,23 +12879,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">allowedNames</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">comparisonType</span>
-
-									<span class="tag"><span class="type">StringComparison</span></span>
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -12770,40 +12906,23 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetPriceInfo">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetPriceInfo(store)</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<p>GetPriceInfo</p>
+					<p>GetHashCode</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">store</span>
-
-									<span class="tag"><span class="type">StoreInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">PriceInfo</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -12816,14 +12935,14 @@ Path											</a>
 		</section>
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="WaterProof">
+		<section class="method" id="AllowedUpgrades">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WaterProof</h1>
+					<h1><span class="realm shared"></span></span>AllowedUpgrades</h1>
 				</a>
 
 
-					<p>WaterProof, Field of type bool</p>
+					<p>AllowedUpgrades, Field of type string</p>
 			</header>
 
 
@@ -12832,217 +12951,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">WaterProof</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Health">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Health</h1>
-				</a>
-
-
-					<p>Health, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Health</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Scale">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Scale</h1>
-				</a>
-
-
-					<p>Scale, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Scale</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RandomDeconstructionOutputAmount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RandomDeconstructionOutputAmount</h1>
-				</a>
-
-
-					<p>RandomDeconstructionOutputAmount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RandomDeconstructionOutputAmount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="UseInHealthInterface">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UseInHealthInterface</h1>
-				</a>
-
-
-					<p>UseInHealthInterface, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UseInHealthInterface</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CannotRepairFail">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CannotRepairFail</h1>
-				</a>
-
-
-					<p>CannotRepairFail, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CannotRepairFail</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="InteractDistance">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InteractDistance</h1>
-				</a>
-
-
-					<p>InteractDistance, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InteractDistance</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="OriginalName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
-				</a>
-
-
-					<p>OriginalName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OriginalName</span>
+								<span class="tag parameter">AllowedUpgrades</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
@@ -13056,14 +12965,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ImpactTolerance">
+		<section class="method" id="HideConditionBar">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ImpactTolerance</h1>
+					<h1><span class="realm shared"></span></span>HideConditionBar</h1>
 				</a>
 
 
-					<p>ImpactTolerance, Field of type number</p>
+					<p>HideConditionBar, Field of type bool</p>
 			</header>
 
 
@@ -13072,397 +12981,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">ImpactTolerance</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RequireCampaignInteract">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RequireCampaignInteract</h1>
-				</a>
-
-
-					<p>RequireCampaignInteract, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RequireCampaignInteract</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DeconstructTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DeconstructTime</h1>
-				</a>
-
-
-					<p>DeconstructTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DeconstructTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="UseContainedSpriteColor">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UseContainedSpriteColor</h1>
-				</a>
-
-
-					<p>UseContainedSpriteColor, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UseContainedSpriteColor</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="InteractThroughWalls">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InteractThroughWalls</h1>
-				</a>
-
-
-					<p>InteractThroughWalls, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InteractThroughWalls</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="HideConditionInTooltip">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HideConditionInTooltip</h1>
-				</a>
-
-
-					<p>HideConditionInTooltip, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">HideConditionInTooltip</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="UintIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UintIdentifier</h1>
-				</a>
-
-
-					<p>UintIdentifier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UintIdentifier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Subcategory">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Subcategory</h1>
-				</a>
-
-
-					<p>Subcategory, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Subcategory</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DamagedByMonsters">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagedByMonsters</h1>
-				</a>
-
-
-					<p>DamagedByMonsters, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagedByMonsters</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DamagedByRepairTools">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagedByRepairTools</h1>
-				</a>
-
-
-					<p>DamagedByRepairTools, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagedByRepairTools</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AddedPickingSpeedMultiplier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddedPickingSpeedMultiplier</h1>
-				</a>
-
-
-					<p>AddedPickingSpeedMultiplier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AddedPickingSpeedMultiplier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ResizeVertical">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ResizeVertical</h1>
-				</a>
-
-
-					<p>ResizeVertical, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ResizeVertical</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CanBeBought">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanBeBought</h1>
-				</a>
-
-
-					<p>CanBeBought, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CanBeBought</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowDroppingOnSwap">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowDroppingOnSwap</h1>
-				</a>
-
-
-					<p>AllowDroppingOnSwap, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowDroppingOnSwap</span>
+								<span class="tag parameter">HideConditionBar</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13506,14 +13025,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RandomDeconstructionOutput">
+		<section class="method" id="OriginalName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RandomDeconstructionOutput</h1>
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
 				</a>
 
 
-					<p>RandomDeconstructionOutput, Field of type bool</p>
+					<p>OriginalName, Field of type string</p>
 			</header>
 
 
@@ -13522,7 +13041,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">RandomDeconstructionOutput</span>
+								<span class="tag parameter">OriginalName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanSpriteFlipY">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanSpriteFlipY</h1>
+				</a>
+
+
+					<p>CanSpriteFlipY, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanSpriteFlipY</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13536,14 +13085,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ShowContentsInTooltip">
+		<section class="method" id="Indestructible">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ShowContentsInTooltip</h1>
+					<h1><span class="realm shared"></span></span>Indestructible</h1>
 				</a>
 
 
-					<p>ShowContentsInTooltip, Field of type bool</p>
+					<p>Indestructible, Field of type bool</p>
 			</header>
 
 
@@ -13552,7 +13101,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">ShowContentsInTooltip</span>
+								<span class="tag parameter">Indestructible</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13566,14 +13115,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SonarSize">
+		<section class="method" id="WaterProof">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SonarSize</h1>
+					<h1><span class="realm shared"></span></span>WaterProof</h1>
 				</a>
 
 
-					<p>SonarSize, Field of type number</p>
+					<p>WaterProof, Field of type bool</p>
 			</header>
 
 
@@ -13582,9 +13131,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">SonarSize</span>
+								<span class="tag parameter">WaterProof</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -13596,14 +13145,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Identifier">
+		<section class="method" id="VariantOf">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
+					<h1><span class="realm shared"></span></span>VariantOf</h1>
 				</a>
 
 
-					<p>Identifier, Field of type Identifier</p>
+					<p>VariantOf, Field of type Identifier</p>
 			</header>
 
 
@@ -13612,7 +13161,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">Identifier</span>
+								<span class="tag parameter">VariantOf</span>
 
 									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
 
@@ -13626,14 +13175,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowSellingWhenBroken">
+		<section class="method" id="UseInHealthInterface">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowSellingWhenBroken</h1>
+					<h1><span class="realm shared"></span></span>UseInHealthInterface</h1>
 				</a>
 
 
-					<p>AllowSellingWhenBroken, Field of type bool</p>
+					<p>UseInHealthInterface, Field of type bool</p>
 			</header>
 
 
@@ -13642,7 +13191,97 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowSellingWhenBroken</span>
+								<span class="tag parameter">UseInHealthInterface</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowRotatingInEditor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowRotatingInEditor</h1>
+				</a>
+
+
+					<p>AllowRotatingInEditor, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowRotatingInEditor</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanFlipX">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanFlipX</h1>
+				</a>
+
+
+					<p>CanFlipX, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanFlipX</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UseContainedSpriteColor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UseContainedSpriteColor</h1>
+				</a>
+
+
+					<p>UseContainedSpriteColor, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UseContainedSpriteColor</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13686,14 +13325,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="FireProof">
+		<section class="method" id="EquipConfirmationText">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FireProof</h1>
+					<h1><span class="realm shared"></span></span>EquipConfirmationText</h1>
 				</a>
 
 
-					<p>FireProof, Field of type bool</p>
+					<p>EquipConfirmationText, Field of type string</p>
 			</header>
 
 
@@ -13702,9 +13341,249 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">FireProof</span>
+								<span class="tag parameter">EquipConfirmationText</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UseContainedInventoryIconColor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UseContainedInventoryIconColor</h1>
+				</a>
+
+
+					<p>UseContainedInventoryIconColor, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UseContainedInventoryIconColor</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RequireCampaignInteract">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RequireCampaignInteract</h1>
+				</a>
+
+
+					<p>RequireCampaignInteract, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RequireCampaignInteract</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AddedRepairSpeedMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddedRepairSpeedMultiplier</h1>
+				</a>
+
+
+					<p>AddedRepairSpeedMultiplier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AddedRepairSpeedMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Subcategory">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Subcategory</h1>
+				</a>
+
+
+					<p>Subcategory, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Subcategory</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HideConditionInTooltip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HideConditionInTooltip</h1>
+				</a>
+
+
+					<p>HideConditionInTooltip, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HideConditionInTooltip</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanBeBought">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanBeBought</h1>
+				</a>
+
+
+					<p>CanBeBought, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanBeBought</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxStackSize">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxStackSize</h1>
+				</a>
+
+
+					<p>MaxStackSize, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxStackSize</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Identifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Identifier</h1>
+				</a>
+
+
+					<p>Identifier, the identifier of the prefab.</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -13746,14 +13625,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="VariantOf">
+		<section class="method" id="DamagedByExplosions">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>VariantOf</h1>
+					<h1><span class="realm shared"></span></span>DamagedByExplosions</h1>
 				</a>
 
 
-					<p>VariantOf, Field of type Identifier</p>
+					<p>DamagedByExplosions, Field of type bool</p>
 			</header>
 
 
@@ -13762,9 +13641,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">VariantOf</span>
+								<span class="tag parameter">DamagedByExplosions</span>
 
-									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -13776,14 +13655,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CargoContainerIdentifier">
+		<section class="method" id="CannotRepairFail">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CargoContainerIdentifier</h1>
+					<h1><span class="realm shared"></span></span>CannotRepairFail</h1>
 				</a>
 
 
-					<p>CargoContainerIdentifier, Field of type string</p>
+					<p>CannotRepairFail, Field of type bool</p>
 			</header>
 
 
@@ -13792,9 +13671,489 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">CargoContainerIdentifier</span>
+								<span class="tag parameter">CannotRepairFail</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ShowContentsInTooltip">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ShowContentsInTooltip</h1>
+				</a>
+
+
+					<p>ShowContentsInTooltip, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ShowContentsInTooltip</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RandomDeconstructionOutputAmount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RandomDeconstructionOutputAmount</h1>
+				</a>
+
+
+					<p>RandomDeconstructionOutputAmount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RandomDeconstructionOutputAmount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AddedPickingSpeedMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AddedPickingSpeedMultiplier</h1>
+				</a>
+
+
+					<p>AddedPickingSpeedMultiplier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AddedPickingSpeedMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ExplosionDamageMultiplier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ExplosionDamageMultiplier</h1>
+				</a>
+
+
+					<p>ExplosionDamageMultiplier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ExplosionDamageMultiplier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowDroppingOnSwap">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowDroppingOnSwap</h1>
+				</a>
+
+
+					<p>AllowDroppingOnSwap, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowDroppingOnSwap</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsOverride">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsOverride</h1>
+				</a>
+
+
+					<p>IsOverride, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsOverride</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DamagedByRepairTools">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DamagedByRepairTools</h1>
+				</a>
+
+
+					<p>DamagedByRepairTools, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DamagedByRepairTools</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowSellingWhenBroken">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowSellingWhenBroken</h1>
+				</a>
+
+
+					<p>AllowSellingWhenBroken, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowSellingWhenBroken</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanFlipY">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanFlipY</h1>
+				</a>
+
+
+					<p>CanFlipY, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanFlipY</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FireProof">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FireProof</h1>
+				</a>
+
+
+					<p>FireProof, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FireProof</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="InteractPriority">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>InteractPriority</h1>
+				</a>
+
+
+					<p>InteractPriority, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">InteractPriority</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DisableItemUsageWhenSelected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DisableItemUsageWhenSelected</h1>
+				</a>
+
+
+					<p>DisableItemUsageWhenSelected, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DisableItemUsageWhenSelected</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UintIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UintIdentifier</h1>
+				</a>
+
+
+					<p>UintIdentifier, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UintIdentifier</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SonarSize">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SonarSize</h1>
+				</a>
+
+
+					<p>SonarSize, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SonarSize</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Scale">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Scale</h1>
+				</a>
+
+
+					<p>Scale, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Scale</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RandomDeconstructionOutput">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RandomDeconstructionOutput</h1>
+				</a>
+
+
+					<p>RandomDeconstructionOutput, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RandomDeconstructionOutput</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -13866,14 +14225,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CanBeSold">
+		<section class="method" id="ResizeVertical">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanBeSold</h1>
+					<h1><span class="realm shared"></span></span>ResizeVertical</h1>
 				</a>
 
 
-					<p>CanBeSold, Field of type bool</p>
+					<p>ResizeVertical, Field of type bool</p>
 			</header>
 
 
@@ -13882,157 +14241,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">CanBeSold</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="HideInMenus">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HideInMenus</h1>
-				</a>
-
-
-					<p>HideInMenus, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">HideInMenus</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowedUpgrades">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowedUpgrades</h1>
-				</a>
-
-
-					<p>AllowedUpgrades, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowedUpgrades</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ExplosionDamageMultiplier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ExplosionDamageMultiplier</h1>
-				</a>
-
-
-					<p>ExplosionDamageMultiplier, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ExplosionDamageMultiplier</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RequireBodyInsideTrigger">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RequireBodyInsideTrigger</h1>
-				</a>
-
-
-					<p>RequireBodyInsideTrigger, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RequireBodyInsideTrigger</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CanSpriteFlipX">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanSpriteFlipX</h1>
-				</a>
-
-
-					<p>CanSpriteFlipX, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CanSpriteFlipX</span>
+								<span class="tag parameter">ResizeVertical</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14076,14 +14285,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowRotatingInEditor">
+		<section class="method" id="InteractThroughWalls">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowRotatingInEditor</h1>
+					<h1><span class="realm shared"></span></span>InteractThroughWalls</h1>
 				</a>
 
 
-					<p>AllowRotatingInEditor, Field of type bool</p>
+					<p>InteractThroughWalls, Field of type bool</p>
 			</header>
 
 
@@ -14092,337 +14301,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowRotatingInEditor</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="InteractPriority">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>InteractPriority</h1>
-				</a>
-
-
-					<p>InteractPriority, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">InteractPriority</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CanFlipX">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanFlipX</h1>
-				</a>
-
-
-					<p>CanFlipX, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CanFlipX</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="EquipConfirmationText">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EquipConfirmationText</h1>
-				</a>
-
-
-					<p>EquipConfirmationText, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">EquipConfirmationText</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Indestructible">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Indestructible</h1>
-				</a>
-
-
-					<p>Indestructible, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Indestructible</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsOverride">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsOverride</h1>
-				</a>
-
-
-					<p>IsOverride, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsOverride</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="FocusOnSelected">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>FocusOnSelected</h1>
-				</a>
-
-
-					<p>FocusOnSelected, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">FocusOnSelected</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="HideConditionBar">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HideConditionBar</h1>
-				</a>
-
-
-					<p>HideConditionBar, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">HideConditionBar</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DamagedByProjectiles">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagedByProjectiles</h1>
-				</a>
-
-
-					<p>DamagedByProjectiles, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagedByProjectiles</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DamagedByExplosions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DamagedByExplosions</h1>
-				</a>
-
-
-					<p>DamagedByExplosions, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DamagedByExplosions</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Identifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Identifier</h1>
-				</a>
-
-
-					<p>Identifier, the identifier of the prefab.</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CanFlipY">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanFlipY</h1>
-				</a>
-
-
-					<p>CanFlipY, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">CanFlipY</span>
+								<span class="tag parameter">InteractThroughWalls</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14466,14 +14345,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="MaxStackSize">
+		<section class="method" id="InteractDistance">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxStackSize</h1>
+					<h1><span class="realm shared"></span></span>InteractDistance</h1>
 				</a>
 
 
-					<p>MaxStackSize, Field of type number</p>
+					<p>InteractDistance, Field of type number</p>
 			</header>
 
 
@@ -14482,7 +14361,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MaxStackSize</span>
+								<span class="tag parameter">InteractDistance</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14496,14 +14375,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="DisableItemUsageWhenSelected">
+		<section class="method" id="ImpactTolerance">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisableItemUsageWhenSelected</h1>
+					<h1><span class="realm shared"></span></span>ImpactTolerance</h1>
 				</a>
 
 
-					<p>DisableItemUsageWhenSelected, Field of type bool</p>
+					<p>ImpactTolerance, Field of type number</p>
 			</header>
 
 
@@ -14512,7 +14391,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">DisableItemUsageWhenSelected</span>
+								<span class="tag parameter">ImpactTolerance</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="FocusOnSelected">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>FocusOnSelected</h1>
+				</a>
+
+
+					<p>FocusOnSelected, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">FocusOnSelected</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14526,14 +14435,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AddedRepairSpeedMultiplier">
+		<section class="method" id="CanSpriteFlipX">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AddedRepairSpeedMultiplier</h1>
+					<h1><span class="realm shared"></span></span>CanSpriteFlipX</h1>
 				</a>
 
 
-					<p>AddedRepairSpeedMultiplier, Field of type number</p>
+					<p>CanSpriteFlipX, Field of type bool</p>
 			</header>
 
 
@@ -14542,7 +14451,67 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AddedRepairSpeedMultiplier</span>
+								<span class="tag parameter">CanSpriteFlipX</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RequireBodyInsideTrigger">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RequireBodyInsideTrigger</h1>
+				</a>
+
+
+					<p>RequireBodyInsideTrigger, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RequireBodyInsideTrigger</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DeconstructTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DeconstructTime</h1>
+				</a>
+
+
+					<p>DeconstructTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DeconstructTime</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14556,14 +14525,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CanSpriteFlipY">
+		<section class="method" id="DamagedByProjectiles">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CanSpriteFlipY</h1>
+					<h1><span class="realm shared"></span></span>DamagedByProjectiles</h1>
 				</a>
 
 
-					<p>CanSpriteFlipY, Field of type bool</p>
+					<p>DamagedByProjectiles, Field of type bool</p>
 			</header>
 
 
@@ -14572,7 +14541,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">CanSpriteFlipY</span>
+								<span class="tag parameter">DamagedByProjectiles</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HideInMenus">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HideInMenus</h1>
+				</a>
+
+
+					<p>HideInMenus, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HideInMenus</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14616,36 +14615,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="UseContainedInventoryIconColor">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UseContainedInventoryIconColor</h1>
-				</a>
-
-
-					<p>UseContainedInventoryIconColor, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UseContainedInventoryIconColor</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="AllowDeconstruct">
 			<header>
 				<a class="anchor">
@@ -14663,6 +14632,156 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">AllowDeconstruct</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Health">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Health</h1>
+				</a>
+
+
+					<p>Health, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Health</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Identifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Identifier</h1>
+				</a>
+
+
+					<p>Identifier, Field of type Identifier</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Identifier</span>
+
+									<span class="tag"><a class="type" href="../../code/itemprefab/#Identifier">Identifier</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CanBeSold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CanBeSold</h1>
+				</a>
+
+
+					<p>CanBeSold, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CanBeSold</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CargoContainerIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CargoContainerIdentifier</h1>
+				</a>
+
+
+					<p>CargoContainerIdentifier, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CargoContainerIdentifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="DamagedByMonsters">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DamagedByMonsters</h1>
+				</a>
+
+
+					<p>DamagedByMonsters, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DamagedByMonsters</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 

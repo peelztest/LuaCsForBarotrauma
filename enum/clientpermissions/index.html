@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>SpawnType - LuaForBarotrauma Documentation</title>
+		<title>ClientPermissions - LuaForBarotrauma Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="SpawnType - LuaForBarotrauma Documentation" />
+		<meta property="og:title" content="ClientPermissions - LuaForBarotrauma Documentation" />
 		<meta property="og:site_name" content="Lua For Barotrauma Documentation" />
 
-			<meta property="og:description" content="SpawnType enum." />
+			<meta property="og:description" content="ClientPermissions enum." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -10723,7 +10723,7 @@ ServerMessageBoxInGame											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../enum/clientpermissions/">ClientPermissions</a></summary>
 
 									<ul>
@@ -11410,7 +11410,7 @@ Wiring											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../enum/spawntype/">SpawnType</a></summary>
 
 									<ul>
@@ -11526,8 +11526,8 @@ Path											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>SpawnType</h1>
-	<h2>SpawnType enum.</h2>
+	<h1>ClientPermissions</h1>
+	<h2>ClientPermissions enum.</h2>
 </header>
 
 <p>
@@ -11537,70 +11537,280 @@ Path											</a>
 
 	<h1 class="title">Fields</h1>
 
-		<section class="method" id="Human">
+		<section class="method" id="Kick">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Human</h1>
+					<h1><span class="realm shared"></span></span>Kick</h1>
 				</a>
 
 
-					<p>SpawnType.Human = 1</p>
+					<p>ClientPermissions.Kick = 0x2</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Path">
+		<section class="method" id="ManageMap">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Path</h1>
+					<h1><span class="realm shared"></span></span>ManageMap</h1>
 				</a>
 
 
-					<p>SpawnType.Path = 0</p>
+					<p>ClientPermissions.ManageMap = 0x8000</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Cargo">
+		<section class="method" id="All">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Cargo</h1>
+					<h1><span class="realm shared"></span></span>All</h1>
 				</a>
 
 
-					<p>SpawnType.Cargo = 4</p>
+					<p>ClientPermissions.All = 0x1FFF</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Enemy">
+		<section class="method" id="Ban">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Enemy</h1>
+					<h1><span class="realm shared"></span></span>Ban</h1>
 				</a>
 
 
-					<p>SpawnType.Enemy = 2</p>
+					<p>ClientPermissions.Ban = 0x4</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="Corpse">
+		<section class="method" id="KarmaImmunity">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Corpse</h1>
+					<h1><span class="realm shared"></span></span>KarmaImmunity</h1>
 				</a>
 
 
-					<p>SpawnType.Corpse = 8</p>
+					<p>ClientPermissions.KarmaImmunity = 0x800</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SellInventoryItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SellInventoryItems</h1>
+				</a>
+
+
+					<p>ClientPermissions.SellInventoryItems = 0x2000</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Unban">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Unban</h1>
+				</a>
+
+
+					<p>ClientPermissions.Unban = 0x8</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManageHires">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManageHires</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManageHires = 0x10000</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SelectSub">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectSub</h1>
+				</a>
+
+
+					<p>ClientPermissions.SelectSub = 0x10</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManageMoney">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManageMoney</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManageMoney = 0x1000</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="None">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>None</h1>
+				</a>
+
+
+					<p>ClientPermissions.None = 0x0</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ConsoleCommands">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ConsoleCommands</h1>
+				</a>
+
+
+					<p>ClientPermissions.ConsoleCommands = 0x80</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SelectMode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectMode</h1>
+				</a>
+
+
+					<p>ClientPermissions.SelectMode = 0x20</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManageCampaign">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManageCampaign</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManageCampaign = 0x40</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManagePermissions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManagePermissions</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManagePermissions = 0x400</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ServerLog">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerLog</h1>
+				</a>
+
+
+					<p>ClientPermissions.ServerLog = 0x100</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SellSubItems">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SellSubItems</h1>
+				</a>
+
+
+					<p>ClientPermissions.SellSubItems = 0x4000</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManageRound">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManageRound</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManageRound = 0x1</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ManageSettings">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ManageSettings</h1>
+				</a>
+
+
+					<p>ClientPermissions.ManageSettings = 0x200</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="None">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>None</h1>
+				</a>
+
+
+					<p>ClientPermissions.None = 0x0</p>
 			</header>
 
 

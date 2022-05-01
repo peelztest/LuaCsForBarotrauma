@@ -10724,6 +10724,125 @@ ServerMessageBoxInGame											</a>
 							</li>
 							<li>
 									<details >
+									<summary><a href="../../enum/clientpermissions/">ClientPermissions</a></summary>
+
+									<ul>
+
+
+
+
+
+
+								<li>
+									<label class="colorful-label">FIELDS</label>
+								</li>
+
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#All">
+All											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Ban">
+Ban											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ConsoleCommands">
+ConsoleCommands											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#KarmaImmunity">
+KarmaImmunity											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Kick">
+Kick											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageCampaign">
+ManageCampaign											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageHires">
+ManageHires											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMap">
+ManageMap											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageMoney">
+ManageMoney											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManagePermissions">
+ManagePermissions											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageRound">
+ManageRound											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ManageSettings">
+ManageSettings											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#None">
+None											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectMode">
+SelectMode											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SelectSub">
+SelectSub											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellInventoryItems">
+SellInventoryItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#SellSubItems">
+SellSubItems											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#ServerLog">
+ServerLog											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../enum/clientpermissions/#Unban">
+Unban											</a>
+										</li>
+
+									</ul>
+									</details>
+							</li>
+							<li>
+									<details >
 									<summary><a href="../../enum/disconnectreason/">DisconnectReason</a></summary>
 
 									<ul>
@@ -11418,47 +11537,6 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Networking.Start">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Networking.Start(netMessageName)</h1>
-				</a>
-
-
-					<p>Creates a new net message, returns an IWriteMessage</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">netMessageName</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">IWriteMessage</span>
-
-								<p>netMessage</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="Networking.RequestPostHTTP">
 			<header>
 				<a class="anchor">
@@ -11528,6 +11606,90 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="Networking.Start">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Networking.Start(netMessageName)</h1>
+				</a>
+
+
+					<p>Creates a new net message, returns an IWriteMessage</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessageName</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">IWriteMessage</span>
+
+								<p>netMessage</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Networking.RequestGetHTTP">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+				</a>
+
+
+					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">url</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">callback</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Networking.Send">
 			<header>
 				<a class="anchor">
@@ -11571,14 +11733,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Networking.RequestGetHTTP">
+		<section class="method" id="Networking.ClientWriteLobby">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
+					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
 				</a>
 
 
-					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
+					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
 			</header>
 
 
@@ -11588,20 +11750,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">url</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">callback</span>
+								<span class="tag parameter">client</span>
 
 
 
@@ -11658,36 +11807,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">deliveryMethod</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Networking.ClientWriteLobby">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
-				</a>
-
-
-					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
 
 
 
