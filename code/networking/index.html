@@ -12084,36 +12084,6 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="Networking.ClientWriteLobby">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
-				</a>
-
-
-					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="Networking.RequestPostHTTP">
 			<header>
 				<a class="anchor">
@@ -12183,14 +12153,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Networking.Start">
+		<section class="method" id="Networking.Receive">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Networking.Start(netMessageName)</h1>
+					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
 				</a>
 
 
-					<p>Creates a new net message, returns an IWriteMessage</p>
+					<p>Adds a function to listen for lua net messages</p>
 			</header>
 
 
@@ -12201,47 +12171,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">netMessageName</span>
-
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">IWriteMessage</span>
-
-								<p>netMessage</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Networking.RequestGetHTTP">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
-				</a>
-
-
-					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">url</span>
 
 
 
@@ -12310,6 +12239,77 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="Networking.Start">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Networking.Start(netMessageName)</h1>
+				</a>
+
+
+					<p>Creates a new net message, returns an IWriteMessage</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">netMessageName</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">IWriteMessage</span>
+
+								<p>netMessage</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Networking.ClientWriteLobby">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm server"></span></span>Networking.ClientWriteLobby(client)</h1>
+				</a>
+
+
+					<p>Writes again the lobby data of a client, useful for syncing submarine lists or other lobby options.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
+
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Networking.Send">
 			<header>
 				<a class="anchor">
@@ -12366,14 +12366,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Networking.Receive">
+		<section class="method" id="Networking.RequestGetHTTP">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Networking.Receive(netMessageName, callback)</h1>
+					<h1><span class="realm server"></span></span>Networking.RequestGetHTTP(url, callback)</h1>
 				</a>
 
 
-					<p>Adds a function to listen for lua net messages</p>
+					<p>Send a get HTTP Request, callback is called with an argument result string.</p>
 			</header>
 
 
@@ -12383,7 +12383,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">netMessageName</span>
+								<span class="tag parameter">url</span>
 
 
 

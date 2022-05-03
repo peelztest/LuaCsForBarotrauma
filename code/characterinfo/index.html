@@ -12082,6 +12082,136 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="LoadHeadAttachments">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LoadHeadAttachments()</h1>
+				</a>
+
+
+					<p>LoadHeadAttachments</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CheckDisguiseStatus">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CheckDisguiseStatus(handleBuff, idCard)</h1>
+				</a>
+
+
+					<p>CheckDisguiseStatus</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">handleBuff</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">idCard</span>
+
+									<span class="tag"><span class="type">IdCard</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetSavedStatValue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSavedStatValue(statType)</h1>
+				</a>
+
+
+					<p>GetSavedStatValue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">statType</span>
+
+									<span class="tag"><span class="type">StatTypes</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetEndocrineTalents">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetEndocrineTalents()</h1>
+				</a>
+
+
+					<p>GetEndocrineTalents</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="CharacterInfo.ApplyHealthData">
 			<header>
 				<a class="anchor">
@@ -12127,14 +12257,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="GetUnlockedTalentsInTree">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>GetUnlockedTalentsInTree()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>GetUnlockedTalentsInTree</p>
 			</header>
 
 
@@ -12143,7 +12273,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">Enumerable</span>
 
 								<p>
 
@@ -12198,16 +12328,47 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
+		<section class="method" id="ReloadHeadAttachments">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
+					<h1><span class="realm shared"></span></span>ReloadHeadAttachments()</h1>
 				</a>
 
 
-					<p>ToString</p>
+					<p>ReloadHeadAttachments</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="ReplaceVars">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReplaceVars(str)</h1>
+				</a>
+
+
+					<p>ReplaceVars</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">str</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
@@ -12225,14 +12386,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Save">
+		<section class="method" id="ApplyOrderData">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
+					<h1><span class="realm shared"></span></span>ApplyOrderData()</h1>
 				</a>
 
 
-					<p>Save</p>
+					<p>ApplyOrderData</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetValidAttachmentElements">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetValidAttachmentElements(elements, headPreset, wearableType)</h1>
+				</a>
+
+
+					<p>GetValidAttachmentElements</p>
 			</header>
 
 
@@ -12242,9 +12417,37 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">parentElement</span>
+								<span class="tag parameter">elements</span>
 
-									<span class="tag"><span class="type">XElement</span></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">headPreset</span>
+
+									<span class="tag"><span class="type">HeadPreset</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wearableType</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
 
 
 								<p>
@@ -12258,7 +12461,314 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">XElement</span>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetManualOrderPriority">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetManualOrderPriority(order)</h1>
+				</a>
+
+
+					<p>GetManualOrderPriority</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">order</span>
+
+									<span class="tag"><span class="type">Order</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ClearSavedStatValues">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ClearSavedStatValues(statType)</h1>
+				</a>
+
+
+					<p>ClearSavedStatValues</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">statType</span>
+
+									<span class="tag"><span class="type">StatTypes</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetExperienceRequiredToLevelUp">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetExperienceRequiredToLevelUp()</h1>
+				</a>
+
+
+					<p>GetExperienceRequiredToLevelUp</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SetSkillLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetSkillLevel(skillIdentifier, level)</h1>
+				</a>
+
+
+					<p>SetSkillLevel</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">skillIdentifier</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">level</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetRandomName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetRandomName(randSync)</h1>
+				</a>
+
+
+					<p>GetRandomName</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">randSync</span>
+
+									<span class="tag"><span class="type">RandSync</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="SetExperience">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetExperience(newExperience)</h1>
+				</a>
+
+
+					<p>SetExperience</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">newExperience</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.SelectRandomColor">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.SelectRandomColor(array, randSync)</h1>
+				</a>
+
+
+					<p>SelectRandomColor</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">array</span>
+
+									<span class="tag"><span class="type">ImmutableArray`1&</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">randSync</span>
+
+									<span class="tag"><span class="type">RandSync</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Color</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetAvailableTalentPoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAvailableTalentPoints()</h1>
+				</a>
+
+
+					<p>GetAvailableTalentPoints</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
 
 								<p>
 
@@ -12289,37 +12799,6 @@ Path											</a>
 								<span class="tag parameter">statIdentifier</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SetExperience">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetExperience(newExperience)</h1>
-				</a>
-
-
-					<p>SetExperience</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newExperience</span>
-
-									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -12403,14 +12882,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CharacterInfo.SaveOrders">
+		<section class="method" id="SaveOrderData">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.SaveOrders(parentElement, orders)</h1>
+					<h1><span class="realm shared"></span></span>SaveOrderData()</h1>
 				</a>
 
 
-					<p>SaveOrders</p>
+					<p>SaveOrderData</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Save">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Save(parentElement)</h1>
+				</a>
+
+
+					<p>Save</p>
 			</header>
 
 
@@ -12431,45 +12924,30 @@ Path											</a>
 							</li>
 					</ul>
 
-					<ul>
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">orders</span>
-
-									<span class="tag"><span class="type">Order[]</span></span>
-
+									<span class="type">XElement</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
 
-
-
-		</section>
-		<section class="method" id="ClearSavedStatValues">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ClearSavedStatValues()</h1>
-				</a>
-
-
-					<p>ClearSavedStatValues</p>
-			</header>
-
-
+				</ul>
 
 
 		</section>
-		<section class="method" id="GetExperienceRequiredForCurrentLevel">
+		<section class="method" id="GetIdentifierUsingOriginalName">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetExperienceRequiredForCurrentLevel()</h1>
+					<h1><span class="realm shared"></span></span>GetIdentifierUsingOriginalName()</h1>
 				</a>
 
 
-					<p>GetExperienceRequiredForCurrentLevel</p>
+					<p>GetIdentifierUsingOriginalName</p>
 			</header>
 
 
@@ -12489,14 +12967,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
+		<section class="method" id="GetTotalTalentPoints">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
+					<h1><span class="realm shared"></span></span>GetTotalTalentPoints()</h1>
 				</a>
 
 
-					<p>GetType</p>
+					<p>GetTotalTalentPoints</p>
 			</header>
 
 
@@ -12505,7 +12983,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Type</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -12516,14 +12994,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CharacterInfo.SelectRandomColor">
+		<section class="method" id="GetRandomElement">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.SelectRandomColor(array, randSync)</h1>
+					<h1><span class="realm shared"></span></span>GetRandomElement(elements)</h1>
 				</a>
 
 
-					<p>SelectRandomColor</p>
+					<p>GetRandomElement</p>
 			</header>
 
 
@@ -12533,23 +13011,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">array</span>
+								<span class="tag parameter">elements</span>
 
-									<span class="tag"><span class="type">ImmutableArray`1&</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">randSync</span>
-
-									<span class="tag"><span class="type">RandSync</span></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
 
 
 								<p>
@@ -12563,7 +13027,107 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">Color</span>
+									<span class="type">ContentXElement</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ClearSavedStatValues">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ClearSavedStatValues()</h1>
+				</a>
+
+
+					<p>ClearSavedStatValues</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ResetName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ResetName()</h1>
+				</a>
+
+
+					<p>ResetName</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.ApplyOrderData">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.ApplyOrderData(character, orderData)</h1>
+				</a>
+
+
+					<p>ApplyOrderData</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">character</span>
+
+									<span class="tag"><a class="type" href="../../code/characterinfo/#Character">Character</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">orderData</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
 
 								<p>
 
@@ -12661,137 +13225,57 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CharacterInfo.ApplyOrderData">
+		<section class="method" id="Remove">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.ApplyOrderData(character, orderData)</h1>
+					<h1><span class="realm shared"></span></span>Remove()</h1>
 				</a>
 
 
-					<p>ApplyOrderData</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">character</span>
-
-									<span class="tag"><a class="type" href="../../code/characterinfo/#Character">Character</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">orderData</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SetSkillLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetSkillLevel(skillIdentifier, level)</h1>
-				</a>
-
-
-					<p>SetSkillLevel</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">skillIdentifier</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">level</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SaveOrderData">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SaveOrderData()</h1>
-				</a>
-
-
-					<p>SaveOrderData</p>
+					<p>Remove</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="GetManualOrderPriority">
+		<section class="method" id="GetIdentifier">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetManualOrderPriority(order)</h1>
+					<h1><span class="realm shared"></span></span>GetIdentifier()</h1>
 				</a>
 
 
-					<p>GetManualOrderPriority</p>
+					<p>GetIdentifier</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
-
-					<ul>
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">order</span>
-
-									<span class="tag"><span class="type">Order</span></span>
-
+									<span class="type">number</span>
 
 								<p>
 
 </p>
 							</li>
-					</ul>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
 
 
 				<h3>Returns</h3>
@@ -12867,58 +13351,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ReplaceVars">
+		<section class="method" id="RefreshHead">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReplaceVars(str)</h1>
+					<h1><span class="realm shared"></span></span>RefreshHead()</h1>
 				</a>
 
 
-					<p>ReplaceVars</p>
+					<p>RefreshHead</p>
 			</header>
 
 
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">str</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
-		<section class="method" id="CheckDisguiseStatus">
+		<section class="method" id="RecreateHead">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CheckDisguiseStatus(handleBuff, idCard)</h1>
+					<h1><span class="realm shared"></span></span>RecreateHead(headInfo)</h1>
 				</a>
 
 
-					<p>CheckDisguiseStatus</p>
+					<p>RecreateHead</p>
 			</header>
 
 
@@ -12928,23 +13382,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">handleBuff</span>
+								<span class="tag parameter">headInfo</span>
 
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">idCard</span>
-
-									<span class="tag"><span class="type">IdCard</span></span>
+									<span class="tag"><span class="type">HeadInfo</span></span>
 
 
 								<p>
@@ -13057,16 +13497,482 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetIdentifierUsingOriginalName">
+		<section class="method" id="RemoveSavedStatValuesOnDeath">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetIdentifierUsingOriginalName()</h1>
+					<h1><span class="realm shared"></span></span>RemoveSavedStatValuesOnDeath()</h1>
 				</a>
 
 
-					<p>GetIdentifierUsingOriginalName</p>
+					<p>RemoveSavedStatValuesOnDeath</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="IncreaseSkillLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase, gainedFromAbility)</h1>
+				</a>
+
+
+					<p>IncreaseSkillLevel</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">skillIdentifier</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">increase</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">gainedFromAbility</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.SaveOrderData">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.SaveOrderData(characterInfo, parentElement)</h1>
+				</a>
+
+
+					<p>SaveOrderData</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">characterInfo</span>
+
+									<span class="tag"><span class="type">CharacterInfo</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">parentElement</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.LoadOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.LoadOrders(ordersElement)</h1>
+				</a>
+
+
+					<p>LoadOrders</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ordersElement</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetExperienceRequiredForCurrentLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetExperienceRequiredForCurrentLevel()</h1>
+				</a>
+
+
+					<p>GetExperienceRequiredForCurrentLevel</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CharacterInfo.SaveOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.SaveOrders(parentElement, orders)</h1>
+				</a>
+
+
+					<p>SaveOrders</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">parentElement</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">orders</span>
+
+									<span class="tag"><span class="type">Order[]</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetCurrentLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetCurrentLevel()</h1>
+				</a>
+
+
+					<p>GetCurrentLevel</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GiveExperience">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GiveExperience(amount, isMissionExperience)</h1>
+				</a>
+
+
+					<p>GiveExperience</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">amount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">isMissionExperience</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CountValidAttachmentsOfType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CountValidAttachmentsOfType(wearableType)</h1>
+				</a>
+
+
+					<p>CountValidAttachmentsOfType</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">wearableType</span>
+
+									<span class="tag"><span class="type">WearableType</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Rename">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Rename(newName)</h1>
+				</a>
+
+
+					<p>Rename</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">newName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetProgressTowardsNextLevel">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetProgressTowardsNextLevel()</h1>
+				</a>
+
+
+					<p>GetProgressTowardsNextLevel</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetSavedStatValue">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetSavedStatValue(statType, statIdentifier)</h1>
+				</a>
+
+
+					<p>GetSavedStatValue</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">statType</span>
+
+									<span class="tag"><span class="type">StatTypes</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">statIdentifier</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 				<h3>Returns</h3>
@@ -13111,6 +14017,20 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="ClearCurrentOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ClearCurrentOrders()</h1>
+				</a>
+
+
+					<p>ClearCurrentOrders</p>
+			</header>
+
 
 
 
@@ -13187,928 +14107,68 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetSavedStatValue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSavedStatValue(statType, statIdentifier)</h1>
-				</a>
-
-
-					<p>GetSavedStatValue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">statType</span>
-
-									<span class="tag"><span class="type">StatTypes</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">statIdentifier</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Rename">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Rename(newName)</h1>
-				</a>
-
-
-					<p>Rename</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove()</h1>
-				</a>
-
-
-					<p>Remove</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="RemoveSavedStatValuesOnDeath">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveSavedStatValuesOnDeath()</h1>
-				</a>
-
-
-					<p>RemoveSavedStatValuesOnDeath</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ReloadHeadAttachments">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReloadHeadAttachments()</h1>
-				</a>
-
-
-					<p>ReloadHeadAttachments</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="RefreshHead">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RefreshHead()</h1>
-				</a>
-
-
-					<p>RefreshHead</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="RecreateHead">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RecreateHead(headInfo)</h1>
-				</a>
-
-
-					<p>RecreateHead</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">headInfo</span>
-
-									<span class="tag"><span class="type">HeadInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetValidAttachmentElements">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetValidAttachmentElements(elements, headPreset, wearableType)</h1>
-				</a>
-
-
-					<p>GetValidAttachmentElements</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">elements</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">headPreset</span>
-
-									<span class="tag"><span class="type">HeadPreset</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wearableType</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="IncreaseSkillLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IncreaseSkillLevel(skillIdentifier, increase, gainedFromAbility)</h1>
-				</a>
-
-
-					<p>IncreaseSkillLevel</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">skillIdentifier</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">increase</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">gainedFromAbility</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GiveExperience">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GiveExperience(amount, isMissionExperience)</h1>
-				</a>
-
-
-					<p>GiveExperience</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">amount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">isMissionExperience</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ClearCurrentOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ClearCurrentOrders()</h1>
-				</a>
-
-
-					<p>ClearCurrentOrders</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="LoadHeadAttachments">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LoadHeadAttachments()</h1>
-				</a>
-
-
-					<p>LoadHeadAttachments</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CountValidAttachmentsOfType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CountValidAttachmentsOfType(wearableType)</h1>
-				</a>
-
-
-					<p>CountValidAttachmentsOfType</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">wearableType</span>
-
-									<span class="tag"><span class="type">WearableType</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetUnlockedTalentsInTree">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetUnlockedTalentsInTree()</h1>
-				</a>
-
-
-					<p>GetUnlockedTalentsInTree</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetProgressTowardsNextLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetProgressTowardsNextLevel()</h1>
-				</a>
-
-
-					<p>GetProgressTowardsNextLevel</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetAvailableTalentPoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAvailableTalentPoints()</h1>
-				</a>
-
-
-					<p>GetAvailableTalentPoints</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetCurrentLevel">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetCurrentLevel()</h1>
-				</a>
-
-
-					<p>GetCurrentLevel</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ClearSavedStatValues">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ClearSavedStatValues(statType)</h1>
-				</a>
-
-
-					<p>ClearSavedStatValues</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">statType</span>
-
-									<span class="tag"><span class="type">StatTypes</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetRandomElement">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRandomElement(elements)</h1>
-				</a>
-
-
-					<p>GetRandomElement</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">elements</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">ContentXElement</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CharacterInfo.LoadOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.LoadOrders(ordersElement)</h1>
-				</a>
-
-
-					<p>LoadOrders</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ordersElement</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetSavedStatValue">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetSavedStatValue(statType)</h1>
-				</a>
-
-
-					<p>GetSavedStatValue</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">statType</span>
-
-									<span class="tag"><span class="type">StatTypes</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CharacterInfo.SaveOrderData">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.SaveOrderData(characterInfo, parentElement)</h1>
-				</a>
-
-
-					<p>SaveOrderData</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">characterInfo</span>
-
-									<span class="tag"><span class="type">CharacterInfo</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">parentElement</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ResetName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ResetName()</h1>
-				</a>
-
-
-					<p>ResetName</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetEndocrineTalents">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetEndocrineTalents()</h1>
-				</a>
-
-
-					<p>GetEndocrineTalents</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetExperienceRequiredToLevelUp">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetExperienceRequiredToLevelUp()</h1>
-				</a>
-
-
-					<p>GetExperienceRequiredToLevelUp</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetTotalTalentPoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetTotalTalentPoints()</h1>
-				</a>
-
-
-					<p>GetTotalTalentPoints</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetIdentifier()</h1>
-				</a>
-
-
-					<p>GetIdentifier</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ApplyOrderData">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyOrderData()</h1>
-				</a>
-
-
-					<p>ApplyOrderData</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetRandomName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRandomName(randSync)</h1>
-				</a>
-
-
-					<p>GetRandomName</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">randSync</span>
-
-									<span class="tag"><span class="type">RandSync</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="CauseOfDeath">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CauseOfDeath</h1>
+				</a>
+
+
+					<p>CauseOfDeath, Field of type CauseOfDeath</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">CauseOfDeath</span>
+
+									<span class="tag"><a class="type" href="../../code/characterinfo/#CauseOfDeath">CauseOfDeath</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasNickname">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasNickname</h1>
+				</a>
+
+
+					<p>HasNickname, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HasNickname</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="Wearables">
 			<header>
 				<a class="anchor">
@@ -14128,288 +14188,6 @@ Path											</a>
 								<span class="tag parameter">Wearables</span>
 
 									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsMale">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsMale</h1>
-				</a>
-
-
-					<p>IsMale, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsMale</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ragdollFileName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ragdollFileName</h1>
-				</a>
-
-
-					<p>ragdollFileName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ragdollFileName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsDisguised">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsDisguised</h1>
-				</a>
-
-
-					<p>IsDisguised, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsDisguised</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SavedStatValues">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SavedStatValues</h1>
-				</a>
-
-
-					<p>SavedStatValues, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CharacterInfo.MaxAdditionalTalentPoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.MaxAdditionalTalentPoints</h1>
-				</a>
-
-
-					<p>CharacterInfo.MaxAdditionalTalentPoints, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CharacterInfo.HighestManualOrderPriority">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.HighestManualOrderPriority</h1>
-				</a>
-
-
-					<p>CharacterInfo.HighestManualOrderPriority, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="SpeciesName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SpeciesName</h1>
-				</a>
-
-
-					<p>SpeciesName, Field of type Identifier</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SpeciesName</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsAttachmentsLoaded">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsAttachmentsLoaded</h1>
-				</a>
-
-
-					<p>IsAttachmentsLoaded, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsAttachmentsLoaded</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Salary">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Salary</h1>
-				</a>
-
-
-					<p>Salary, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Salary</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="OriginalName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OriginalName</h1>
-				</a>
-
-
-					<p>OriginalName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OriginalName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="OmitJobInPortraitClothing">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>OmitJobInPortraitClothing</h1>
-				</a>
-
-
-					<p>OmitJobInPortraitClothing, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">OmitJobInPortraitClothing</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -14481,66 +14259,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AdditionalTalentPoints">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AdditionalTalentPoints</h1>
-				</a>
-
-
-					<p>AdditionalTalentPoints, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AdditionalTalentPoints</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="IsFemale">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsFemale</h1>
-				</a>
-
-
-					<p>IsFemale, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">IsFemale</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="DisplayName">
 			<header>
 				<a class="anchor">
@@ -14571,14 +14289,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="IsNewHire">
+		<section class="method" id="StartItemsGiven">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>IsNewHire</h1>
+					<h1><span class="realm shared"></span></span>StartItemsGiven</h1>
 				</a>
 
 
-					<p>IsNewHire, Field of type bool</p>
+					<p>StartItemsGiven, Field of type bool</p>
 			</header>
 
 
@@ -14587,7 +14305,259 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">IsNewHire</span>
+								<span class="tag parameter">StartItemsGiven</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SpriteTags">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SpriteTags</h1>
+				</a>
+
+
+					<p>SpriteTags, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AdditionalTalentPoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AdditionalTalentPoints</h1>
+				</a>
+
+
+					<p>AdditionalTalentPoints, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AdditionalTalentPoints</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ragdollFileName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ragdollFileName</h1>
+				</a>
+
+
+					<p>ragdollFileName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ragdollFileName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AttachmentSprites">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AttachmentSprites</h1>
+				</a>
+
+
+					<p>AttachmentSprites, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SpeciesName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SpeciesName</h1>
+				</a>
+
+
+					<p>SpeciesName, Field of type Identifier</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SpeciesName</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasSpecifierTags">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasSpecifierTags</h1>
+				</a>
+
+
+					<p>HasSpecifierTags, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HasSpecifierTags</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OriginalName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OriginalName</h1>
+				</a>
+
+
+					<p>OriginalName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OriginalName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Salary">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Salary</h1>
+				</a>
+
+
+					<p>Salary, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Salary</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.MaxAdditionalTalentPoints">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.MaxAdditionalTalentPoints</h1>
+				</a>
+
+
+					<p>CharacterInfo.MaxAdditionalTalentPoints, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IsFemale">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsFemale</h1>
+				</a>
+
+
+					<p>IsFemale, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsFemale</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14631,28 +14601,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AttachmentSprites">
+		<section class="method" id="IsNewHire">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AttachmentSprites</h1>
+					<h1><span class="realm shared"></span></span>IsNewHire</h1>
 				</a>
 
 
-					<p>AttachmentSprites, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="HasNickname">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasNickname</h1>
-				</a>
-
-
-					<p>HasNickname, Field of type bool</p>
+					<p>IsNewHire, Field of type bool</p>
 			</header>
 
 
@@ -14661,7 +14617,97 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">HasNickname</span>
+								<span class="tag parameter">IsNewHire</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="OmitJobInPortraitClothing">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>OmitJobInPortraitClothing</h1>
+				</a>
+
+
+					<p>OmitJobInPortraitClothing, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">OmitJobInPortraitClothing</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsAttachmentsLoaded">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsAttachmentsLoaded</h1>
+				</a>
+
+
+					<p>IsAttachmentsLoaded, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsAttachmentsLoaded</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="IsMale">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsMale</h1>
+				</a>
+
+
+					<p>IsMale, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">IsMale</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14705,50 +14751,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="StartItemsGiven">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartItemsGiven</h1>
-				</a>
-
-
-					<p>StartItemsGiven, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">StartItemsGiven</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CurrentOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CurrentOrders</h1>
-				</a>
-
-
-					<p>CurrentOrders, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="ID">
 			<header>
 				<a class="anchor">
@@ -14775,94 +14777,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-
-
-		</section>
-		<section class="method" id="HasSpecifierTags">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasSpecifierTags</h1>
-				</a>
-
-
-					<p>HasSpecifierTags, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">HasSpecifierTags</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Character">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Character</h1>
-				</a>
-
-
-					<p>Character, Field of type Character</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Character</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SpriteTags">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SpriteTags</h1>
-				</a>
-
-
-					<p>SpriteTags, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CharacterInfo.MaxCurrentOrders">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterInfo.MaxCurrentOrders</h1>
-				</a>
-
-
-					<p>CharacterInfo.MaxCurrentOrders, Field of type number</p>
-			</header>
-
 
 
 
@@ -14897,14 +14811,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CauseOfDeath">
+		<section class="method" id="CharacterInfo.MaxCurrentOrders">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CauseOfDeath</h1>
+					<h1><span class="realm shared"></span></span>CharacterInfo.MaxCurrentOrders</h1>
 				</a>
 
 
-					<p>CauseOfDeath, Field of type CauseOfDeath</p>
+					<p>CharacterInfo.MaxCurrentOrders, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="IsDisguised">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>IsDisguised</h1>
+				</a>
+
+
+					<p>IsDisguised, Field of type bool</p>
 			</header>
 
 
@@ -14913,9 +14841,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">CauseOfDeath</span>
+								<span class="tag parameter">IsDisguised</span>
 
-									<span class="tag"><a class="type" href="../../code/characterinfo/#CauseOfDeath">CauseOfDeath</a></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -14923,6 +14851,78 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="CurrentOrders">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CurrentOrders</h1>
+				</a>
+
+
+					<p>CurrentOrders, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="Character">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Character</h1>
+				</a>
+
+
+					<p>Character, Field of type Character</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Character</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterInfo.HighestManualOrderPriority">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterInfo.HighestManualOrderPriority</h1>
+				</a>
+
+
+					<p>CharacterInfo.HighestManualOrderPriority, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="SavedStatValues">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SavedStatValues</h1>
+				</a>
+
+
+					<p>SavedStatValues, Field of type table</p>
+			</header>
+
 
 
 

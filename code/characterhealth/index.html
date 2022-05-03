@@ -12084,6 +12084,110 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
+		<section class="method" id="RemoveAllAfflictions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemoveAllAfflictions()</h1>
+				</a>
+
+
+					<p>RemoveAllAfflictions</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ApplyAffliction">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyAffliction(targetLimb, affliction, allowStacking)</h1>
+				</a>
+
+
+					<p>ApplyAffliction</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">targetLimb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+									<span class="tag"><span class="type">Affliction</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">allowStacking</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Load">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Load(element)</h1>
+				</a>
+
+
+					<p>Load</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">element</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
 		<section class="method" id="GetAffliction">
 			<header>
 				<a class="anchor">
@@ -12132,229 +12236,6 @@ Path											</a>
 
 							<li>
 									<span class="type">T</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="SetVitality">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetVitality(newVitality)</h1>
-				</a>
-
-
-					<p>SetVitality</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">newVitality</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ReduceAllAfflictionsOnAllLimbs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReduceAllAfflictionsOnAllLimbs(amount, treatmentAction)</h1>
-				</a>
-
-
-					<p>ReduceAllAfflictionsOnAllLimbs</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">amount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">treatmentAction</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetAfflictionLimb">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAfflictionLimb(affliction)</h1>
-				</a>
-
-
-					<p>GetAfflictionLimb</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-									<span class="tag"><span class="type">Affliction</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Limb</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ReduceAfflictionOnAllLimbs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReduceAfflictionOnAllLimbs(affliction, amount, treatmentAction)</h1>
-				</a>
-
-
-					<p>ReduceAfflictionOnAllLimbs</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">amount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">treatmentAction</span>
-
-									<span class="tag"><span class="type">Nullable`1</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetActiveAfflictionTags">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetActiveAfflictionTags(afflictions)</h1>
-				</a>
-
-
-					<p>GetActiveAfflictionTags</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">afflictions</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
 
 								<p>
 
@@ -12452,14 +12333,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ApplyDamage">
+		<section class="method" id="GetAllAfflictions">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyDamage(hitLimb, attackResult, allowStacking)</h1>
+					<h1><span class="realm shared"></span></span>GetAllAfflictions(limbHealthFilter)</h1>
 				</a>
 
 
-					<p>ApplyDamage</p>
+					<p>GetAllAfflictions</p>
 			</header>
 
 
@@ -12469,23 +12350,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">hitLimb</span>
+								<span class="tag parameter">limbHealthFilter</span>
 
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">attackResult</span>
-
-									<span class="tag"><span class="type">AttackResult</span></span>
+									<span class="tag"><span class="type">function</span></span>
 
 
 								<p>
@@ -12493,295 +12360,6 @@ Path											</a>
 </p>
 							</li>
 					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">allowStacking</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetHashCode">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
-				</a>
-
-
-					<p>GetHashCode</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Equals">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
-				</a>
-
-
-					<p>Equals</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">bool</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ApplyAffliction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyAffliction(targetLimb, affliction, allowStacking)</h1>
-				</a>
-
-
-					<p>ApplyAffliction</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">targetLimb</span>
-
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-									<span class="tag"><span class="type">Affliction</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">allowStacking</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Remove">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Remove()</h1>
-				</a>
-
-
-					<p>Remove</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="CalculateVitality">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CalculateVitality()</h1>
-				</a>
-
-
-					<p>CalculateVitality</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Update">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
-				</a>
-
-
-					<p>Update</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">deltaTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetPredictedStrength">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetPredictedStrength(affliction, predictFutureDuration, limb)</h1>
-				</a>
-
-
-					<p>GetPredictedStrength</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">affliction</span>
-
-									<span class="tag"><span class="type">Affliction</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">predictFutureDuration</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetActiveAfflictionTags">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetActiveAfflictionTags()</h1>
-				</a>
-
-
-					<p>GetActiveAfflictionTags</p>
-			</header>
-
 
 
 				<h3>Returns</h3>
@@ -12871,105 +12449,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="CharacterHealth.SortAfflictionsBySeverity">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterHealth.SortAfflictionsBySeverity(afflictions, excludeBuffs)</h1>
-				</a>
-
-
-					<p>SortAfflictionsBySeverity</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">afflictions</span>
-
-									<span class="tag"><span class="type">Enumerable</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">excludeBuffs</span>
-
-									<span class="tag"><span class="type">bool</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="RemoveAllAfflictions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveAllAfflictions()</h1>
-				</a>
-
-
-					<p>RemoveAllAfflictions</p>
-			</header>
-
-
-
-
-		</section>
 		<section class="method" id="GetAffliction">
 			<header>
 				<a class="anchor">
@@ -12989,7 +12468,7 @@ Path											</a>
 							<li>
 								<span class="tag parameter">identifier</span>
 
-									<span class="tag"><span class="type">Identifier</span></span>
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -13028,14 +12507,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="HasFlag">
+		<section class="method" id="Equals">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasFlag(flagType)</h1>
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
 				</a>
 
 
-					<p>HasFlag</p>
+					<p>Equals</p>
 			</header>
 
 
@@ -13045,9 +12524,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">flagType</span>
+								<span class="tag parameter">obj</span>
 
-									<span class="tag"><span class="type">AbilityFlags</span></span>
+									<span class="tag"><span class="type">Object</span></span>
 
 
 								<p>
@@ -13062,6 +12541,208 @@ Path											</a>
 
 							<li>
 									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetLimbDamage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetLimbDamage(limb, afflictionType)</h1>
+				</a>
+
+
+					<p>GetLimbDamage</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">afflictionType</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Remove">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Remove()</h1>
+				</a>
+
+
+					<p>Remove</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="GetAffliction">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAffliction(identifier, limb)</h1>
+				</a>
+
+
+					<p>GetAffliction</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">identifier</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Affliction</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetPredictedStrength">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetPredictedStrength(affliction, predictFutureDuration, limb)</h1>
+				</a>
+
+
+					<p>GetPredictedStrength</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+									<span class="tag"><span class="type">Affliction</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">predictFutureDuration</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">limb</span>
+
+									<span class="tag"><span class="type">Limb</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
 
 								<p>
 
@@ -13130,6 +12811,50 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="HasFlag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasFlag(flagType)</h1>
+				</a>
+
+
+					<p>HasFlag</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">flagType</span>
+
+									<span class="tag"><span class="type">AbilityFlags</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="GetStatValue">
 			<header>
 				<a class="anchor">
@@ -13174,14 +12899,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ApplyAfflictionStatusEffects">
+		<section class="method" id="SetVitality">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ApplyAfflictionStatusEffects(type)</h1>
+					<h1><span class="realm shared"></span></span>SetVitality(newVitality)</h1>
 				</a>
 
 
-					<p>ApplyAfflictionStatusEffects</p>
+					<p>SetVitality</p>
 			</header>
 
 
@@ -13191,40 +12916,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">type</span>
+								<span class="tag parameter">newVitality</span>
 
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetResistance">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetResistance(afflictionPrefab)</h1>
-				</a>
-
-
-					<p>GetResistance</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">afflictionPrefab</span>
-
-									<span class="tag"><span class="type">AfflictionPrefab</span></span>
+									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -13233,19 +12927,6 @@ Path											</a>
 							</li>
 					</ul>
 
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
@@ -13322,6 +13003,268 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="GetResistance">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetResistance(afflictionPrefab)</h1>
+				</a>
+
+
+					<p>GetResistance</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">afflictionPrefab</span>
+
+									<span class="tag"><span class="type">AfflictionPrefab</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="CharacterHealth.SortAfflictionsBySeverity">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterHealth.SortAfflictionsBySeverity(afflictions, excludeBuffs)</h1>
+				</a>
+
+
+					<p>SortAfflictionsBySeverity</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">afflictions</span>
+
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">excludeBuffs</span>
+
+									<span class="tag"><span class="type">bool</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Save">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Save(healthElement)</h1>
+				</a>
+
+
+					<p>Save</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">healthElement</span>
+
+									<span class="tag"><span class="type">XElement</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetAllAfflictions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAllAfflictions()</h1>
+				</a>
+
+
+					<p>GetAllAfflictions</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">IReadOnlyCollection`1</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ApplyAfflictionStatusEffects">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyAfflictionStatusEffects(type)</h1>
+				</a>
+
+
+					<p>ApplyAfflictionStatusEffects</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">type</span>
+
+									<span class="tag"><span class="type">function</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetAfflictionLimb">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAfflictionLimb(affliction)</h1>
+				</a>
+
+
+					<p>GetAfflictionLimb</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+									<span class="tag"><span class="type">Affliction</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Limb</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ToString">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ToString()</h1>
+				</a>
+
+
+					<p>ToString</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 		<section class="method" id="SetAllDamage">
 			<header>
 				<a class="anchor">
@@ -13381,135 +13324,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ToString">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ToString()</h1>
-				</a>
-
-
-					<p>ToString</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetLimbDamage">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetLimbDamage(limb, afflictionType)</h1>
-				</a>
-
-
-					<p>GetLimbDamage</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
-
-									<span class="tag"><span class="type">Limb</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">afflictionType</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">number</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetAllAfflictions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAllAfflictions(limbHealthFilter)</h1>
-				</a>
-
-
-					<p>GetAllAfflictions</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limbHealthFilter</span>
-
-									<span class="tag"><span class="type">function</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Enumerable</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="ServerWrite">
 			<header>
 				<a class="anchor">
@@ -13541,14 +13355,87 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetCauseOfDeath">
+		<section class="method" id="CalculateVitality">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetCauseOfDeath()</h1>
+					<h1><span class="realm shared"></span></span>CalculateVitality()</h1>
 				</a>
 
 
-					<p>GetCauseOfDeath</p>
+					<p>CalculateVitality</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="RemoveNegativeAfflictions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RemoveNegativeAfflictions()</h1>
+				</a>
+
+
+					<p>RemoveNegativeAfflictions</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="ReduceAllAfflictionsOnAllLimbs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReduceAllAfflictionsOnAllLimbs(amount, treatmentAction)</h1>
+				</a>
+
+
+					<p>ReduceAllAfflictionsOnAllLimbs</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">amount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">treatmentAction</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetActiveAfflictionTags">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetActiveAfflictionTags()</h1>
+				</a>
+
+
+					<p>GetActiveAfflictionTags</p>
 			</header>
 
 
@@ -13557,7 +13444,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">ValueTuple`2</span>
+									<span class="type">Enumerable</span>
 
 								<p>
 
@@ -13568,14 +13455,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetAffliction">
+		<section class="method" id="GetActiveAfflictionTags">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAffliction(identifier, allowLimbAfflictions)</h1>
+					<h1><span class="realm shared"></span></span>GetActiveAfflictionTags(afflictions)</h1>
 				</a>
 
 
-					<p>GetAffliction</p>
+					<p>GetActiveAfflictionTags</p>
 			</header>
 
 
@@ -13585,9 +13472,84 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">identifier</span>
+								<span class="tag parameter">afflictions</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+									<span class="tag"><span class="type">Enumerable</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Enumerable</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="Update">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Update(deltaTime)</h1>
+				</a>
+
+
+					<p>Update</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">deltaTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetAfflictionOfType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetAfflictionOfType(afflictionType, allowLimbAfflictions)</h1>
+				</a>
+
+
+					<p>GetAfflictionOfType</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">afflictionType</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
 
 
 								<p>
@@ -13626,14 +13588,68 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Save">
+		<section class="method" id="GetCauseOfDeath">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Save(healthElement)</h1>
+					<h1><span class="realm shared"></span></span>GetCauseOfDeath()</h1>
 				</a>
 
 
-					<p>Save</p>
+					<p>GetCauseOfDeath</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">ValueTuple`2</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="GetType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetType()</h1>
+				</a>
+
+
+					<p>GetType</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">Type</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ApplyDamage">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ApplyDamage(hitLimb, attackResult, allowStacking)</h1>
+				</a>
+
+
+					<p>ApplyDamage</p>
 			</header>
 
 
@@ -13643,66 +13659,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">healthElement</span>
-
-									<span class="tag"><span class="type">XElement</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RemoveNegativeAfflictions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RemoveNegativeAfflictions()</h1>
-				</a>
-
-
-					<p>RemoveNegativeAfflictions</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="GetAffliction">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAffliction(identifier, limb)</h1>
-				</a>
-
-
-					<p>GetAffliction</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">identifier</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">limb</span>
+								<span class="tag parameter">hitLimb</span>
 
 									<span class="tag"><span class="type">Limb</span></span>
 
@@ -13713,69 +13670,26 @@ Path											</a>
 							</li>
 					</ul>
 
-
-				<h3>Returns</h3>
-				<ul>
+					<ul>
 
 							<li>
-									<span class="type">Affliction</span>
+								<span class="tag parameter">attackResult</span>
+
+									<span class="tag"><span class="type">AttackResult</span></span>
+
 
 								<p>
 
 </p>
 							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="GetAllAfflictions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAllAfflictions()</h1>
-				</a>
-
-
-					<p>GetAllAfflictions</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">IReadOnlyCollection`1</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="Load">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Load(element)</h1>
-				</a>
-
-
-					<p>Load</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
+					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">element</span>
+								<span class="tag parameter">allowStacking</span>
 
-									<span class="tag"><span class="type">XElement</span></span>
+									<span class="tag"><span class="type">bool</span></span>
 
 
 								<p>
@@ -13846,14 +13760,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetAfflictionOfType">
+		<section class="method" id="GetAffliction">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetAfflictionOfType(afflictionType, allowLimbAfflictions)</h1>
+					<h1><span class="realm shared"></span></span>GetAffliction(identifier, allowLimbAfflictions)</h1>
 				</a>
 
 
-					<p>GetAfflictionOfType</p>
+					<p>GetAffliction</p>
 			</header>
 
 
@@ -13863,7 +13777,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">afflictionType</span>
+								<span class="tag parameter">identifier</span>
 
 									<span class="tag"><span class="type">Identifier</span></span>
 
@@ -13904,8 +13818,228 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="ReduceAfflictionOnAllLimbs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReduceAfflictionOnAllLimbs(affliction, amount, treatmentAction)</h1>
+				</a>
+
+
+					<p>ReduceAfflictionOnAllLimbs</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">affliction</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">amount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">treatmentAction</span>
+
+									<span class="tag"><span class="type">Nullable`1</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetHashCode">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+				</a>
+
+
+					<p>GetHashCode</p>
+			</header>
+
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">number</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="Stun">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Stun</h1>
+				</a>
+
+
+					<p>Stun, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Stun</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Character">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Character</h1>
+				</a>
+
+
+					<p>Character, Field of type Character</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Character</span>
+
+									<span class="tag"><span class="type">character</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="PressureKillDelay">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>PressureKillDelay</h1>
+				</a>
+
+
+					<p>PressureKillDelay, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">PressureKillDelay</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="BloodlossAmount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>BloodlossAmount</h1>
+				</a>
+
+
+					<p>BloodlossAmount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">BloodlossAmount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterHealth.InsufficientOxygenThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterHealth.InsufficientOxygenThreshold</h1>
+				</a>
+
+
+					<p>CharacterHealth.InsufficientOxygenThreshold, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="Unkillable">
 			<header>
 				<a class="anchor">
@@ -14086,50 +14220,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="CharacterHealth.LowOxygenThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterHealth.LowOxygenThreshold</h1>
-				</a>
-
-
-					<p>CharacterHealth.LowOxygenThreshold, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="Character">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Character</h1>
-				</a>
-
-
-					<p>Character, Field of type Character</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Character</span>
-
-									<span class="tag"><span class="type">character</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
 		<section class="method" id="DoesBleed">
 			<header>
 				<a class="anchor">
@@ -14149,80 +14239,6 @@ Path											</a>
 								<span class="tag parameter">DoesBleed</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="CharacterHealth.InsufficientOxygenThreshold">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>CharacterHealth.InsufficientOxygenThreshold</h1>
-				</a>
-
-
-					<p>CharacterHealth.InsufficientOxygenThreshold, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="UseHealthWindow">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UseHealthWindow</h1>
-				</a>
-
-
-					<p>UseHealthWindow, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UseHealthWindow</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Stun">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Stun</h1>
-				</a>
-
-
-					<p>Stun, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Stun</span>
-
-									<span class="tag"><span class="type">number</span></span>
 
 
 								<p>
@@ -14264,14 +14280,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="PressureKillDelay">
+		<section class="method" id="MaxVitality">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>PressureKillDelay</h1>
+					<h1><span class="realm shared"></span></span>MaxVitality</h1>
 				</a>
 
 
-					<p>PressureKillDelay, Field of type number</p>
+					<p>MaxVitality, Field of type number</p>
 			</header>
 
 
@@ -14280,7 +14296,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">PressureKillDelay</span>
+								<span class="tag parameter">MaxVitality</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14294,14 +14310,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="BloodlossAmount">
+		<section class="method" id="UseHealthWindow">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>BloodlossAmount</h1>
+					<h1><span class="realm shared"></span></span>UseHealthWindow</h1>
 				</a>
 
 
-					<p>BloodlossAmount, Field of type number</p>
+					<p>UseHealthWindow, Field of type bool</p>
 			</header>
 
 
@@ -14310,9 +14326,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">BloodlossAmount</span>
+								<span class="tag parameter">UseHealthWindow</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -14320,6 +14336,20 @@ Path											</a>
 </p>
 							</li>
 					</ul>
+
+
+
+		</section>
+		<section class="method" id="CharacterHealth.LowOxygenThreshold">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>CharacterHealth.LowOxygenThreshold</h1>
+				</a>
+
+
+					<p>CharacterHealth.LowOxygenThreshold, Field of type number</p>
+			</header>
+
 
 
 
@@ -14341,36 +14371,6 @@ Path											</a>
 
 							<li>
 								<span class="tag parameter">CrushDepth</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxVitality">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxVitality</h1>
-				</a>
-
-
-					<p>MaxVitality, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxVitality</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
