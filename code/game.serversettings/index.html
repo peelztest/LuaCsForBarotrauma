@@ -12084,14 +12084,134 @@ Path											</a>
 
 	<h1 class="title">Functions</h1>
 
-		<section class="method" id="ServerWrite">
+		<section class="method" id="ReadHiddenSubs">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerWrite(outMsg, c)</h1>
+					<h1><span class="realm shared"></span></span>ReadHiddenSubs(msg)</h1>
 				</a>
 
 
-					<p>ServerWrite</p>
+					<p>ReadHiddenSubs</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+									<span class="tag"><span class="type">IReadMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SelectNonHiddenSubmarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectNonHiddenSubmarine(current)</h1>
+				</a>
+
+
+					<p>SelectNonHiddenSubmarine</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">current</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="WriteMonsterEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WriteMonsterEnabled(msg, monsterEnabled)</h1>
+				</a>
+
+
+					<p>WriteMonsterEnabled</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+									<span class="tag"><span class="type">IWriteMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">monsterEnabled</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerAdminWrite">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerAdminWrite(outMsg, c)</h1>
+				</a>
+
+
+					<p>ServerAdminWrite</p>
 			</header>
 
 
@@ -12143,14 +12263,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="GetHashCode">
+		<section class="method" id="GetType">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
+					<h1><span class="realm shared"></span></span>GetType()</h1>
 				</a>
 
 
-					<p>GetHashCode</p>
+					<p>GetType</p>
 			</header>
 
 
@@ -12159,7 +12279,7 @@ Path											</a>
 				<ul>
 
 							<li>
-									<span class="type">number</span>
+									<span class="type">Type</span>
 
 								<p>
 
@@ -12170,16 +12290,348 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="LoadClientPermissions">
+		<section class="method" id="ServerRead">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LoadClientPermissions()</h1>
+					<h1><span class="realm shared"></span></span>ServerRead(incMsg, c)</h1>
 				</a>
 
 
-					<p>LoadClientPermissions</p>
+					<p>ServerRead</p>
 			</header>
 
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">incMsg</span>
+
+									<span class="tag"><span class="type">IReadMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">c</span>
+
+									<span class="tag"><span class="type">Client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Equals">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+				</a>
+
+
+					<p>Equals</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">obj</span>
+
+									<span class="tag"><span class="type">Object</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ReadMonsterEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReadMonsterEnabled(inc)</h1>
+				</a>
+
+
+					<p>ReadMonsterEnabled</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">inc</span>
+
+									<span class="tag"><span class="type">IReadMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SetPassword">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SetPassword(password)</h1>
+				</a>
+
+
+					<p>SetPassword</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">password</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GetRequiredFlags">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GetRequiredFlags(c)</h1>
+				</a>
+
+
+					<p>GetRequiredFlags</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">c</span>
+
+									<span class="tag"><span class="type">Client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">NetFlags</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ReadExtraCargo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ReadExtraCargo(msg)</h1>
+				</a>
+
+
+					<p>ReadExtraCargo</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+									<span class="tag"><span class="type">IReadMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="type">bool</span>
+
+								<p>
+
+</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method" id="ServerWrite">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerWrite(outMsg, c)</h1>
+				</a>
+
+
+					<p>ServerWrite</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">outMsg</span>
+
+									<span class="tag"><span class="type">IWriteMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">c</span>
+
+									<span class="tag"><span class="type">Client</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UpdateFlag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UpdateFlag(flag)</h1>
+				</a>
+
+
+					<p>UpdateFlag</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">flag</span>
+
+									<span class="tag"><span class="type">NetFlags</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="WriteExtraCargo">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>WriteExtraCargo(msg)</h1>
+				</a>
+
+
+					<p>WriteExtraCargo</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">msg</span>
+
+									<span class="tag"><span class="type">IWriteMessage</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -12327,318 +12779,6 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="SaveClientPermissions">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SaveClientPermissions()</h1>
-				</a>
-
-
-					<p>SaveClientPermissions</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="WriteMonsterEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WriteMonsterEnabled(msg, monsterEnabled)</h1>
-				</a>
-
-
-					<p>WriteMonsterEnabled</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-									<span class="tag"><span class="type">IWriteMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">monsterEnabled</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SelectNonHiddenSubmarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelectNonHiddenSubmarine(current)</h1>
-				</a>
-
-
-					<p>SelectNonHiddenSubmarine</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">current</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ServerRead">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerRead(incMsg, c)</h1>
-				</a>
-
-
-					<p>ServerRead</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">incMsg</span>
-
-									<span class="tag"><span class="type">IReadMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">c</span>
-
-									<span class="tag"><span class="type">Client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetRequiredFlags">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetRequiredFlags(c)</h1>
-				</a>
-
-
-					<p>GetRequiredFlags</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">c</span>
-
-									<span class="tag"><span class="type">Client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">NetFlags</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
-		<section class="method" id="ReadHiddenSubs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReadHiddenSubs(msg)</h1>
-				</a>
-
-
-					<p>ReadHiddenSubs</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-									<span class="tag"><span class="type">IReadMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="UpdateFlag">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UpdateFlag(flag)</h1>
-				</a>
-
-
-					<p>UpdateFlag</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">flag</span>
-
-									<span class="tag"><span class="type">NetFlags</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SetPassword">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SetPassword(password)</h1>
-				</a>
-
-
-					<p>SetPassword</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">password</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GetType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GetType()</h1>
-				</a>
-
-
-					<p>GetType</p>
-			</header>
-
-
-
-				<h3>Returns</h3>
-				<ul>
-
-							<li>
-									<span class="type">Type</span>
-
-								<p>
-
-</p>
-							</li>
-
-				</ul>
-
-
-		</section>
 		<section class="method" id="WriteHiddenSubs">
 			<header>
 				<a class="anchor">
@@ -12670,147 +12810,23 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ServerAdminWrite">
+		<section class="method" id="GetHashCode">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerAdminWrite(outMsg, c)</h1>
+					<h1><span class="realm shared"></span></span>GetHashCode()</h1>
 				</a>
 
 
-					<p>ServerAdminWrite</p>
+					<p>GetHashCode</p>
 			</header>
 
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">outMsg</span>
-
-									<span class="tag"><span class="type">IWriteMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">c</span>
-
-									<span class="tag"><span class="type">Client</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ReadMonsterEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReadMonsterEnabled(inc)</h1>
-				</a>
-
-
-					<p>ReadMonsterEnabled</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">inc</span>
-
-									<span class="tag"><span class="type">IReadMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="WriteExtraCargo">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>WriteExtraCargo(msg)</h1>
-				</a>
-
-
-					<p>WriteExtraCargo</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-									<span class="tag"><span class="type">IWriteMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ReadExtraCargo">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ReadExtraCargo(msg)</h1>
-				</a>
-
-
-					<p>ReadExtraCargo</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">msg</span>
-
-									<span class="tag"><span class="type">IReadMessage</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 				<h3>Returns</h3>
 				<ul>
 
 							<li>
-									<span class="type">bool</span>
+									<span class="type">number</span>
 
 								<p>
 
@@ -12821,52 +12837,378 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="Equals">
+		<section class="method" id="LoadClientPermissions">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Equals(obj)</h1>
+					<h1><span class="realm shared"></span></span>LoadClientPermissions()</h1>
 				</a>
 
 
-					<p>Equals</p>
+					<p>LoadClientPermissions</p>
 			</header>
 
 
-					<h3>Parameters</h3>
 
 
-					<ul>
-
-							<li>
-								<span class="tag parameter">obj</span>
-
-									<span class="tag"><span class="type">Object</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
+		</section>
+		<section class="method" id="SaveClientPermissions">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SaveClientPermissions()</h1>
+				</a>
 
 
-				<h3>Returns</h3>
-				<ul>
+					<p>SaveClientPermissions</p>
+			</header>
 
-							<li>
-									<span class="type">bool</span>
 
-								<p>
-
-</p>
-							</li>
-
-				</ul>
 
 
 		</section>
 	<h1 class="title">Fields</h1>
 
+		<section class="method" id="DestructibleOutposts">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>DestructibleOutposts</h1>
+				</a>
+
+
+					<p>DestructibleOutposts, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">DestructibleOutposts</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MonsterEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MonsterEnabled</h1>
+				</a>
+
+
+					<p>MonsterEnabled, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="RandomizeSeed">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RandomizeSeed</h1>
+				</a>
+
+
+					<p>RandomizeSeed, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RandomizeSeed</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowRespawn">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowRespawn</h1>
+				</a>
+
+
+					<p>AllowRespawn, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowRespawn</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerSettings.SettingsFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerSettings.SettingsFile</h1>
+				</a>
+
+
+					<p>ServerSettings.SettingsFile, Field of type string</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AllowRewiring">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowRewiring</h1>
+				</a>
+
+
+					<p>AllowRewiring, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowRewiring</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowSpectating">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowSpectating</h1>
+				</a>
+
+
+					<p>AllowSpectating, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowSpectating</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowVoteKick">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowVoteKick</h1>
+				</a>
+
+
+					<p>AllowVoteKick, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowVoteKick</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RadiationEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RadiationEnabled</h1>
+				</a>
+
+
+					<p>RadiationEnabled, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RadiationEnabled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SelectedShuttle">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectedShuttle</h1>
+				</a>
+
+
+					<p>SelectedShuttle, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SelectedShuttle</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Name">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Name</h1>
+				</a>
+
+
+					<p>Name, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Name</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SelectedSubmarine">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SelectedSubmarine</h1>
+				</a>
+
+
+					<p>SelectedSubmarine, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SelectedSubmarine</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowedClientNameChars">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowedClientNameChars</h1>
+				</a>
+
+
+					<p>AllowedClientNameChars, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="ServerSettings.MaxExtraCargoItemTypes">
 			<header>
 				<a class="anchor">
@@ -12877,6 +13219,650 @@ Path											</a>
 					<p>ServerSettings.MaxExtraCargoItemTypes, Field of type number</p>
 			</header>
 
+
+
+
+		</section>
+		<section class="method" id="AllowModDownloads">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowModDownloads</h1>
+				</a>
+
+
+					<p>AllowModDownloads, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowModDownloads</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxAutoBanTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxAutoBanTime</h1>
+				</a>
+
+
+					<p>MaxAutoBanTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxAutoBanTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowEndVoting">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowEndVoting</h1>
+				</a>
+
+
+					<p>AllowEndVoting, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowEndVoting</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LinesPerLogFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LinesPerLogFile</h1>
+				</a>
+
+
+					<p>LinesPerLogFile, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">LinesPerLogFile</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TraitorsMaxStartDelay">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TraitorsMaxStartDelay</h1>
+				</a>
+
+
+					<p>TraitorsMaxStartDelay, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TraitorsMaxStartDelay</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MinRespawnRatio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MinRespawnRatio</h1>
+				</a>
+
+
+					<p>MinRespawnRatio, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MinRespawnRatio</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxBotCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxBotCount</h1>
+				</a>
+
+
+					<p>MaxBotCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxBotCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AutoRestartTimer">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutoRestartTimer</h1>
+				</a>
+
+
+					<p>AutoRestartTimer, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AutoRestartTimer</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowSubVoting">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowSubVoting</h1>
+				</a>
+
+
+					<p>AllowSubVoting, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowSubVoting</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="SaveServerLogs">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>SaveServerLogs</h1>
+				</a>
+
+
+					<p>SaveServerLogs, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">SaveServerLogs</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerDetailsChanged">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerDetailsChanged</h1>
+				</a>
+
+
+					<p>ServerDetailsChanged, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ServerDetailsChanged</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerMessageText">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerMessageText</h1>
+				</a>
+
+
+					<p>ServerMessageText, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ServerMessageText</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerName">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerName</h1>
+				</a>
+
+
+					<p>ServerName, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ServerName</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="Port">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>Port</h1>
+				</a>
+
+
+					<p>Port, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">Port</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="EndVoteRequiredRatio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>EndVoteRequiredRatio</h1>
+				</a>
+
+
+					<p>EndVoteRequiredRatio, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">EndVoteRequiredRatio</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KickVoteRequiredRatio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KickVoteRequiredRatio</h1>
+				</a>
+
+
+					<p>KickVoteRequiredRatio, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KickVoteRequiredRatio</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerSettings.MaxExtraCargoItemsOfType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerSettings.MaxExtraCargoItemsOfType</h1>
+				</a>
+
+
+					<p>ServerSettings.MaxExtraCargoItemsOfType, Field of type number</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="EnableUPnP">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>EnableUPnP</h1>
+				</a>
+
+
+					<p>EnableUPnP, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">EnableUPnP</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowLinkingWifiToChat">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowLinkingWifiToChat</h1>
+				</a>
+
+
+					<p>AllowLinkingWifiToChat, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowLinkingWifiToChat</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="BanAfterWrongPassword">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>BanAfterWrongPassword</h1>
+				</a>
+
+
+					<p>BanAfterWrongPassword, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">BanAfterWrongPassword</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="StartWhenClientsReady">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>StartWhenClientsReady</h1>
+				</a>
+
+
+					<p>StartWhenClientsReady, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">StartWhenClientsReady</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxPasswordRetriesBeforeBan">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxPasswordRetriesBeforeBan</h1>
+				</a>
+
+
+					<p>MaxPasswordRetriesBeforeBan, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxPasswordRetriesBeforeBan</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
 
 
 
@@ -12911,14 +13897,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="QueryPort">
+		<section class="method" id="DisableBotConversations">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>QueryPort</h1>
+					<h1><span class="realm shared"></span></span>DisableBotConversations</h1>
 				</a>
 
 
-					<p>QueryPort, Field of type number</p>
+					<p>DisableBotConversations, Field of type bool</p>
 			</header>
 
 
@@ -12927,9 +13913,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">QueryPort</span>
+								<span class="tag parameter">DisableBotConversations</span>
 
-									<span class="tag"><span class="type">number</span></span>
+									<span class="tag"><span class="type">boolean</span></span>
 
 
 								<p>
@@ -12971,6 +13957,500 @@ Path											</a>
 
 
 		</section>
+		<section class="method" id="VoteRequiredRatio">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>VoteRequiredRatio</h1>
+				</a>
+
+
+					<p>VoteRequiredRatio, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">VoteRequiredRatio</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="VoiceChatEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>VoiceChatEnabled</h1>
+				</a>
+
+
+					<p>VoiceChatEnabled, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">VoiceChatEnabled</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="RespawnInterval">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>RespawnInterval</h1>
+				</a>
+
+
+					<p>RespawnInterval, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">RespawnInterval</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="UseRespawnShuttle">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>UseRespawnShuttle</h1>
+				</a>
+
+
+					<p>UseRespawnShuttle, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">UseRespawnShuttle</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TraitorsMinStartDelay">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TraitorsMinStartDelay</h1>
+				</a>
+
+
+					<p>TraitorsMinStartDelay, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TraitorsMinStartDelay</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AutoBanTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutoBanTime</h1>
+				</a>
+
+
+					<p>AutoBanTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AutoBanTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowDisguises">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowDisguises</h1>
+				</a>
+
+
+					<p>AllowDisguises, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowDisguises</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TraitorsMinRestartDelay">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TraitorsMinRestartDelay</h1>
+				</a>
+
+
+					<p>TraitorsMinRestartDelay, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TraitorsMinRestartDelay</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MissionType">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MissionType</h1>
+				</a>
+
+
+					<p>MissionType, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MissionType</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TraitorsMinPlayerCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TraitorsMinPlayerCount</h1>
+				</a>
+
+
+					<p>TraitorsMinPlayerCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TraitorsMinPlayerCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TraitorsMaxRestartDelay">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TraitorsMaxRestartDelay</h1>
+				</a>
+
+
+					<p>TraitorsMaxRestartDelay, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TraitorsMaxRestartDelay</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="GameModeIdentifier">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>GameModeIdentifier</h1>
+				</a>
+
+
+					<p>GameModeIdentifier, Field of type Identifier</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">GameModeIdentifier</span>
+
+									<span class="tag"><span class="type">Identifier</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="TickRate">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>TickRate</h1>
+				</a>
+
+
+					<p>TickRate, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">TickRate</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KickAFKTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KickAFKTime</h1>
+				</a>
+
+
+					<p>KickAFKTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KickAFKTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KarmaPreset">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KarmaPreset</h1>
+				</a>
+
+
+					<p>KarmaPreset, Field of type string</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KarmaPreset</span>
+
+									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="QueryPort">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>QueryPort</h1>
+				</a>
+
+
+					<p>QueryPort, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">QueryPort</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="LastUpdateIdForFlag">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>LastUpdateIdForFlag</h1>
+				</a>
+
+
+					<p>LastUpdateIdForFlag, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
 		<section class="method" id="LockAllDefaultWires">
 			<header>
 				<a class="anchor">
@@ -13001,28 +14481,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowedClientNameChars">
+		<section class="method" id="ServerSettings.PermissionPresetFile">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowedClientNameChars</h1>
+					<h1><span class="realm shared"></span></span>ServerSettings.PermissionPresetFile</h1>
 				</a>
 
 
-					<p>AllowedClientNameChars, Field of type table</p>
+					<p>ServerSettings.PermissionPresetFile, Field of type string</p>
 			</header>
 
 
 
 
 		</section>
-		<section class="method" id="AllowFileTransfers">
+		<section class="method" id="StartWhenClientsReadyRatio">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowFileTransfers</h1>
+					<h1><span class="realm shared"></span></span>StartWhenClientsReadyRatio</h1>
 				</a>
 
 
-					<p>AllowFileTransfers, Field of type bool</p>
+					<p>StartWhenClientsReadyRatio, Field of type number</p>
 			</header>
 
 
@@ -13031,7 +14511,245 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowFileTransfers</span>
+								<span class="tag parameter">StartWhenClientsReadyRatio</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="ServerSettings.ClientPermissionsFile">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>ServerSettings.ClientPermissionsFile</h1>
+				</a>
+
+
+					<p>ServerSettings.ClientPermissionsFile, Field of type string</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AllowFriendlyFire">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowFriendlyFire</h1>
+				</a>
+
+
+					<p>AllowFriendlyFire, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowFriendlyFire</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="MaxMissionCount">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>MaxMissionCount</h1>
+				</a>
+
+
+					<p>MaxMissionCount, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">MaxMissionCount</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="HasPassword">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>HasPassword</h1>
+				</a>
+
+
+					<p>HasPassword, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">HasPassword</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowedRandomMissionTypes">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowedRandomMissionTypes</h1>
+				</a>
+
+
+					<p>AllowedRandomMissionTypes, Field of type table</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method" id="AutoRestartInterval">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AutoRestartInterval</h1>
+				</a>
+
+
+					<p>AutoRestartInterval, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AutoRestartInterval</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KillDisconnectedTime">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KillDisconnectedTime</h1>
+				</a>
+
+
+					<p>KillDisconnectedTime, Field of type number</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KillDisconnectedTime</span>
+
+									<span class="tag"><span class="type">number</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="AllowRagdollButton">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>AllowRagdollButton</h1>
+				</a>
+
+
+					<p>AllowRagdollButton, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">AllowRagdollButton</span>
+
+									<span class="tag"><span class="type">boolean</span></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method" id="KarmaEnabled">
+			<header>
+				<a class="anchor">
+					<h1><span class="realm shared"></span></span>KarmaEnabled</h1>
+				</a>
+
+
+					<p>KarmaEnabled, Field of type bool</p>
+			</header>
+
+
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">KarmaEnabled</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -13105,14 +14823,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="RandomizeSeed">
+		<section class="method" id="AllowFileTransfers">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RandomizeSeed</h1>
+					<h1><span class="realm shared"></span></span>AllowFileTransfers</h1>
 				</a>
 
 
-					<p>RandomizeSeed, Field of type bool</p>
+					<p>AllowFileTransfers, Field of type bool</p>
 			</header>
 
 
@@ -13121,1411 +14839,9 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">RandomizeSeed</span>
+								<span class="tag parameter">AllowFileTransfers</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="TraitorsMinStartDelay">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TraitorsMinStartDelay</h1>
-				</a>
-
-
-					<p>TraitorsMinStartDelay, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TraitorsMinStartDelay</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="KickAFKTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KickAFKTime</h1>
-				</a>
-
-
-					<p>KickAFKTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KickAFKTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DisableBotConversations">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DisableBotConversations</h1>
-				</a>
-
-
-					<p>DisableBotConversations, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DisableBotConversations</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="GameModeIdentifier">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>GameModeIdentifier</h1>
-				</a>
-
-
-					<p>GameModeIdentifier, Field of type Identifier</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">GameModeIdentifier</span>
-
-									<span class="tag"><span class="type">Identifier</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RespawnInterval">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RespawnInterval</h1>
-				</a>
-
-
-					<p>RespawnInterval, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RespawnInterval</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxMissionCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxMissionCount</h1>
-				</a>
-
-
-					<p>MaxMissionCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxMissionCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AutoRestartInterval">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutoRestartInterval</h1>
-				</a>
-
-
-					<p>AutoRestartInterval, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AutoRestartInterval</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="RadiationEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>RadiationEnabled</h1>
-				</a>
-
-
-					<p>RadiationEnabled, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">RadiationEnabled</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowedRandomMissionTypes">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowedRandomMissionTypes</h1>
-				</a>
-
-
-					<p>AllowedRandomMissionTypes, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AutoRestart">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutoRestart</h1>
-				</a>
-
-
-					<p>AutoRestart, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AutoRestart</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="BotCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>BotCount</h1>
-				</a>
-
-
-					<p>BotCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">BotCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="LinesPerLogFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LinesPerLogFile</h1>
-				</a>
-
-
-					<p>LinesPerLogFile, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LinesPerLogFile</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MinRespawnRatio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MinRespawnRatio</h1>
-				</a>
-
-
-					<p>MinRespawnRatio, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MinRespawnRatio</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Port">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Port</h1>
-				</a>
-
-
-					<p>Port, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Port</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowSubVoting">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowSubVoting</h1>
-				</a>
-
-
-					<p>AllowSubVoting, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowSubVoting</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="HasPassword">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>HasPassword</h1>
-				</a>
-
-
-					<p>HasPassword, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">HasPassword</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="KarmaPreset">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KarmaPreset</h1>
-				</a>
-
-
-					<p>KarmaPreset, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KarmaPreset</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="VoteRequiredRatio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>VoteRequiredRatio</h1>
-				</a>
-
-
-					<p>VoteRequiredRatio, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">VoteRequiredRatio</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="KickVoteRequiredRatio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KickVoteRequiredRatio</h1>
-				</a>
-
-
-					<p>KickVoteRequiredRatio, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KickVoteRequiredRatio</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SelectedShuttle">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelectedShuttle</h1>
-				</a>
-
-
-					<p>SelectedShuttle, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SelectedShuttle</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxPasswordRetriesBeforeBan">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxPasswordRetriesBeforeBan</h1>
-				</a>
-
-
-					<p>MaxPasswordRetriesBeforeBan, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxPasswordRetriesBeforeBan</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MissionType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MissionType</h1>
-				</a>
-
-
-					<p>MissionType, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MissionType</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ServerSettings.PermissionPresetFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerSettings.PermissionPresetFile</h1>
-				</a>
-
-
-					<p>ServerSettings.PermissionPresetFile, Field of type string</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AutoBanTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutoBanTime</h1>
-				</a>
-
-
-					<p>AutoBanTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AutoBanTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MonsterEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MonsterEnabled</h1>
-				</a>
-
-
-					<p>MonsterEnabled, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="StartWhenClientsReady">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartWhenClientsReady</h1>
-				</a>
-
-
-					<p>StartWhenClientsReady, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">StartWhenClientsReady</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="DestructibleOutposts">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>DestructibleOutposts</h1>
-				</a>
-
-
-					<p>DestructibleOutposts, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">DestructibleOutposts</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowDisguises">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowDisguises</h1>
-				</a>
-
-
-					<p>AllowDisguises, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowDisguises</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="LastPropertyUpdateId">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastPropertyUpdateId</h1>
-				</a>
-
-
-					<p>LastPropertyUpdateId, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">LastPropertyUpdateId</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="TraitorsMinRestartDelay">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TraitorsMinRestartDelay</h1>
-				</a>
-
-
-					<p>TraitorsMinRestartDelay, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TraitorsMinRestartDelay</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AutoRestartTimer">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AutoRestartTimer</h1>
-				</a>
-
-
-					<p>AutoRestartTimer, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AutoRestartTimer</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="VoiceChatEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>VoiceChatEnabled</h1>
-				</a>
-
-
-					<p>VoiceChatEnabled, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">VoiceChatEnabled</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="UseRespawnShuttle">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>UseRespawnShuttle</h1>
-				</a>
-
-
-					<p>UseRespawnShuttle, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">UseRespawnShuttle</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowLinkingWifiToChat">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowLinkingWifiToChat</h1>
-				</a>
-
-
-					<p>AllowLinkingWifiToChat, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowLinkingWifiToChat</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowVoteKick">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowVoteKick</h1>
-				</a>
-
-
-					<p>AllowVoteKick, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowVoteKick</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowRagdollButton">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowRagdollButton</h1>
-				</a>
-
-
-					<p>AllowRagdollButton, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowRagdollButton</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="LastUpdateIdForFlag">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>LastUpdateIdForFlag</h1>
-				</a>
-
-
-					<p>LastUpdateIdForFlag, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="TraitorsMaxStartDelay">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TraitorsMaxStartDelay</h1>
-				</a>
-
-
-					<p>TraitorsMaxStartDelay, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TraitorsMaxStartDelay</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxPlayers">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxPlayers</h1>
-				</a>
-
-
-					<p>MaxPlayers, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxPlayers</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="TickRate">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TickRate</h1>
-				</a>
-
-
-					<p>TickRate, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TickRate</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="Name">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>Name</h1>
-				</a>
-
-
-					<p>Name, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">Name</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ServerSettings.ClientPermissionsFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerSettings.ClientPermissionsFile</h1>
-				</a>
-
-
-					<p>ServerSettings.ClientPermissionsFile, Field of type string</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="AllowModeVoting">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowModeVoting</h1>
-				</a>
-
-
-					<p>AllowModeVoting, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowModeVoting</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="BanAfterWrongPassword">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>BanAfterWrongPassword</h1>
-				</a>
-
-
-					<p>BanAfterWrongPassword, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">BanAfterWrongPassword</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ServerSettings.SettingsFile">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerSettings.SettingsFile</h1>
-				</a>
-
-
-					<p>ServerSettings.SettingsFile, Field of type string</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerSettings.MaxExtraCargoItemsOfType">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerSettings.MaxExtraCargoItemsOfType</h1>
-				</a>
-
-
-					<p>ServerSettings.MaxExtraCargoItemsOfType, Field of type number</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="TraitorsMinPlayerCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TraitorsMinPlayerCount</h1>
-				</a>
-
-
-					<p>TraitorsMinPlayerCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TraitorsMinPlayerCount</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="KarmaEnabled">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KarmaEnabled</h1>
-				</a>
-
-
-					<p>KarmaEnabled, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KarmaEnabled</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ExtraCargo">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ExtraCargo</h1>
-				</a>
-
-
-					<p>ExtraCargo, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="ServerName">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerName</h1>
-				</a>
-
-
-					<p>ServerName, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ServerName</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SelectedSubmarine">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SelectedSubmarine</h1>
-				</a>
-
-
-					<p>SelectedSubmarine, Field of type string</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SelectedSubmarine</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
 								<p>
@@ -14567,76 +14883,16 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="ServerMessageText">
+		<section class="method" id="ExtraCargo">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerMessageText</h1>
+					<h1><span class="realm shared"></span></span>ExtraCargo</h1>
 				</a>
 
 
-					<p>ServerMessageText, Field of type string</p>
+					<p>ExtraCargo, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ServerMessageText</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SerializableProperties">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SerializableProperties</h1>
-				</a>
-
-
-					<p>SerializableProperties, Field of type table</p>
-			</header>
-
-
-
-
-		</section>
-		<section class="method" id="KillDisconnectedTime">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>KillDisconnectedTime</h1>
-				</a>
-
-
-					<p>KillDisconnectedTime, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">KillDisconnectedTime</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
@@ -14655,44 +14911,28 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="EnableUPnP">
+		<section class="method" id="SerializableProperties">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EnableUPnP</h1>
+					<h1><span class="realm shared"></span></span>SerializableProperties</h1>
 				</a>
 
 
-					<p>EnableUPnP, Field of type bool</p>
+					<p>SerializableProperties, Field of type table</p>
 			</header>
 
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">EnableUPnP</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
 
 
 
 		</section>
-		<section class="method" id="MaxAutoBanTime">
+		<section class="method" id="LastPropertyUpdateId">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxAutoBanTime</h1>
+					<h1><span class="realm shared"></span></span>LastPropertyUpdateId</h1>
 				</a>
 
 
-					<p>MaxAutoBanTime, Field of type number</p>
+					<p>LastPropertyUpdateId, Field of type number</p>
 			</header>
 
 
@@ -14701,7 +14941,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">MaxAutoBanTime</span>
+								<span class="tag parameter">LastPropertyUpdateId</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14715,14 +14955,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowFriendlyFire">
+		<section class="method" id="AllowModeVoting">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowFriendlyFire</h1>
+					<h1><span class="realm shared"></span></span>AllowModeVoting</h1>
 				</a>
 
 
-					<p>AllowFriendlyFire, Field of type bool</p>
+					<p>AllowModeVoting, Field of type bool</p>
 			</header>
 
 
@@ -14731,7 +14971,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowFriendlyFire</span>
+								<span class="tag parameter">AllowModeVoting</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
@@ -14745,14 +14985,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowRewiring">
+		<section class="method" id="MaxPlayers">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowRewiring</h1>
+					<h1><span class="realm shared"></span></span>MaxPlayers</h1>
 				</a>
 
 
-					<p>AllowRewiring, Field of type bool</p>
+					<p>MaxPlayers, Field of type number</p>
 			</header>
 
 
@@ -14761,67 +15001,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowRewiring</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="ServerDetailsChanged">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>ServerDetailsChanged</h1>
-				</a>
-
-
-					<p>ServerDetailsChanged, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">ServerDetailsChanged</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="MaxBotCount">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>MaxBotCount</h1>
-				</a>
-
-
-					<p>MaxBotCount, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">MaxBotCount</span>
+								<span class="tag parameter">MaxPlayers</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14835,14 +15015,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="AllowRespawn">
+		<section class="method" id="BotCount">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowRespawn</h1>
+					<h1><span class="realm shared"></span></span>BotCount</h1>
 				</a>
 
 
-					<p>AllowRespawn, Field of type bool</p>
+					<p>BotCount, Field of type number</p>
 			</header>
 
 
@@ -14851,97 +15031,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">AllowRespawn</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="SaveServerLogs">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>SaveServerLogs</h1>
-				</a>
-
-
-					<p>SaveServerLogs, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">SaveServerLogs</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowModDownloads">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowModDownloads</h1>
-				</a>
-
-
-					<p>AllowModDownloads, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowModDownloads</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="StartWhenClientsReadyRatio">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>StartWhenClientsReadyRatio</h1>
-				</a>
-
-
-					<p>StartWhenClientsReadyRatio, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">StartWhenClientsReadyRatio</span>
+								<span class="tag parameter">BotCount</span>
 
 									<span class="tag"><span class="type">number</span></span>
 
@@ -14955,14 +15045,14 @@ Path											</a>
 
 
 		</section>
-		<section class="method" id="EndVoteRequiredRatio">
+		<section class="method" id="AutoRestart">
 			<header>
 				<a class="anchor">
-					<h1><span class="realm shared"></span></span>EndVoteRequiredRatio</h1>
+					<h1><span class="realm shared"></span></span>AutoRestart</h1>
 				</a>
 
 
-					<p>EndVoteRequiredRatio, Field of type number</p>
+					<p>AutoRestart, Field of type bool</p>
 			</header>
 
 
@@ -14971,97 +15061,7 @@ Path											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">EndVoteRequiredRatio</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowEndVoting">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowEndVoting</h1>
-				</a>
-
-
-					<p>AllowEndVoting, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowEndVoting</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="TraitorsMaxRestartDelay">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>TraitorsMaxRestartDelay</h1>
-				</a>
-
-
-					<p>TraitorsMaxRestartDelay, Field of type number</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">TraitorsMaxRestartDelay</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method" id="AllowSpectating">
-			<header>
-				<a class="anchor">
-					<h1><span class="realm shared"></span></span>AllowSpectating</h1>
-				</a>
-
-
-					<p>AllowSpectating, Field of type bool</p>
-			</header>
-
-
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">AllowSpectating</span>
+								<span class="tag parameter">AutoRestart</span>
 
 									<span class="tag"><span class="type">boolean</span></span>
 
