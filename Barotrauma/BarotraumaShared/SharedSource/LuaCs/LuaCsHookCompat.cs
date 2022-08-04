@@ -46,40 +46,33 @@ namespace Barotrauma
 						args.Add(@params[i].Name, __args[i]);
 					}
 
-					var outOfSocpe = new HashSet<(string, LuaCsPatch, ACsMod)>();
+					var outOfScope = new HashSet<(string, LuaCsPatch, ACsMod)>();
 					foreach (var tuple in methodSet)
 					{
 						if (tuple.Item3 != null && tuple.Item3.IsDisposed)
 						{
-							outOfSocpe.Add(tuple);
+							outOfScope.Add(tuple);
 						}
 						else
 						{
-							var _result = tuple.Item2(__instance, args);
-							if (_result != null)
+							var luaResult = tuple.Item2(__instance, args);
+							if (luaResult != null)
 							{
-								if (_result is LuaResult res)
+								if (!luaResult.IsNil())
 								{
-									if (!res.IsNull())
+									if (__originalMethod is MethodInfo mi && mi.ReturnType != typeof(void))
 									{
-										if (__originalMethod is MethodInfo mi && mi.ReturnType != typeof(void))
-										{
-											result = res.DynValue().ToObject(mi.ReturnType);
-										}
-										else
-										{
-											result = res.DynValue().ToObject();
-										}
+										result = luaResult.ToObject(mi.ReturnType);
 									}
-								}
-								else
-								{
-									result = _result;
+									else
+									{
+										result = luaResult.ToObject();
+									}
 								}
 							}
 						}
 					}
-					foreach (var tuple in outOfSocpe) { methodSet.Remove(tuple); }
+					foreach (var tuple in outOfScope) { methodSet.Remove(tuple); }
 				}
 			}
 			catch (Exception ex)
