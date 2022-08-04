@@ -11,8 +11,8 @@
       <meta property="og:description" content="The Hook API allow you to listen to game events and modify the behavior&#47;logic of the game." />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
-    <link rel="stylesheet" href="../../ldoc.css?v=3657354" />
-    <link rel="stylesheet" href="../../highlight.css?v=a6142ce" />
+    <link rel="stylesheet" href="../../ldoc.css?v=79c2ba8" />
+    <link rel="stylesheet" href="../../highlight.css?v=1864ee0" />
   </head>
 
   <body>
@@ -9686,7 +9686,7 @@ end, Hook.HookMethodType.After)
                   <span class="tag default">optional</span>
 
 
-                <p> a string that uniquely identifies this patch on this method (works across mods and NOT globally unique)</p>
+                <p> a string that identifies this patch (unique per patched method)</p>
               </li>
           </ul>
 
@@ -9739,7 +9739,7 @@ end, Hook.HookMethodType.After)
 
 
 
-                <p> function that is called before/after (see hookType) the patched method executes</p>
+                <p> function that is called before/after the patched method executes (see hookType parameter)</p>
               </li>
           </ul>
 
@@ -9753,7 +9753,7 @@ end, Hook.HookMethodType.After)
                   <span class="tag default">default: Hook.HookMethodType.Before</span>
 
 
-                <p> determines whether this patch is to be called before or after the original method executes</p>
+                <p> determines whether this patch is to be called before or after the original method executes. <a href="../../enum/hook.hookmethodtype/#Before">Hook.HookMethodType.Before</a> is a prefix and <a href="../../enum/hook.hookmethodtype/#After">Hook.HookMethodType.After</a> is a postfix.</p>
               </li>
           </ul>
 
@@ -9968,7 +9968,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
           <p class="description">A table of the parameters that a C# method was called with. </p>
 
-<p> This is used in the <code>Hook.Patch()</code> callback.</p>
+<p> This is used in the <a href="../../code/hook/#Hook.Patch">Hook.Patch</a> callback.</p>
 
 <p> In order to access or modify parameters, you have to use the array accessor syntax, e.g. <code>ptable[&quot;myParam&quot;]</code></p>
       </header>
@@ -10035,7 +10035,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
     <div class="section-separator"></div>
     <h2> Hooks are functions that get called when events happen in-game, e.g. chat messages.</p>
 
-<p> These can be used with <code>Hook.Add()</code> and <code>Hook.Call()</code>.</h2>
+<p> These can be used with <a href="../../code/hook/#Hook.Add">Hook.Add</a> and <a href="../../code/hook/#Hook.Call">Hook.Call</a>.</h2>
   </header>
 
     <section class="method" id="afflictionUpdate">
@@ -12069,8 +12069,8 @@ end)
       </article>
     </main>
 
-    <script type="text/javascript" src="../../app.js?v=300c05c"></script>
-    <script type="text/javascript" src="../../highlight.min.js?v=c2af47e"></script>
+    <script type="text/javascript" src="../../app.js?v=2ef62d2"></script>
+    <script type="text/javascript" src="../../highlight.min.js?v=b99deb0"></script>
     <script type="text/javascript">
       var elements = document.querySelectorAll("pre code")
 
