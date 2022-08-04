@@ -11,8 +11,8 @@
       <meta property="og:description" content="The Hook API allow you to listen to game events and modify the behavior&#47;logic of the game." />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
-    <link rel="stylesheet" href="../../ldoc.css" />
-    <link rel="stylesheet" href="../../highlight.css" />
+    <link rel="stylesheet" href="../../ldoc.css?v=3657354" />
+    <link rel="stylesheet" href="../../highlight.css?v=a6142ce" />
   </head>
 
   <body>
@@ -3309,7 +3309,7 @@
                 </li>
 
                     <li>
-                      <span class="realm ChatBox"></span><a href="../../code/game/#Game.ChatBox"><span>Game.ChatBox</span></a>
+                      <span class="realm server"></span><a href="../../code/game/#Game.ChatBox"><span>Game.ChatBox</span></a>
                     </li>
                     <li>
                       <span class="realm server"></span><a href="../../code/game/#Game.IsDedicated"><span>Game.IsDedicated</span></a>
@@ -4625,7 +4625,13 @@
                       <span class="realm shared"></span><a href="../../code/hook/#Hook.RemovePatch"><span>Hook.RemovePatch</span></a>
                     </li>
 
+                <li>
+                  <label class="colorful-label">TABLES</label>
+                </li>
 
+                    <li>
+                      <span class="realm shared"></span><a href="../../code/hook/#ParameterTable"><span>ParameterTable</span></a>
+                    </li>
 
 
 
@@ -9495,7 +9501,8 @@
               <li>
                 <span class="tag parameter">eventName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> event name</p>
@@ -9507,7 +9514,8 @@
               <li>
                 <span class="tag parameter">hookName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> hook name</p>
@@ -9519,7 +9527,8 @@
               <li>
                 <span class="tag parameter">func</span>
 
-                  <span class="tag"><span class="type">function</span></span>
+                  <span class="tag type"><span class="type">function</span></span>
+
 
 
                 <p> callback</p>
@@ -9552,7 +9561,8 @@ end)
               <li>
                 <span class="tag parameter">eventName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> event name</p>
@@ -9564,7 +9574,8 @@ end)
               <li>
                 <span class="tag parameter">parameters</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
+
 
 
                 <p> parameters to be passed in</p>
@@ -9587,6 +9598,7 @@ end)
             <div class="title">Deprecated</div>
             <div class="body">
               <p>This API is deprecated and shouldn't be used anymore.</p>
+                <p>Use <a href="../../code/hook/#Hook.Patch">Hook.Patch</a> instead.</p>
             </div>
           </div>
 
@@ -9603,7 +9615,8 @@ end)
               <li>
                 <span class="tag parameter">className</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p>
@@ -9617,7 +9630,8 @@ end)
               <li>
                 <span class="tag parameter">methodName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p>
@@ -9631,7 +9645,8 @@ end)
               <li>
                 <span class="tag parameter">callback</span>
 
-                  <span class="tag"><span class="type">function</span></span>
+                  <span class="tag type"><span class="type">function</span></span>
+
 
 
                 <p>
@@ -9666,9 +9681,10 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">identifier</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
                   <span class="tag default">optional</span>
+
 
                 <p> a string that uniquely identifies this patch on this method (works across mods and NOT globally unique)</p>
               </li>
@@ -9679,7 +9695,8 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">className</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> the fully-qualified name of the type to patch</p>
@@ -9691,7 +9708,8 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">methodName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> the name of the method to patch</p>
@@ -9703,9 +9721,10 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">parameterTypes</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">{string}</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">{string}</a></span>
 
                   <span class="tag default">optional</span>
+
 
                 <p> the type of the parameters -- used for disambiguating between overloads</p>
               </li>
@@ -9716,7 +9735,8 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">callback</span>
 
-                  <span class="tag"><span class="type">function</span></span>
+                  <span class="tag type"><span class="type">function</span></span>
+
 
 
                 <p> function that is called before/after (see hookType) the patched method executes</p>
@@ -9728,9 +9748,10 @@ end, Hook.HookMethodType.After)
               <li>
                 <span class="tag parameter">hookType</span>
 
-                  <span class="tag"><span class="type">Hook.HookMethodType</span></span>
+                  <span class="tag type"><span class="type">Hook.HookMethodType</span></span>
 
                   <span class="tag default">default: Hook.HookMethodType.Before</span>
+
 
                 <p> determines whether this patch is to be called before or after the original method executes</p>
               </li>
@@ -9741,7 +9762,9 @@ end, Hook.HookMethodType.After)
         <ul>
 
               <li>
+                <span class="tag type">
                   <a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a>
+                </span>
 
                 <p>returns the identifier. If no identifier is supplied, a randomly generated one is returned instead.</p>
               </li>
@@ -9775,6 +9798,10 @@ Hook.Patch(
   end, Hook.HookMethodType.Before)
 </code></pre>
 
+        <h3>See Also</h3>
+        <ul>
+            <li><a href="../../code/hook/#ParameterTable">ParameterTable</a></li>
+        </ul>
     </section>
     <section class="method" id="Hook.Remove">
       <header>
@@ -9794,7 +9821,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">eventName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> event name</p>
@@ -9806,7 +9834,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">hookName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> hook name</p>
@@ -9837,7 +9866,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">identifier</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> the identifier of the patch to remove</p>
@@ -9849,7 +9879,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">className</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> the fully-qualified name of the type to unpatch</p>
@@ -9861,7 +9892,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">methodName</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p> the name of the method to unpatch</p>
@@ -9873,9 +9905,10 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">parameterTypes</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">{string}</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">{string}</a></span>
 
                   <span class="tag default">optional</span>
+
 
                 <p> the type of the parameters -- used for disambiguating between overloads</p>
               </li>
@@ -9886,7 +9919,8 @@ Hook.Patch(
               <li>
                 <span class="tag parameter">hookType</span>
 
-                  <span class="tag"><span class="type">Hook.HookMethodType</span></span>
+                  <span class="tag type"><span class="type">Hook.HookMethodType</span></span>
+
 
 
                 <p> the patch type</p>
@@ -9898,7 +9932,9 @@ Hook.Patch(
         <ul>
 
               <li>
+                <span class="tag type">
                   <span class="type">boolean</span>
+                </span>
 
                 <p>returns true if patch was successfully removed, otherwise false</p>
               </li>
@@ -9918,6 +9954,80 @@ local patchId = Hook.Patch("Barotrauma.Character", "IsInteractable", function(in
 end, Hook.HookMethodType.After)
 local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractable", Hook.HookMethodType.After)
 </code></pre>
+
+    </section>
+  <header class="section">
+    <h1>Tables</h1>
+  </header>
+
+    <section class="method" id="ParameterTable">
+      <header>
+        <a class="anchor"><h1><span class="realm shared"></span>ParameterTable</h1></a>
+
+
+
+          <p class="description">A table of the parameters that a C# method was called with. </p>
+
+<p> This is used in the <code>Hook.Patch()</code> callback.</p>
+
+<p> In order to access or modify parameters, you have to use the array accessor syntax, e.g. <code>ptable[&quot;myParam&quot;]</code></p>
+      </header>
+
+
+          <h3>Fields</h3>
+
+
+          <ul>
+
+              <li>
+                <span class="tag parameter">PreventExecution</span>
+
+
+
+
+                <p> if set to <code>true</code>, the original method and remaining postfix/prefixes will be skipped</p>
+              </li>
+          </ul>
+
+          <ul>
+
+              <li>
+                <span class="tag parameter">ReturnValue</span>
+
+
+
+
+                <p> the return value of the C# method</p>
+              </li>
+          </ul>
+
+          <ul>
+
+              <li>
+                <span class="tag parameter">OriginalParameters</span>
+
+
+
+                  <span class="tag readonly">read-only</span>
+
+                <p> the parameters passed to the C# method, before any modifications by the patch(es)</p>
+              </li>
+          </ul>
+
+          <ul>
+
+              <li>
+                <span class="tag parameter">OriginalReturnValue</span>
+
+
+
+                  <span class="tag readonly">read-only</span>
+
+                <p> the return value of the C# method, before any modifications by the patch(es)</p>
+              </li>
+          </ul>
+
+
 
     </section>
   <header class="section">
@@ -9948,6 +10058,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -9961,6 +10072,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -9971,6 +10083,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">limb</span>
+
 
 
 
@@ -10003,6 +10116,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10013,6 +10127,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">receiver</span>
+
 
 
 
@@ -10063,6 +10178,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10073,6 +10189,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">receiver</span>
+
 
 
 
@@ -10105,6 +10222,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10115,6 +10233,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">limbHealth</span>
+
 
 
 
@@ -10131,6 +10250,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10141,6 +10261,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">allowStacking</span>
+
 
 
 
@@ -10173,6 +10294,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10183,6 +10305,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">attackResult</span>
+
 
 
 
@@ -10199,6 +10322,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
 
 
+
                 <p>
 
 </p>
@@ -10209,6 +10333,7 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
 
               <li>
                 <span class="tag parameter">allowStacking</span>
+
 
 
 
@@ -10239,7 +10364,8 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
               <li>
                 <span class="tag parameter">createdCharacter</span>
 
-                  <span class="tag"><span class="type">character</span></span>
+                  <span class="tag type"><span class="type">character</span></span>
+
 
 
                 <p>
@@ -10269,7 +10395,8 @@ local success = Hook.RemovePatch(patchId, "Barotrauma.Character", "IsInteractabl
               <li>
                 <span class="tag parameter">character</span>
 
-                  <span class="tag"><span class="type">Character</span></span>
+                  <span class="tag type"><span class="type">Character</span></span>
+
 
 
                 <p> A dead Character.</p>
@@ -10302,7 +10429,8 @@ end)
               <li>
                 <span class="tag parameter">character</span>
 
-                  <span class="tag"><span class="type">character</span></span>
+                  <span class="tag type"><span class="type">character</span></span>
+
 
 
                 <p>
@@ -10316,7 +10444,8 @@ end)
               <li>
                 <span class="tag parameter">waypoint</span>
 
-                  <span class="tag"><span class="type">WayPoint</span></span>
+                  <span class="tag type"><span class="type">WayPoint</span></span>
+
 
 
                 <p>
@@ -10346,7 +10475,8 @@ end)
               <li>
                 <span class="tag parameter">message</span>
 
-                  <span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+                  <span class="tag type"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+
 
 
                 <p>
@@ -10360,7 +10490,8 @@ end)
               <li>
                 <span class="tag parameter">sender</span>
 
-                  <span class="tag"><span class="type">client</span></span>
+                  <span class="tag type"><span class="type">client</span></span>
+
 
 
                 <p>
@@ -10390,7 +10521,8 @@ end)
               <li>
                 <span class="tag parameter">connectedClient</span>
 
-                  <span class="tag"><span class="type">client</span></span>
+                  <span class="tag type"><span class="type">client</span></span>
+
 
 
                 <p>
@@ -10420,7 +10552,8 @@ end)
               <li>
                 <span class="tag parameter">disconnectedClient</span>
 
-                  <span class="tag"><span class="type">client</span></span>
+                  <span class="tag type"><span class="type">client</span></span>
+
 
 
                 <p>
@@ -10452,6 +10585,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10465,6 +10599,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10475,6 +10610,7 @@ end)
 
               <li>
                 <span class="tag parameter">hull2</span>
+
 
 
 
@@ -10507,6 +10643,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10533,6 +10670,7 @@ end)
 
               <li>
                 <span class="tag parameter">animController</span>
+
 
 
 
@@ -10570,6 +10708,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10580,6 +10719,7 @@ end)
 
               <li>
                 <span class="tag parameter">husk</span>
+
 
 
 
@@ -10612,6 +10752,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10622,6 +10763,7 @@ end)
 
               <li>
                 <span class="tag parameter">item</span>
+
 
 
 
@@ -10638,6 +10780,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10651,6 +10794,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10661,6 +10805,7 @@ end)
 
               <li>
                 <span class="tag parameter">swapWholeStackBool</span>
+
 
 
 
@@ -10693,6 +10838,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10703,6 +10849,7 @@ end)
 
               <li>
                 <span class="tag parameter">item</span>
+
 
 
 
@@ -10719,6 +10866,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10732,6 +10880,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10742,6 +10891,7 @@ end)
 
               <li>
                 <span class="tag parameter">removeItemBool</span>
+
 
 
 
@@ -10774,6 +10924,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10784,6 +10935,7 @@ end)
 
               <li>
                 <span class="tag parameter">usingCharacter</span>
+
 
 
 
@@ -10800,6 +10952,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10810,6 +10963,7 @@ end)
 
               <li>
                 <span class="tag parameter">limb</span>
+
 
 
 
@@ -10842,6 +10996,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10852,6 +11007,7 @@ end)
 
               <li>
                 <span class="tag parameter">deconstructor</span>
+
 
 
 
@@ -10868,6 +11024,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10878,6 +11035,7 @@ end)
 
               <li>
                 <span class="tag parameter">allowRemove</span>
+
 
 
 
@@ -10910,6 +11068,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10939,6 +11098,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10952,6 +11112,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -10962,6 +11123,7 @@ end)
 
               <li>
                 <span class="tag parameter">userCharacter</span>
+
 
 
 
@@ -10994,6 +11156,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11004,6 +11167,7 @@ end)
 
               <li>
                 <span class="tag parameter">character</span>
+
 
 
 
@@ -11036,6 +11200,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11046,6 +11211,7 @@ end)
 
               <li>
                 <span class="tag parameter">character</span>
+
 
 
 
@@ -11078,6 +11244,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11088,6 +11255,7 @@ end)
 
               <li>
                 <span class="tag parameter">characterPicker</span>
+
 
 
 
@@ -11104,6 +11272,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11117,6 +11286,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11127,6 +11297,7 @@ end)
 
               <li>
                 <span class="tag parameter">forceActionKeyBool</span>
+
 
 
 
@@ -11159,6 +11330,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11169,6 +11341,7 @@ end)
 
               <li>
                 <span class="tag parameter">itemUser</span>
+
 
 
 
@@ -11201,6 +11374,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11211,6 +11385,7 @@ end)
 
               <li>
                 <span class="tag parameter">character</span>
+
 
 
 
@@ -11243,6 +11418,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11256,6 +11432,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11266,6 +11443,7 @@ end)
 
               <li>
                 <span class="tag parameter">targetLimb</span>
+
 
 
 
@@ -11331,6 +11509,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11341,6 +11520,7 @@ end)
 
               <li>
                 <span class="tag parameter">targetBody</span>
+
 
 
 
@@ -11373,6 +11553,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11383,6 +11564,7 @@ end)
 
               <li>
                 <span class="tag parameter">wifiComponentSender</span>
+
 
 
 
@@ -11441,6 +11623,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11451,6 +11634,7 @@ end)
 
               <li>
                 <span class="tag parameter">serverLogMessageType</span>
+
 
 
 
@@ -11483,6 +11667,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11493,6 +11678,7 @@ end)
 
               <li>
                 <span class="tag parameter">connection</span>
+
 
 
 
@@ -11525,6 +11711,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11535,6 +11722,7 @@ end)
 
               <li>
                 <span class="tag parameter">connection</span>
+
 
 
 
@@ -11567,6 +11755,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11577,6 +11766,7 @@ end)
 
               <li>
                 <span class="tag parameter">deltaTime</span>
+
 
 
 
@@ -11593,6 +11783,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11606,6 +11797,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11616,6 +11808,7 @@ end)
 
               <li>
                 <span class="tag parameter">worldPosition</span>
+
 
 
 
@@ -11682,6 +11875,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11692,6 +11886,7 @@ end)
 
               <li>
                 <span class="tag parameter">team</span>
+
 
 
 
@@ -11729,6 +11924,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11758,6 +11954,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11768,6 +11965,7 @@ end)
 
               <li>
                 <span class="tag parameter">newName</span>
+
 
 
 
@@ -11784,6 +11982,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11794,6 +11993,7 @@ end)
 
               <li>
                 <span class="tag parameter">newTeam</span>
+
 
 
 
@@ -11826,6 +12026,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11839,6 +12040,7 @@ end)
 
 
 
+
                 <p>
 
 </p>
@@ -11849,6 +12051,7 @@ end)
 
               <li>
                 <span class="tag parameter">sentFromChat</span>
+
 
 
 
@@ -11866,8 +12069,8 @@ end)
       </article>
     </main>
 
-    <script type="text/javascript" src="../../app.js"></script>
-    <script type="text/javascript" src="../../highlight.min.js"></script>
+    <script type="text/javascript" src="../../app.js?v=300c05c"></script>
+    <script type="text/javascript" src="../../highlight.min.js?v=c2af47e"></script>
     <script type="text/javascript">
       var elements = document.querySelectorAll("pre code")
 
