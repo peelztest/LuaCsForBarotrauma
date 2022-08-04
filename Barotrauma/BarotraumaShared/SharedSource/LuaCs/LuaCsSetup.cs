@@ -75,6 +75,8 @@ namespace Barotrauma
 		public CsScriptLoader CsScriptLoader { get; private set; }
 		public LuaCsSetupConfig Config { get; private set; }
 
+		public bool CatchLuaErrors { get; set; } = true;
+
 		public LuaCsSetup()
 		{
 			Hook = new LuaCsHook();
@@ -289,6 +291,11 @@ namespace Barotrauma
 		{
 			lock (lua)
 			{
+                if (!CatchLuaErrors)
+                {
+                    return lua.Call(function, args: args);
+                }
+
 				try
 				{
 					return lua.Call(function, args: args);
