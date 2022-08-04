@@ -52,23 +52,27 @@ namespace Barotrauma
 						if (tuple.Item3 != null && tuple.Item3.IsDisposed)
 						{
 							outOfScope.Add(tuple);
+							continue;
 						}
-						else
+
+						var patchResult = tuple.Item2(__instance, args);
+						// lua patches can return null if an exception is caught
+						if (patchResult == null) continue;
+						if (__originalMethod is MethodInfo mi && mi.ReturnType != typeof(void))
 						{
-							var luaResult = tuple.Item2(__instance, args);
-							if (luaResult != null)
+							if (patchResult is DynValue luaResult)
 							{
+								// XXX: unfortunately checking for IsNil
+								// instead of IsVoid makes it impossible to
+								// replace the return value with "null".
 								if (!luaResult.IsNil())
 								{
-									if (__originalMethod is MethodInfo mi && mi.ReturnType != typeof(void))
-									{
-										result = luaResult.ToObject(mi.ReturnType);
-									}
-									else
-									{
-										result = luaResult.ToObject();
-									}
+									result = luaResult.ToObject(mi.ReturnType);
 								}
+							}
+							else // only C# mods can return CLR types
+							{
+								result = patchResult;
 							}
 						}
 					}

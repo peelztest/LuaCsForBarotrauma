@@ -14,7 +14,7 @@ namespace Barotrauma
 {
 	public delegate void LuaCsAction(params object[] args);
 	public delegate DynValue LuaCsFunc(params object[] args);
-	public delegate DynValue LuaCsPatch(object self, Dictionary<string, object> args);
+	public delegate object LuaCsPatch(object self, Dictionary<string, object> args);
 
 	public partial class LuaCsHook
 	{
