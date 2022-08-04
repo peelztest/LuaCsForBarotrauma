@@ -533,8 +533,6 @@ namespace Barotrauma
             return identifier?.Trim().ToLowerInvariant();
         }
 
-        private Harmony harmony;
-
         private Lazy<ModuleBuilder> patchModuleBuilder;
 
         private readonly Dictionary<string, Dictionary<string, (LuaCsHookCallback, ACsMod)>> hookFunctions = new Dictionary<string, Dictionary<string, (LuaCsHookCallback, ACsMod)>>();
@@ -544,6 +542,9 @@ namespace Barotrauma
         private static LuaCsSetup LuaCs;
 
         private static LuaCsHook instance;
+
+        [MoonSharpHidden]
+        public Harmony Harmony { get; private set; }
 
         private struct MethodKey : IEquatable<MethodKey>
         {
@@ -591,7 +592,7 @@ namespace Barotrauma
 
         public void Initialize()
         {
-            harmony = new Harmony("LuaCsForBarotrauma");
+            Harmony = new Harmony("LuaCsForBarotrauma");
             patchModuleBuilder = new Lazy<ModuleBuilder>(CreateModuleBuilder);
 
             UserData.RegisterType<ParameterTable>();
@@ -730,7 +731,7 @@ namespace Barotrauma
             compatHookPrefixMethods.Clear();
             compatHookPostfixMethods.Clear();
 
-            harmony?.UnpatchAll();
+            Harmony?.UnpatchAll();
         }
 
         public void Update() { }
@@ -1139,7 +1140,7 @@ namespace Barotrauma
             {
                 var harmonyPrefix = CreateDynamicHarmonyPatch(identifier, method, HookMethodType.Before);
                 var harmonyPostfix = CreateDynamicHarmonyPatch(identifier, method, HookMethodType.After);
-                harmony.Patch(method, prefix: new HarmonyMethod(harmonyPrefix), postfix: new HarmonyMethod(harmonyPostfix));
+                Harmony.Patch(method, prefix: new HarmonyMethod(harmonyPrefix), postfix: new HarmonyMethod(harmonyPostfix));
                 methodPatches = registeredPatches[patchKey] = new PatchedMethod(harmonyPrefix, harmonyPostfix);
             }
 
