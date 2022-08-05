@@ -1,4 +1,4 @@
-﻿using Barotrauma;
+using Barotrauma;
 using MoonSharp.Interpreter;
 using System;
 using System.Diagnostics;
@@ -23,6 +23,7 @@ namespace TestProject.LuaCs
             UserData.RegisterType<PatchTarget2>();
             UserData.RegisterType<PatchTarget3>();
             UserData.RegisterType<PatchTarget4>();
+            UserData.RegisterType<PatchTarget5>();
 
             luaCs.Initialize();
             luaCs.Lua.Globals["TestValueType"] = UserData.CreateStatic<TestValueType>();
@@ -309,6 +310,29 @@ namespace TestProject.LuaCs
             target.Run(5, out var outString, ref refByte, "foo");
             Assert.True(target.ran);
             Assert.Equal("100abc4", outString);
+        }
+
+
+        public class PatchTarget5
+        {
+            public bool ran;
+
+            public string Run(Microsoft.Xna.Framework.Vector2 a)
+            {
+                ran = true;
+                return a.ToString();
+            }
+        }
+
+        [Fact]
+        public void TestParameterValueType()
+        {
+            var target = new PatchTarget5();
+            AddPrefix<PatchTarget5>("patchRan = true");
+            var returnValue = target.Run(new Microsoft.Xna.Framework.Vector2(1, 2));
+            Assert.True(target.ran);
+            Assert.True(luaCs.Lua.Globals["patchRan"] as bool?);
+            Assert.Equal("{X:1 Y:2}", returnValue);
         }
     }
 }
