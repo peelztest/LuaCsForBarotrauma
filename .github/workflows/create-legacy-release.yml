@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Publish release
+name: Create legacy release
 
 on:
   workflow_call:
     inputs:
       target:
-        description: "The git ref to checkout, build from and release"
+        description: "The git commit to be associated with the release"
         required: true
         type: string
       tag:
@@ -66,14 +66,8 @@ env:
     Lua
 
 jobs:
-  build:
-    uses: ./.github/workflows/build.yml
-    with:
-      target: ${{ inputs.target }}
-
-  publish-release:
+  create-release:
     runs-on: ubuntu-latest
-    needs: [build]
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
@@ -156,7 +150,7 @@ jobs:
             )
           done
 
-      - name: Publish release
+      - name: Create release
         uses: notpeelz/action-gh-create-release@a12edfc71daf5daa7922b931c28e2bf88d3b2ced # v5.0.0
         with:
           target: ${{ inputs.target }}
