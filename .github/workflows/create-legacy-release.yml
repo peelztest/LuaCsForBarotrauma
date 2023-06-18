@@ -101,8 +101,6 @@ jobs:
           lines_to_array RELEASES
 
           artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
-          mkdir -p "$artifacts_dir"
-
           archives_dir="$(realpath -m "$CI_DIR/archives")"
           mkdir -p "$archives_dir"
 
@@ -112,21 +110,13 @@ jobs:
               IFS=':' read platform side publish_dir _rest <<< "${RELEASES[i]}"
               cd "${artifacts_dir}/${publish_dir}"
 
-              echo "Creating build_${platform}_${side}.zip"
-              zip --must-match -qr "${archives_dir}/${ARCHIVE_BASE_NAME}_build_${platform}_${side}.zip" *
-
-              echo "Creating build_${platform}_${side}.tar.gz"
-              tar -czf "${archives_dir}/${ARCHIVE_BASE_NAME}_build_${platform}_${side}.tar.gz" \
-                --owner=0 --group=0 \
-                *
-
               if [[ "$side" == "client" ]]; then
-                files=(
+                patch_files=(
                   ${ARCHIVE_FILES_SHARED[@]}
                   ${ARCHIVE_FILES_CLIENT[@]}
                 )
               elif [[ "$side" == "server" ]]; then
-                files=(
+                patch_files=(
                   ${ARCHIVE_FILES_SHARED[@]}
                   ${ARCHIVE_FILES_SERVER[@]}
                 )
@@ -135,18 +125,26 @@ jobs:
                 exit 1
               fi
 
+              echo "Creating build_${platform}_${side}.zip"
+              zip --must-match -qr "${archives_dir}/${ARCHIVE_BASE_NAME}_build_${platform}_${side}.zip" *
+
+              echo "Creating build_${platform}_${side}.tar.gz"
+              tar -czf "${archives_dir}/${ARCHIVE_BASE_NAME}_build_${platform}_${side}.tar.gz" \
+                --owner=0 --group=0 \
+                *
+
               echo "Creating patch_${platform}_${side}.zip"
               zip \
                 --must-match \
                 -qr \
                 "${archives_dir}/${ARCHIVE_BASE_NAME}_patch_${platform}_${side}.zip" \
-                "${files[@]}"
+                "${patch_files[@]}"
 
               echo "Creating patch_${platform}_${side}.tar.gz"
               tar \
                 -zcf "${archives_dir}/${ARCHIVE_BASE_NAME}_patch_${platform}_${side}.tar.gz" \
                 --owner=0 --group=0 \
-                "${files[@]}"
+                "${patch_files[@]}"
             )
           done
 
