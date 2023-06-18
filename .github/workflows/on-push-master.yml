@@ -15,8 +15,14 @@ jobs:
     with:
       target: ${{ github.event.ref }}
 
-  publish-release:
-    uses: ./.github/workflows/publish-release.yml
+  build:
+    uses: ./.github/workflows/build.yml
+    with:
+      target: ${{ inputs.target }}
+
+  create-legacy-release:
+    needs: [build]
+    uses: ./.github/workflows/create-legacy-release.yml
     with:
       target: ${{ github.event.ref }}
       tag: latest

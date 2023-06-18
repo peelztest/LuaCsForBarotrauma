@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Create pre-release
+name: Nightly
 
 on:
   schedule:
@@ -79,10 +79,17 @@ jobs:
             echo "has-new-commits=true" >> "$GITHUB_OUTPUT"
           fi
 
-  publish-release:
+  build:
     needs: [check-if-release-needed]
     if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
-    uses: ./.github/workflows/publish-release.yml
+    uses: ./.github/workflows/build.yml
+    with:
+      target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+
+  create-legacy-release:
+    needs: [check-if-release-needed, build]
+    if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
+    uses: ./.github/workflows/create-legacy-release.yml
     with:
       target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
       tag: nightly
