@@ -86,6 +86,14 @@ jobs:
     with:
       target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
 
+  create-release:
+    needs: [check-if-release-needed, build]
+    if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
+    uses: ./.github/workflows/create-release.yml
+    with:
+      target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+      tag: build-develop-${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+
   create-legacy-release:
     needs: [check-if-release-needed, build]
     if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}

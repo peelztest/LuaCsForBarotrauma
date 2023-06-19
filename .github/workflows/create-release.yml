@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Create release
+
+on:
+  workflow_call:
+    inputs:
+      target:
+        description: "The git commit to be associated with the release"
+        required: true
+        type: string
+      tag:
+        description: "The tag of the release"
+        required: true
+        type: string
+      prerelease:
+        description: "Prerelease"
+        required: false
+        default: false
+        type: boolean
+
+env:
+  CI_DIR: 0ae7827c-c0ec-49e4-b2d5-fbc97e9dd729
+  RELEASES: |
+    windows:client:Windows/Client
+    windows:server:Windows/Server
+    linux:client:Linux/Client
+    linux:server:Linux/Server
+    mac:client:Mac/Client/Barotrauma.app/Contents/MacOS
+    mac:server:Mac/Server
+  ARCHIVE_BASE_NAME: luatrauma
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+        with:
+          name: build
+          path: ${{ env.CI_DIR }}
+
+      - name: Extract build artifacts
+        run: |
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          mkdir -p "$artifacts_dir"
+          tar -xzf "$CI_DIR/build.tar.gz" -C "$artifacts_dir"
+          rm "$CI_DIR/build.tar.gz"
+
+      - name: Create archives
+        run: |
+          set -e
+          shopt -s globstar nullglob
+          shopt -u dotglob
+
+          # This converts a newline-separated (LF) list into a Bash array
+          # NOTE: this doesn't discard the trailing LF that GitHub actions
+          # append (which results in an extra entry in the array).
+          lines_to_array() {
+            IFS=$'\n' readarray -td $'\n' "$1" <<< "${!1}"
+          }
+
+          lines_to_array RELEASES
+
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          archives_dir="$(realpath -m "$CI_DIR/archives")"
+          mkdir -p "$archives_dir"
+
+          for i in "${!RELEASES[@]}"; do
+            [[ -z "${RELEASES[i]}" ]] && continue
+            (
+              IFS=':' read platform side publish_dir _rest <<< "${RELEASES[i]}"
+              cd "${artifacts_dir}/${publish_dir}"
+
+              if [[ "$side" != "client" && "$side" != "server" ]]; then
+                echo "Invalid side: $side"
+                exit 1
+              fi
+
+              echo "Creating ${platform}_${side}.tar.gz"
+              tar -czf "${archives_dir}/${ARCHIVE_BASE_NAME}_${platform}_${side}.tar.gz" \
+                --owner=0 --group=0 \
+                *
+            )
+          done
+
+      - name: Create release
+        uses: notpeelz/action-gh-create-release@a12edfc71daf5daa7922b931c28e2bf88d3b2ced # v5.0.0
+        with:
+          target: ${{ inputs.target }}
+          tag: ${{ inputs.tag }}
+          prerelease: ${{ inputs.prerelease }}
+          title: "Build"
+          body: "Build"
+          # TODO: sign this with PGP? gpg -s luatrauma_linux_server.tar.gz -o luatrauma_linux_server.tar.gz.sig
+          files: |
+            ${{ env.CI_DIR }}/archives/${{ env.ARCHIVE_BASE_NAME }}_{windows,linux,mac}_{client,server}.tar.gz
+
+# TODO: dispatch event to releases-api

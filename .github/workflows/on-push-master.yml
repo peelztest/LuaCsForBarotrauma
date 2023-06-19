@@ -13,16 +13,23 @@ jobs:
   run-tests:
     uses: ./.github/workflows/run-tests.yml
     with:
-      target: ${{ github.event.ref }}
+      target: ${{ github.sha }}
 
   build:
     uses: ./.github/workflows/build.yml
     with:
       target: ${{ inputs.target }}
 
+  create-release:
+    needs: [build]
+    uses: ./.github/workflows/create-release.yml
+    with:
+      target: ${{ github.sha }}
+      tag: build-master-${{ github.sha }}
+
   create-legacy-release:
     needs: [build]
     uses: ./.github/workflows/create-legacy-release.yml
     with:
-      target: ${{ github.event.ref }}
+      target: ${{ github.sha }}
       tag: latest
