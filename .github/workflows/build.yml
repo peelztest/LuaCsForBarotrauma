@@ -31,7 +31,7 @@ jobs:
 
       - name: Run deploy script
         run: |
-          set -e
+          set -Eeuo pipefail
           shopt -s globstar nullglob
           shopt -u dotglob
           cd Deploy
