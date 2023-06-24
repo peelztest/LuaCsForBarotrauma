@@ -11,4 +11,4 @@ jobs:
   harden-ci-security:
     uses: ./.github/workflows/harden-ci-security.yml
     with:
-      target: ${{ github.event.ref }}
+      target: ${{ github.sha }}
