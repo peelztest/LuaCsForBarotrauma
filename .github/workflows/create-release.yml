@@ -1,0 +1,188 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Create release
+
+on:
+  workflow_call:
+    inputs:
+      target:
+        description: "The git commit to be associated with the release"
+        required: true
+        type: string
+      tag:
+        description: "The tag of the release"
+        required: true
+        type: string
+      prerelease:
+        description: "Prerelease"
+        required: false
+        default: false
+        type: boolean
+
+env:
+  CI_DIR: 0ae7827c-c0ec-49e4-b2d5-fbc97e9dd729
+  RELEASES: |
+    windows:client:Windows/Client
+    windows:server:Windows/Server
+    linux:client:Linux/Client
+    linux:server:Linux/Server
+    mac:client:Mac/Client/Barotrauma.app/Contents/MacOS
+    mac:server:Mac/Server
+  ARCHIVE_BASE_NAME: luatrauma
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+        with:
+          name: build
+          path: ${{ env.CI_DIR }}
+
+      - name: Extract build artifacts
+        run: |
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          mkdir -p "$artifacts_dir"
+          tar -xzf "$CI_DIR/build.tar.gz" -C "$artifacts_dir"
+          rm "$CI_DIR/build.tar.gz"
+
+      - name: Create archives
+        run: |
+          set -Eeuo pipefail
+          shopt -s globstar nullglob
+          shopt -u dotglob
+
+          # This converts a newline-separated (LF) list into a Bash array
+          # NOTE: this doesn't discard the trailing LF that GitHub actions
+          # append (which results in an extra entry in the array).
+          lines_to_array() {
+            IFS=$'\n' readarray -td $'\n' "$1" <<< "${!1}"
+          }
+
+          lines_to_array RELEASES
+
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          archives_dir="$(realpath -m "$CI_DIR/archives")"
+          mkdir -p "$archives_dir"
+
+          for i in "${!RELEASES[@]}"; do
+            [[ -z "${RELEASES[i]}" ]] && continue
+            (
+              IFS=':' read -r platform side publish_dir _rest <<< "${RELEASES[i]}"
+              cd "${artifacts_dir}/${publish_dir}"
+
+              if [[ "$side" != "client" && "$side" != "server" ]]; then
+                echo "Invalid side: $side"
+                exit 1
+              fi
+
+              echo "Creating ${platform}_${side}.tar.gz"
+              tar -czf "${archives_dir}/${ARCHIVE_BASE_NAME}_${platform}_${side}.tar.gz" \
+                --owner=0 --group=0 \
+                *
+            )
+          done
+
+      - name: Generate PGP signatures
+        env:
+          LUATRAUMA_RELEASES_PGP_PRIVATE_KEY: "${{ secrets.LUATRAUMA_RELEASES_PGP_PRIVATE_KEY }}"
+        run: |
+          set -Eeuo pipefail
+          export GNUPGHOME="$(mktemp -d)"
+
+          gpg --import <<< "$LUATRAUMA_RELEASES_PGP_PRIVATE_KEY"
+
+          archives_dir="$(realpath -m "$CI_DIR/archives")"
+          for file in "$archives_dir"/*.tar.gz; do
+            [[ -z "$file" ]] && continue
+            gpg \
+              --detach-sig \
+              --armor \
+              -o "${file}.sig" \
+              -s "$file"
+          done
+          gpgconf --kill gpg-agent
+          rm -rf "$GNUPGHOME"
+
+      - name: Create GitHub release
+        uses: notpeelz/action-gh-create-release@a12edfc71daf5daa7922b931c28e2bf88d3b2ced # v5.0.0
+        with:
+          target: ${{ inputs.target }}
+          tag: ${{ inputs.tag }}
+          prerelease: ${{ inputs.prerelease }}
+          title: "Automatic build"
+          body: "Automatic build"
+          files: |
+            ${{ env.CI_DIR }}/archives/${{ env.ARCHIVE_BASE_NAME }}_{windows,linux,mac}_{client,server}.tar.gz{,.sig}
+
+      - name: Create releases-api event payload
+        id: create-event-payload
+        run: |
+          set -Eeuo pipefail
+
+          join_by() {
+            local d="${1-}"
+            local f="${2-}"
+            if shift 2; then
+              printf %s "$f" "${@/#/$d}"
+            fi
+          }
+
+          artifacts=()
+
+          add_artifact() {
+            artifacts+=("$(
+              jq -n \
+                --arg target "$1" \
+                --arg downloadUrl "$2" \
+                --arg signatureUrl "$3" \
+                '{
+                  "target": $target,
+                  "downloadUrl": $downloadUrl,
+                  "signatureUrl": $signatureUrl
+                }'
+            )")
+          }
+
+          add_artifact \
+            win-x64 \
+            "https://TODO/todo.tar.gz" \
+            "https://TODO/todo.tar.gz.sig"
+
+          add_artifact \
+            linux-x64 \
+            "https://TODO/todo.tar.gz" \
+            "https://TODO/todo.tar.gz.sig"
+
+          add_artifact \
+            osx-x64 \
+            "https://TODO/todo.tar.gz" \
+            "https://TODO/todo.tar.gz.sig"
+
+          payload="$(
+            jq -n \
+              --arg channel "main" \
+              --arg version "0.0.0-TODO" \
+              --arg source "https://TODO" \
+              --arg displayName "Test release" \
+              --arg steamBuildId "123" \
+              --argjson artifacts "[ $(join_by "," "${artifacts[@]}") ]" \
+              '{
+                "channel": $channel,
+                "version": $version,
+                "source": $source,
+                "displayName": $displayName,
+                "steamBuildId": $steamBuildId,
+                "artifacts": $artifacts
+              }'
+          )"
+          echo "payload=$payload" >> "$GITHUB_OUTPUT"
+
+      - name: Publish release
+        uses: peter-evans/repository-dispatch@26b39ed245ab8f31526069329e112ab2fb224588 # v2.1.1
+        with:
+          token: ${{ secrets.RELEASES_API_GITHUB_TOKEN }}
+          repository: peelztest/releases-api
+          event-type: add-luatrauma-release
+          client-payload: ${{ steps.create-event-payload.outputs.payload }}
