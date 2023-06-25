@@ -17,7 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: Checkout target
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
           ref: ${{ inputs.target }}
@@ -31,7 +31,7 @@ jobs:
 
       - name: Run deploy script
         run: |
-          set -e
+          set -Eeuo pipefail
           shopt -s globstar nullglob
           shopt -u dotglob
           cd Deploy
