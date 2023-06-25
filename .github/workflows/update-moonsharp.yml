@@ -7,8 +7,8 @@ on:
 
 env:
   SUBMODULE_PATH: Libraries/moonsharp
-  GIT_USER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
-  GIT_USER_NAME: "github-actions[bot]"
+  GIT_USER_EMAIL: "41898282+github-actions@users.noreply.github.com"
+  GIT_USER_NAME: "github-actions"
 
 jobs:
   update-moonsharp:
