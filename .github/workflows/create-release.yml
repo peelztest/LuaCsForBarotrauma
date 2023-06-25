@@ -1,0 +1,245 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Create release
+
+on:
+  workflow_call:
+    inputs:
+      channel:
+        description: "The channel to publish the release to"
+        required: true
+        type: string
+      target:
+        description: "The git commit to be associated with the release"
+        required: true
+        type: string
+      tag:
+        description: "The tag of the release"
+        required: true
+        type: string
+      prerelease:
+        description: "Prerelease"
+        required: false
+        default: false
+        type: boolean
+
+env:
+  REPO_OWNER_LUATRAUMA: peelztest
+  REPO_LUATRAUMA: LuaCsForBarotrauma
+  REPO_OWNER_RELEASES_API: peelztest
+  REPO_RELEASES_API: releases-api
+  CI_DIR: 0ae7827c-c0ec-49e4-b2d5-fbc97e9dd729
+  RELEASES: |
+    windows:client:Windows/Client
+    windows:server:Windows/Server
+    linux:client:Linux/Client
+    linux:server:Linux/Server
+    mac:client:Mac/Client/Barotrauma.app/Contents/MacOS
+    mac:server:Mac/Server
+  ARCHIVE_BASE_NAME: luatrauma
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          ref: ${{ inputs.target }}
+          submodules: recursive
+
+      - name: Get Steam app info
+        id: get-steam-app-info
+        uses: notpeelz/action-get-steam-app-info@f3caf11762978348aef12253b4277cf89130ee40 # v0.1.0
+        with:
+          app-id: 602960
+
+      - name: Extract latest build id
+        id: get-latest-build-id
+        env:
+          BUILD_ID: ${{ fromJSON(steps.get-steam-app-info.outputs.app-info).depots.branches.public.buildid }}
+        run: |
+          set -Eeuo pipefail
+          echo "build-id=$BUILD_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Compare build ids
+        env:
+          LATEST_BUILD_ID: ${{ steps.get-latest-build-id.outputs.build-id }}
+        run: |
+          set -Eeuo pipefail
+          build_id="$(cat ./.github/data/buildid-public.txt)"
+          if [[ -z "$build_id" || -z "$LATEST_BUILD_ID" || "$build_id" != "$LATEST_BUILD_ID" ]]; then
+            echo "::error::the build id is outdated (current: \"${build_id}\", latest: \"${LATEST_BUILD_ID}\")"
+            exit 1
+          fi
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+        with:
+          name: build
+          path: ${{ env.CI_DIR }}
+
+      - name: Extract build artifacts
+        run: |
+          set -Eeuo pipefail
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          mkdir -p "$artifacts_dir"
+          tar -xzf "$CI_DIR/build.tar.gz" -C "$artifacts_dir"
+          rm "$CI_DIR/build.tar.gz"
+
+      - name: Create archives
+        run: |
+          set -Eeuo pipefail
+          shopt -s globstar nullglob
+          shopt -u dotglob
+
+          # This converts a newline-separated (LF) list into a Bash array
+          # NOTE: this doesn't discard the trailing LF that GitHub actions
+          # append (which results in an extra entry in the array).
+          lines_to_array() {
+            IFS=$'\n' readarray -td $'\n' "$1" <<< "${!1}"
+          }
+
+          lines_to_array RELEASES
+
+          artifacts_dir="$(realpath -m "$CI_DIR/artifacts")"
+          archives_dir="$(realpath -m "$CI_DIR/archives")"
+          mkdir -p "$archives_dir"
+
+          for i in "${!RELEASES[@]}"; do
+            [[ -z "${RELEASES[i]}" ]] && continue
+            (
+              IFS=':' read -r platform side publish_dir _rest <<< "${RELEASES[i]}"
+              cd "${artifacts_dir}/${publish_dir}"
+
+              if [[ "$side" != "client" && "$side" != "server" ]]; then
+                echo "::error::invalid side: $side"
+                exit 1
+              fi
+
+              echo "Creating ${platform}_${side}.tar.gz"
+              tar -czf "${archives_dir}/${ARCHIVE_BASE_NAME}_${platform}_${side}.tar.gz" \
+                --owner=0 --group=0 \
+                *
+            )
+          done
+
+      - name: Generate PGP signatures
+        env:
+          LUATRAUMA_RELEASES_PGP_PRIVATE_KEY: ${{ secrets.LUATRAUMA_RELEASES_PGP_PRIVATE_KEY }}
+        run: |
+          set -Eeuo pipefail
+          export GNUPGHOME="$(mktemp -d)"
+
+          gpg --import <<< "$LUATRAUMA_RELEASES_PGP_PRIVATE_KEY"
+
+          archives_dir="$(realpath -m "$CI_DIR/archives")"
+          for file in "$archives_dir"/*.tar.gz; do
+            [[ -z "$file" ]] && continue
+            gpg \
+              --detach-sig \
+              --armor \
+              -o "${file}.sig" \
+              -s "$file"
+          done
+          gpgconf --kill gpg-agent
+          rm -rf "$GNUPGHOME"
+
+      - name: Create GitHub release
+        uses: notpeelz/action-gh-create-release@a12edfc71daf5daa7922b931c28e2bf88d3b2ced # v5.0.0
+        with:
+          target: ${{ inputs.target }}
+          tag: ${{ inputs.tag }}
+          prerelease: ${{ inputs.prerelease }}
+          title: "Automatic build"
+          body: "Automatic build"
+          files: |
+            ${{ env.CI_DIR }}/archives/${{ env.ARCHIVE_BASE_NAME }}_{windows,linux,mac}_{client,server}.tar.gz{,.sig}
+
+      - name: Create event payload
+        id: create-event-payload
+        env:
+          RELEASE_CHANNEL: ${{ inputs.channel }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_SOURCE_SHA: ${{ github.sha }}
+          RELEASE_STEAM_BUILD_ID: ${{ steps.get-latest-build-id.outputs.build-id }}
+        run: |
+          set -Eeuo pipefail
+
+          join_by() {
+            local d="${1-}"
+            local f="${2-}"
+            if shift 2; then
+              printf %s "$f" "${@/#/$d}"
+            fi
+          }
+
+          artifacts=()
+
+          add_artifact() {
+            local platform="$1"
+            local side="$2"
+            local rid="$3"
+            artifacts+=("$(
+              jq -cn \
+                --arg target "$rid" \
+                --arg side "$side" \
+                --arg downloadUrl "https://github.com/${REPO_OWNER_LUATRAUMA}/${REPO_LUATRAUMA}/releases/download/${RELEASE_TAG}/${ARCHIVE_BASE_NAME}_${platform}_${side}.tar.gz" \
+                --arg signatureUrl "https://github.com/${REPO_OWNER_LUATRAUMA}/${REPO_LUATRAUMA}/releases/download/${RELEASE_TAG}/${ARCHIVE_BASE_NAME}_${platform}_${side}.tar.gz.sig" \
+                '{
+                  "target": $target,
+                  "side": $side,
+                  "downloadUrl": $downloadUrl,
+                  "signatureUrl": $signatureUrl
+                }'
+            )")
+          }
+
+          add_artifact windows server win-x64
+          add_artifact windows client win-x64
+
+          add_artifact linux server linux-x64
+          add_artifact linux client linux-x64
+
+          add_artifact mac server osx-x64
+          add_artifact mac client osx-x64
+
+          payload="$(
+            jq -cn \
+              --arg channel "$RELEASE_CHANNEL" \
+              --arg version "0.0.0-build$(date -u +'%s')" \
+              --arg source "git+https://github.com/${REPO_OWNER_LUATRAUMA}/${REPO_LUATRAUMA}.git#commit=$RELEASE_SOURCE_SHA" \
+              --arg displayName "${RELEASE_SOURCE_SHA:0:7}" \
+              --arg steamBuildId "$RELEASE_STEAM_BUILD_ID" \
+              --arg artifacts "[ $(join_by "," "${artifacts[@]}") ]" \
+              '{
+                "channel": $channel,
+                "version": $version,
+                "source": $source,
+                "displayName": $displayName,
+                "steamBuildId": $steamBuildId,
+                "artifacts": $artifacts
+              }'
+          )"
+          echo "payload=$payload" >> "$GITHUB_OUTPUT"
+
+      - name: "Dispatch workflow: add-luatrauma-release"
+        id: dispatch-release
+        uses: Codex-/return-dispatch@39a6d48ab43a8959d4a0a8108f6e64cd39736799 # v1.10.0
+        with:
+          token: ${{ secrets.RELEASES_API_GITHUB_TOKEN }}
+          ref: refs/heads/master
+          owner: ${{ env.REPO_OWNER_RELEASES_API }}
+          repo: ${{ env.REPO_RELEASES_API }}
+          workflow: add-luatrauma-release.yml
+          workflow_inputs: ${{ steps.create-event-payload.outputs.payload }}
+
+      - name: "Await workflow: add-luatrauma-release#${{ steps.dispatch-release.outputs.run_id }}"
+        uses: Codex-/await-remote-run@ebdef1805ef1e8b612a70453a048eab968710613 # v1.9.0
+        with:
+          token: ${{ secrets.RELEASES_API_GITHUB_TOKEN }}
+          owner: ${{ env.REPO_OWNER_RELEASES_API }}
+          repo: ${{ env.REPO_RELEASES_API }}
+          run_id: ${{ steps.dispatch-release.outputs.run_id }}
+          run_timeout_seconds: 600
+          poll_interval_ms: 5000
