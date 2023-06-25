@@ -1,0 +1,10 @@
+{
+  "name": "vdf-to-json",
+  "packageManager": "yarn@3.6.0",
+  "private": true,
+  "type": "module",
+  "main": "main.mjs",
+  "dependencies": {
+    "@node-steam/vdf": "^2.2.0"
+  }
+}

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Create pre-release
+name: Nightly
 
 on:
   schedule:
@@ -79,10 +79,41 @@ jobs:
             echo "has-new-commits=true" >> "$GITHUB_OUTPUT"
           fi
 
-  publish-release:
+      - name: Update nightly tag
+        if: ${{ steps.get-latest-tag.outputs.result != 'tag-doesnt-exist' }}
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
+        env:
+          LATEST_SHA: "${{ steps.get-latest-commit.outputs.result }}"
+        with:
+          result-encoding: string
+          script: |
+            await github.rest.git.updateRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: "tags/nightly",
+              sha: process.env.LATEST_SHA,
+            });
+
+  build:
     needs: [check-if-release-needed]
     if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
-    uses: ./.github/workflows/publish-release.yml
+    uses: ./.github/workflows/build.yml
+    with:
+      target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+
+  create-release:
+    needs: [check-if-release-needed, build]
+    if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
+    uses: ./.github/workflows/create-release.yml
+    secrets: inherit
+    with:
+      target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+      tag: build-develop-${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
+
+  create-legacy-release:
+    needs: [check-if-release-needed, build]
+    if: ${{ needs.check-if-release-needed.outputs.has-new-commits == 'true' }}
+    uses: ./.github/workflows/create-legacy-release.yml
     with:
       target: ${{ needs.check-if-release-needed.outputs.latest-commit-sha }}
       tag: nightly
