@@ -47,6 +47,7 @@ jobs:
 
       - name: Create tarball
         run: |
+          set -Eeuo pipefail
           mkdir -p "$CI_ARTIFACTS_DIR"
           tar -czf "$CI_ARTIFACTS_DIR"/lua.tar.gz -C "$DOCS_LUA_ROOT"/build .
 
@@ -71,6 +72,7 @@ jobs:
 
       - name: Create tarball
         run: |
+          set -Eeuo pipefail
           mkdir -p "$CI_ARTIFACTS_DIR"
           tar -czf "$CI_ARTIFACTS_DIR"/cs.tar.gz -C "$DOCS_CS_ROOT"/build .
 
@@ -103,6 +105,7 @@ jobs:
 
       - name: Extract lua and cs tarballs
         run: |
+          set -Eeuo pipefail
           mkdir -p "$CI_DEPLOY_DIR"/{lua,cs}-docs
           tar -xzf "$CI_ARTIFACTS_DIR"/lua.tar.gz -C "$CI_DEPLOY_DIR"/lua-docs
           tar -xzf "$CI_ARTIFACTS_DIR"/cs.tar.gz -C "$CI_DEPLOY_DIR"/cs-docs

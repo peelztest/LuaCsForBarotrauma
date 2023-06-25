@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Update build id
+
+on:
+  workflow_dispatch:
+
+env:
+  GIT_USER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+  GIT_USER_NAME: "github-actions[bot]"
+
+jobs:
+  update-build-id:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          submodules: recursive
+
+      - name: Get Steam app info
+        id: get-steam-app-info
+        uses: notpeelz/action-get-steam-app-info@f3caf11762978348aef12253b4277cf89130ee40 # v0.1.0
+        with:
+          app-id: 602960
+
+      - name: Update build id
+        env:
+          BUILD_ID: ${{ fromJSON(steps.get-steam-app-info.outputs.app-info).depots.branches.public.buildid }}
+        run: |
+          set -Eeuo pipefail
+          if [[ ! "${BUILD_ID:-}" =~ ^[0-9]+$ ]]; then
+            echo "::error::received invalid build id: ${BUILD_ID:-}"
+            exit 1
+          fi
+          echo "$BUILD_ID" > ./.github/data/buildid-public.txt
+
+      - name: Create commit
+        env:
+          BUILD_ID: ${{ fromJSON(steps.get-steam-app-info.outputs.app-info).depots.branches.public.buildid }}
+        run: |
+          set -Eeuo pipefail
+          git config user.name "$GIT_USER_NAME"
+          git config user.email "$GIT_USER_EMAIL"
+          git commit -am "Bump build id to $BUILD_ID"
+
+      - name: Push
+        run: git push
